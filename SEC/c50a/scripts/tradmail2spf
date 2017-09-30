@@ -1,0 +1,67 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+filtername=tradmail2spf
+
+for file in $*
+do
+	if [ ! -f $file ]
+	then
+		echo "$filtername: $file: no such file" 1>&2
+		continue
+	fi
+
+# this script provides a few basic tests in order to weed out bogus
+# ciphertexts as per the "trad" unix password standard; more *may* be
+# weeded out by the ELCID routine embedded in the cracker, which is
+# permitted to apply more subtle rules.  Filtering done here is
+# coarser, and is purely done (a) to remove gross formatting errors,
+# and (b) so that load-balancing works ok.
+
+	host=`basename $file`
+
+	awk -F: '
+	NF == 7 && /^\+/ && $2 == "" {
+		print "E:0:ignoring passwordless nis entry: " $0
+		next
+	}
+	NF == 7 && $2 ~ /^\*/ {
+		print "E:0:ignoring locked entry: " $0
+		next
+	}
+	NF == 7 && $2 ~ /[\-\ ]/ {
+		print "E:0:ignoring locked entry: " $0
+		next
+	}
+	NF == 7 && $2 ~ /^\[\#\!]/ {
+		print "E:0:ignoring shadowed entry: " $0
+		next
+	}
+	NF == 7 && $2 == "x" {
+		print "E:0:ignoring shadowed entry: " $0
+		next
+	}
+	NF == 7 {
+		printf("D:%s:%s:%s@%s:%s [%s %s]:%s %s\n", substr($2, 1, 2), \
+		    $2, $1, "'"$host"'", $5, "'"$file"'", $7, $1, $5);
+		next
+	}
+	{
+		print "E:0:bad format: '"$file"': " $0
+	}' < $file
+done
+
+# ...in hotel cells listening to dull tones,
+# remote controls and cable phones...
+
+exit 0
+

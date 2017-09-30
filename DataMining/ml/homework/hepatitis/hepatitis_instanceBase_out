@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.IB1
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              class
+              age
+              sex
+              steroid
+              antivirals
+              fatigue
+              malaise
+              anoresia
+              liver_big
+              liver_firm
+              spleen_palpable
+              spiders
+              ascites
+              varices
+              bilirubin
+              alk_phosphate
+              sgot
+              albumin
+              protime
+              histology
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 classifier
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         103               66.4516 %
+Incorrectly Classified Instances        52               33.5484 %
+Mean absolute error                      0.3355
+Root mean squared error                  0.5792
+Relative absolute error                 67.7229 %
+Root relative squared error            116.3881 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.718     0.4        0.685     0.718     0.701    1
+  0.6       0.282      0.636     0.6       0.618    2
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 61 24 |  a = 1
+ 28 42 |  b = 2
+

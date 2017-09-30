@@ -1,0 +1,108 @@
+ten56% clientudp2 2
+hostname portnumber protocol service
+ten14 14021 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 tcp ftp
+socket timeout
+
+ten43 15010 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 udp domain
+port: 53, names: domain
+The sequence of reply matches
+
+ten22 14070 udp domain
+port: 53, names: domain
+The sequence of reply matches
+
+ten23 14070 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten22 14070 tcp ftp
+port: 21, names: ftp
+The sequence of reply matches
+
+ten23 14070 udp domain
+port: 53, names: domain
+The sequence of reply matches
+
+ten10 14021 tcp kdc
+socket timeout
+
+ten43 15010 tcp kdc
+port: 750, names: kdc
+The sequence of reply matches
+
+ten23 14070 tcp kdc
+port: 750, names: kdc
+The sequence of reply matches
+
+ten24 14070 tcp kdc
+port: 750, names: kdc
+The sequence of reply matches
+
+ten24 14070 tcp nicname
+port: 43, names: nicname
+The sequence of reply matches
+
+ten43 15010 udp domain
+port: 53, names: domain
+The sequence of reply matches
+
+ten43 15010 tcp kdc
+port: 750, names: kdc
+The sequence of reply matches
+
+ten43 15010 tcp link
+port: 87, names: link
+The sequence of reply matches
+
+ten14 14021 tcp link 
+port: 87, names: link
+The sequence of reply matches
+
+ten14 14021 udp ntp
+port: 123, names: ntp
+The sequence of reply matches
+
+ten43 15010 udp snmp
+port: -1, names: 
+The sequence of reply matches
+
+ten24 14070 tcp nfs
+port: 2049, names: nfs
+The sequence of reply matches
+
+ten56 13040 tcp telnet
+port: 23, names: telnet
+The sequence of reply matches
+
+ten56 13040 udp domain
+port: 53, names: domain
+The sequence of reply matches
+
+ten22 14070 tcp telnet
+port: 23, names: telnet
+The sequence of reply matches
+
+ten56 13040 tcp finger
+port: 79, names: finger
+The sequence of reply matches
+

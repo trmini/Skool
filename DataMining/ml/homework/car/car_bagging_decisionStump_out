@@ -1,0 +1,279 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.Bagging -S 1 -I 10 -P 100 -W weka.classifiers.DecisionStump --
+Relation:     auto93.names-weka.filters.DiscretizeFilter-E-B5-R23-23
+Instances:    93
+Attributes:   23
+              Manufacturer
+              Type
+              City_MPG
+              Highway_MPG
+              Air_Bags_standard
+              Drive_train_type
+              Number_of_cylinders
+              Engine_size
+              Horsepower
+              RPM
+              Engine_revolutions_per_mile
+              Manual_transmission_available
+              Fuel_tank_capacity
+              Passenger_capacity
+              Length
+              Wheelbase
+              Width
+              U-turn_space
+              Rear_seat_room
+              Luggage_capacity
+              Weight
+              Domestic
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+Decision Stump
+
+Classifications
+
+Fuel_tank_capacity <= 15.7 : '(-inf-18.3]'
+Fuel_tank_capacity > 15.7 : '(18.3-29.2]'
+Fuel_tank_capacity is missing : '(-inf-18.3]'
+
+Class distributions
+
+Fuel_tank_capacity <= 15.7
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.9428571428571428	0.0	0.05714285714285714	0.0	0.0	
+Fuel_tank_capacity > 15.7
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.2413793103448276	0.5517241379310345	0.1206896551724138	0.05172413793103448	0.034482758620689655	
+Fuel_tank_capacity is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5053763440860215	0.34408602150537637	0.0967741935483871	0.03225806451612903	0.021505376344086023	
+
+
+Decision Stump
+
+Classifications
+
+Horsepower <= 128.5 : '(-inf-18.3]'
+Horsepower > 128.5 : '(18.3-29.2]'
+Horsepower is missing : '(-inf-18.3]'
+
+Class distributions
+
+Horsepower <= 128.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+1.0	0.0	0.0	0.0	0.0	
+Horsepower > 128.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.11764705882352941	0.6470588235294118	0.19607843137254902	0.0196078431372549	0.0196078431372549	
+Horsepower is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5161290322580645	0.3548387096774194	0.10752688172043011	0.010752688172043012	0.010752688172043012	
+
+
+Decision Stump
+
+Classifications
+
+City_MPG <= 21.5 : '(18.3-29.2]'
+City_MPG > 21.5 : '(-inf-18.3]'
+City_MPG is missing : '(-inf-18.3]'
+
+Class distributions
+
+City_MPG <= 21.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.07407407407407407	0.7037037037037037	0.2037037037037037	0.018518518518518517	0.0	
+City_MPG > 21.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.9487179487179487	0.0	0.05128205128205128	0.0	0.0	
+City_MPG is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.44086021505376344	0.40860215053763443	0.13978494623655913	0.010752688172043012	0.0	
+
+
+Decision Stump
+
+Classifications
+
+Horsepower <= 166.5 : '(-inf-18.3]'
+Horsepower > 166.5 : '(18.3-29.2]'
+Horsepower is missing : '(-inf-18.3]'
+
+Class distributions
+
+Horsepower <= 166.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.828125	0.140625	0.03125	0.0	0.0	
+Horsepower > 166.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.034482758620689655	0.5172413793103449	0.3448275862068966	0.034482758620689655	0.06896551724137931	
+Horsepower is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5806451612903226	0.25806451612903225	0.12903225806451613	0.010752688172043012	0.021505376344086023	
+
+
+Decision Stump
+
+Classifications
+
+Fuel_tank_capacity <= 17.6 : '(-inf-18.3]'
+Fuel_tank_capacity > 17.6 : '(18.3-29.2]'
+Fuel_tank_capacity is missing : '(-inf-18.3]'
+
+Class distributions
+
+Fuel_tank_capacity <= 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.9183673469387755	0.061224489795918366	0.02040816326530612	0.0	0.0	
+Fuel_tank_capacity > 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.06818181818181818	0.5909090909090909	0.29545454545454547	0.022727272727272728	0.022727272727272728	
+Fuel_tank_capacity is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5161290322580645	0.3118279569892473	0.15053763440860216	0.010752688172043012	0.010752688172043012	
+
+
+Decision Stump
+
+Classifications
+
+Weight <= 2857.5 : '(-inf-18.3]'
+Weight > 2857.5 : '(18.3-29.2]'
+Weight is missing : '(-inf-18.3]'
+
+Class distributions
+
+Weight <= 2857.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+1.0	0.0	0.0	0.0	0.0	
+Weight > 2857.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.23636363636363636	0.6	0.16363636363636364	0.0	0.0	
+Weight is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5483870967741935	0.3548387096774194	0.0967741935483871	0.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+Weight <= 2892.5 : '(-inf-18.3]'
+Weight > 2892.5 : '(18.3-29.2]'
+Weight is missing : '(-inf-18.3]'
+
+Class distributions
+
+Weight <= 2892.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.9555555555555556	0.044444444444444446	0.0	0.0	0.0	
+Weight > 2892.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.1875	0.5833333333333334	0.20833333333333334	0.0	0.020833333333333332	
+Weight is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5591397849462365	0.3225806451612903	0.10752688172043011	0.0	0.010752688172043012	
+
+
+Decision Stump
+
+Classifications
+
+Fuel_tank_capacity <= 17.6 : '(-inf-18.3]'
+Fuel_tank_capacity > 17.6 : '(18.3-29.2]'
+Fuel_tank_capacity is missing : '(-inf-18.3]'
+
+Class distributions
+
+Fuel_tank_capacity <= 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.8909090909090909	0.09090909090909091	0.01818181818181818	0.0	0.0	
+Fuel_tank_capacity > 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.02631578947368421	0.6578947368421053	0.23684210526315788	0.02631578947368421	0.05263157894736842	
+Fuel_tank_capacity is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5376344086021505	0.3225806451612903	0.10752688172043011	0.010752688172043012	0.021505376344086023	
+
+
+Decision Stump
+
+Classifications
+
+City_MPG <= 20.5 : '(18.3-29.2]'
+City_MPG > 20.5 : '(-inf-18.3]'
+City_MPG is missing : '(-inf-18.3]'
+
+Class distributions
+
+City_MPG <= 20.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.12244897959183673	0.6326530612244898	0.22448979591836735	0.0	0.02040816326530612	
+City_MPG > 20.5
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.8863636363636364	0.11363636363636363	0.0	0.0	0.0	
+City_MPG is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.4838709677419355	0.3870967741935484	0.11827956989247312	0.0	0.010752688172043012	
+
+
+Decision Stump
+
+Classifications
+
+Fuel_tank_capacity <= 17.6 : '(-inf-18.3]'
+Fuel_tank_capacity > 17.6 : '(18.3-29.2]'
+Fuel_tank_capacity is missing : '(-inf-18.3]'
+
+Class distributions
+
+Fuel_tank_capacity <= 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.9375	0.0625	0.0	0.0	0.0	
+Fuel_tank_capacity > 17.6
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.044444444444444446	0.6888888888888889	0.24444444444444444	0.0	0.022222222222222223	
+Fuel_tank_capacity is missing
+'(-inf-18.3]'	'(18.3-29.2]'	'(29.2-40.1]'	'(40.1-51]'	'(51-inf)'	
+0.5053763440860215	0.3655913978494624	0.11827956989247312	0.0	0.010752688172043012	
+
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          63               67.7419 %
+Incorrectly Classified Instances        30               32.2581 %
+Kappa statistic                          0.4305
+Mean absolute error                      0.1742
+Root mean squared error                  0.2999
+Relative absolute error                 70.7511 %
+Root relative squared error             86.1225 %
+Total Number of Instances               93     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.833     0.244      0.784     0.833     0.808    '(-inf-18.3]'
+  0.742     0.306      0.548     0.742     0.63     '(18.3-29.2]'
+  0         0          0         0         0        '(29.2-40.1]'
+  0         0          0         0         0        '(40.1-51]'
+  0         0          0         0         0        '(51-inf)'
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 40  8  0  0  0 |  a = '(-inf-18.3]'
+  8 23  0  0  0 |  b = '(18.3-29.2]'
+  3  9  0  0  0 |  c = '(29.2-40.1]'
+  0  1  0  0  0 |  d = '(40.1-51]'
+  0  1  0  0  0 |  e = '(51-inf)'
+

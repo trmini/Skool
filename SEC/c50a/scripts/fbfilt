@@ -1,0 +1,52 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+opfile="$1"
+mfile="$2"
+
+if [ "x$1" = "x" ]
+then
+	echo "Usage: $0 output-file [mailfile]" 1>&2
+	exit 1
+fi
+
+awk -F: '
+BEGIN {
+	opfile ="'"$opfile"'"
+	mfile ="'"$mfile"'"
+}
+$1 == "F" {
+	pw[$2] = $3
+	next
+}
+$1 == "E" {
+	print $0 > opfile
+	next
+}
+$1 == "D" && pw[$3] != "" {
+	print $0 > opfile
+	print "G:0:" $3 ":" pw[$3] > opfile
+	if (mfile != "")
+	{
+		print "nastygram", $4 > mfile
+	}
+	next
+}
+$1 == "D" && $3 == "" {
+	print $0 > opfile
+	print "G:0:" $3 ":<no-ciphertext>" > opfile
+	# lets let the sysadmin find these
+	next
+}
+{
+	print
+}'

@@ -1,0 +1,88 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+#
+# Usage: Crack7 ciphertext ...
+#
+
+##################################################################
+
+# The bottom three runs of "brute" (length=6..8) are comented out
+# because of estimated time constraints.  Feel free to uncomment them
+# (or comment out the others) if you feel you know what you are doing.
+
+###
+# Make the brute binary; Makefile assumes existence of
+# ../src/libdes/libdes.a so it may need reconfiguring if you are not
+# using plain-old Unix crypt().
+###
+
+make || exit 1
+
+###
+# set up a few shorthand charsets
+###
+
+lower=a-z
+upper=A-Z
+digit=0-9
+setld=$lower$digit
+setud=$upper$digit
+setuld=$upper$lower$digit
+
+# these are the charsets we will use for certain characters of the
+# plaintext - tweak these if you can be more precise, for instance:
+# restrict the values of s1..s8 to match anything that you know for
+# certain about the plaintext.
+
+# eg: the first character is on the left side of the keyboard, so we
+# can set s1="qwerasdfzxcv" - or similar.  This sort of pruning effect
+# causes a massive reduction in time required to brute force
+# passwords; as an example, if you know these things:
+
+#  - the first character is alphabetic and on the keyboard LHS
+#  - the second character is a digit
+#  - the third through sixth characters are in the range "a-z"
+#  - the seventh (final) character is "k"
+
+# ...you can set s1..s7 appropriately and comment out all the other
+# runs, or just invoke "brute" manually:
+#
+#    brute CIPHERTEXT qwerasdfzxcv 0-9 a-z a-z a-z a-z k
+#
+
+s1=$setld
+s2=$setld
+s3=$setld
+s4=$setld
+s5=$setld
+s6=$setld
+s7=$setld
+s8=$setld
+
+###
+# go
+###
+
+for ciphertext in $*
+do
+    ./brute $ciphertext $s1 && break
+    ./brute $ciphertext $s1 $s2 && break
+    ./brute $ciphertext $s1 $s2 $s3 && break
+    ./brute $ciphertext $s1 $s2 $s3 $s4 && break
+    ./brute $ciphertext $s1 $s2 $s3 $s4 $s5 && break
+#   ./brute $ciphertext $s1 $s2 $s3 $s4 $s5 $s6 && break
+#   ./brute $ciphertext $s1 $s2 $s3 $s4 $s5 $s6 $s7 && break
+#   ./brute $ciphertext $s1 $s2 $s3 $s4 $s5 $s6 $s7 $s8 && break
+done
+
+exit 0

@@ -1,0 +1,140 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.j48.J48 -C 0.25 -M 2
+Relation:     heart_disease
+Instances:    303
+Attributes:   14
+              age
+              sex
+              chest_pain
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+thal <= 3
+|   ca <= 0: 0 (117.51/13.55)
+|   ca > 0
+|   |   chest_pain = 1.0
+|   |   |   trestbps <= 138
+|   |   |   |   thalach <= 153: 0 (2.0/1.0)
+|   |   |   |   thalach > 153: 1 (2.0)
+|   |   |   trestbps > 138: 0 (3.0)
+|   |   chest_pain = 2.0: 0 (9.0/3.0)
+|   |   chest_pain = 3.0: 0 (13.59/1.0)
+|   |   chest_pain = 4.0
+|   |   |   sex = 0.0
+|   |   |   |   trestbps <= 134: 0 (4.0/1.0)
+|   |   |   |   trestbps > 134: 2 (2.0/1.0)
+|   |   |   sex = 1.0
+|   |   |   |   exang = 0.0: 1 (4.0/1.0)
+|   |   |   |   exang = 1.0
+|   |   |   |   |   slope <= 1: 2 (2.0/1.0)
+|   |   |   |   |   slope > 1
+|   |   |   |   |   |   trestbps <= 130
+|   |   |   |   |   |   |   ca <= 1
+|   |   |   |   |   |   |   |   chol <= 247: 3 (2.0)
+|   |   |   |   |   |   |   |   chol > 247: 1 (2.0)
+|   |   |   |   |   |   |   ca > 1: 3 (2.0)
+|   |   |   |   |   |   trestbps > 130: 2 (2.0/1.0)
+thal > 3
+|   oldpeak <= 0.7
+|   |   ca <= 0
+|   |   |   oldpeak <= 0.3
+|   |   |   |   oldpeak <= 0
+|   |   |   |   |   age <= 42: 1 (4.0/1.0)
+|   |   |   |   |   age > 42: 0 (8.45)
+|   |   |   |   oldpeak > 0: 1 (4.56/1.0)
+|   |   |   oldpeak > 0.3: 0 (8.56/1.0)
+|   |   ca > 0
+|   |   |   restecg = 0.0
+|   |   |   |   fbs = 0.0
+|   |   |   |   |   age <= 55: 1 (3.0/1.0)
+|   |   |   |   |   age > 55: 2 (5.44/1.44)
+|   |   |   |   fbs = 1.0: 0 (3.0/1.0)
+|   |   |   restecg = 1.0: 1 (0.0)
+|   |   |   restecg = 2.0
+|   |   |   |   exang = 0.0: 1 (4.0)
+|   |   |   |   exang = 1.0
+|   |   |   |   |   thalach <= 145: 1 (2.44/1.0)
+|   |   |   |   |   thalach > 145: 3 (2.0)
+|   oldpeak > 0.7
+|   |   chest_pain = 1.0: 0 (7.0/2.0)
+|   |   chest_pain = 2.0: 1 (2.0/1.0)
+|   |   chest_pain = 3.0
+|   |   |   exang = 0.0
+|   |   |   |   oldpeak <= 1.9: 0 (7.0/2.0)
+|   |   |   |   oldpeak > 1.9
+|   |   |   |   |   age <= 58: 3 (3.0/1.0)
+|   |   |   |   |   age > 58: 2 (2.0)
+|   |   |   exang = 1.0: 3 (3.0/1.0)
+|   |   chest_pain = 4.0
+|   |   |   ca <= 2
+|   |   |   |   thal <= 6
+|   |   |   |   |   exang = 0.0: 0 (3.0/2.0)
+|   |   |   |   |   exang = 1.0: 2 (5.06/2.0)
+|   |   |   |   thal > 6
+|   |   |   |   |   age <= 58
+|   |   |   |   |   |   chol <= 302: 3 (24.39/11.39)
+|   |   |   |   |   |   chol > 302: 2 (6.0/1.0)
+|   |   |   |   |   age > 58
+|   |   |   |   |   |   sex = 0.0: 3 (3.0/1.0)
+|   |   |   |   |   |   sex = 1.0
+|   |   |   |   |   |   |   thalach <= 139
+|   |   |   |   |   |   |   |   chol <= 206: 4 (2.0)
+|   |   |   |   |   |   |   |   chol > 206: 1 (4.0/1.0)
+|   |   |   |   |   |   |   thalach > 139: 2 (11.0/2.0)
+|   |   |   ca > 2
+|   |   |   |   exang = 0.0: 4 (5.0/1.0)
+|   |   |   |   exang = 1.0: 3 (3.0/1.0)
+
+Number of Leaves  : 	41
+
+Size of the tree : 	76
+
+
+Time taken to build model: 0.13 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         150               49.505  %
+Incorrectly Classified Instances       153               50.495  %
+Kappa statistic                          0.1871
+Mean absolute error                      0.2184
+Root mean squared error                  0.4081
+Relative absolute error                 84.3566 %
+Root relative squared error            113.6372 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.78      0.374      0.711     0.78      0.744    0
+  0.182     0.173      0.189     0.182     0.185    1
+  0.194     0.075      0.259     0.194     0.222    2
+  0.143     0.119      0.135     0.143     0.139    3
+  0         0.021      0         0         0        4
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 128  22   6   8   0 |   a = 0
+  30  10   4  10   1 |   b = 1
+  10   7   7   9   3 |   c = 2
+   8  11   9   5   2 |   d = 3
+   4   3   1   5   0 |   e = 4
+

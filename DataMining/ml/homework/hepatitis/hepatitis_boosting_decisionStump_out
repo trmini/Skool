@@ -1,0 +1,288 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.AdaBoostM1 -P 100 -I 10 -S 1 -W weka.classifiers.DecisionStump --
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              class
+              age
+              sex
+              steroid
+              antivirals
+              fatigue
+              malaise
+              anoresia
+              liver_big
+              liver_firm
+              spleen_palpable
+              spiders
+              ascites
+              varices
+              bilirubin
+              alk_phosphate
+              sgot
+              albumin
+              protime
+              histology
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+varices = 1 : 2
+varices != 1 : 1
+varices is missing : 1
+
+Class distributions
+
+varices = 1
+1	2	
+0.05555555555555555	0.9444444444444444	
+varices != 1
+1	2	
+0.6060606060606061	0.3939393939393939	
+varices is missing
+1	2	
+0.8	0.2	
+
+
+Weight: 0.63
+
+Decision Stump
+
+Classifications
+
+ascites = 1 : 2
+ascites != 1 : 2
+ascites is missing : 1
+
+Class distributions
+
+ascites = 1
+1	2	
+0.06967741935483869	0.9303225806451613	
+ascites != 1
+1	2	
+0.4770489990045352	0.5229510009954648	
+ascites is missing
+1	2	
+0.6813880126182965	0.3186119873817035	
+
+
+Weight: 0.35
+
+Decision Stump
+
+Classifications
+
+ascites = 1 : 2
+ascites != 1 : 1
+ascites is missing : 1
+
+Class distributions
+
+ascites = 1
+1	2	
+0.09565167704702573	0.9043483229529744	
+ascites != 1
+1	2	
+0.5629849243811177	0.4370150756188822	
+ascites is missing
+1	2	
+0.6022871758570131	0.397712824142987	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+alk_phosphate <= 81.5 : 1
+alk_phosphate > 81.5 : 2
+alk_phosphate is missing : 2
+
+Class distributions
+
+alk_phosphate <= 81.5
+1	2	
+0.668756715278428	0.33124328472157205	
+alk_phosphate > 81.5
+1	2	
+0.33810177447774675	0.6618982255222533	
+alk_phosphate is missing
+1	2	
+0.32110123823887726	0.6788987617611227	
+
+
+Weight: 0.7
+
+Decision Stump
+
+Classifications
+
+spiders = 1 : 2
+spiders != 1 : 1
+spiders is missing : 1
+
+Class distributions
+
+spiders = 1
+1	2	
+0.3204165065918221	0.6795834934081778	
+spiders != 1
+1	2	
+0.5906299570219683	0.4093700429780317	
+spiders is missing
+1	2	
+0.5959163878341	0.4040836121659001	
+
+
+Weight: 0.49
+
+Decision Stump
+
+Classifications
+
+age <= 37.5 : 1
+age > 37.5 : 2
+age is missing : 2
+
+Class distributions
+
+age <= 37.5
+1	2	
+0.5773815182175301	0.42261848178246975	
+age > 37.5
+1	2	
+0.373465733848737	0.6265342661512631	
+age is missing
+1	2	
+0.45819093214555123	0.5418090678544488	
+
+
+Weight: 0.43
+
+Decision Stump
+
+Classifications
+
+sgot <= 68.5 : 1
+sgot > 68.5 : 2
+sgot is missing : 1
+
+Class distributions
+
+sgot <= 68.5
+1	2	
+0.5371285971160374	0.4628714028839625	
+sgot > 68.5
+1	2	
+0.358357003759658	0.6416429962403419	
+sgot is missing
+1	2	
+0.8055450618469567	0.19445493815304327	
+
+
+Weight: 0.34
+
+Decision Stump
+
+Classifications
+
+sgot <= 42.5 : 2
+sgot > 42.5 : 1
+sgot is missing : 1
+
+Class distributions
+
+sgot <= 42.5
+1	2	
+0.31181773232924476	0.6881822676707553	
+sgot > 42.5
+1	2	
+0.5199104137634478	0.4800895862365521	
+sgot is missing
+1	2	
+0.7465736025405345	0.25342639745946555	
+
+
+Weight: 0.33
+
+Decision Stump
+
+Classifications
+
+liver_firm = 1 : 2
+liver_firm != 1 : 2
+liver_firm is missing : 2
+
+Class distributions
+
+liver_firm = 1
+1	2	
+0.3939672267267888	0.6060327732732111	
+liver_firm != 1
+1	2	
+0.4883507786832225	0.5116492213167776	
+liver_firm is missing
+1	2	
+0.15689564797430203	0.843104352025698	
+
+
+Weight: 0.3
+
+Decision Stump
+
+Classifications
+
+liver_firm = 1 : 2
+liver_firm != 1 : 1
+liver_firm is missing : 2
+
+Class distributions
+
+liver_firm = 1
+1	2	
+0.46682281519821345	0.5331771848017866	
+liver_firm != 1
+1	2	
+0.562461257140719	0.43753874285928107	
+liver_firm is missing
+1	2	
+0.20040780957703822	0.7995921904229617	
+
+
+Weight: 0.28
+
+Number of performed Iterations: 10
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         101               65.1613 %
+Incorrectly Classified Instances        54               34.8387 %
+Mean absolute error                      0.4506
+Root mean squared error                  0.485 
+Relative absolute error                 90.963  %
+Root relative squared error             97.4673 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.741     0.457      0.663     0.741     0.7      1
+  0.543     0.259      0.633     0.543     0.585    2
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 63 22 |  a = 1
+ 32 38 |  b = 2
+

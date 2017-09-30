@@ -1,0 +1,209 @@
+: # -*- perl -*-
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+eval 'exec perl -S $0 "$@"'
+    if $runnning_under_some_shell;
+
+# I know it's possible to recode this in awk/sh, in fact it was done
+# so for Crack v4.1.  I just can't face re-doing it.  - alecm
+$| = 1;
+
+$nfsdicts = "run/dict/gecos.* run/dict/gcperm.*";
+
+###
+# host : relative power : nfs mounted [y/n] : username [optional] : crack dir
+###
+# foo:30:y:user1:~alecm/crack/c50/
+# bar:20:y::~alecm/crack/c50/
+# baz:10:n::/usr/local/c50/
+#
+
+sub bypower
+{
+    $powerof{$b} <=> $powerof{$a};
+}
+
+###
+# read the config file and build the lists
+###
+
+# use a cookie-based scheme in order to permit multiple instances of
+# the same hostname in one file...
+
+$counter = 0;
+
+$cf = "conf/network.conf";
+
+die "netcrack: $cf: $!\n" unless (open(CONFIG, $cf)) ;
+while (<CONFIG>)
+{
+    s/\s+$//o;
+    next if /^\s*\#/o;
+    next if /^\s*$/o;
+
+    $counter++;
+
+    ($host, $power, $nfs, $user, $path) = split(/:/, $_, 5);
+    $cookie = "$counter-$host";
+
+    $hostof{$cookie} = $host;
+    $powerof{$cookie} = $power;
+    $nfsof{$cookie} = $nfs;
+    $userof{$cookie} = $user if ($user ne "");
+    $pathof{$cookie} = $path;
+
+    $totalpower += $power;
+}
+close(CONFIG);
+
+$stats{"power"} = $totalpower;
+
+###
+# slurp all data into memory for dividing up manually
+###
+
+$lastsortkey = ":";             # Ha!
+$drossfile = "run/D.network$$";
+$killfile = "run/K.network$$";
+@data = ();
+
+unless (open(DROSS, ">$drossfile"))
+{
+    die "netcrack: $drossfile: $!\n";
+}
+
+while (<STDIN>)
+{
+    unless (/^D:/o)
+    {
+	print DROSS $_;
+	next;
+    }
+
+    $stats{"users"}++;
+    $sortkey = (split(/:/))[1];
+
+    if ($sortkey eq $lastsortkey)
+    {
+	$data[$#data] .= $_;
+    } else
+    {
+	$totalkeys++;
+	$lastsortkey = $sortkey;
+	push(@data, $_);
+    }
+}
+close(DROSS);
+
+$stats{"sortkeys"} = $totalkeys;
+
+###
+# print statistics
+###
+
+foreach $stat (sort keys %stats)
+{
+    print "netcrack: $stat: $stats{$stat}\n";
+}
+
+###
+# split the data up proportionately and dispatch
+###
+
+$datasize = $#data + 1;
+@cookielist = sort bypower keys %hostof;
+
+unless (open(KILL, ">$killfile"))
+{
+    die "netcrack: $killfile: $!\n";
+}
+
+print KILL "PATH=$ENV{PATH}\nexport PATH\n";
+
+while (@cookielist)
+{
+    $cookie = shift(@cookielist);
+
+    if ($#cookielist >= 0)
+    {
+	$slicesize = int(($powerof{$cookie} / $totalpower) * $datasize);
+	$totalpower -= $powerof{$cookie};
+	$datasize -= $slicesize;
+	@slice = splice(@data, 0, $slicesize);
+    }
+    else
+    {
+	@slice = @data;
+    }
+
+    $slicesize = $#slice + 1;
+
+    if ($slicesize)
+    {
+	$rshpfx = sprintf("crack-rsh %s %s %s",
+			  (defined($userof{$cookie}) ? "-l $userof{$cookie}" : ""),
+			  $hostof{$cookie},
+			  $pathof{$cookie});
+
+	printf("netcrack: %s: power=%d sortkeys=%d (%2.1f%%)\n",
+	       $hostof{$cookie},
+	       $powerof{$cookie},
+	       $slicesize,
+	       ($slicesize / $totalkeys) * 100);
+
+	if ($nfsof{$cookie} =~ /^n/oi)
+	{
+	    $cmd = "$rshpfx/Crack -makedict";
+	    printf("netcrack: $cmd\n");
+	    system $cmd;
+
+	    $cmd = sprintf("crack-rcp %s %s%s:%s/run/dict",
+			   $nfsdicts,
+			   (defined($userof{$cookie}) ? "$userof{$cookie}\@" : ""),
+			   $hostof{$cookie},
+			   $pathof{$cookie});
+	    printf("netcrack: $cmd\n");
+	    system $cmd;
+	}
+
+	$remkillfile = "run/RK$cookie";
+
+	$cmd = "$rshpfx/Crack -remote -kill $remkillfile @ARGV";
+	printf("netcrack: $cmd\n");
+	unless(open(PIPE, "|$cmd"))
+	{
+	    warn "netcrack: popen(): $!\n";
+	}
+	print PIPE @slice;
+	close(PIPE);
+
+	printf(KILL "crack-rsh %s %s sh -x %s/%s\n",
+	       (defined($userof{$cookie}) ? "-l $userof{$cookie}" : ""),
+	       $hostof{$cookie},
+	       $pathof{$cookie},
+	       $remkillfile);
+
+	$slicebytes = 0;
+	foreach (@slice)
+	{
+	    $slicebytes += length;
+	}
+
+	printf("netcrack: sent %d sortkeys, %d bytes\n\n",
+	       $slicesize, $slicebytes);
+    }
+}
+print KILL "rm -f \$0\n";
+print KILL "exit 0\n";
+close(KILL);
+
+exit 0;

@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.IB1
+Relation:     heart_disease
+Instances:    303
+Attributes:   14
+              age
+              sex
+              chest_pain
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 classifier
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         163               53.7954 %
+Incorrectly Classified Instances       140               46.2046 %
+Kappa statistic                          0.2663
+Mean absolute error                      0.1848
+Root mean squared error                  0.4299
+Relative absolute error                 71.3789 %
+Root relative squared error            119.7107 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.823     0.295      0.767     0.823     0.794    0
+  0.255     0.137      0.292     0.255     0.272    1
+  0.194     0.101      0.206     0.194     0.2      2
+  0.171     0.093      0.194     0.171     0.182    3
+  0.077     0.045      0.071     0.077     0.074    4
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 135  17   7   4   1 |   a = 0
+  24  14   8   6   3 |   b = 1
+   9  11   7   8   1 |   c = 2
+   7   4  10   6   8 |   d = 3
+   1   2   2   7   1 |   e = 4
+

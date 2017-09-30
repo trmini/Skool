@@ -1,0 +1,53 @@
+//Small Project
+
+//Global
+
+#include <iostream.h>
+#include <constrea.h>
+
+struct rational_number
+ {
+  int numerator;
+  char slash;
+  int denominator;
+ };
+
+void getfraction(rational_number&);
+void showfraction(rational_number);
+void background(int);
+
+void getfraction(rational_number&fraction)
+ {
+  cin>>fraction.numerator>>fraction.slash>>fraction.denominator;
+  cin.get();
+  while (fraction.slash!='/'||fraction.denominator==0)
+   {
+    //int line;
+    //line=wherey(); more to control the monitor
+    cout<<"Invalid Data! Please re-enter another number: ";
+    cin>>fraction.numerator>>fraction.slash>>fraction.denominator;
+   }
+  return;
+ }
+
+void showfraction(rational_number fraction)
+ {
+  cout<<fraction.numerator<<fraction.slash<<fraction.denominator;
+  return;
+ }
+
+void background(int color)
+ {
+   constream full_window;
+   int row,column;
+
+   full_window.window(1,1,80,80,25);
+   full_window<<setattr((BLACK<<4)|color);
+   full_window.clrscr();
+   for (row=1;row<=25;row++)
+    for (column=1;column<=80;column++)
+     { full_window.setxy(column,row);
+       full_window<<"±";
+     }
+   return;
+ }

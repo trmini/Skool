@@ -1,0 +1,328 @@
+     What's New in PGP Command Line Freeware
+                Version 6.5.8
+  Copyright (c) 1999-2000 by Networks Associates 
+  Technology, Inc., and its Affiliated Companies. 
+               All Rights Reserved.
+                                                        
+Thank you for using Network Associates' products.
+This What's New file contains important information 
+regarding PGP Command Line Freeware.  Network
+Associates strongly recommends that you read this
+entire document.
+
+Network Associates welcomes your comments and
+suggestions. Please use the information provided in
+this file to contact us.
+
+NOTE: PGP freeware products are for non-commercial
+use only. Please refer to the included license 
+agreement for terms and conditions of use.
+
+NOTE: Network Associates does not provide technical 
+support for PGP freeware products.
+
+Warning: Export of this software may be restricted
+by the U.S. Government.
+
+
+___________________
+WHAT'S IN THIS FILE
+
+- Functionality Overview
+- Enhancements and Fixes in this Release
+- Documentation
+- System Requirements
+- Installation
+- Known Issues 
+- Contacting Network Associates
+
+
+______________________
+FUNCTIONALITY OVERVIEW
+
+PGP Command Line provides a convenient way for you
+to integrate PGP's strong authentication and 
+encryption features with other applications and
+automated processes. Examples include encrypting
+credit card transactions, personnel records, etc.
+
+The following commands provide on-line help for 
+each of the major product areas:
+
+* To display all of the encryption/decryption options:
+      pgp -h
+
+* To display all of the key management options:
+      pgp -k
+
+* To display all of the group management options:
+      pgp -g
+
+
+_____________________
+FIXES IN THIS RELEASE
+
+*  This release corrects a security-related bug with
+   Additional Decryption Keys (ADKs) that may allow
+   sophisticated attackers to add unauthorized ADK
+   key IDs to unhashed areas of PGP public keys.
+
+   For more information about this bug, please review
+   the PGP ADK Security Advisory available on
+   www.pgp.com.
+  
+_____________
+DOCUMENTATION
+
+Also included with this release are the following 
+manuals, which can be viewed on-line as well 
+as printed:
+
+* Introduction to Cryptography (IntrotoCrypto.pdf)
+* PGP Command Line Installation Guide (PGPCmdLineInstallGuide.pdf)
+* PGP Command Line User's Guide (PGPCmdLineGuide.pdf)
+
+Each document is saved in Adobe Acrobat Portable 
+Document Format (.PDF). You can view and print 
+these documents with Adobe's Acrobat Reader. PDF 
+files can include hypertext links and other 
+navigation features to assist you in finding 
+answers to questions about your Network 
+Associates product.
+
+To download Adobe Acrobat Reader from the World Wide
+Web, visit Adobe's Web site at:
+
+http://www.adobe.com/
+
+For UNIX releases the following online documents are
+also included:
+ 
+* PGP.1
+
+After the PGP Command Line product has been installed, 
+this document can be found in:
+ 
+Linux RPM:  /usr/man/man1 
+Solaris:    /opt/PGP/man/man1/ 
+tar file for all platforms:  
+            <install directory>/pgp-6.5.8/man/man1 
+
+For more information on how to view the man page, 
+type "man man" (without quotes) at the command 
+prompt (UNIX).  
+
+* IntrotoCrypto.ps
+* PGPCmdLineInstallGuide.ps
+* PGPCmdLineGuide.ps
+
+These are postscript files of the PGP Command Line
+User's Guide and the Introduction to Cryptography. 
+After the PGP Command Line product has been 
+installed, these documents are located in:
+
+Linux:     /usr/doc/pgp-6.5.8 
+Solaris:   /opt/PGP/docs  
+tar file for all platforms:  
+           <install directory>/pgp-6.5.8/docs
+
+
+Documentation feedback is welcome. Send email to 
+tns_documentation@nai.com.
+
+
+___________________
+SYSTEM REQUIREMENTS
+
+To install PGP Command Line on a Windows NT 
+or Windows 2000 system, you must have:
+
+- Windows NT version 4.0 (Service Pack 3 or later)
+  or
+- Windows 2000 (RC2 or later) 
+- 32MB RAM minimum
+- 6MB disk space for software
+
+
+To install PGP Command Line on a UNIX system, you 
+must have:
+
+- One of these flavors of UNIX: 
+     - Sun Solaris for SPARC version 2.51 or later 
+     - AIX 4.2 or later
+     - HPUX 10.20 or later
+     - Linux x86 Red Hat (RPM) 5.0 or later
+- 64MB RAM minimum for Solaris
+- 32MB RAM minimum for Linux, AIX, and HPUX
+- 9MB disk space for software
+- 9MB disk space in /opt directory for Solaris
+
+
+____________
+INSTALLATION
+
+To install PGP Command Line on a Windows machine: 
+
+1.  Start the Windows system.
+
+2.  Download the PGP files to the system. 
+
+3.  Double-click SETUP.EXE to start the Setup program. 
+    
+    The PGP Command Line Welcome screen appears.
+
+4.  Review the information in the Welcome screen, 
+    then click Next.
+
+    The Network Associates license agreement appears.
+
+5.  Review the license agreement information, then 
+    click Yes to accept the licensing terms.
+
+6.  Use the default destination directory or click 
+    Browse to navigate to a directory for your PGP 
+    files, then click Next. 
+
+    The PGP files are copied to the computer.
+
+7.  Click Finish to complete the PGP Command Line 
+    installation.
+
+    The WhatsNew.txt file appears listing the new 
+    features and other important information 
+    regarding PGP Command Line. 
+
+
+To install PGP Command Line on a Sun SparcStation:
+(To install the software, you must have root privileges.)
+
+1.  Download the PGP package to the system. 
+
+2.  If this is the first time you are installing the 
+    PGP Command Line product on this system, navigate 
+    to the directory where the PGPcmdfw_x.x.x_Solaris 
+    file is located, and begin installing the package 
+    by issuing the following command:
+
+    pkgadd -d PGPcmdfw_x.x.x_Solaris 
+
+    (where x.x.x is the release number)
+
+    If a previous version of the Command Line is 
+    installed on this system, you must remove it 
+    before you can install the new package. You 
+    can remove the installed package by issuing 
+    the following command:
+
+    pkgrm PGP
+
+    
+3.  Review the license agreement information, then 
+    type Y to accept the licensing terms.
+
+    The installer processes the package and system 
+    information, verifies disk space requirements, 
+    and installs the PGP Command Line program files. 
+
+    Note: The program files are installed to the 
+    default installation path of /opt/PGP/. 
+
+4.  When the installation is complete, you can 
+    verify that the product was installed properly 
+    by entering the following command:
+
+    pkginfo -l PGP
+
+    The status for the selected package should be 
+    "STATUS: completely installed."
+
+
+To install PGP Command Line on AIX and HPUX systems:
+
+1.  Download the PGP package to the system. 
+
+2.  Uncompress the package by issuing the following 
+    command:
+
+    gzip -d < PGPcmdfw_x.x.x_AIX.tar.gz | tar xvf -
+
+    or
+
+    gzip -d < PGPcmdfw_x.x.x_HPUX.tar.gz | tar xvf - 
+
+    (where x.x.x is the release number)
+
+   When the package is uncompressed, the pgp-6.5.8/ 
+   directory is created.
+
+3. To run the PGP Command Line application, enter the 
+   following command:
+
+    ./pgp
+
+
+To install PGP Command Line on Linux RPM systems:
+(To install the software, you must have root privileges.)
+
+1.  Download the PGP files to your system. 
+
+2.  Install the package by issuing the following 
+    command:
+
+    rpm -iv PGPcmdfw_x.x.x_linux.i386.rpm
+
+    (where x.x.x is the release number)
+
+    The PGP program files are copied to the system.
+
+3.  When installation is complete, verify the PGP 
+    signature file by adding the PGP signature in the 
+    SampleKeys.Asc file found in /usr/doc/pgp-x.x.x/ 
+    directory to your keyring. 
+
+    Once the PGP signature is added to your keyring, 
+    issue the following command:
+
+    rpm --checksig PGPcmdfw_x.x.x_linux.i386.rpm
+
+    (where x.x.x is the release number)
+
+    If the signature is correct, the response from 
+    this command is "OK." 
+
+____________
+KNOWN ISSUES
+
+1. The BATCHMODE flag is not supported when used 
+   with a UNIX-style filter.
+
+2. The -m and -w options cannot be used together 
+   (pgp -mw <file>). Use pgp -m first.
+
+3. The functionality to preserve a signature from 
+   within an encrypted file is not available in
+   this release.
+
+4. The ability to use the +makerandom feature is 
+   not supported in this release.
+
+
+_____________________________
+CONTACTING NETWORK ASSOCIATES
+
+NOTE: Network Associates does not provide 
+technical support for freeware products.
+
+To purchase a commercial version of PGP, please 
+contact the Network Associates Customer Service 
+department between 8:00 A.M. and 8:00 P.M.,
+Central Time, Monday through Friday, at:
+
+Network Associates Customer Service
+4099 McEwen Road, Suite 500
+Dallas, Texas 75244
+
+Phone: (972) 308-9960
+Email: cust_care@nai.com
+Web:   http://www.pgp.com
+

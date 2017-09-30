@@ -1,0 +1,34 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+# To his continuing mortification, I shall re-dedicate this program
+# and it's ridiculously punny name to the man who named it - Chris
+# Samuel, paragon of the UK net.community, last seen working for the
+# Defence Research Agency.
+
+# "Plaster the Cracks" indeed... 8-)
+
+node=`uname -n`
+
+for i in run/K*
+do
+	case $i in
+		run/K.*)	sh -x $i ;;
+		run/K$node.*)	sh -x $i ;;
+	esac
+
+	sleep 1
+done
+
+sleep 1
+
+exit 0

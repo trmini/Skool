@@ -1,0 +1,197 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.NaiveBayes 
+Relation:     auto93.names-weka.filters.DiscretizeFilter-E-B5-R23-23
+Instances:    93
+Attributes:   23
+              Manufacturer
+              Type
+              City_MPG
+              Highway_MPG
+              Air_Bags_standard
+              Drive_train_type
+              Number_of_cylinders
+              Engine_size
+              Horsepower
+              RPM
+              Engine_revolutions_per_mile
+              Manual_transmission_available
+              Fuel_tank_capacity
+              Passenger_capacity
+              Length
+              Wheelbase
+              Width
+              U-turn_space
+              Rear_seat_room
+              Luggage_capacity
+              Weight
+              Domestic
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class '(-inf-18.3]': Prior probability = 0.5 
+
+Manufacturer:  Discrete Estimator. Counts =  2 1 1 2 1 7 2 5 2 6 3 3 5 1 1 1 4 1 3 2 3 3 2 4 1 2 3 2 3 2 1  (Total = 79)
+Type:  Discrete Estimator. Counts =  22 8 11 1 9 3  (Total = 54)
+City_MPG:  Normal Distribution. Mean = 25.6719 StandardDev = 5.8759 WeightSum = 48 Precision = 1.55
+Highway_MPG:  Normal Distribution. Mean = 32.0833 StandardDev = 5.4395 WeightSum = 48 Precision = 1.4285714285714286
+Air_Bags_standard:  Discrete Estimator. Counts =  28 5 18  (Total = 51)
+Drive_train_type:  Discrete Estimator. Counts =  41 5 5  (Total = 51)
+Number_of_cylinders:  Normal Distribution. Mean = 3.9323 StandardDev = 0.8459 WeightSum = 48 Precision = 1.25
+Engine_size:  Normal Distribution. Mean = 2.1072 StandardDev = 0.6854 WeightSum = 48 Precision = 0.188
+Horsepower:  Normal Distribution. Mean = 109.7396 StandardDev = 28.589 WeightSum = 48 Precision = 4.375
+RPM:  Normal Distribution. Mean = 5336.413 StandardDev = 575.5758 WeightSum = 48 Precision = 117.3913043478261
+Engine_revolutions_per_mile:  Normal Distribution. Mean = 2559.517 StandardDev = 457.4657 WeightSum = 48 Precision = 31.623376623376622
+Manual_transmission_available:  Discrete Estimator. Counts =  40 10  (Total = 50)
+Fuel_tank_capacity:  Normal Distribution. Mean = 14.5727 StandardDev = 2.8914 WeightSum = 48 Precision = 0.4810810810810811
+Passenger_capacity:  Normal Distribution. Mean = 4.625 StandardDev = 1.0096 WeightSum = 48 Precision = 1.2
+Length:  Normal Distribution. Mean = 176.3775 StandardDev = 12.5667 WeightSum = 48 Precision = 1.56
+Wheelbase:  Normal Distribution. Mean = 100.1755 StandardDev = 5.15 WeightSum = 48 Precision = 1.1153846153846154
+Width:  Normal Distribution. Mean = 67.5 StandardDev = 3.4684 WeightSum = 48 Precision = 1.2
+U-turn_space:  Normal Distribution. Mean = 37.7292 StandardDev = 3.0804 WeightSum = 48 Precision = 1.0
+Rear_seat_room:  Normal Distribution. Mean = 26.8551 StandardDev = 2.4437 WeightSum = 48 Precision = 0.7391304347826086
+Luggage_capacity:  Normal Distribution. Mean = 12.5913 StandardDev = 2.4528 WeightSum = 46 Precision = 1.0666666666666667
+Weight:  Normal Distribution. Mean = 2674.2214 StandardDev = 466.2989 WeightSum = 48 Precision = 30.125
+Domestic:  Discrete Estimator. Counts =  22 28  (Total = 50)
+
+
+Class '(18.3-29.2]': Prior probability = 0.33
+
+Manufacturer:  Discrete Estimator. Counts =  1 2 1 4 1 2 2 3 2 4 1 2 1 1 2 1 2 1 1 2 3 3 1 3 2 1 2 1 3 4 3  (Total = 62)
+Type:  Discrete Estimator. Counts =  1 8 6 9 5 8  (Total = 37)
+City_MPG:  Normal Distribution. Mean = 19.35 StandardDev = 2.1517 WeightSum = 31 Precision = 1.55
+Highway_MPG:  Normal Distribution. Mean = 26.2673 StandardDev = 3.0289 WeightSum = 31 Precision = 1.4285714285714286
+Air_Bags_standard:  Discrete Estimator. Counts =  8 6 20  (Total = 34)
+Drive_train_type:  Discrete Estimator. Counts =  22 5 7  (Total = 34)
+Number_of_cylinders:  Normal Distribution. Mean = 5.6855 StandardDev = 1.1376 WeightSum = 31 Precision = 1.25
+Engine_size:  Normal Distribution. Mean = 3.1475 StandardDev = 0.8298 WeightSum = 31 Precision = 0.188
+Horsepower:  Normal Distribution. Mean = 165.2621 StandardDev = 34.6758 WeightSum = 31 Precision = 4.375
+RPM:  Normal Distribution. Mean = 5172.791 StandardDev = 558.5779 WeightSum = 31 Precision = 117.3913043478261
+Engine_revolutions_per_mile:  Normal Distribution. Mean = 2091.2233 StandardDev = 429.9175 WeightSum = 31 Precision = 31.623376623376622
+Manual_transmission_available:  Discrete Estimator. Counts =  16 17  (Total = 33)
+Fuel_tank_capacity:  Normal Distribution. Mean = 18.638 StandardDev = 1.9473 WeightSum = 31 Precision = 0.4810810810810811
+Passenger_capacity:  Normal Distribution. Mean = 5.4968 StandardDev = 1.1716 WeightSum = 31 Precision = 1.2
+Length:  Normal Distribution. Mean = 189.0116 StandardDev = 12.5057 WeightSum = 31 Precision = 1.56
+Wheelbase:  Normal Distribution. Mean = 107.7246 StandardDev = 6.0084 WeightSum = 31 Precision = 1.1153846153846154
+Width:  Normal Distribution. Mean = 71.6129 StandardDev = 3.2169 WeightSum = 31 Precision = 1.2
+U-turn_space:  Normal Distribution. Mean = 40.2581 StandardDev = 2.5396 WeightSum = 31 Precision = 1.0
+Rear_seat_room:  Normal Distribution. Mean = 28.6115 StandardDev = 2.9991 WeightSum = 31 Precision = 0.7391304347826086
+Luggage_capacity:  Normal Distribution. Mean = 15.2444 StandardDev = 2.9771 WeightSum = 24 Precision = 1.0666666666666667
+Weight:  Normal Distribution. Mean = 3474.0927 StandardDev = 374.3412 WeightSum = 31 Precision = 30.125
+Domestic:  Discrete Estimator. Counts =  17 16  (Total = 33)
+
+
+Class '(29.2-40.1]': Prior probability = 0.13
+
+Manufacturer:  Discrete Estimator. Counts =  2 2 2 1 3 2 2 1 1 1 1 1 1 1 2 3 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1  (Total = 43)
+Type:  Discrete Estimator. Counts =  1 7 2 4 3 1  (Total = 18)
+City_MPG:  Normal Distribution. Mean = 18.2125 StandardDev = 1.8037 WeightSum = 12 Precision = 1.55
+Highway_MPG:  Normal Distribution. Mean = 26.0714 StandardDev = 1.6624 WeightSum = 12 Precision = 1.4285714285714286
+Air_Bags_standard:  Discrete Estimator. Counts =  1 7 7  (Total = 15)
+Drive_train_type:  Discrete Estimator. Counts =  7 7 1  (Total = 15)
+Number_of_cylinders:  Normal Distribution. Mean = 6.25 StandardDev = 1.3056 WeightSum = 11 Precision = 1.25
+Engine_size:  Normal Distribution. Mean = 3.572 StandardDev = 1.1436 WeightSum = 12 Precision = 0.188
+Horsepower:  Normal Distribution. Mean = 208.9063 StandardDev = 51.1496 WeightSum = 12 Precision = 4.375
+RPM:  Normal Distribution. Mean = 5263.0435 StandardDev = 694.2207 WeightSum = 12 Precision = 117.3913043478261
+Engine_revolutions_per_mile:  Normal Distribution. Mean = 2089.7781 StandardDev = 384.164 WeightSum = 12 Precision = 31.623376623376622
+Manual_transmission_available:  Discrete Estimator. Counts =  8 6  (Total = 14)
+Fuel_tank_capacity:  Normal Distribution. Mean = 19.0027 StandardDev = 2.0831 WeightSum = 12 Precision = 0.4810810810810811
+Passenger_capacity:  Normal Distribution. Mean = 4.7 StandardDev = 1.3379 WeightSum = 12 Precision = 1.2
+Length:  Normal Distribution. Mean = 193.57 StandardDev = 13.9887 WeightSum = 12 Precision = 1.56
+Wheelbase:  Normal Distribution. Mean = 107.9135 StandardDev = 6.4256 WeightSum = 12 Precision = 1.1153846153846154
+Width:  Normal Distribution. Mean = 71.6 StandardDev = 2.6533 WeightSum = 12 Precision = 1.2
+U-turn_space:  Normal Distribution. Mean = 40.4167 StandardDev = 3.3778 WeightSum = 12 Precision = 1.0
+Rear_seat_room:  Normal Distribution. Mean = 30.3783 StandardDev = 3.362 WeightSum = 10 Precision = 0.7391304347826086
+Luggage_capacity:  Normal Distribution. Mean = 15.5733 StandardDev = 3.8222 WeightSum = 10 Precision = 1.0666666666666667
+Weight:  Normal Distribution. Mean = 3519.6042 StandardDev = 333.1579 WeightSum = 12 Precision = 30.125
+Domestic:  Discrete Estimator. Counts =  7 7  (Total = 14)
+
+
+Class '(40.1-51]': Prior probability = 0.02
+
+Manufacturer:  Discrete Estimator. Counts =  1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1  (Total = 32)
+Type:  Discrete Estimator. Counts =  1 2 1 1 1 1  (Total = 7)
+City_MPG:  Normal Distribution. Mean = 17.05 StandardDev = 0.2583 WeightSum = 1 Precision = 1.55
+Highway_MPG:  Normal Distribution. Mean = 21.4286 StandardDev = 0.2381 WeightSum = 1 Precision = 1.4285714285714286
+Air_Bags_standard:  Discrete Estimator. Counts =  1 1 2  (Total = 4)
+Drive_train_type:  Discrete Estimator. Counts =  1 2 1  (Total = 4)
+Number_of_cylinders:  Normal Distribution. Mean = 7.5 StandardDev = 0.2083 WeightSum = 1 Precision = 1.25
+Engine_size:  Normal Distribution. Mean = 4.512 StandardDev = 0.0313 WeightSum = 1 Precision = 0.188
+Horsepower:  Normal Distribution. Mean = 280 StandardDev = 0.7292 WeightSum = 1 Precision = 4.375
+RPM:  Normal Distribution. Mean = 5986.9565 StandardDev = 19.5652 WeightSum = 1 Precision = 117.3913043478261
+Engine_revolutions_per_mile:  Normal Distribution. Mean = 1960.6494 StandardDev = 5.2706 WeightSum = 1 Precision = 31.623376623376622
+Manual_transmission_available:  Discrete Estimator. Counts =  1 2  (Total = 3)
+Fuel_tank_capacity:  Normal Distribution. Mean = 22.6108 StandardDev = 0.0802 WeightSum = 1 Precision = 0.4810810810810811
+Passenger_capacity:  Normal Distribution. Mean = 4.8 StandardDev = 0.2 WeightSum = 1 Precision = 1.2
+Length:  Normal Distribution. Mean = 199.68 StandardDev = 0.26 WeightSum = 1 Precision = 1.56
+Wheelbase:  Normal Distribution. Mean = 112.6538 StandardDev = 0.1859 WeightSum = 1 Precision = 1.1153846153846154
+Width:  Normal Distribution. Mean = 72 StandardDev = 0.2 WeightSum = 1 Precision = 1.2
+U-turn_space:  Normal Distribution. Mean = 42 StandardDev = 0.1667 WeightSum = 1 Precision = 1.0
+Rear_seat_room:  Normal Distribution. Mean = 28.8261 StandardDev = 0.1232 WeightSum = 1 Precision = 0.7391304347826086
+Luggage_capacity:  Normal Distribution. Mean = 14.9333 StandardDev = 0.1778 WeightSum = 1 Precision = 1.0666666666666667
+Weight:  Normal Distribution. Mean = 4006.625 StandardDev = 5.0208 WeightSum = 1 Precision = 30.125
+Domestic:  Discrete Estimator. Counts =  2 1  (Total = 3)
+
+
+Class '(51-inf)': Prior probability = 0.02
+
+Manufacturer:  Discrete Estimator. Counts =  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1  (Total = 32)
+Type:  Discrete Estimator. Counts =  1 2 1 1 1 1  (Total = 7)
+City_MPG:  Normal Distribution. Mean = 18.6 StandardDev = 0.2583 WeightSum = 1 Precision = 1.55
+Highway_MPG:  Normal Distribution. Mean = 25.7143 StandardDev = 0.2381 WeightSum = 1 Precision = 1.4285714285714286
+Air_Bags_standard:  Discrete Estimator. Counts =  1 2 1  (Total = 4)
+Drive_train_type:  Discrete Estimator. Counts =  1 2 1  (Total = 4)
+Number_of_cylinders:  Normal Distribution. Mean = 6.25 StandardDev = 0.2083 WeightSum = 1 Precision = 1.25
+Engine_size:  Normal Distribution. Mean = 3.196 StandardDev = 0.0313 WeightSum = 1 Precision = 0.188
+Horsepower:  Normal Distribution. Mean = 218.75 StandardDev = 0.7292 WeightSum = 1 Precision = 4.375
+RPM:  Normal Distribution. Mean = 5517.3913 StandardDev = 19.5652 WeightSum = 1 Precision = 117.3913043478261
+Engine_revolutions_per_mile:  Normal Distribution. Mean = 2213.6364 StandardDev = 5.2706 WeightSum = 1 Precision = 31.623376623376622
+Manual_transmission_available:  Discrete Estimator. Counts =  1 2  (Total = 3)
+Fuel_tank_capacity:  Normal Distribution. Mean = 18.2811 StandardDev = 0.0802 WeightSum = 1 Precision = 0.4810810810810811
+Passenger_capacity:  Normal Distribution. Mean = 4.8 StandardDev = 0.2 WeightSum = 1 Precision = 1.2
+Length:  Normal Distribution. Mean = 187.2 StandardDev = 0.26 WeightSum = 1 Precision = 1.56
+Wheelbase:  Normal Distribution. Mean = 110.4231 StandardDev = 0.1859 WeightSum = 1 Precision = 1.1153846153846154
+Width:  Normal Distribution. Mean = 69.6 StandardDev = 0.2 WeightSum = 1 Precision = 1.2
+U-turn_space:  Normal Distribution. Mean = 37 StandardDev = 0.1667 WeightSum = 1 Precision = 1.0
+Rear_seat_room:  Normal Distribution. Mean = 27.3478 StandardDev = 0.1232 WeightSum = 1 Precision = 0.7391304347826086
+Luggage_capacity:  Normal Distribution. Mean = 14.9333 StandardDev = 0.1778 WeightSum = 1 Precision = 1.0666666666666667
+Weight:  Normal Distribution. Mean = 3524.625 StandardDev = 5.0208 WeightSum = 1 Precision = 30.125
+Domestic:  Discrete Estimator. Counts =  2 1  (Total = 3)
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          65               69.8925 %
+Incorrectly Classified Instances        28               30.1075 %
+Kappa statistic                          0.5026
+Mean absolute error                      0.1305
+Root mean squared error                  0.332 
+Relative absolute error                 52.9864 %
+Root relative squared error             95.359  %
+Total Number of Instances               93     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.833     0.178      0.833     0.833     0.833    '(-inf-18.3]'
+  0.613     0.177      0.633     0.613     0.623    '(18.3-29.2]'
+  0.5       0.111      0.4       0.5       0.444    '(29.2-40.1]'
+  0         0          0         0         0        '(40.1-51]'
+  0         0          0         0         0        '(51-inf)'
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 40  6  2  0  0 |  a = '(-inf-18.3]'
+  7 19  5  0  0 |  b = '(18.3-29.2]'
+  1  5  6  0  0 |  c = '(29.2-40.1]'
+  0  0  1  0  0 |  d = '(40.1-51]'
+  0  0  1  0  0 |  e = '(51-inf)'
+

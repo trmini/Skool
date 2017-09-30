@@ -1,0 +1,112 @@
+
+ John the Ripper F.A.Q.
+========================
+
+Q: Why "John"?
+A: Why not?
+
+Q: Why "the Ripper"?
+A: That was Lost Soul's idea. Ask him.
+
+Q: Is John the Ripper better than Crack?
+A: Decide yourself: John is faster, and has some extra features, but Crack
+is certainly good also.
+
+Q: Is John the Ripper better than Star Cracker?
+A: In fact, Star Cracker v1.0 is very similar to John v1.4: the main thing
+that differs is their release date, so I even wondered -- why make another
+instance of John. ;-) I won't go into detail now, but we obviously shared
+some ideas (nothing bad here), and John v1.4's DES routines are used in *C
+(with my permission). IMHO, both crackers had the same design problem: no
+easy way to add totally new algorithms in, such as new ciphertext formats,
+and bitslice DES. By the time of *C v1.0 release, I was thinking of a new
+John structure that would allow implementing all the new good ideas at the
+same time. So I contacted The SOrCErEr, and we decided that I continue the
+work on John v1.5, while he moves to doing other stuff instead of working
+on future versions *C, since doing the same thing twice would be a waste
+of time, in my opinion. Now that John v1.5 sources are split into modules,
+and are far easier to understand (I hope), it is possible for others, and
+The SOrCErEr (who is obviously a talented coder), to join the development
+of an even better password cracker. We'll see. For the original question:
+I think that John v1.5+ is now better than *C v1.0.
+
+Q: Is John the Ripper better than Cracker Jack?
+A: Yes.
+
+Q: Is John the Ripper better than L0phtCrack?
+A: It isn't meant to be. However, you might find John more convenient for
+enforcing the same password policy on your UNIX and NT boxes.
+
+Q: Will there be a Pentium optimized version of John?
+A: You've got it already.
+
+Q: How do I use a cracking mode, see the passwords it cracked, etc?
+A: See doc/EXAMPLES. :-)
+
+Q: Why doesn't John load my password file? It says 'Loaded 0 passwords'.
+A: Your password file is probably shadowed. You need to get both passwd
+and shadow files, and combine them into one for use with John. Also, you
+might get the same message if your password file or ciphertext format is
+not supported by John.
+
+Q: I've just switched my system to MD5-based passwords, but there're still
+some DES entries in the password file. How do I handle multiple ciphertext
+formats in one file?
+A: Use the '-format' option for that. See doc/OPTIONS.
+
+Q: I have 10 users, but John said it loaded 15 passwords. What's going on?
+A: Some ciphertext formats (double-length DES-based crypt(3), and WinNT LM
+hashes) have a property that allows John to split some long passwords into
+two pieces on loading, and crack them separately. When this happens, it is
+impossible to tell how many real passwords there are, loaded for cracking,
+so John reports this virtual number instead.
+
+Q: How do I unshadow?
+A: See doc/EXAMPLES on how to combine your passwd and shadow files. If you
+don't have root access, there's no answer for you here. ;-) This isn't the
+purpose of this FAQ. You'd better just erase John if you asked that.
+
+Q: Why doesn't John display a progress indicator for the incremental mode?
+A: Do you really want to see a 0% all the time? You probably need to read
+doc/MODES once again if you asked this.
+
+Q: Why does John display meaningless c/s values while cracking, instead of
+real crypt()s per second rate?
+A: The values displayed by John mean combinations (of login and password)
+per second, not crypt()s per second. This is the effective cracking speed
+you get on particular password files, and may be useful, for example, to
+adjust the value you use with the '-salts' option. If you want a benchmark
+of the password hashing routines only, use the '-test' option.
+
+Q: I just noticed that the c/s values shown while using incremental mode
+are a lot less than they're in other cracking modes. They're even less
+than they were in John v1.0. What has happened?
+A: You're probably running John for a few seconds only. My new incremental
+mode implementation uses large character sets which need to be expanded
+each time John switches to a different password length. Fortunately, this
+is only noticable when John has just started, since it rarely switches to
+a new password length when cracking for some hours already. I think this
+isn't a high price for the better order of password tries.
+
+Q: How can I test John's password hashing routines for proper operation?
+A: John always tests itself when you run it on a password file and reports
+if an error occurs. If you need just to test all the routines, use John's
+'-test' command line option.
+
+Q: Does John support parallel processing?
+A: I have a separate project for that. There's no real parallel processing
+support in John right now, but you can however use an external word filter
+for that purpose -- see the default configuration file for an example.
+
+Q: I'm trying to compile John with MMX support, but the assembler reports
+all the MMX instructions as unknown. How do I get around this?
+A: Upgrade your binutils. At least version 2.8.1.0.15 is known to work.
+
+Q: Where do I get the wordlists?
+A: You can find some at ftp://sable.ox.ac.uk/pub/wordlists/.
+
+Q: What is the primary site for John?
+A: http://www.false.com/security/john/.
+
+Q: How can I contact you?
+A: See doc/CREDITS.

@@ -1,0 +1,29 @@
+ten56% make lintc1
+lint -m -x -u -Xarch=v9 clientudp1.c 
+
+function returns value which is always ignored
+    fprintf             memcpy              memset              close
+
+
+ten56% make lints1
+lint -m -x -u -Xarch=v9 serverudp1.c 
+
+function returns value which is always ignored
+    fprintf             close               sleep  
+    
+
+ten56% make lintc2
+lint -m -x -u -Xarch=v9 clientudp2.c 
+
+statement not reached
+    (252)           
+
+function returns value which is always ignored
+    fprintf             memcpy              memset              close
+
+
+ten56% make lints2
+lint -m -x -u -Xarch=v9 serverudp2.c 
+
+function returns value which is always ignored
+    fprintf             close               strcpy

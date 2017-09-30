@@ -1,0 +1,97 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+tfile=run/T$$
+date=`date`
+
+while [ "x$1" != "x" ]
+do
+    case $1 in
+	-html)
+	    html=yes
+	    ;;
+	-quiet)
+	    quiet=yes # At the suggestion of Guido van Rooij
+	    ;;
+    esac
+
+    shift
+done
+
+if [ "$html" != "" ]
+then
+    echo "<html><head><title>Crack 5.0 Output</title></head><body>"
+    echo "<h1>Crack 5.0 Output:</h1><hr>"
+    echo "<h1>Passwords Cracked as of $date:</h1><p>"
+    echo "<pre>"
+else
+    echo "---- passwords cracked as of $date ----"
+    echo ""
+fi
+
+(
+    cat run/D* | egrep '^[DFG]:' > $tfile
+    egrep '^[FG]:' $tfile
+    egrep '^D:' $tfile
+    rm $tfile
+) |
+awk -F: '
+$1 == "F" {
+    plaintext[$2] = $3
+    guesstime[$2] = 0
+    next
+}
+$1 == "G" {
+    plaintext[$3] = $4
+    guesstime[$3] = $2
+    next
+}
+$1 == "D" {
+    if (plaintext[$3] != "")
+    {
+	printf "%d:Guessed %s [%s]  %s\n", guesstime[$3], $4, plaintext[$3], $5
+    }
+}' |
+sort -t: -n |
+sed -e 's/^[0-9]\+://'
+
+if [ "$quiet" = "" ]
+then
+    if [ "$html" != "" ]
+    then
+	echo "</pre>"
+	echo "<hr>"
+	echo "<h1>Errors and Warnings:</h1>"
+	echo "<p>"
+	echo "<pre>"
+    else
+	echo ""
+	echo "---- errors and warnings ----"
+	echo ""
+    fi
+
+    cat run/D* |
+    egrep '^E:' |
+    sed -e 's/^E:[0-9]\+://' |
+    sort |
+    uniq
+fi
+
+if [ "$html" != "" ]
+then
+    echo "</pre><hr></body></html>"
+else
+    echo ""
+    echo "---- done ----"
+fi
+
+exit 0

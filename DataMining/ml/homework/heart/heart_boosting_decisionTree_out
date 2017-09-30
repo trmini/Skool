@@ -1,0 +1,107 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.AdaBoostM1 -P 100 -I 10 -S 1 -W weka.classifiers.DecisionStump --
+Relation:     heart_disease
+Instances:    303
+Attributes:   14
+              age
+              sex
+              chest_pain
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Decision Stump
+
+Classifications
+
+thal <= 4.5 : 0
+thal > 4.5 : 0
+thal is missing : 0
+
+Class distributions
+
+thal <= 4.5
+0	1	2	3	4	
+0.7771084337349398	0.13253012048192772	0.04216867469879518	0.03614457831325301	0.012048192771084338	
+thal > 4.5
+0	1	2	3	4	
+0.2518518518518518	0.24444444444444444	0.2074074074074074	0.21481481481481482	0.08148148148148149	
+thal is missing
+0	1	2	3	4	
+0.5	0.0	0.5	0.0	0.0	
+
+
+Weight: 0.17
+
+Decision Stump
+
+Classifications
+
+thal <= 4.5 : 0
+thal > 4.5 : 1
+thal is missing : 2
+
+Class distributions
+
+thal <= 4.5
+0	1	2	3	4	
+0.7471561315054792	0.15033959748322864	0.04783532647193637	0.04100170840451689	0.013667236134838966	
+thal > 4.5
+0	1	2	3	4	
+0.22198215124471596	0.25420385157350867	0.21568811648661343	0.2233912635039925	0.08473461719116952	
+thal is missing
+0	1	2	3	4	
+0.4587458745874587	0.0	0.5412541254125411	0.0	0.0	
+
+
+Weight: 0.06
+
+Number of performed Iterations: 2
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         156               51.4851 %
+Incorrectly Classified Instances       147               48.5149 %
+Kappa statistic                          0.0119
+Mean absolute error                      0.1927
+Root mean squared error                  0.3964
+Relative absolute error                 74.4344 %
+Root relative squared error            110.373  %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.939     0.878      0.558     0.939     0.7      0
+  0.036     0.097      0.077     0.036     0.049    1
+  0         0.004      0         0         0        2
+  0         0          0         0         0        3
+  0         0          0         0         0        4
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 154   9   1   0   0 |   a = 0
+  53   2   0   0   0 |   b = 1
+  30   6   0   0   0 |   c = 2
+  29   6   0   0   0 |   d = 3
+  10   3   0   0   0 |   e = 4
+

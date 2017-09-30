@@ -1,0 +1,71 @@
+
+ Credits
+=========
+
+I'd like to thank the following people for their direct or indirect help
+in making John what it is now:
+
+* Matthew Kwan --
+	for letting me use his DES S-box file (nonstd.c):
+	http://www.cs.mu.oz.au/~mkwan/bitslice/;
+
+* Eli Biham --
+	for great "bitslice" paper:
+	http://www.cs.technion.ac.il/~biham/Reports/cs0891.ps.gz;
+
+* Roman Rusakov --
+	for his optimization hints, and original x86 assembly DES code;
+
+* Lionel Cons --
+	for making me add the AFS passwords support, reporting some bugs,
+	and for many good advices;
+
+* stran9er --
+	for tracking down the section alignment problem with MMX in the
+	DOS and Win32 ports;
+
+* All the people who have developed freeware crypt(3) implementations --
+	for various tricks that I combined in my routines;
+
+* Niels Provos and Poul-Henning Kamp --
+	for original Blowfish-based and MD5-based crypt(3), respectively,
+	that my implementations are compatible with;
+
+* Alec Muffett --
+	for the original wordlist rules syntax;
+
+* The SOrCErEr --
+	for proving the large charsets are worth implementing, and for
+	introducing '-groups' in his cracker;
+
+* Jackal --
+	for the format of john.pot, and parts of the user interface;
+
+* Anton Ertl --
+	for "Labels as Values" optimization that I use in compiler.c:
+	http://www.complang.tuwien.ac.at/papers/ertl96diss.ps.gz;
+
+* The people at Cygnus --
+	for Cygnus Developer's Kit (http://www.cygnus.com/misc/gnu-win32/)
+	that I used for the Win32 port, and for EGCS;
+
+* DJ Delorie --
+	for DJGPP (http://www.delorie.com), and
+
+* Charles W Sandmann --
+	(sandmann@clio.rice.edu; 1206 Braelinn, Sugar Land, TX 77479),
+	who wrote the DPMI server that I use for the DOS port: its source
+	code is available at:
+	ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2misc/csdpmi4s.zip.
+
+ How Can I Contact You?
+========================
+
+Send mail to solar@false.com.
+
+Please, don't ask me questions until you read doc/FAQ (and some FAQs on
+password cracking in general, if you're unfamiliar with it). Also, do not
+send me password files, I'm not a cracking service.
+
+Signed,
+Solar Designer

@@ -1,0 +1,1 @@
+facetrain -n shades.net -t ../trainset/straightrnd_train.list -1 ../trainset/straightrnd_test1.list -2 ../trainset/straightrnd_test2.list -e 75

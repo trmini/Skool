@@ -1,0 +1,11 @@
+D:De:DeWxNtTN$sUX0Ftw1Lntnd6HGMtHut1:user4:User 4 [../pass_norm2 /bin/bash]:user4 User 4
+E:993195664:StoreDataHook: invalid ciphertext: user4 DeWxNtTN$sUX0Ftw1Lntnd6HGMtHut1
+E:993195664:StoreDataHook: wg='user4 User 4' un='user4' cm='User 4 [../pass_norm2 /bin/bash]' ct='DeWxNtTN$sUX0Ftw1Lntnd6HGMtHut1' sk='De'
+D:hu:huvuRYWE$eaOltq1FuBJhoVJ.dZqWh.:user6:PoobUser 6 [../pass_norm2 /bin/tcsh]:user6 PoobUser 6
+E:993195664:StoreDataHook: invalid ciphertext: user6 huvuRYWE$eaOltq1FuBJhoVJ.dZqWh.
+E:993195664:StoreDataHook: wg='user6 PoobUser 6' un='user6' cm='PoobUser 6 [../pass_norm2 /bin/tcsh]' ct='huvuRYWE$eaOltq1FuBJhoVJ.dZqWh.' sk='hu'
+D:M2:M2KK0oP3$ebpQzotGJFlfv2/WajeK0.:user5:Blah User 5 [../pass_norm2 /bin/csh]:user5 Blah User 5
+E:993195664:StoreDataHook: invalid ciphertext: user5 M2KK0oP3$ebpQzotGJFlfv2/WajeK0.
+E:993195664:StoreDataHook: wg='user5 Blah User 5' un='user5' cm='Blah User 5 [../pass_norm2 /bin/csh]' ct='M2KK0oP3$ebpQzotGJFlfv2/WajeK0.' sk='M2'
+S:993195664:pid=10407 ciphers=0 saltgroups=0 rejects=3 errors=0 srule=1
+T:993195664:Crack: nothing 'uncracked' in my input. Done.

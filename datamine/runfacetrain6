@@ -1,0 +1,1 @@
+facetrain -n face.net -t ../trainset/straighteven_train.list -1 ../trainset/straighteven_test1.list -2 ../trainset/straighteven_test2.list -e 100 

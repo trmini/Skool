@@ -1,0 +1,6 @@
+Script started on Tue Sep 18 01:35:41 2001
+medusa {dluu} 1 : java -classpath ./ clients[K_server -s 20000
+Server is listening on port 20000...
+^C
+medusa {dluu} 2 : exit
+script done on Tue Sep 18 01:59:22 2001

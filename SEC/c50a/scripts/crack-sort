@@ -1,0 +1,5 @@
+#!/bin/sh
+# Hook, in case you have to point your 'sort' at a
+# large area of tmp space somewhere else, eg:
+# exec sort -T /var/tmp $*
+exec sort $*

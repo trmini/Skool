@@ -1,0 +1,48 @@
+Federal Information Processing Standard 181 defines a standard for an
+automated password generator to be used in "all federal departments
+and agencies where there is a requirement for computer generated
+pronouncable passwords"... for passwords of between 5 and 8 characters
+long.
+
+Basically it's a generator which takes a good PRNG and a bunch of
+fixed syllables (composed from lowercase ascii letters) and uses the
+former to drive concatenation of the latter, producing at the business
+end a "pronouncable password".
+
+Reading FIPS181 (http://csrc.ncsl.nist.gov/fips/fips181.txt) one gets
+a good feel for the reduction in search space that this algorithm
+provides to the password cracker.
+
+Section 2.4 cites that the algorithm is capable of producing
+"approximately 18 million 6-character" passwords; compare this with
+the set of 309 million lowercase 6-character passwords, and we see
+that the lack of entropy in the output has reduced the search space to
+about 5% of it's original size.
+
+Interesting; from this basis we may pose the following student project:
+
+--
+1) Either:
+	create an implementation of the FIPS181 algorithm with a
+	backdoor, namely that you include the ability to drive the
+	algorithm's PRNG input to the password generation routines,
+Or:
+	create an exhaustive word generator *and* a filter that will
+	quickly identify an arbitrary text string as being a plausible
+	output of the FIPS181 algorithm
+
+2) Use your above software to create an exhaustive dictionary of *all*
+possible N-character FIPS181 passwords, for values of N constrained by
+your resources.
+
+3) sort/uniq, dawg and gzip this dictionary and put it up on an
+Internet FTP site, posting an announcement of a new Crack dictionary
+containing all possible N-character plaintext federal passwords.
+
+4) Write an essay describing your experiences of consequent federal
+investigation, backbiting and paranoia.
+--
+To verify the feasibility of (3), the author can confirm that the
+highly redundant 2Gb dictionary of all possible 6-character lowercase
+passwords (newline separated) compresses to about 7Mb under dawg/gzip.
+YMMV.

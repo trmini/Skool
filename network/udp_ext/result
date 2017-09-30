@@ -1,0 +1,56 @@
+ten22% serverudp2 14070
+service name: domain, protocol: udp
+port: 53, alias of service: domain
+
+service name: ftp, protocol: tcp
+port: 21, alias of service: ftp
+
+service name: ftp, protocol: tcp
+port: 21, alias of service: ftp
+
+service name: telnet, protocol: tcp
+port: 23, alias of service: telnet
+
+service name: rpc, protocol: tcp
+port: 530, alias of service: rpc
+
+service name: ftp, protocol: tcp
+port: 21, alias of service: ftp
+
+service name: nicname, protocol: tcp
+port: 43, alias of service: nicname
+
+service name: ftp, protocol: tcp
+port: 21, alias of service: ftp
+
+service name: kdc, protocol: tcp
+port: 750, alias of service: kdc
+
+service name: telnet, protocol: p
+service not found or error telnet
+port: -1, alias of service: telnet
+
+service name: ftp, protocol: tcp
+port: 21, alias of service: ftp
+
+service name: smtp, protocol: tcp
+port: 25, alias of service: smtp
+
+service name: router, protocol: tcp
+service not found or error router
+port: -1, alias of service: router
+
+service name: echo, protocol: tcp
+port: 7, alias of service: echo
+
+service name: link, protocol: tcp
+port: 87, alias of service: link
+
+service name: finger, protocol: tcp
+port: 79, alias of service: finger
+
+service name: fs, protocol: tcp
+port: 7100, alias of service: fs
+
+service name: telnet, protocol: tcp
+port: 23, alias of service: telnet

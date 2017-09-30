@@ -1,0 +1,1218 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.AdaBoostM1 -P 100 -I 10 -S 1 -W weka.classifiers.j48.J48 -- -C 0.25 -M 2
+Relation:     soybean
+Instances:    683
+Attributes:   36
+              date
+              plant-stand
+              precip
+              temp
+              hail
+              crop-hist
+              area-damaged
+              severity
+              seed-tmt
+              germination
+              plant-growth
+              leaves
+              leafspots-halo
+              leafspots-marg
+              leafspot-size
+              leaf-shread
+              leaf-malf
+              leaf-mild
+              stem
+              lodging
+              stem-cankers
+              canker-lesion
+              fruiting-bodies
+              external-decay
+              mycelium
+              int-discolor
+              sclerotia
+              fruit-pods
+              fruit-spots
+              seed
+              mold-growth
+              seed-discolor
+              seed-size
+              shriveling
+              roots
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   canker-lesion = dna
+|   |   leafspots-marg = w-s-marg
+|   |   |   seed-size = norm: bacterial-blight (21.0/1.0)
+|   |   |   seed-size = lt-norm: bacterial-pustule (3.23/1.23)
+|   |   leafspots-marg = no-w-s-marg: bacterial-pustule (17.91/0.91)
+|   |   leafspots-marg = dna: bacterial-blight (0.0)
+|   canker-lesion = brown: bacterial-blight (0.0)
+|   canker-lesion = dk-brown-blk: phytophthora-rot (4.78/0.1)
+|   canker-lesion = tan: purple-seed-stain (11.23/0.23)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   mold-growth = absent
+|   |   |   fruit-spots = absent
+|   |   |   |   leaf-malf = absent
+|   |   |   |   |   fruiting-bodies = absent
+|   |   |   |   |   |   date = april: brown-spot (5.0)
+|   |   |   |   |   |   date = may: brown-spot (24.0/1.0)
+|   |   |   |   |   |   date = june
+|   |   |   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (4.0)
+|   |   |   |   |   |   |   precip = norm: brown-spot (5.0/2.0)
+|   |   |   |   |   |   |   precip = gt-norm: brown-spot (21.0)
+|   |   |   |   |   |   date = july
+|   |   |   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (1.0)
+|   |   |   |   |   |   |   precip = norm: phyllosticta-leaf-spot (2.0)
+|   |   |   |   |   |   |   precip = gt-norm: frog-eye-leaf-spot (11.0/5.0)
+|   |   |   |   |   |   date = august
+|   |   |   |   |   |   |   leaf-shread = absent
+|   |   |   |   |   |   |   |   seed-tmt = none: alternarialeaf-spot (16.0/4.0)
+|   |   |   |   |   |   |   |   seed-tmt = fungicide
+|   |   |   |   |   |   |   |   |   plant-stand = normal: frog-eye-leaf-spot (6.0)
+|   |   |   |   |   |   |   |   |   plant-stand = lt-normal: alternarialeaf-spot (5.0/1.0)
+|   |   |   |   |   |   |   |   seed-tmt = other: frog-eye-leaf-spot (3.0)
+|   |   |   |   |   |   |   leaf-shread = present: alternarialeaf-spot (2.0)
+|   |   |   |   |   |   date = september
+|   |   |   |   |   |   |   stem = norm: alternarialeaf-spot (44.0/4.0)
+|   |   |   |   |   |   |   stem = abnorm: frog-eye-leaf-spot (2.0)
+|   |   |   |   |   |   date = october: alternarialeaf-spot (31.0/1.0)
+|   |   |   |   |   fruiting-bodies = present: brown-spot (34.0)
+|   |   |   |   leaf-malf = present: phyllosticta-leaf-spot (10.0)
+|   |   |   fruit-spots = colored
+|   |   |   |   fruit-pods = norm: brown-spot (2.0)
+|   |   |   |   fruit-pods = diseased: frog-eye-leaf-spot (62.0)
+|   |   |   |   fruit-pods = few-present: frog-eye-leaf-spot (0.0)
+|   |   |   |   fruit-pods = dna: frog-eye-leaf-spot (0.0)
+|   |   |   fruit-spots = brown-w/blk-specks
+|   |   |   |   crop-hist = diff-lst-year: brown-spot (0.0)
+|   |   |   |   crop-hist = same-lst-yr: brown-spot (2.0)
+|   |   |   |   crop-hist = same-lst-two-yrs: brown-spot (0.0)
+|   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (2.0)
+|   |   |   fruit-spots = distort: brown-spot (0.0)
+|   |   |   fruit-spots = dna: brown-stem-rot (9.0)
+|   |   mold-growth = present
+|   |   |   leaves = norm: diaporthe-pod-&-stem-blight (7.25)
+|   |   |   leaves = abnorm: downy-mildew (20.0)
+|   roots = rotted
+|   |   area-damaged = scattered: herbicide-injury (1.1/0.1)
+|   |   area-damaged = low-areas: phytophthora-rot (30.03)
+|   |   area-damaged = upper-areas: phytophthora-rot (0.0)
+|   |   area-damaged = whole-field: herbicide-injury (3.66/0.66)
+|   roots = galls-cysts: cyst-nematode (7.81/0.17)
+leafspot-size = dna
+|   int-discolor = none
+|   |   leaves = norm
+|   |   |   stem-cankers = absent
+|   |   |   |   canker-lesion = dna: diaporthe-pod-&-stem-blight (5.53)
+|   |   |   |   canker-lesion = brown: purple-seed-stain (0.0)
+|   |   |   |   canker-lesion = dk-brown-blk: purple-seed-stain (0.0)
+|   |   |   |   canker-lesion = tan: purple-seed-stain (9.0)
+|   |   |   stem-cankers = below-soil: rhizoctonia-root-rot (19.0)
+|   |   |   stem-cankers = above-soil: anthracnose (0.0)
+|   |   |   stem-cankers = above-sec-nde: anthracnose (24.0)
+|   |   leaves = abnorm
+|   |   |   stem = norm
+|   |   |   |   plant-growth = norm: powdery-mildew (22.0/2.0)
+|   |   |   |   plant-growth = abnorm: cyst-nematode (4.3/0.39)
+|   |   |   stem = abnorm
+|   |   |   |   plant-stand = normal
+|   |   |   |   |   leaf-malf = absent
+|   |   |   |   |   |   seed = norm: diaporthe-stem-canker (21.0/1.0)
+|   |   |   |   |   |   seed = abnorm: anthracnose (9.0)
+|   |   |   |   |   leaf-malf = present: 2-4-d-injury (3.0)
+|   |   |   |   plant-stand = lt-normal
+|   |   |   |   |   fruiting-bodies = absent: phytophthora-rot (50.16/7.61)
+|   |   |   |   |   fruiting-bodies = present
+|   |   |   |   |   |   roots = norm: anthracnose (11.0/1.0)
+|   |   |   |   |   |   roots = rotted: phytophthora-rot (12.89/2.15)
+|   |   |   |   |   |   roots = galls-cysts: phytophthora-rot (0.0)
+|   int-discolor = brown
+|   |   leaf-malf = absent: brown-stem-rot (35.73/0.73)
+|   |   leaf-malf = present: 2-4-d-injury (3.15/0.68)
+|   int-discolor = black: charcoal-rot (22.22/2.22)
+
+Number of Leaves  : 	61
+
+Size of the tree : 	93
+
+
+Weight: 3.27
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   canker-lesion = dna
+|   |   roots = norm
+|   |   |   mold-growth = absent: bacterial-blight (10.9/0.52)
+|   |   |   mold-growth = present: bacterial-pustule (4.89/0.22)
+|   |   roots = rotted: bacterial-pustule (18.06/0.25)
+|   |   roots = galls-cysts: bacterial-pustule (0.9/0.38)
+|   canker-lesion = brown: bacterial-pustule (0.0)
+|   canker-lesion = dk-brown-blk: phytophthora-rot (1.79/0.02)
+|   canker-lesion = tan: purple-seed-stain (5.77/0.06)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   mold-growth = absent
+|   |   |   precip = lt-norm
+|   |   |   |   stem = norm: phyllosticta-leaf-spot (4.67)
+|   |   |   |   stem = abnorm: brown-stem-rot (4.15)
+|   |   |   precip = norm
+|   |   |   |   plant-stand = normal
+|   |   |   |   |   seed-discolor = absent
+|   |   |   |   |   |   area-damaged = scattered: brown-spot (2.08/0.52)
+|   |   |   |   |   |   area-damaged = low-areas: frog-eye-leaf-spot (15.22)
+|   |   |   |   |   |   area-damaged = upper-areas: brown-spot (1.04)
+|   |   |   |   |   |   area-damaged = whole-field: frog-eye-leaf-spot (16.25/1.04)
+|   |   |   |   |   seed-discolor = present: alternarialeaf-spot (2.08/0.52)
+|   |   |   |   plant-stand = lt-normal
+|   |   |   |   |   hail = yes: phyllosticta-leaf-spot (46.17/1.04)
+|   |   |   |   |   hail = no: brown-spot (4.15/1.56)
+|   |   |   precip = gt-norm
+|   |   |   |   leaf-shread = absent
+|   |   |   |   |   fruiting-bodies = absent
+|   |   |   |   |   |   date = april: brown-spot (1.04)
+|   |   |   |   |   |   date = may: brown-spot (3.63)
+|   |   |   |   |   |   date = june: brown-spot (2.59)
+|   |   |   |   |   |   date = july
+|   |   |   |   |   |   |   area-damaged = scattered: alternarialeaf-spot (30.43/3.11)
+|   |   |   |   |   |   |   area-damaged = low-areas
+|   |   |   |   |   |   |   |   stem = norm: alternarialeaf-spot (13.66)
+|   |   |   |   |   |   |   |   stem = abnorm: frog-eye-leaf-spot (2.08/0.52)
+|   |   |   |   |   |   |   area-damaged = upper-areas: frog-eye-leaf-spot (1.56)
+|   |   |   |   |   |   |   area-damaged = whole-field: brown-spot (14.7/0.52)
+|   |   |   |   |   |   date = august: frog-eye-leaf-spot (75.4/7.78)
+|   |   |   |   |   |   date = september
+|   |   |   |   |   |   |   temp = lt-norm: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   temp = norm: frog-eye-leaf-spot (64.5/3.63)
+|   |   |   |   |   |   |   temp = gt-norm
+|   |   |   |   |   |   |   |   stem = norm: alternarialeaf-spot (13.49)
+|   |   |   |   |   |   |   |   stem = abnorm: frog-eye-leaf-spot (6.23)
+|   |   |   |   |   |   date = october
+|   |   |   |   |   |   |   stem = norm: alternarialeaf-spot (10.38)
+|   |   |   |   |   |   |   stem = abnorm: frog-eye-leaf-spot (5.71)
+|   |   |   |   |   fruiting-bodies = present: brown-spot (10.9)
+|   |   |   |   leaf-shread = present
+|   |   |   |   |   severity = minor: alternarialeaf-spot (5.19)
+|   |   |   |   |   severity = pot-severe: brown-spot (35.98/0.52)
+|   |   |   |   |   severity = severe: brown-spot (0.52)
+|   |   mold-growth = present
+|   |   |   leaves = norm: diaporthe-pod-&-stem-blight (4.66)
+|   |   |   leaves = abnorm: downy-mildew (10.38)
+|   roots = rotted
+|   |   temp = lt-norm: herbicide-injury (2.08)
+|   |   temp = norm: phytophthora-rot (9.89)
+|   |   temp = gt-norm: phytophthora-rot (8.48/0.23)
+|   roots = galls-cysts: cyst-nematode (4.67/0.05)
+leafspot-size = dna
+|   leaf-malf = absent
+|   |   int-discolor = none
+|   |   |   stem = norm
+|   |   |   |   leaves = norm: purple-seed-stain (3.11)
+|   |   |   |   leaves = abnorm: powdery-mildew (11.56/1.18)
+|   |   |   stem = abnorm
+|   |   |   |   mycelium = absent
+|   |   |   |   |   canker-lesion = dna: diaporthe-stem-canker (6.78/1.59)
+|   |   |   |   |   canker-lesion = brown
+|   |   |   |   |   |   leaves = norm: rhizoctonia-root-rot (7.27)
+|   |   |   |   |   |   leaves = abnorm
+|   |   |   |   |   |   |   fruit-spots = absent: anthracnose (15.22)
+|   |   |   |   |   |   |   fruit-spots = colored: anthracnose (0.0)
+|   |   |   |   |   |   |   fruit-spots = brown-w/blk-specks: anthracnose (3.11)
+|   |   |   |   |   |   |   fruit-spots = distort: anthracnose (0.0)
+|   |   |   |   |   |   |   fruit-spots = dna: diaporthe-stem-canker (5.19)
+|   |   |   |   |   canker-lesion = dk-brown-blk
+|   |   |   |   |   |   plant-growth = norm: anthracnose (14.01)
+|   |   |   |   |   |   plant-growth = abnorm
+|   |   |   |   |   |   |   plant-stand = normal: anthracnose (2.08)
+|   |   |   |   |   |   |   plant-stand = lt-normal: phytophthora-rot (24.51/1.56)
+|   |   |   |   |   canker-lesion = tan: purple-seed-stain (1.56)
+|   |   |   |   mycelium = present: rhizoctonia-root-rot (16.25)
+|   |   int-discolor = brown: brown-stem-rot (18.36/0.2)
+|   |   int-discolor = black: charcoal-rot (10.49/0.11)
+|   leaf-malf = present
+|   |   area-damaged = scattered: herbicide-injury (43.49/2.51)
+|   |   area-damaged = low-areas: phytophthora-rot (5.34/2.53)
+|   |   area-damaged = upper-areas: 2-4-d-injury (2.4/0.31)
+|   |   area-damaged = whole-field: herbicide-injury (16.0/2.34)
+
+Number of Leaves  : 	61
+
+Size of the tree : 	95
+
+
+Weight: 3.11
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   canker-lesion = dna
+|   |   leaf-shread = absent: bacterial-pustule (15.32/1.0)
+|   |   leaf-shread = present
+|   |   |   leafspots-marg = w-s-marg: bacterial-blight (5.21/0.61)
+|   |   |   leafspots-marg = no-w-s-marg: bacterial-pustule (3.29/0.04)
+|   |   |   leafspots-marg = dna: bacterial-blight (0.0)
+|   canker-lesion = brown: bacterial-pustule (0.0)
+|   canker-lesion = dk-brown-blk: phytophthora-rot (0.6/0.0)
+|   canker-lesion = tan: purple-seed-stain (3.0/0.02)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   fruit-spots = absent
+|   |   |   leaf-mild = absent
+|   |   |   |   leaf-shread = absent
+|   |   |   |   |   seed = norm
+|   |   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (1.36)
+|   |   |   |   |   |   precip = norm
+|   |   |   |   |   |   |   severity = minor
+|   |   |   |   |   |   |   |   date = april: brown-spot (0.81)
+|   |   |   |   |   |   |   |   date = may: brown-spot (0.54)
+|   |   |   |   |   |   |   |   date = june: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   date = july: phyllosticta-leaf-spot (0.54)
+|   |   |   |   |   |   |   |   date = august: frog-eye-leaf-spot (13.5)
+|   |   |   |   |   |   |   |   date = september: frog-eye-leaf-spot (0.27)
+|   |   |   |   |   |   |   |   date = october
+|   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (7.13)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: alternarialeaf-spot (6.37)
+|   |   |   |   |   |   |   severity = pot-severe
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year: brown-spot (0.27)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr: phyllosticta-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: phyllosticta-leaf-spot (15.08/0.54)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: alternarialeaf-spot (6.37/0.27)
+|   |   |   |   |   |   |   severity = severe: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   precip = gt-norm
+|   |   |   |   |   |   |   fruiting-bodies = absent
+|   |   |   |   |   |   |   |   date = april: brown-spot (0.54)
+|   |   |   |   |   |   |   |   date = may: brown-spot (1.9)
+|   |   |   |   |   |   |   |   date = june: brown-spot (1.36)
+|   |   |   |   |   |   |   |   date = july
+|   |   |   |   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (14.27)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   |   hail = no: frog-eye-leaf-spot (12.2)
+|   |   |   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (7.13)
+|   |   |   |   |   |   |   |   |   area-damaged = upper-areas: frog-eye-leaf-spot (0.54)
+|   |   |   |   |   |   |   |   |   area-damaged = whole-field: brown-spot (7.13)
+|   |   |   |   |   |   |   |   date = august
+|   |   |   |   |   |   |   |   |   germination = 90-100: alternarialeaf-spot (19.65/1.36)
+|   |   |   |   |   |   |   |   |   germination = 80-89
+|   |   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (7.13)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = scattered: frog-eye-leaf-spot (7.13)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (12.2)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = whole-field: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   germination = lt-80
+|   |   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (18.29)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   |   |   |   |   |   seed-tmt = none: frog-eye-leaf-spot (7.13)
+|   |   |   |   |   |   |   |   |   |   |   |   seed-tmt = fungicide: alternarialeaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   |   |   |   seed-tmt = other: frog-eye-leaf-spot (0.27)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = low-areas: frog-eye-leaf-spot (13.23/6.1)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   |   |   area-damaged = whole-field: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   date = september
+|   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (12.2)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr
+|   |   |   |   |   |   |   |   |   |   hail = yes: frog-eye-leaf-spot (15.89/1.63)
+|   |   |   |   |   |   |   |   |   |   hail = no: alternarialeaf-spot (6.1)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (15.18/0.27)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs
+|   |   |   |   |   |   |   |   |   |   temp = lt-norm: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   temp = norm: frog-eye-leaf-spot (14.27)
+|   |   |   |   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (2.71)
+|   |   |   |   |   |   |   |   date = october: alternarialeaf-spot (5.42)
+|   |   |   |   |   |   |   fruiting-bodies = present: brown-spot (5.69)
+|   |   |   |   |   seed = abnorm: alternarialeaf-spot (49.33)
+|   |   |   |   leaf-shread = present
+|   |   |   |   |   temp = lt-norm: brown-spot (0.0)
+|   |   |   |   |   temp = norm
+|   |   |   |   |   |   seed-tmt = none: brown-spot (16.62/0.81)
+|   |   |   |   |   |   seed-tmt = fungicide: alternarialeaf-spot (9.35/1.36)
+|   |   |   |   |   |   seed-tmt = other: brown-spot (1.63)
+|   |   |   |   |   temp = gt-norm: phyllosticta-leaf-spot (9.57)
+|   |   |   leaf-mild = upper-surf: alternarialeaf-spot (0.0)
+|   |   |   leaf-mild = lower-surf: downy-mildew (5.42)
+|   |   fruit-spots = colored: frog-eye-leaf-spot (34.83/0.54)
+|   |   fruit-spots = brown-w/blk-specks
+|   |   |   canker-lesion = dna: diaporthe-pod-&-stem-blight (2.66)
+|   |   |   canker-lesion = brown: brown-spot (6.37)
+|   |   |   canker-lesion = dk-brown-blk: frog-eye-leaf-spot (6.37)
+|   |   |   canker-lesion = tan: brown-spot (0.0)
+|   |   fruit-spots = distort: alternarialeaf-spot (0.0)
+|   |   fruit-spots = dna: brown-stem-rot (8.27)
+|   roots = rotted: phytophthora-rot (11.2/1.15)
+|   roots = galls-cysts: cyst-nematode (2.57/0.02)
+leafspot-size = dna
+|   leaf-malf = absent
+|   |   int-discolor = none
+|   |   |   stem = norm
+|   |   |   |   seed = norm: powdery-mildew (5.42)
+|   |   |   |   seed = abnorm: purple-seed-stain (2.04/0.41)
+|   |   |   stem = abnorm
+|   |   |   |   mycelium = absent
+|   |   |   |   |   canker-lesion = dna: diaporthe-stem-canker (3.24/0.53)
+|   |   |   |   |   canker-lesion = brown
+|   |   |   |   |   |   leaves = norm: rhizoctonia-root-rot (3.79)
+|   |   |   |   |   |   leaves = abnorm
+|   |   |   |   |   |   |   fruit-spots = absent: anthracnose (7.95)
+|   |   |   |   |   |   |   fruit-spots = colored: anthracnose (0.0)
+|   |   |   |   |   |   |   fruit-spots = brown-w/blk-specks: anthracnose (1.63)
+|   |   |   |   |   |   |   fruit-spots = distort: anthracnose (0.0)
+|   |   |   |   |   |   |   fruit-spots = dna: diaporthe-stem-canker (2.71)
+|   |   |   |   |   canker-lesion = dk-brown-blk
+|   |   |   |   |   |   roots = norm
+|   |   |   |   |   |   |   fruit-pods = norm: anthracnose (0.54)
+|   |   |   |   |   |   |   fruit-pods = diseased: anthracnose (26.15)
+|   |   |   |   |   |   |   fruit-pods = few-present: anthracnose (0.0)
+|   |   |   |   |   |   |   fruit-pods = dna: phytophthora-rot (5.42)
+|   |   |   |   |   |   roots = rotted: phytophthora-rot (5.46)
+|   |   |   |   |   |   roots = galls-cysts: anthracnose (0.0)
+|   |   |   |   |   canker-lesion = tan: purple-seed-stain (0.81)
+|   |   |   |   mycelium = present: rhizoctonia-root-rot (8.49)
+|   |   int-discolor = brown: brown-stem-rot (9.54/0.05)
+|   |   int-discolor = black: charcoal-rot (5.45/0.03)
+|   leaf-malf = present: 2-4-d-injury (106.34/32.08)
+
+Number of Leaves  : 	97
+
+Size of the tree : 	138
+
+
+Weight: 2.68
+
+J48 pruned tree
+------------------
+
+leaf-malf = absent
+|   leafspot-size = lt-1/8
+|   |   seed = norm
+|   |   |   roots = norm
+|   |   |   |   leafspots-marg = w-s-marg: bacterial-blight (6.54/0.01)
+|   |   |   |   leafspots-marg = no-w-s-marg: bacterial-pustule (3.26/0.0)
+|   |   |   |   leafspots-marg = dna: bacterial-blight (0.0)
+|   |   |   roots = rotted: bacterial-pustule (4.71/0.17)
+|   |   |   roots = galls-cysts: bacterial-pustule (0.14/0.0)
+|   |   seed = abnorm
+|   |   |   precip = lt-norm: bacterial-pustule (0.0)
+|   |   |   precip = norm: bacterial-pustule (2.74/0.05)
+|   |   |   precip = gt-norm: purple-seed-stain (2.29/0.7)
+|   leafspot-size = gt-1/8
+|   |   plant-growth = norm
+|   |   |   canker-lesion = dna
+|   |   |   |   leaf-shread = absent
+|   |   |   |   |   mold-growth = absent
+|   |   |   |   |   |   date = april: brown-spot (0.29)
+|   |   |   |   |   |   date = may: phyllosticta-leaf-spot (4.68/0.87)
+|   |   |   |   |   |   date = june
+|   |   |   |   |   |   |   area-damaged = scattered: phyllosticta-leaf-spot (3.96/0.14)
+|   |   |   |   |   |   |   area-damaged = low-areas: phyllosticta-leaf-spot (0.0)
+|   |   |   |   |   |   |   area-damaged = upper-areas: brown-spot (2.26)
+|   |   |   |   |   |   |   area-damaged = whole-field: brown-spot (0.58/0.14)
+|   |   |   |   |   |   date = july
+|   |   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year
+|   |   |   |   |   |   |   |   |   hail = yes: alternarialeaf-spot (7.77/0.14)
+|   |   |   |   |   |   |   |   |   hail = no: frog-eye-leaf-spot (3.26)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (3.26)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: phyllosticta-leaf-spot (0.14)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (3.26)
+|   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (3.81)
+|   |   |   |   |   |   |   area-damaged = upper-areas: frog-eye-leaf-spot (0.43/0.14)
+|   |   |   |   |   |   |   area-damaged = whole-field: brown-spot (3.81)
+|   |   |   |   |   |   date = august
+|   |   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   |   plant-stand = normal
+|   |   |   |   |   |   |   |   |   seed-tmt = none
+|   |   |   |   |   |   |   |   |   |   germination = 90-100: alternarialeaf-spot (9.77)
+|   |   |   |   |   |   |   |   |   |   germination = 80-89
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (3.81)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs
+|   |   |   |   |   |   |   |   |   |   |   |   area-damaged = scattered: frog-eye-leaf-spot (3.81)
+|   |   |   |   |   |   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (6.52)
+|   |   |   |   |   |   |   |   |   |   |   |   area-damaged = whole-field: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: alternarialeaf-spot (3.26)
+|   |   |   |   |   |   |   |   |   |   germination = lt-80: alternarialeaf-spot (3.26)
+|   |   |   |   |   |   |   |   |   seed-tmt = fungicide: frog-eye-leaf-spot (8.59)
+|   |   |   |   |   |   |   |   |   seed-tmt = other: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   |   plant-stand = lt-normal: alternarialeaf-spot (77.93/7.62)
+|   |   |   |   |   |   |   hail = no
+|   |   |   |   |   |   |   |   seed = norm: frog-eye-leaf-spot (8.03)
+|   |   |   |   |   |   |   |   seed = abnorm: alternarialeaf-spot (3.26)
+|   |   |   |   |   |   date = september
+|   |   |   |   |   |   |   temp = lt-norm: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   temp = norm
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (9.92/0.14)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr
+|   |   |   |   |   |   |   |   |   hail = yes: frog-eye-leaf-spot (7.77)
+|   |   |   |   |   |   |   |   |   hail = no: alternarialeaf-spot (3.26)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (9.77)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (7.62)
+|   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (22.08)
+|   |   |   |   |   |   date = october
+|   |   |   |   |   |   |   temp = lt-norm: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   temp = norm
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (0.29)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (0.14)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (3.96/0.14)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: alternarialeaf-spot (3.4)
+|   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (9.12)
+|   |   |   |   |   mold-growth = present: downy-mildew (2.97/0.94)
+|   |   |   |   leaf-shread = present
+|   |   |   |   |   temp = lt-norm: brown-spot (0.0)
+|   |   |   |   |   temp = norm
+|   |   |   |   |   |   severity = minor: alternarialeaf-spot (7.35)
+|   |   |   |   |   |   severity = pot-severe
+|   |   |   |   |   |   |   crop-hist = diff-lst-year: brown-spot (0.0)
+|   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (3.84/0.58)
+|   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: brown-spot (5.81)
+|   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: brown-spot (11.45)
+|   |   |   |   |   |   severity = severe: brown-spot (0.14)
+|   |   |   |   |   temp = gt-norm: phyllosticta-leaf-spot (4.23/0.13)
+|   |   |   canker-lesion = brown
+|   |   |   |   lodging = yes: brown-spot (10.73/1.01)
+|   |   |   |   lodging = no: frog-eye-leaf-spot (2.11)
+|   |   |   canker-lesion = dk-brown-blk: frog-eye-leaf-spot (17.31)
+|   |   |   canker-lesion = tan: brown-spot (0.72)
+|   |   plant-growth = abnorm
+|   |   |   roots = norm
+|   |   |   |   int-discolor = none
+|   |   |   |   |   germination = 90-100: brown-spot (0.29/0.14)
+|   |   |   |   |   germination = 80-89: brown-spot (2.69)
+|   |   |   |   |   germination = lt-80
+|   |   |   |   |   |   date = april: brown-spot (0.14)
+|   |   |   |   |   |   date = may: brown-spot (0.14)
+|   |   |   |   |   |   date = june: brown-spot (2.11)
+|   |   |   |   |   |   date = july: frog-eye-leaf-spot (6.52)
+|   |   |   |   |   |   date = august: frog-eye-leaf-spot (3.4)
+|   |   |   |   |   |   date = september: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   date = october: frog-eye-leaf-spot (0.0)
+|   |   |   |   int-discolor = brown: brown-stem-rot (4.42)
+|   |   |   |   int-discolor = black: frog-eye-leaf-spot (0.0)
+|   |   |   roots = rotted: phytophthora-rot (3.9)
+|   |   |   roots = galls-cysts: cyst-nematode (0.99)
+|   leafspot-size = dna
+|   |   int-discolor = none
+|   |   |   stem = norm: powdery-mildew (3.88/0.98)
+|   |   |   stem = abnorm
+|   |   |   |   mycelium = absent
+|   |   |   |   |   canker-lesion = dna: diaporthe-stem-canker (1.6/0.15)
+|   |   |   |   |   canker-lesion = brown
+|   |   |   |   |   |   leaves = norm: rhizoctonia-root-rot (2.03)
+|   |   |   |   |   |   leaves = abnorm: anthracnose (6.56/1.45)
+|   |   |   |   |   canker-lesion = dk-brown-blk
+|   |   |   |   |   |   stem-cankers = absent: phytophthora-rot (0.06)
+|   |   |   |   |   |   stem-cankers = below-soil: phytophthora-rot (1.67)
+|   |   |   |   |   |   stem-cankers = above-soil: phytophthora-rot (3.01/0.29)
+|   |   |   |   |   |   stem-cankers = above-sec-nde: anthracnose (14.84/0.87)
+|   |   |   |   |   canker-lesion = tan: purple-seed-stain (0.43)
+|   |   |   |   mycelium = present: rhizoctonia-root-rot (4.54)
+|   |   int-discolor = brown: brown-stem-rot (5.08/0.02)
+|   |   int-discolor = black: charcoal-rot (2.9/0.01)
+leaf-malf = present
+|   leafspot-size = lt-1/8
+|   |   roots = norm: bacterial-blight (2.41/0.15)
+|   |   roots = rotted: bacterial-pustule (2.32/0.06)
+|   |   roots = galls-cysts: cyst-nematode (0.01/0.0)
+|   leafspot-size = gt-1/8
+|   |   stem = norm: phyllosticta-leaf-spot (2.35/0.9)
+|   |   stem = abnorm: herbicide-injury (8.61/0.16)
+|   leafspot-size = dna
+|   |   area-damaged = scattered
+|   |   |   date = april: herbicide-injury (59.54/3.99)
+|   |   |   date = may: herbicide-injury (59.66/4.1)
+|   |   |   date = june: herbicide-injury (56.25/0.69)
+|   |   |   date = july: herbicide-injury (0.0)
+|   |   |   date = august: 2-4-d-injury (3.3)
+|   |   |   date = september: 2-4-d-injury (3.3)
+|   |   |   date = october: herbicide-injury (0.0)
+|   |   area-damaged = low-areas: 2-4-d-injury (16.8/3.56)
+|   |   area-damaged = upper-areas: 2-4-d-injury (0.93/0.34)
+|   |   area-damaged = whole-field
+|   |   |   date = april: herbicide-injury (59.54/3.99)
+|   |   |   date = may: herbicide-injury (0.0)
+|   |   |   date = june: herbicide-injury (0.0)
+|   |   |   date = july: 2-4-d-injury (3.3)
+|   |   |   date = august: 2-4-d-injury (3.3)
+|   |   |   date = september: diaporthe-pod-&-stem-blight (0.4/0.0)
+|   |   |   date = october: diaporthe-pod-&-stem-blight (0.34/0.0)
+
+Number of Leaves  : 	108
+
+Size of the tree : 	155
+
+
+Weight: 3.11
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   leafspots-marg = w-s-marg
+|   |   roots = norm: bacterial-blight (6.57/1.98)
+|   |   roots = rotted: bacterial-pustule (3.17/0.08)
+|   |   roots = galls-cysts: cyst-nematode (0.02/0.0)
+|   leafspots-marg = no-w-s-marg: bacterial-pustule (11.16/0.16)
+|   leafspots-marg = dna: bacterial-pustule (0.0)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   mold-growth = absent
+|   |   |   leaf-shread = absent
+|   |   |   |   fruit-spots = absent
+|   |   |   |   |   date = april: brown-spot (0.38)
+|   |   |   |   |   date = may: brown-spot (12.61/2.07)
+|   |   |   |   |   date = june
+|   |   |   |   |   |   seed-tmt = none: phyllosticta-leaf-spot (2.22/0.23)
+|   |   |   |   |   |   seed-tmt = fungicide: brown-spot (3.1/0.08)
+|   |   |   |   |   |   seed-tmt = other: phyllosticta-leaf-spot (2.8/1.1)
+|   |   |   |   |   date = july
+|   |   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (0.23)
+|   |   |   |   |   |   precip = norm: phyllosticta-leaf-spot (3.39)
+|   |   |   |   |   |   precip = gt-norm
+|   |   |   |   |   |   |   area-damaged = scattered: frog-eye-leaf-spot (10.79/3.98)
+|   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (2.14/0.15)
+|   |   |   |   |   |   |   area-damaged = upper-areas: frog-eye-leaf-spot (0.23/0.08)
+|   |   |   |   |   |   |   area-damaged = whole-field: brown-spot (2.37)
+|   |   |   |   |   date = august
+|   |   |   |   |   |   seed = norm
+|   |   |   |   |   |   |   area-damaged = scattered: frog-eye-leaf-spot (51.15/3.4)
+|   |   |   |   |   |   |   area-damaged = low-areas
+|   |   |   |   |   |   |   |   precip = lt-norm: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   precip = norm: frog-eye-leaf-spot (3.77)
+|   |   |   |   |   |   |   |   precip = gt-norm
+|   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: frog-eye-leaf-spot (1.1)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (3.4)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (69.46/24.88)
+|   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (11.6/3.09)
+|   |   |   |   |   |   |   area-damaged = whole-field
+|   |   |   |   |   |   |   |   seed-tmt = none: alternarialeaf-spot (5.26/0.15)
+|   |   |   |   |   |   |   |   seed-tmt = fungicide: frog-eye-leaf-spot (3.38/0.08)
+|   |   |   |   |   |   |   |   seed-tmt = other: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   seed = abnorm: alternarialeaf-spot (5.11)
+|   |   |   |   |   date = september
+|   |   |   |   |   |   canker-lesion = dna
+|   |   |   |   |   |   |   temp = lt-norm: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   |   temp = norm
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (5.11)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (5.68/1.7)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (5.11)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (3.98)
+|   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (11.53)
+|   |   |   |   |   |   canker-lesion = brown: frog-eye-leaf-spot (3.1/0.3)
+|   |   |   |   |   |   canker-lesion = dk-brown-blk: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   canker-lesion = tan: brown-spot (0.15)
+|   |   |   |   |   date = october: alternarialeaf-spot (10.45/1.99)
+|   |   |   |   fruit-spots = colored
+|   |   |   |   |   fruit-pods = norm: brown-spot (2.21)
+|   |   |   |   |   fruit-pods = diseased: frog-eye-leaf-spot (20.89)
+|   |   |   |   |   fruit-pods = few-present: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   fruit-pods = dna: frog-eye-leaf-spot (0.0)
+|   |   |   |   fruit-spots = brown-w/blk-specks: brown-spot (3.56/1.78)
+|   |   |   |   fruit-spots = distort: frog-eye-leaf-spot (0.0)
+|   |   |   |   fruit-spots = dna: brown-stem-rot (2.31)
+|   |   |   leaf-shread = present
+|   |   |   |   temp = lt-norm: brown-spot (0.0)
+|   |   |   |   temp = norm
+|   |   |   |   |   severity = minor: alternarialeaf-spot (3.84)
+|   |   |   |   |   severity = pot-severe: brown-spot (18.48/1.7)
+|   |   |   |   |   severity = severe: brown-spot (0.08)
+|   |   |   |   temp = gt-norm: phyllosticta-leaf-spot (4.29)
+|   |   mold-growth = present: downy-mildew (13.19/1.97)
+|   roots = rotted: herbicide-injury (6.37/1.96)
+|   roots = galls-cysts: cyst-nematode (0.49/0.0)
+leafspot-size = dna
+|   leaves = norm
+|   |   canker-lesion = dna: diaporthe-pod-&-stem-blight (2.22)
+|   |   canker-lesion = brown: rhizoctonia-root-rot (1.44)
+|   |   canker-lesion = dk-brown-blk: anthracnose (1.82)
+|   |   canker-lesion = tan: purple-seed-stain (11.07/0.68)
+|   leaves = abnorm
+|   |   leaf-malf = absent
+|   |   |   external-decay = absent
+|   |   |   |   canker-lesion = dna: brown-stem-rot (3.33/1.52)
+|   |   |   |   canker-lesion = brown: phytophthora-rot (0.0)
+|   |   |   |   canker-lesion = dk-brown-blk: phytophthora-rot (8.75/0.01)
+|   |   |   |   canker-lesion = tan: charcoal-rot (1.67/0.15)
+|   |   |   external-decay = firm-and-dry
+|   |   |   |   fruit-spots = absent: anthracnose (5.61/0.01)
+|   |   |   |   fruit-spots = colored: diaporthe-stem-canker (0.0)
+|   |   |   |   fruit-spots = brown-w/blk-specks: anthracnose (5.95/0.01)
+|   |   |   |   fruit-spots = distort: diaporthe-stem-canker (0.0)
+|   |   |   |   fruit-spots = dna
+|   |   |   |   |   fruit-pods = norm: diaporthe-stem-canker (17.69)
+|   |   |   |   |   fruit-pods = diseased: diaporthe-stem-canker (0.0)
+|   |   |   |   |   fruit-pods = few-present: cyst-nematode (0.03)
+|   |   |   |   |   fruit-pods = dna: rhizoctonia-root-rot (2.44/0.45)
+|   |   |   external-decay = watery: phytophthora-rot (0.07/0.0)
+|   |   leaf-malf = present
+|   |   |   date = april: 2-4-d-injury (155.12/58.07)
+|   |   |   date = may: 2-4-d-injury (80.04/29.52)
+|   |   |   date = june
+|   |   |   |   area-damaged = scattered: herbicide-injury (33.5/4.48)
+|   |   |   |   area-damaged = low-areas: 2-4-d-injury (2.61/0.56)
+|   |   |   |   area-damaged = upper-areas: 2-4-d-injury (0.13/0.03)
+|   |   |   |   area-damaged = whole-field: herbicide-injury (0.0)
+|   |   |   date = july: 2-4-d-injury (2.97/0.79)
+|   |   |   date = august: 2-4-d-injury (4.35/0.36)
+|   |   |   date = september: 2-4-d-injury (3.93)
+|   |   |   date = october: 2-4-d-injury (2.05)
+
+Number of Leaves  : 	80
+
+Size of the tree : 	111
+
+
+Weight: 1.33
+
+J48 pruned tree
+------------------
+
+leaf-malf = absent
+|   leafspot-size = lt-1/8
+|   |   mold-growth = absent
+|   |   |   seed = norm: bacterial-pustule (4.85/2.23)
+|   |   |   seed = abnorm: purple-seed-stain (2.03/0.04)
+|   |   mold-growth = present: bacterial-pustule (7.27/0.16)
+|   leafspot-size = gt-1/8
+|   |   roots = norm
+|   |   |   fruit-spots = absent
+|   |   |   |   date = april: brown-spot (0.24)
+|   |   |   |   date = may
+|   |   |   |   |   precip = lt-norm: brown-spot (0.0)
+|   |   |   |   |   precip = norm
+|   |   |   |   |   |   severity = minor: brown-spot (2.14)
+|   |   |   |   |   |   severity = pot-severe: phyllosticta-leaf-spot (4.76)
+|   |   |   |   |   |   severity = severe: phyllosticta-leaf-spot (0.0)
+|   |   |   |   |   precip = gt-norm: brown-spot (7.7/0.1)
+|   |   |   |   date = june
+|   |   |   |   |   temp = lt-norm: downy-mildew (0.1)
+|   |   |   |   |   temp = norm: brown-spot (13.3/2.38)
+|   |   |   |   |   temp = gt-norm: phyllosticta-leaf-spot (2.52/0.1)
+|   |   |   |   date = july
+|   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (0.05)
+|   |   |   |   |   precip = norm: phyllosticta-leaf-spot (2.14)
+|   |   |   |   |   precip = gt-norm
+|   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   plant-stand = normal: alternarialeaf-spot (11.68/2.15)
+|   |   |   |   |   |   |   plant-stand = lt-normal: frog-eye-leaf-spot (2.15)
+|   |   |   |   |   |   area-damaged = low-areas: brown-spot (3.02/1.35)
+|   |   |   |   |   |   area-damaged = upper-areas: brown-spot (0.32/0.14)
+|   |   |   |   |   |   area-damaged = whole-field: brown-spot (1.69)
+|   |   |   |   date = august
+|   |   |   |   |   seed-tmt = none
+|   |   |   |   |   |   germination = 90-100: alternarialeaf-spot (8.47/0.1)
+|   |   |   |   |   |   germination = 80-89: frog-eye-leaf-spot (10.74/3.46)
+|   |   |   |   |   |   germination = lt-80
+|   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (2.15)
+|   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (1.08)
+|   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (0.7)
+|   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (29.61/1.44)
+|   |   |   |   |   seed-tmt = fungicide
+|   |   |   |   |   |   severity = minor: frog-eye-leaf-spot (3.43/0.05)
+|   |   |   |   |   |   severity = pot-severe: alternarialeaf-spot (99.92/30.27)
+|   |   |   |   |   |   severity = severe: brown-spot (0.18)
+|   |   |   |   |   seed-tmt = other: frog-eye-leaf-spot (1.82)
+|   |   |   |   date = september
+|   |   |   |   |   stem = norm
+|   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   temp = lt-norm: downy-mildew (0.05)
+|   |   |   |   |   |   |   temp = norm
+|   |   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (2.15)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (2.56/0.05)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (2.9/0.05)
+|   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (2.71/0.19)
+|   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (5.14)
+|   |   |   |   |   |   hail = no: alternarialeaf-spot (8.42/0.05)
+|   |   |   |   |   stem = abnorm: frog-eye-leaf-spot (2.63/0.87)
+|   |   |   |   date = october
+|   |   |   |   |   germination = 90-100: frog-eye-leaf-spot (6.27/1.51)
+|   |   |   |   |   germination = 80-89: alternarialeaf-spot (2.2)
+|   |   |   |   |   germination = lt-80: alternarialeaf-spot (2.48)
+|   |   |   fruit-spots = colored: frog-eye-leaf-spot (14.6/1.39)
+|   |   |   fruit-spots = brown-w/blk-specks: frog-eye-leaf-spot (6.47/2.22)
+|   |   |   fruit-spots = distort: alternarialeaf-spot (0.0)
+|   |   |   fruit-spots = dna: brown-stem-rot (1.46)
+|   |   roots = rotted: phytophthora-rot (4.01/0.02)
+|   |   roots = galls-cysts: cyst-nematode (0.27/0.0)
+|   leafspot-size = dna
+|   |   int-discolor = none
+|   |   |   canker-lesion = dna: powdery-mildew (4.28/0.66)
+|   |   |   canker-lesion = brown
+|   |   |   |   temp = lt-norm: rhizoctonia-root-rot (2.17/0.0)
+|   |   |   |   temp = norm: diaporthe-stem-canker (10.95/0.25)
+|   |   |   |   temp = gt-norm: anthracnose (1.45/0.0)
+|   |   |   canker-lesion = dk-brown-blk
+|   |   |   |   roots = norm: anthracnose (8.51/1.76)
+|   |   |   |   roots = rotted: phytophthora-rot (5.34)
+|   |   |   |   roots = galls-cysts: cyst-nematode (0.01)
+|   |   |   canker-lesion = tan: purple-seed-stain (6.57/0.01)
+|   |   int-discolor = brown: brown-stem-rot (3.14/0.0)
+|   |   int-discolor = black: charcoal-rot (0.96/0.0)
+leaf-malf = present
+|   leafspot-size = lt-1/8: bacterial-pustule (2.61/0.8)
+|   leafspot-size = gt-1/8
+|   |   stem = norm: downy-mildew (7.18/0.75)
+|   |   stem = abnorm: herbicide-injury (2.98/0.19)
+|   leafspot-size = dna
+|   |   temp = lt-norm: herbicide-injury (329.28/102.62)
+|   |   temp = norm: phytophthora-rot (3.91/1.22)
+|   |   temp = gt-norm: phytophthora-rot (5.25/3.0)
+
+Number of Leaves  : 	62
+
+Size of the tree : 	91
+
+
+Weight: 1.18
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   seed-discolor = absent: bacterial-blight (8.45/2.29)
+|   seed-discolor = present: bacterial-pustule (6.85/1.5)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   mold-growth = absent
+|   |   |   canker-lesion = dna
+|   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (3.76)
+|   |   |   |   precip = norm
+|   |   |   |   |   plant-stand = normal
+|   |   |   |   |   |   germination = 90-100: frog-eye-leaf-spot (5.46/0.13)
+|   |   |   |   |   |   germination = 80-89: alternarialeaf-spot (3.84/0.85)
+|   |   |   |   |   |   germination = lt-80: brown-spot (3.19/0.73)
+|   |   |   |   |   plant-stand = lt-normal
+|   |   |   |   |   |   seed = norm
+|   |   |   |   |   |   |   hail = yes: phyllosticta-leaf-spot (9.61/0.7)
+|   |   |   |   |   |   |   hail = no: brown-spot (2.59/0.7)
+|   |   |   |   |   |   seed = abnorm: alternarialeaf-spot (3.69)
+|   |   |   |   precip = gt-norm
+|   |   |   |   |   date = april: brown-spot (0.06)
+|   |   |   |   |   date = may: brown-spot (4.85)
+|   |   |   |   |   date = june: brown-spot (4.25)
+|   |   |   |   |   date = july
+|   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   severity = minor: frog-eye-leaf-spot (2.29)
+|   |   |   |   |   |   |   severity = pot-severe: alternarialeaf-spot (11.46/2.55)
+|   |   |   |   |   |   |   severity = severe: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   hail = no: frog-eye-leaf-spot (2.99)
+|   |   |   |   |   date = august
+|   |   |   |   |   |   seed = norm
+|   |   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   |   |   seed-tmt = none
+|   |   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (2.66)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (0.82)
+|   |   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (18.42)
+|   |   |   |   |   |   |   |   |   seed-tmt = fungicide: alternarialeaf-spot (2.66)
+|   |   |   |   |   |   |   |   |   seed-tmt = other: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   area-damaged = low-areas: frog-eye-leaf-spot (104.67/43.34)
+|   |   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (11.38/3.12)
+|   |   |   |   |   |   |   |   area-damaged = whole-field: frog-eye-leaf-spot (3.34/1.41)
+|   |   |   |   |   |   |   hail = no: frog-eye-leaf-spot (2.18)
+|   |   |   |   |   |   seed = abnorm: alternarialeaf-spot (2.11)
+|   |   |   |   |   date = september: alternarialeaf-spot (14.4/3.29)
+|   |   |   |   |   date = october: alternarialeaf-spot (1.74)
+|   |   |   canker-lesion = brown
+|   |   |   |   external-decay = absent: brown-spot (9.74/0.46)
+|   |   |   |   external-decay = firm-and-dry: frog-eye-leaf-spot (5.63)
+|   |   |   |   external-decay = watery: brown-spot (0.0)
+|   |   |   canker-lesion = dk-brown-blk: frog-eye-leaf-spot (5.78)
+|   |   |   canker-lesion = tan: brown-stem-rot (1.34/0.38)
+|   |   mold-growth = present
+|   |   |   leaves = norm: diaporthe-pod-&-stem-blight (2.17)
+|   |   |   leaves = abnorm: downy-mildew (5.41)
+|   roots = rotted: phytophthora-rot (4.31/1.86)
+|   roots = galls-cysts: cyst-nematode (0.17/0.0)
+leafspot-size = dna
+|   leaves = norm
+|   |   canker-lesion = dna: diaporthe-pod-&-stem-blight (3.53)
+|   |   canker-lesion = brown: rhizoctonia-root-rot (0.59)
+|   |   canker-lesion = dk-brown-blk: anthracnose (0.75)
+|   |   canker-lesion = tan: purple-seed-stain (5.36/1.07)
+|   leaves = abnorm
+|   |   leaf-malf = absent
+|   |   |   canker-lesion = dna: powdery-mildew (4.14/1.77)
+|   |   |   canker-lesion = brown: diaporthe-stem-canker (9.28/2.28)
+|   |   |   canker-lesion = dk-brown-blk
+|   |   |   |   external-decay = absent: phytophthora-rot (4.69/0.0)
+|   |   |   |   external-decay = firm-and-dry
+|   |   |   |   |   fruit-pods = norm: anthracnose (1.4)
+|   |   |   |   |   fruit-pods = diseased: anthracnose (2.27)
+|   |   |   |   |   fruit-pods = few-present: cyst-nematode (0.0)
+|   |   |   |   |   fruit-pods = dna: phytophthora-rot (2.31)
+|   |   |   |   external-decay = watery: phytophthora-rot (0.06/0.0)
+|   |   |   canker-lesion = tan: charcoal-rot (0.86/0.24)
+|   |   leaf-malf = present: 2-4-d-injury (375.48/152.14)
+
+Number of Leaves  : 	52
+
+Size of the tree : 	78
+
+
+Weight: 0.72
+
+J48 pruned tree
+------------------
+
+leaf-malf = absent
+|   leafspot-size = lt-1/8
+|   |   seed-discolor = absent: bacterial-blight (6.12/2.72)
+|   |   seed-discolor = present
+|   |   |   leaf-shread = absent: purple-seed-stain (2.08/0.08)
+|   |   |   leaf-shread = present: bacterial-pustule (3.53/0.1)
+|   leafspot-size = gt-1/8
+|   |   roots = norm
+|   |   |   stem = norm
+|   |   |   |   date = april: brown-spot (0.14)
+|   |   |   |   date = may
+|   |   |   |   |   precip = lt-norm: brown-spot (0.0)
+|   |   |   |   |   precip = norm: phyllosticta-leaf-spot (3.35/1.04)
+|   |   |   |   |   precip = gt-norm: brown-spot (3.75/0.15)
+|   |   |   |   date = june
+|   |   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (2.25)
+|   |   |   |   |   precip = norm: phyllosticta-leaf-spot (4.73/2.14)
+|   |   |   |   |   precip = gt-norm: brown-spot (3.28/0.12)
+|   |   |   |   date = july
+|   |   |   |   |   plant-stand = normal: alternarialeaf-spot (12.93/6.32)
+|   |   |   |   |   plant-stand = lt-normal: frog-eye-leaf-spot (3.31/1.19)
+|   |   |   |   date = august
+|   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (1.04)
+|   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (2.32/0.34)
+|   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (0.61)
+|   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (15.68/1.98)
+|   |   |   |   |   area-damaged = low-areas
+|   |   |   |   |   |   severity = minor: frog-eye-leaf-spot (3.16/0.77)
+|   |   |   |   |   |   severity = pot-severe: alternarialeaf-spot (111.19/45.54)
+|   |   |   |   |   |   severity = severe: alternarialeaf-spot (0.0)
+|   |   |   |   |   area-damaged = upper-areas
+|   |   |   |   |   |   plant-stand = normal
+|   |   |   |   |   |   |   crop-hist = diff-lst-year: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (5.29/0.52)
+|   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (3.39)
+|   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (1.28)
+|   |   |   |   |   |   plant-stand = lt-normal: alternarialeaf-spot (2.82/0.08)
+|   |   |   |   |   area-damaged = whole-field
+|   |   |   |   |   |   seed-tmt = none: alternarialeaf-spot (3.85)
+|   |   |   |   |   |   seed-tmt = fungicide: frog-eye-leaf-spot (2.54)
+|   |   |   |   |   |   seed-tmt = other: alternarialeaf-spot (0.0)
+|   |   |   |   date = september
+|   |   |   |   |   hail = yes
+|   |   |   |   |   |   temp = lt-norm: downy-mildew (0.02)
+|   |   |   |   |   |   temp = norm
+|   |   |   |   |   |   |   crop-hist = diff-lst-year: alternarialeaf-spot (1.04)
+|   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (2.59/0.08)
+|   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: alternarialeaf-spot (1.46/0.08)
+|   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (2.82/0.3)
+|   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (2.49)
+|   |   |   |   |   hail = no: alternarialeaf-spot (4.14/0.08)
+|   |   |   |   date = october: alternarialeaf-spot (8.17/2.31)
+|   |   |   stem = abnorm
+|   |   |   |   stem-cankers = absent: diaporthe-pod-&-stem-blight (2.75/1.3)
+|   |   |   |   stem-cankers = below-soil: frog-eye-leaf-spot (0.0)
+|   |   |   |   stem-cankers = above-soil: frog-eye-leaf-spot (0.0)
+|   |   |   |   stem-cankers = above-sec-nde
+|   |   |   |   |   external-decay = absent
+|   |   |   |   |   |   seed-tmt = none: brown-spot (5.12)
+|   |   |   |   |   |   seed-tmt = fungicide: frog-eye-leaf-spot (2.05/0.08)
+|   |   |   |   |   |   seed-tmt = other: brown-spot (2.42/0.72)
+|   |   |   |   |   external-decay = firm-and-dry: frog-eye-leaf-spot (6.47)
+|   |   |   |   |   external-decay = watery: frog-eye-leaf-spot (0.0)
+|   |   roots = rotted: phytophthora-rot (3.41/0.02)
+|   |   roots = galls-cysts: cyst-nematode (0.11/0.0)
+|   leafspot-size = dna
+|   |   int-discolor = none
+|   |   |   stem = norm: purple-seed-stain (4.89/1.77)
+|   |   |   stem = abnorm
+|   |   |   |   plant-stand = normal
+|   |   |   |   |   seed = norm: diaporthe-stem-canker (8.15/1.4)
+|   |   |   |   |   seed = abnorm: anthracnose (2.12/0.1)
+|   |   |   |   plant-stand = lt-normal
+|   |   |   |   |   temp = lt-norm: phytophthora-rot (1.1/0.42)
+|   |   |   |   |   temp = norm: phytophthora-rot (4.81/0.28)
+|   |   |   |   |   temp = gt-norm: anthracnose (3.49/0.4)
+|   |   int-discolor = brown: brown-stem-rot (3.14/0.0)
+|   |   int-discolor = black: charcoal-rot (0.46/0.0)
+leaf-malf = present
+|   temp = lt-norm
+|   |   date = april: herbicide-injury (232.87/93.15)
+|   |   date = may: herbicide-injury (119.31/48.4)
+|   |   date = june: herbicide-injury (22.94/3.88)
+|   |   date = july: 2-4-d-injury (1.93/0.08)
+|   |   date = august: 2-4-d-injury (3.59/0.07)
+|   |   date = september: 2-4-d-injury (3.52)
+|   |   date = october: 2-4-d-injury (2.98/1.04)
+|   temp = norm: 2-4-d-injury (12.46/7.43)
+|   temp = gt-norm
+|   |   leaves = norm: diaporthe-pod-&-stem-blight (2.62)
+|   |   leaves = abnorm: 2-4-d-injury (8.85/4.22)
+
+Number of Leaves  : 	63
+
+Size of the tree : 	93
+
+
+Weight: 0.65
+
+J48 pruned tree
+------------------
+
+leafspot-size = lt-1/8
+|   seed-discolor = absent
+|   |   roots = norm: bacterial-blight (5.87/1.57)
+|   |   roots = rotted: bacterial-pustule (3.37/0.1)
+|   |   roots = galls-cysts: bacterial-pustule (0.08/0.01)
+|   seed-discolor = present: bacterial-pustule (5.05/1.65)
+leafspot-size = gt-1/8
+|   roots = norm
+|   |   mold-growth = absent
+|   |   |   canker-lesion = dna
+|   |   |   |   precip = lt-norm: phyllosticta-leaf-spot (2.5)
+|   |   |   |   precip = norm
+|   |   |   |   |   date = april: brown-spot (0.07)
+|   |   |   |   |   date = may: phyllosticta-leaf-spot (3.28/1.52)
+|   |   |   |   |   date = june
+|   |   |   |   |   |   area-damaged = scattered: phyllosticta-leaf-spot (2.38/0.76)
+|   |   |   |   |   |   area-damaged = low-areas: brown-spot (0.0)
+|   |   |   |   |   |   area-damaged = upper-areas: brown-spot (2.78/0.42)
+|   |   |   |   |   |   area-damaged = whole-field: phyllosticta-leaf-spot (0.47)
+|   |   |   |   |   date = july: phyllosticta-leaf-spot (1.73)
+|   |   |   |   |   date = august: frog-eye-leaf-spot (4.16/1.51)
+|   |   |   |   |   date = september: alternarialeaf-spot (1.22/0.43)
+|   |   |   |   |   date = october
+|   |   |   |   |   |   seed-tmt = none: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   seed-tmt = fungicide: frog-eye-leaf-spot (3.77/0.4)
+|   |   |   |   |   |   seed-tmt = other: alternarialeaf-spot (3.08)
+|   |   |   |   precip = gt-norm
+|   |   |   |   |   leaf-shread = absent
+|   |   |   |   |   |   date = april: brown-spot (0.04)
+|   |   |   |   |   |   date = may: brown-spot (1.64)
+|   |   |   |   |   |   date = june: brown-spot (0.27)
+|   |   |   |   |   |   date = july
+|   |   |   |   |   |   |   crop-hist = diff-lst-year
+|   |   |   |   |   |   |   |   hail = yes: alternarialeaf-spot (3.52)
+|   |   |   |   |   |   |   |   hail = no: frog-eye-leaf-spot (2.47)
+|   |   |   |   |   |   |   crop-hist = same-lst-yr: frog-eye-leaf-spot (2.7)
+|   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: brown-spot (3.97/2.13)
+|   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (0.82)
+|   |   |   |   |   |   date = august
+|   |   |   |   |   |   |   severity = minor: alternarialeaf-spot (4.6/1.7)
+|   |   |   |   |   |   |   severity = pot-severe
+|   |   |   |   |   |   |   |   temp = lt-norm: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   temp = norm: frog-eye-leaf-spot (135.82/54.58)
+|   |   |   |   |   |   |   |   temp = gt-norm: alternarialeaf-spot (2.13/0.49)
+|   |   |   |   |   |   |   severity = severe: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   date = september: alternarialeaf-spot (9.62/3.84)
+|   |   |   |   |   |   date = october: alternarialeaf-spot (0.63)
+|   |   |   |   |   leaf-shread = present
+|   |   |   |   |   |   date = april: alternarialeaf-spot (0.0)
+|   |   |   |   |   |   date = may: brown-spot (1.11)
+|   |   |   |   |   |   date = june: brown-spot (2.14)
+|   |   |   |   |   |   date = july: brown-spot (1.84)
+|   |   |   |   |   |   date = august: alternarialeaf-spot (4.12)
+|   |   |   |   |   |   date = september: alternarialeaf-spot (0.7)
+|   |   |   |   |   |   date = october: alternarialeaf-spot (0.35)
+|   |   |   canker-lesion = brown
+|   |   |   |   external-decay = absent: brown-spot (6.32/1.02)
+|   |   |   |   external-decay = firm-and-dry: frog-eye-leaf-spot (3.18)
+|   |   |   |   external-decay = watery: brown-spot (0.0)
+|   |   |   canker-lesion = dk-brown-blk: frog-eye-leaf-spot (3.27)
+|   |   |   canker-lesion = tan: brown-stem-rot (1.89/0.86)
+|   |   mold-growth = present: downy-mildew (6.93/1.09)
+|   roots = rotted: phytophthora-rot (4.71/2.15)
+|   roots = galls-cysts: cyst-nematode (0.16/0.0)
+leafspot-size = dna
+|   leaves = norm
+|   |   canker-lesion = dna: diaporthe-pod-&-stem-blight (2.13)
+|   |   canker-lesion = brown: rhizoctonia-root-rot (0.64)
+|   |   canker-lesion = dk-brown-blk: anthracnose (0.7)
+|   |   canker-lesion = tan: purple-seed-stain (3.72/1.24)
+|   leaves = abnorm
+|   |   leaf-malf = absent
+|   |   |   external-decay = absent
+|   |   |   |   stem = norm: powdery-mildew (2.57/0.0)
+|   |   |   |   stem = abnorm: phytophthora-rot (4.26/1.5)
+|   |   |   external-decay = firm-and-dry
+|   |   |   |   fruit-pods = norm
+|   |   |   |   |   fruiting-bodies = absent: anthracnose (2.11)
+|   |   |   |   |   fruiting-bodies = present: diaporthe-stem-canker (5.14)
+|   |   |   |   fruit-pods = diseased: anthracnose (1.66)
+|   |   |   |   fruit-pods = few-present: cyst-nematode (0.01)
+|   |   |   |   fruit-pods = dna: rhizoctonia-root-rot (3.14/1.3)
+|   |   |   external-decay = watery: phytophthora-rot (0.05/0.0)
+|   |   leaf-malf = present
+|   |   |   date = april: 2-4-d-injury (250.38/105.9)
+|   |   |   date = may: 2-4-d-injury (129.4/54.18)
+|   |   |   date = june
+|   |   |   |   area-damaged = scattered: herbicide-injury (16.14/2.17)
+|   |   |   |   area-damaged = low-areas: 2-4-d-injury (4.37/1.31)
+|   |   |   |   area-damaged = upper-areas: 2-4-d-injury (0.15/0.02)
+|   |   |   |   area-damaged = whole-field: herbicide-injury (0.0)
+|   |   |   date = july: 2-4-d-injury (3.46/1.65)
+|   |   |   date = august: 2-4-d-injury (3.69/0.61)
+|   |   |   date = september: 2-4-d-injury (2.98)
+|   |   |   date = october: 2-4-d-injury (1.56)
+
+Number of Leaves  : 	69
+
+Size of the tree : 	96
+
+
+Weight: 0.59
+
+J48 pruned tree
+------------------
+
+leaf-malf = absent
+|   leafspot-size = lt-1/8
+|   |   canker-lesion = dna: bacterial-pustule (8.06/2.06)
+|   |   canker-lesion = brown: bacterial-pustule (0.0)
+|   |   canker-lesion = dk-brown-blk: phytophthora-rot (0.14/0.0)
+|   |   canker-lesion = tan: purple-seed-stain (2.13/0.0)
+|   leafspot-size = gt-1/8
+|   |   roots = norm
+|   |   |   fruiting-bodies = absent
+|   |   |   |   seed = norm
+|   |   |   |   |   date = april: brown-spot (0.08)
+|   |   |   |   |   date = may: brown-spot (5.62/1.37)
+|   |   |   |   |   date = june: brown-spot (7.63/2.87)
+|   |   |   |   |   date = july
+|   |   |   |   |   |   area-damaged = scattered: frog-eye-leaf-spot (9.05/3.4)
+|   |   |   |   |   |   area-damaged = low-areas: brown-spot (4.59/2.16)
+|   |   |   |   |   |   area-damaged = upper-areas: phyllosticta-leaf-spot (1.12/0.53)
+|   |   |   |   |   |   area-damaged = whole-field: brown-spot (2.38/0.31)
+|   |   |   |   |   date = august
+|   |   |   |   |   |   hail = yes
+|   |   |   |   |   |   |   area-damaged = scattered
+|   |   |   |   |   |   |   |   seed-tmt = none
+|   |   |   |   |   |   |   |   |   crop-hist = diff-lst-year: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-yr: alternarialeaf-spot (2.14/0.03)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-two-yrs: frog-eye-leaf-spot (0.67)
+|   |   |   |   |   |   |   |   |   crop-hist = same-lst-sev-yrs: frog-eye-leaf-spot (8.1)
+|   |   |   |   |   |   |   |   seed-tmt = fungicide: alternarialeaf-spot (4.05)
+|   |   |   |   |   |   |   |   seed-tmt = other: frog-eye-leaf-spot (0.0)
+|   |   |   |   |   |   |   area-damaged = low-areas: alternarialeaf-spot (121.07/52.52)
+|   |   |   |   |   |   |   area-damaged = upper-areas: alternarialeaf-spot (9.23/2.97)
+|   |   |   |   |   |   |   area-damaged = whole-field: alternarialeaf-spot (5.1/2.01)
+|   |   |   |   |   |   hail = no: frog-eye-leaf-spot (2.82)
+|   |   |   |   |   date = september: frog-eye-leaf-spot (13.64/4.47)
+|   |   |   |   |   date = october: frog-eye-leaf-spot (5.43/2.67)
+|   |   |   |   seed = abnorm: alternarialeaf-spot (5.08/1.0)
+|   |   |   fruiting-bodies = present: brown-spot (5.74/2.07)
+|   |   roots = rotted: phytophthora-rot (2.9/0.01)
+|   |   roots = galls-cysts: cyst-nematode (0.17/0.0)
+|   leafspot-size = dna
+|   |   int-discolor = none
+|   |   |   canker-lesion = dna: powdery-mildew (2.99/1.0)
+|   |   |   canker-lesion = brown
+|   |   |   |   fruiting-bodies = absent: rhizoctonia-root-rot (2.95/1.02)
+|   |   |   |   fruiting-bodies = present: diaporthe-stem-canker (3.37/0.3)
+|   |   |   canker-lesion = dk-brown-blk: phytophthora-rot (6.29/2.16)
+|   |   |   canker-lesion = tan: purple-seed-stain (1.92/0.0)
+|   |   int-discolor = brown: brown-stem-rot (3.36/0.0)
+|   |   int-discolor = black: charcoal-rot (0.5/0.0)
+leaf-malf = present
+|   temp = lt-norm: herbicide-injury (410.2/173.3)
+|   temp = norm: 2-4-d-injury (13.49/7.84)
+|   temp = gt-norm
+|   |   area-damaged = scattered: 2-4-d-injury (4.07/1.44)
+|   |   area-damaged = low-areas: phytophthora-rot (4.06/1.14)
+|   |   area-damaged = upper-areas: downy-mildew (1.02/0.44)
+|   |   area-damaged = whole-field: 2-4-d-injury (1.84/0.52)
+
+Number of Leaves  : 	40
+
+Size of the tree : 	57
+
+
+Weight: 0.39
+
+Number of performed Iterations: 10
+
+
+Time taken to build model: 2.91 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         634               92.8258 %
+Incorrectly Classified Instances        49                7.1742 %
+Kappa statistic                          0.9213
+Mean absolute error                      0.0185
+Root mean squared error                  0.0777
+Relative absolute error                 19.2675 %
+Root relative squared error             35.4441 %
+Total Number of Instances              683     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         0.002      0.952     1         0.976    diaporthe-stem-canker
+  1         0          1         1         1        charcoal-rot
+  0.95      0          1         0.95      0.974    rhizoctonia-root-rot
+  1         0          1         1         1        phytophthora-rot
+  1         0          1         1         1        brown-stem-rot
+  1         0          1         1         1        powdery-mildew
+  1         0          1         1         1        downy-mildew
+  0.946     0.007      0.956     0.946     0.951    brown-spot
+  1         0.005      0.87      1         0.93     bacterial-blight
+  0.85      0          1         0.85      0.919    bacterial-pustule
+  1         0          1         1         1        purple-seed-stain
+  1         0          1         1         1        anthracnose
+  0.9       0.002      0.947     0.9       0.923    phyllosticta-leaf-spot
+  0.835     0.027      0.826     0.835     0.831    alternarialeaf-spot
+  0.824     0.029      0.815     0.824     0.82     frog-eye-leaf-spot
+  1         0.001      0.938     1         0.968    diaporthe-pod-&-stem-blight
+  1         0          1         1         1        cyst-nematode
+  0.875     0.006      0.778     0.875     0.824    2-4-d-injury
+  0.375     0.003      0.6       0.375     0.462    herbicide-injury
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s   <-- classified as
+ 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  a = diaporthe-stem-canker
+  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = charcoal-rot
+  1  0 19  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  c = rhizoctonia-root-rot
+  0  0  0 88  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = phytophthora-rot
+  0  0  0  0 44  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = brown-stem-rot
+  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = powdery-mildew
+  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0  0  0 |  g = downy-mildew
+  0  0  0  0  0  0  0 87  0  0  0  0  1  1  3  0  0  0  0 |  h = brown-spot
+  0  0  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0 |  i = bacterial-blight
+  0  0  0  0  0  0  0  0  3 17  0  0  0  0  0  0  0  0  0 |  j = bacterial-pustule
+  0  0  0  0  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0 |  k = purple-seed-stain
+  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0 |  l = anthracnose
+  0  0  0  0  0  0  0  2  0  0  0  0 18  0  0  0  0  0  0 |  m = phyllosticta-leaf-spot
+  0  0  0  0  0  0  0  1  0  0  0  0  0 76 14  0  0  0  0 |  n = alternarialeaf-spot
+  0  0  0  0  0  0  0  1  0  0  0  0  0 15 75  0  0  0  0 |  o = frog-eye-leaf-spot
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 15  0  0  0 |  p = diaporthe-pod-&-stem-blight
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0  0 |  q = cyst-nematode
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 14  2 |  r = 2-4-d-injury
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  4  3 |  s = herbicide-injury
+

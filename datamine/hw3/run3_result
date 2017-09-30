@@ -1,0 +1,735 @@
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_left_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/phoebe/phoebe_straight_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_up_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/an2i/an2i_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_straight_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_left_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_up_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/ch4f/ch4f_left_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_right_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/megak/megak_right_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/sz24/sz24_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/cheyer/cheyer_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/tammo/tammo_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_left_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_right_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/night/night_right_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_straight_angry_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_left_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_up_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/boland/boland_right_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/bpm/bpm_right_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kawamura/kawamura_straight_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/kk49/kk49_left_angry_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/saavik/saavik_up_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_up_sad_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/mitchell/mitchell_straight_neutral_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/glickman/glickman_straight_neutral_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/choon/choon_up_sad_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/karyadi/karyadi_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/steffi/steffi_straight_happy_sunglasses_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/at33/at33_right_happy_open_4.pgm'...done
+Loading '/home/dluu/courses/datamine/hw3/faces_4/danieln/danieln_left_happy_sunglasses_4.pgm'...done
+Random number generator seed: 102194
+277 images in training set
+139 images in test1 set
+208 images in test2 set
+Creating new network 'shades.net'
+Training underway (going to 100 epochs)
+Will save network every 100 epochs
+0 0.0 26.7148 0.112949 30.2158 0.1141 23.5577 0.118716 
+1 75.8321 73.6462 0.0583507 71.9424 0.0613191 78.8462 0.0527586 
+2 72.9268 73.6462 0.054684 71.9424 0.0585822 78.8462 0.0503603 
+3 70.8461 77.2563 0.0497563 74.1007 0.0551473 81.7308 0.0461249 
+4 69.6182 82.6715 0.0406096 79.8561 0.0491003 87.0192 0.0395085 
+5 64.3072 88.0866 0.0322558 85.6115 0.0425818 88.4615 0.0325917 
+6 56.7476 90.9747 0.0254517 87.0504 0.0376944 89.9038 0.0273679 
+7 49.7815 93.5018 0.0210522 87.0504 0.0346142 90.8654 0.0242737 
+8 44.2595 94.2238 0.0181288 87.7698 0.032782 91.8269 0.0225035 
+9 39.9055 94.2238 0.0159093 87.0504 0.0314715 91.8269 0.0213241 
+10 36.1471 94.2238 0.0141759 87.7698 0.0306581 91.3462 0.0205043 
+11 32.5829 94.9458 0.0127288 87.0504 0.0301542 91.8269 0.0197021 
+12 29.3108 95.6679 0.0113624 87.0504 0.0297211 92.3077 0.0189118 
+13 26.4713 96.3899 0.0101133 86.3309 0.0294716 92.3077 0.0183377 
+14 24.2372 97.1119 0.00903982 85.6115 0.0294938 91.8269 0.0180609 
+15 22.2954 97.4729 0.00812734 86.3309 0.0296197 92.3077 0.018012 
+16 19.9721 98.1949 0.00724063 87.0504 0.0296779 92.7885 0.0179066 
+17 18.0009 98.1949 0.00648876 87.7698 0.02965 92.3077 0.0177208 
+18 16.5245 98.1949 0.00593255 88.4892 0.0295102 92.7885 0.0174096 
+19 15.335 98.556 0.00553697 88.4892 0.0292909 93.2692 0.0170231 
+20 14.1901 98.1949 0.00526495 88.4892 0.0290219 94.2308 0.016689 
+21 13.1003 98.556 0.00510055 88.4892 0.0286932 93.75 0.0164067 
+22 12.2062 98.556 0.00499163 88.4892 0.0283099 93.75 0.0161936 
+23 11.4656 98.917 0.00490787 89.2086 0.0279055 94.2308 0.0160132 
+24 10.8288 98.917 0.00483154 89.9281 0.0275067 93.75 0.0158393 
+25 10.2682 98.917 0.00474756 89.9281 0.0271223 94.2308 0.0156669 
+26 9.77428 98.917 0.00464577 90.6475 0.0267497 94.7115 0.0154991 
+27 9.33966 98.917 0.00452336 90.6475 0.026384 94.7115 0.0153397 
+28 8.95758 98.917 0.00438333 90.6475 0.0260229 94.7115 0.0151912 
+29 8.62128 99.278 0.00423106 90.6475 0.0256669 94.2308 0.0150551 
+30 8.32151 99.278 0.00407189 91.3669 0.0253181 93.75 0.014932 
+31 8.05569 99.639 0.00391023 91.3669 0.0249786 93.75 0.0148225 
+32 7.81931 99.639 0.00374938 91.3669 0.0246502 93.75 0.0147267 
+33 7.61054 99.639 0.00359163 91.3669 0.0243341 93.75 0.0146443 
+34 7.42474 99.639 0.00343856 91.3669 0.0240308 93.75 0.0145748 
+35 7.25807 99.639 0.0032912 92.0863 0.0237405 94.2308 0.0145177 
+36 7.10623 100 0.00315021 92.0863 0.0234633 94.7115 0.014472 
+37 6.96712 100 0.00301598 92.0863 0.0231991 94.7115 0.014437 
+38 6.83968 100 0.0028887 92.0863 0.0229477 94.7115 0.0144118 
+39 6.72159 100 0.0027684 92.0863 0.0227089 94.7115 0.0143953 
+40 6.61145 100 0.002655 92.8058 0.0224824 94.2308 0.0143867 
+41 6.50883 100 0.0025483 92.8058 0.0222679 94.2308 0.0143848 
+42 6.41352 100 0.00244806 92.8058 0.0220651 94.2308 0.0143886 
+43 6.32481 100 0.00235395 92.8058 0.0218734 94.2308 0.0143974 
+44 6.24076 100 0.00226564 93.5252 0.0216923 94.2308 0.0144102 
+45 6.16063 100 0.00218274 93.5252 0.0215212 94.2308 0.0144262 
+46 6.08474 100 0.0021049 93.5252 0.0213597 94.2308 0.0144446 
+47 6.012 100 0.00203176 93.5252 0.0212071 94.2308 0.014465 
+48 5.9437 100 0.00196296 94.2446 0.0210629 94.2308 0.0144867 
+49 5.87844 100 0.00189818 94.2446 0.0209265 94.2308 0.0145094 
+50 5.81536 100 0.00183714 94.2446 0.0207974 93.75 0.0145326 
+51 5.75457 100 0.00177954 94.2446 0.0206753 93.75 0.014556 
+52 5.6959 100 0.00172516 94.2446 0.0205596 93.75 0.0145795 
+53 5.63936 100 0.00167376 94.2446 0.02045 93.75 0.0146027 
+54 5.58449 100 0.00162513 94.2446 0.0203461 93.75 0.0146256 
+55 5.53258 100 0.00157909 94.2446 0.0202476 93.75 0.0146479 
+56 5.48362 100 0.00153545 94.2446 0.0201542 93.75 0.0146696 
+57 5.43636 100 0.00149407 94.2446 0.0200655 93.75 0.0146906 
+58 5.39003 100 0.00145477 94.2446 0.0199814 93.75 0.0147109 
+59 5.34495 100 0.00141741 94.2446 0.0199014 93.2692 0.0147303 
+60 5.3007 100 0.00138185 94.2446 0.0198253 93.2692 0.0147489 
+61 5.25766 100 0.00134796 94.2446 0.019753 93.2692 0.0147667 
+62 5.21553 100 0.0013156 94.2446 0.0196842 93.2692 0.0147837 
+63 5.17551 100 0.00128466 94.2446 0.0196187 93.2692 0.0148001 
+64 5.13689 100 0.00125503 94.2446 0.0195562 93.2692 0.0148159 
+65 5.09962 100 0.0012266 94.2446 0.0194967 93.2692 0.0148311 
+66 5.06356 100 0.00119929 94.2446 0.0194399 93.2692 0.0148459 
+67 5.02792 100 0.00117301 94.2446 0.0193857 93.75 0.0148604 
+68 4.99258 100 0.0011477 94.2446 0.0193338 93.75 0.0148747 
+69 4.95799 100 0.0011233 94.2446 0.0192843 93.75 0.0148887 
+70 4.92429 100 0.00109975 94.2446 0.0192368 93.75 0.0149026 
+71 4.89131 100 0.00107701 94.2446 0.0191913 93.75 0.0149165 
+72 4.85926 100 0.00105504 94.2446 0.0191476 93.75 0.0149302 
+73 4.82783 100 0.00103382 94.2446 0.0191056 93.75 0.0149439 
+74 4.79717 100 0.00101331 94.2446 0.019065 93.75 0.0149575 
+75 4.76701 100 0.000993495 94.2446 0.0190259 93.75 0.014971 
+76 4.73712 100 0.000974349 94.2446 0.018988 93.75 0.0149844 
+77 4.70761 100 0.000955852 94.2446 0.0189513 93.75 0.0149976 
+78 4.6786 100 0.000937986 94.2446 0.0189155 93.75 0.0150106 
+79 4.65011 100 0.000920733 94.2446 0.0188806 93.75 0.0150233 
+80 4.622 100 0.000904075 94.2446 0.0188465 93.75 0.0150357 
+81 4.5946 100 0.000887994 94.2446 0.018813 93.75 0.0150477 
+82 4.56783 100 0.000872471 94.2446 0.0187801 93.75 0.0150593 
+83 4.54152 100 0.000857489 94.2446 0.0187477 93.75 0.0150704 
+84 4.51542 100 0.000843028 94.2446 0.0187158 94.2308 0.0150811 
+85 4.48965 100 0.000829069 94.2446 0.0186842 93.75 0.0150912 
+86 4.46418 100 0.000815595 94.2446 0.0186529 93.75 0.0151008 
+87 4.43891 100 0.000802585 93.5252 0.0186219 93.75 0.0151098 
+88 4.41368 100 0.000790022 93.5252 0.0185911 93.75 0.0151182 
+89 4.38853 100 0.000777885 93.5252 0.0185605 93.75 0.0151261 
+90 4.36343 100 0.000766158 93.5252 0.0185301 94.2308 0.0151333 
+91 4.33864 100 0.000754822 93.5252 0.0184998 94.2308 0.01514 
+92 4.31399 100 0.000743858 93.5252 0.0184698 94.2308 0.0151462 
+93 4.2895 100 0.000733251 93.5252 0.0184398 94.2308 0.0151518 
+94 4.26503 100 0.000722983 93.5252 0.0184101 94.2308 0.0151569 
+95 4.24055 100 0.000713038 93.5252 0.0183805 94.2308 0.0151615 
+96 4.21643 100 0.000703401 93.5252 0.0183511 94.2308 0.0151656 
+97 4.19253 100 0.000694057 93.5252 0.0183219 94.2308 0.0151693 
+98 4.16889 100 0.000684991 93.5252 0.0182929 94.2308 0.0151725 
+99 4.14564 100 0.000676191 93.5252 0.0182641 94.2308 0.0151754 
+100 4.12248 100 0.000667644 93.5252 0.0182356 94.2308 0.0151779 
+Saving 960x6x4 network to 'shades.net'
+
+Saving 960x6x4 network to 'shades.net'

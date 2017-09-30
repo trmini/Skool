@@ -1,0 +1,212 @@
+\documentclass[fullpage,my,12pt]{article}
+% DT -- if you are working on UNIX, change this to
+\input{psfig}
+%\input vpsfig.sty
+
+\usepackage{my}
+\usepackage{fullpage}
+\newcommand{\same}{{\cal Q}}
+\newcommand{\trivial}{${\cal A}_{trivial}$}
+\newcommand{\qpos}{{\rm\mbox{``$+$''}}}
+
+\begin{document}
+
+\title{An $O(n \log{n})$ Algorithm for Constructung a
+Consistent Convex $k$-gons. (Extended Abstract)}
+\author{Stephen Kwek, Dien Trang Luu\thanks{This research is
+supported by UTSA Faculty Research Award 14-7518-01.} \\
+Division of Computer Science \\
+University of Texas at San Antonio \\
+San Antonio, TX 78249 \\
+Email: kwek@cs.utsa.edu, dluu@cs.utsa.edu } \date{\today}
+\maketitle
+
+\begin{abstract}
+... A short summary of results. DT - you will fill this in later
+when I have done with the intro. and previous work section.
+
+
+\end{abstract}
+\thispagestyle{empty}
+ 
+\noindent
+{keywords: PAC Learning, Computational Geometry, Consistent
+Algorithm}
+
+\newpage
+
+\setcounter{page}{1}
+\section{Introduction}
+I will fill it in later.
+
+\section{Previous Results}
+I will fill it in later.
+
+\section{Preliminary Lemmas}
+Through out our discussion, we will use the following notation:
+
+$S$ -- the set of labeled sample points.
+
+$n$ -- the size of $S$.
+
+$S^+$ -- the subset of $S$ that are labeled positive.
+
+$S^-$ -- the subset of $S$ that are labeled negative.
+
+$conv(A)$ -- the convex hull of the set of points $A$.
+
+$k-gon$ -- a convex polygon with $k$ sides (edges).
+
+$line(e)$ -- the (extended) line containing the edge $e$.
+
+The output of our algorithm is a $k$-gon such that each edge may
+be incident to a negative point $p^-$ and a positive point $p^+$.
+By performing a very small perturbation of the edges, we can
+obtain a polygon that have the negative point $p^-$ in the
+exterior while the positive point $p^+$ in the interior, without
+changing an interior point to an exterior point or vice versa.
+
+\begin{observation}~\label{obv:enclose}
+A consistent polygon must contain $conv(S^+)$.
+\end{observation}
+\pf
+A consistent polygon $P$ contains $S^+$. Therefore $P$ must contain the
+convex hull of $S^+$, $conv(S^+)$.
+\qed
+
+A {\em supporting line} of a polygon $P$ is a line that contains
+exactly a vertex or an edge of $P$.
+
+WLOG, we assume the points in $S^-$ are labeled as $p_1, \ldots,
+p_i, \ldots, p_l$ in ascending order of their polar angles around
+some arbitrary point in $conv(S^+)$.
+
+%\begin{figure}
+%\mbox{\psfig{figure=supporting.eps,width=6.00in}}
+%\caption{There are two supporting lines
+%of $conv(S^+)$ that pass through $p_i$,
+%$p_i \in S^-$.}\label{supporting}
+
+\begin{figure}
+\begin{center}
+\input{./lemma4_fig.eps}
+\end{center}
+\caption{There are two supporting lines
+of $conv(S^+)$ that pass through $p_i$,
+$p_i \in S^-$.}
+\label{supporting}
+\end{figure}
+
+Let $p_i$ be an arbitrary point in $S^-$. Then there
+are two supporting lines {\em left}, $l_i^l$, and {\em right}, $l_i^r$,
+that pass through the point $p_i$ (See Figure~\ref{fig:supporting})
+and lean on $conv(S^+)$. We also define,
+\begin{eqnarray*}
+c_l &=& l_i^l \cap conv(S^+)\\
+c_r &=& l_i^r \cap conv(S^+)
+\end{eqnarray*}
+   
+\begin{lemma}~\label{lem:supporting}
+The region in the opposite of the quadrant holding $conv(S^+)$
+does not contain any consistent polygon vertex.
+\end{lemma}
+
+\pf
+Suppose one of the consistent polygon vertces, $c$ is in the
+forbidden region. Point $c$ will form a triangle with $c_l$ and $c_r$.
+Since $c$ is a vertex of $P$ and $c_l$, $c_r$ $\in$ $S^+$, $c$,
+$c_l$, and $c_r$ are positive. Hence, all points in $\triangle c c_l c_r$
+are positive which implies $p_i$ being inside $\triangle c c_l c_r$
+has to be positve. This contradict $p_i \in S^-$.
+\qed
+
+By Lemma~\ref{lem:supporting}, each point $p_i \in S^-$ gives
+raise to a {\em forbidden region} in which no vertex of a
+consistent polygon can fall. Clearly, the union of all these
+forbidden regions forms an exterior of a star-shaped polygon
+$P^s = p_1 p'_1 p_2 p'_2 ... p_l p'_l$. Here $p'_i$ is the
+intersection of a supporting line of $p_i$ with another
+supporting line of $p_{i-1}$ [I need to define this better, will
+do it later]. Clearly, we have the following observation. We call
+the set of edges $\{\overline{p_ip'_i}\}$ the {\em left edges}
+(of $p_i$) while the other edges $\overline{p_ip'_{i+1}}$ the
+{\em right edges} (of $p_i$).
+
+
+\begin{observation}~\label{lem:between}
+All the vertices must lie in the region $P^s - conv(S^+)$. That
+is, they must lie in the region between $conv(S^+)$ and $P^s$.
+\end{observation}
+
+\begin{lemma}~\label{lem:onePoint}
+There is a consistent polygon such that each of its edges
+contains a vertex of $conv(S^+)$.
+
+\end{lemma}
+\pf
+We can draw a supporting line from $c_i$ to one convex of $conv(S^+)$.
+This line intersects the polygon edge started from $c_{i+1}$ at $c_{i+1}^'$.
+Point $c_i$, $c_{i+1}$, and $c_{i+1}^'$ form a triangle, $\triangle c_i c_{i+1} c_{i+1}^'$,
+which does not contain any positive points. Therefore, we can cut off this triangle
+to from a consistent polygon.
+\qed
+
+\begin{lemma}~\label{lem:leftEdge}
+There is a consistent polygon $P$ such that each vertex, except
+possibly one, lies on a left edge of $P^s$.
+\end{lemma}
+\pf
+Extending the line $e_{i-1}$ to intersect the supporting line $l_i^r$, we have
+a point $c_i^'$. The line $l_i^r$ intersects $e_{i+1}$ at $c_{i+1}^'$. The
+line $c_i^' c_{i+1}^'$ will be the edge of a consistent polygon. Because
+$c_i^'$ and $c_{i+1}^'$ are still on their original lines, i.e $e_{i-1}$ and $e_{i+1}$,
+the line and other edges of $P$ can from a consistent polygon.
+\qed
+
+\section{An Efficient Algorithm for Finding a Consistent Polygon}
+
+\begin{lemma}~\label{lem:compStar}
+$P^s$ can be computed in $O(n \log n)$ time.
+\end{lemma}
+\pf
+DT(5) -- fill this up.
+
+\qed
+
+The proof of Lemma~\ref{lem:leftEdge} also implies that the
+possible candidates of the vertices are intersection of an
+extended line containing a left edge and another left edge. Let
+$E_i$ denote the left edge $\overline{p_ip'_i}$, and $C(E_i)$ be
+the set of possible vertex candidates on $E_i$. In other words,
+$C(E_i)$ is the set $\{p: p = E_i \cap line(E_j), i\not=j. \}$
+
+\begin{lemma}~\label{lem:compCandidate}
+All the $C(E_i)$'s can be computed in $O(n \log n)$ time.
+\end{lemma}
+\pf
+DT(6) -- Perform the kind of binary search that we were
+discussing. In fact, it may be possible to do it in $O(n)$ time.
+However, we are only require to come up with an $O(n \log n)$
+time result. You will have to use Lemma~\ref{lem:leftEdge}.
+
+\qed
+
+\begin{theorem}~\label{thm:consistent}
+The consistent polygon problem can be solved in $O(n \log n)$
+time.
+\end{theorem}
+\pf
+DT(7) -- filled it up. Complete the proofs of the earlier lemmas
+first and then meet me to discuss about this.
+
+
+Skeleton: \\
+1. Construct $conv(S^+)$ \\
+2. Construct $P^s$ \\
+3. For each leftedge $E_i$, find the set of left edges $E_j$ such
+that the extended line intersects it.
+4. Compute how "far" you can reach as discussed before.
+
+\qed
+
+\end{document}

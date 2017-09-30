@@ -1,0 +1,267 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.Bagging -S 1 -I 10 -P 100 -W weka.classifiers.DecisionStump --
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              class
+              age
+              sex
+              steroid
+              antivirals
+              fatigue
+              malaise
+              anoresia
+              liver_big
+              liver_firm
+              spleen_palpable
+              spiders
+              ascites
+              varices
+              bilirubin
+              alk_phosphate
+              sgot
+              albumin
+              protime
+              histology
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+Decision Stump
+
+Classifications
+
+varices = 1 : 2
+varices != 1 : 1
+varices is missing : 1
+
+Class distributions
+
+varices = 1
+1	2	
+0.0	1.0	
+varices != 1
+1	2	
+0.6029411764705882	0.39705882352941174	
+varices is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+spiders = 1 : 2
+spiders != 1 : 1
+spiders is missing : 1
+
+Class distributions
+
+spiders = 1
+1	2	
+0.2777777777777778	0.7222222222222222	
+spiders != 1
+1	2	
+0.6875	0.3125	
+spiders is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+spiders = 1 : 2
+spiders != 1 : 1
+spiders is missing : 1
+
+Class distributions
+
+spiders = 1
+1	2	
+0.19607843137254902	0.803921568627451	
+spiders != 1
+1	2	
+0.7070707070707071	0.29292929292929293	
+spiders is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+ascites = 1 : 2
+ascites != 1 : 1
+ascites is missing : 1
+
+Class distributions
+
+ascites = 1
+1	2	
+0.05555555555555555	0.9444444444444444	
+ascites != 1
+1	2	
+0.6015037593984962	0.39849624060150374	
+ascites is missing
+1	2	
+0.75	0.25	
+
+
+Decision Stump
+
+Classifications
+
+class = 1 : 2
+class != 1 : 1
+class is missing : 1
+
+Class distributions
+
+class = 1
+1	2	
+0.0975609756097561	0.9024390243902439	
+class != 1
+1	2	
+0.6491228070175439	0.3508771929824561	
+class is missing
+1	2	
+0.5032258064516129	0.4967741935483871	
+
+
+Decision Stump
+
+Classifications
+
+albumin <= 3.8499999999999996 : 2
+albumin > 3.8499999999999996 : 1
+albumin is missing : 1
+
+Class distributions
+
+albumin <= 3.8499999999999996
+1	2	
+0.26785714285714285	0.7321428571428571	
+albumin > 3.8499999999999996
+1	2	
+0.7738095238095238	0.2261904761904762	
+albumin is missing
+1	2	
+0.6	0.4	
+
+
+Decision Stump
+
+Classifications
+
+varices = 1 : 2
+varices != 1 : 1
+varices is missing : 1
+
+Class distributions
+
+varices = 1
+1	2	
+0.0	1.0	
+varices != 1
+1	2	
+0.627906976744186	0.37209302325581395	
+varices is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+spiders = 1 : 2
+spiders != 1 : 1
+spiders is missing : 1
+
+Class distributions
+
+spiders = 1
+1	2	
+0.19607843137254902	0.803921568627451	
+spiders != 1
+1	2	
+0.63	0.37	
+spiders is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+spiders = 1 : 2
+spiders != 1 : 1
+spiders is missing : 1
+
+Class distributions
+
+spiders = 1
+1	2	
+0.21052631578947367	0.7894736842105263	
+spiders != 1
+1	2	
+0.6804123711340206	0.31958762886597936	
+spiders is missing
+1	2	
+1.0	0.0	
+
+
+Decision Stump
+
+Classifications
+
+alk_phosphate <= 104.5 : 1
+alk_phosphate > 104.5 : 2
+alk_phosphate is missing : 2
+
+Class distributions
+
+alk_phosphate <= 104.5
+1	2	
+0.8051948051948052	0.19480519480519481	
+alk_phosphate > 104.5
+1	2	
+0.3018867924528302	0.6981132075471698	
+alk_phosphate is missing
+1	2	
+0.32	0.68	
+
+
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          99               63.871  %
+Incorrectly Classified Instances        56               36.129  %
+Mean absolute error                      0.4565
+Root mean squared error                  0.4746
+Relative absolute error                 92.1489 %
+Root relative squared error             95.3737 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.788     0.543      0.638     0.788     0.705    1
+  0.457     0.212      0.64      0.457     0.533    2
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 67 18 |  a = 1
+ 38 32 |  b = 2
+

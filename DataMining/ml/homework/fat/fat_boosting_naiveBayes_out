@@ -1,0 +1,626 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.AdaBoostM1 -P 100 -I 10 -S 1 -W weka.classifiers.NaiveBayes --
+Relation:     bodyfat.names-weka.filters.DiscretizeFilter-B5-R15-15
+Instances:    252
+Attributes:   15
+              Density
+              Age
+              Weight
+              Height
+              Neck
+              Chest
+              Abdomen
+              Hip
+              Thigh
+              Knee
+              Ankle
+              Biceps
+              Forearm
+              Wrist
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+AdaBoostM1: Base classifiers and their weights: 
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.14
+
+Density:  Normal Distribution. Mean = 1.0841 StandardDev = 0.0071 WeightSum = 36 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 39.3006 StandardDev = 10.7605 WeightSum = 36 Precision = 1.18
+Weight:  Normal Distribution. Mean = 155.264 StandardDev = 20.7437 WeightSum = 36 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.4074 StandardDev = 2.8361 WeightSum = 36 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 36.4673 StandardDev = 1.7384 WeightSum = 36 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 92.5858 StandardDev = 5.0106 WeightSum = 36 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 80.3633 StandardDev = 4.71 WeightSum = 36 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 94.223 StandardDev = 5.1159 WeightSum = 36 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 55.1375 StandardDev = 4.1905 WeightSum = 36 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 36.8632 StandardDev = 1.9372 WeightSum = 36 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.4535 StandardDev = 1.2503 WeightSum = 36 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 30.1366 StandardDev = 2.9144 WeightSum = 36 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 27.5561 StandardDev = 1.6601 WeightSum = 36 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 17.7623 StandardDev = 0.7311 WeightSum = 36 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.34
+
+Density:  Normal Distribution. Mean = 1.0663 StandardDev = 0.0071 WeightSum = 87 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 44.2025 StandardDev = 12.2848 WeightSum = 87 Precision = 1.18
+Weight:  Normal Distribution. Mean = 167.0455 StandardDev = 21.3372 WeightSum = 87 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.1035 StandardDev = 2.7179 WeightSum = 87 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.2069 StandardDev = 2.2284 WeightSum = 87 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 97.5817 StandardDev = 5.9452 WeightSum = 87 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 87.4215 StandardDev = 6.4864 WeightSum = 87 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 96.9161 StandardDev = 4.8303 WeightSum = 87 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.3611 StandardDev = 3.8227 WeightSum = 87 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.7496 StandardDev = 1.9051 WeightSum = 87 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.8238 StandardDev = 1.7373 WeightSum = 87 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.3584 StandardDev = 2.6397 WeightSum = 87 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.2183 StandardDev = 1.9792 WeightSum = 87 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.0739 StandardDev = 0.9112 WeightSum = 87 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.37
+
+Density:  Normal Distribution. Mean = 1.0458 StandardDev = 0.0058 WeightSum = 93 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 45.614 StandardDev = 12.1704 WeightSum = 93 Precision = 1.18
+Weight:  Normal Distribution. Mean = 186.6147 StandardDev = 21.9249 WeightSum = 93 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.6585 StandardDev = 2.4117 WeightSum = 93 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.5001 StandardDev = 1.9782 WeightSum = 93 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 102.9321 StandardDev = 5.9942 WeightSum = 93 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 96.0754 StandardDev = 6.3102 WeightSum = 93 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 101.7229 StandardDev = 4.9466 WeightSum = 93 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 60.9218 StandardDev = 4.0698 WeightSum = 93 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.2142 StandardDev = 2.0789 WeightSum = 93 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.2689 StandardDev = 1.6883 WeightSum = 93 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.0193 StandardDev = 2.6377 WeightSum = 93 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.0075 StandardDev = 2.0365 WeightSum = 93 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.3614 StandardDev = 0.8319 WeightSum = 93 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.13
+
+Density:  Normal Distribution. Mean = 1.0279 StandardDev = 0.0044 WeightSum = 33 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 50.8473 StandardDev = 14.0294 WeightSum = 33 Precision = 1.18
+Weight:  Normal Distribution. Mean = 210.9104 StandardDev = 34.5553 WeightSum = 33 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.6886 StandardDev = 7.2122 WeightSum = 33 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.0221 StandardDev = 2.7563 WeightSum = 33 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 110.8897 StandardDev = 8.7564 WeightSum = 33 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 107.2923 StandardDev = 10.1025 WeightSum = 33 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 107.6709 StandardDev = 9.4026 WeightSum = 33 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.7552 StandardDev = 6.0333 WeightSum = 33 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.7571 StandardDev = 2.4358 WeightSum = 33 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.979 StandardDev = 1.5809 WeightSum = 33 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.7007 StandardDev = 2.5955 WeightSum = 33 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.9726 StandardDev = 1.3685 WeightSum = 33 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.793 StandardDev = 1.0187 WeightSum = 33 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.02
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 3 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 3 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 3 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 3 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 3 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 3 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 3 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 3 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 3 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 3 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 3 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 3 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 3 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 3 Precision = 0.13023255813953483
+
+
+Weight: 0.94
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.13
+
+Density:  Normal Distribution. Mean = 1.0835 StandardDev = 0.0065 WeightSum = 31.5319 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 39.1055 StandardDev = 10.3674 WeightSum = 31.5319 Precision = 1.18
+Weight:  Normal Distribution. Mean = 161.5258 StandardDev = 23.2249 WeightSum = 31.5319 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 71.1623 StandardDev = 2.9984 WeightSum = 31.5319 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 36.8548 StandardDev = 1.7597 WeightSum = 31.5319 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 93.8458 StandardDev = 5.51 WeightSum = 31.5319 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 81.7337 StandardDev = 5.1541 WeightSum = 31.5319 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 95.6362 StandardDev = 5.5506 WeightSum = 31.5319 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 56.2159 StandardDev = 4.5048 WeightSum = 31.5319 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.354 StandardDev = 1.9895 WeightSum = 31.5319 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.8402 StandardDev = 1.43 WeightSum = 31.5319 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 30.6665 StandardDev = 2.9968 WeightSum = 31.5319 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 27.9002 StandardDev = 1.6536 WeightSum = 31.5319 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 17.9033 StandardDev = 0.7284 WeightSum = 31.5319 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.36
+
+Density:  Normal Distribution. Mean = 1.0664 StandardDev = 0.007 WeightSum = 91.8405 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 44.1009 StandardDev = 12.0284 WeightSum = 91.8405 Precision = 1.18
+Weight:  Normal Distribution. Mean = 167.0602 StandardDev = 24.6236 WeightSum = 91.8405 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.0874 StandardDev = 2.7588 WeightSum = 91.8405 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.176 StandardDev = 2.4731 WeightSum = 91.8405 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 97.6744 StandardDev = 6.7951 WeightSum = 91.8405 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 87.5102 StandardDev = 7.5084 WeightSum = 91.8405 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 96.825 StandardDev = 5.5451 WeightSum = 91.8405 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.0995 StandardDev = 4.3262 WeightSum = 91.8405 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.6845 StandardDev = 2.1081 WeightSum = 91.8405 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.7938 StandardDev = 1.7129 WeightSum = 91.8405 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.2893 StandardDev = 3.0389 WeightSum = 91.8405 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.1553 StandardDev = 2.2975 WeightSum = 91.8405 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.0453 StandardDev = 0.9918 WeightSum = 91.8405 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.36
+
+Density:  Normal Distribution. Mean = 1.0461 StandardDev = 0.0059 WeightSum = 92.7817 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 44.7902 StandardDev = 11.6129 WeightSum = 92.7817 Precision = 1.18
+Weight:  Normal Distribution. Mean = 184.8571 StandardDev = 23.5096 WeightSum = 92.7817 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.5925 StandardDev = 2.3797 WeightSum = 92.7817 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.263 StandardDev = 2.1899 WeightSum = 92.7817 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 102.6114 StandardDev = 7.0011 WeightSum = 92.7817 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 95.5026 StandardDev = 7.2212 WeightSum = 92.7817 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 101.518 StandardDev = 5.1558 WeightSum = 92.7817 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 60.7865 StandardDev = 4.0082 WeightSum = 92.7817 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.0857 StandardDev = 2.1308 WeightSum = 92.7817 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.1781 StandardDev = 1.5769 WeightSum = 92.7817 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 32.7788 StandardDev = 2.7947 WeightSum = 92.7817 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.7914 StandardDev = 2.0111 WeightSum = 92.7817 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2513 StandardDev = 0.8743 WeightSum = 92.7817 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.14
+
+Density:  Normal Distribution. Mean = 1.029 StandardDev = 0.0042 WeightSum = 33.7575 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 50.2852 StandardDev = 14.0325 WeightSum = 33.7575 Precision = 1.18
+Weight:  Normal Distribution. Mean = 202.3485 StandardDev = 31.7924 WeightSum = 33.7575 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.8824 StandardDev = 6.1249 WeightSum = 33.7575 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 39.3646 StandardDev = 2.6547 WeightSum = 33.7575 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 108.2783 StandardDev = 8.5485 WeightSum = 33.7575 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 104.8669 StandardDev = 9.4804 WeightSum = 33.7575 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 105.7336 StandardDev = 8.377 WeightSum = 33.7575 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 63.9245 StandardDev = 5.5129 WeightSum = 33.7575 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.2367 StandardDev = 2.3054 WeightSum = 33.7575 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.6549 StandardDev = 1.4787 WeightSum = 33.7575 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.1218 StandardDev = 2.517 WeightSum = 33.7575 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.6407 StandardDev = 1.4021 WeightSum = 33.7575 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.6056 StandardDev = 0.9577 WeightSum = 33.7575 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.01
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 2.0884 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 2.0884 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 2.0884 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 2.0884 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 2.0884 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 2.0884 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 2.0884 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 2.0884 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 2.0884 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 2.0884 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 2.0884 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 2.0884 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 2.0884 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 2.0884 Precision = 0.13023255813953483
+
+
+Weight: 0.94
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.1 
+
+Density:  Normal Distribution. Mean = 1.0828 StandardDev = 0.0067 WeightSum = 25.3635 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 38.1907 StandardDev = 10.1474 WeightSum = 25.3635 Precision = 1.18
+Weight:  Normal Distribution. Mean = 164.1669 StandardDev = 26.9914 WeightSum = 25.3635 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 71.415 StandardDev = 3.1317 WeightSum = 25.3635 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 36.8092 StandardDev = 2.042 WeightSum = 25.3635 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 94.2066 StandardDev = 6.0039 WeightSum = 25.3635 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 82.2116 StandardDev = 5.5193 WeightSum = 25.3635 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 96.221 StandardDev = 6.247 WeightSum = 25.3635 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 56.6825 StandardDev = 5.1476 WeightSum = 25.3635 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.4228 StandardDev = 1.974 WeightSum = 25.3635 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.9897 StandardDev = 1.6069 WeightSum = 25.3635 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 30.9749 StandardDev = 3.4187 WeightSum = 25.3635 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 27.8983 StandardDev = 1.8675 WeightSum = 25.3635 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 17.9335 StandardDev = 0.8017 WeightSum = 25.3635 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.4 
+
+Density:  Normal Distribution. Mean = 1.066 StandardDev = 0.0074 WeightSum = 101.8551 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 43.5797 StandardDev = 11.4804 WeightSum = 101.8551 Precision = 1.18
+Weight:  Normal Distribution. Mean = 172.0466 StandardDev = 25.8711 WeightSum = 101.8551 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.5351 StandardDev = 2.7108 WeightSum = 101.8551 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.5548 StandardDev = 2.6232 WeightSum = 101.8551 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 98.9658 StandardDev = 7.2267 WeightSum = 101.8551 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 88.6186 StandardDev = 8.2855 WeightSum = 101.8551 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 97.7227 StandardDev = 5.8804 WeightSum = 101.8551 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.5415 StandardDev = 4.5972 WeightSum = 101.8551 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 38.009 StandardDev = 2.1399 WeightSum = 101.8551 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.0608 StandardDev = 1.5619 WeightSum = 101.8551 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.7634 StandardDev = 3.2788 WeightSum = 101.8551 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.3071 StandardDev = 2.3388 WeightSum = 101.8551 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2 StandardDev = 0.9698 WeightSum = 101.8551 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.36
+
+Density:  Normal Distribution. Mean = 1.0451 StandardDev = 0.0062 WeightSum = 90.2482 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 45.0168 StandardDev = 11.4353 WeightSum = 90.2482 Precision = 1.18
+Weight:  Normal Distribution. Mean = 187.7566 StandardDev = 26.24 WeightSum = 90.2482 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.6483 StandardDev = 2.3879 WeightSum = 90.2482 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.6167 StandardDev = 2.2556 WeightSum = 90.2482 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 103.8057 StandardDev = 8.1575 WeightSum = 90.2482 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 96.5844 StandardDev = 8.3035 WeightSum = 90.2482 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 102.132 StandardDev = 5.7759 WeightSum = 90.2482 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 61.0877 StandardDev = 4.2652 WeightSum = 90.2482 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.1988 StandardDev = 2.3806 WeightSum = 90.2482 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.1826 StandardDev = 1.5871 WeightSum = 90.2482 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.0267 StandardDev = 3.0439 WeightSum = 90.2482 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.958 StandardDev = 2.0021 WeightSum = 90.2482 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.3256 StandardDev = 0.8867 WeightSum = 90.2482 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.13
+
+Density:  Normal Distribution. Mean = 1.0299 StandardDev = 0.004 WeightSum = 33.0801 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 48.638 StandardDev = 14.6683 WeightSum = 33.0801 Precision = 1.18
+Weight:  Normal Distribution. Mean = 196.4457 StandardDev = 28.9291 WeightSum = 33.0801 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 69.3295 StandardDev = 5.3313 WeightSum = 33.0801 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.677 StandardDev = 2.6488 WeightSum = 33.0801 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 105.7406 StandardDev = 8.3276 WeightSum = 33.0801 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 102.6126 StandardDev = 8.8019 WeightSum = 33.0801 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 104.3807 StandardDev = 7.4941 WeightSum = 33.0801 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 63.2177 StandardDev = 5.1346 WeightSum = 33.0801 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.078 StandardDev = 2.1405 WeightSum = 33.0801 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.5621 StandardDev = 1.2976 WeightSum = 33.0801 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.7814 StandardDev = 2.5107 WeightSum = 33.0801 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.3828 StandardDev = 1.4369 WeightSum = 33.0801 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.437 StandardDev = 0.9079 WeightSum = 33.0801 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.01
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 1.4531 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 1.4531 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 1.4531 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 1.4531 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 1.4531 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 1.4531 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 1.4531 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 1.4531 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 1.4531 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 1.4531 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 1.4531 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 1.4531 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 1.4531 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 1.4531 Precision = 0.13023255813953483
+
+
+Weight: 0.37
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.1 
+
+Density:  Normal Distribution. Mean = 1.0823 StandardDev = 0.0068 WeightSum = 23.5684 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 37.8239 StandardDev = 10.0666 WeightSum = 23.5684 Precision = 1.18
+Weight:  Normal Distribution. Mean = 166.8916 StandardDev = 28.3628 WeightSum = 23.5684 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 71.7045 StandardDev = 3.1846 WeightSum = 23.5684 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 36.8996 StandardDev = 2.0502 WeightSum = 23.5684 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 94.7038 StandardDev = 6.1641 WeightSum = 23.5684 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 82.7441 StandardDev = 5.6992 WeightSum = 23.5684 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 96.8247 StandardDev = 6.5125 WeightSum = 23.5684 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.1036 StandardDev = 5.3773 WeightSum = 23.5684 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.5598 StandardDev = 1.9471 WeightSum = 23.5684 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.1501 StandardDev = 1.6822 WeightSum = 23.5684 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.2358 StandardDev = 3.5596 WeightSum = 23.5684 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 27.9955 StandardDev = 1.8565 WeightSum = 23.5684 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 17.9846 StandardDev = 0.8009 WeightSum = 23.5684 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.4 
+
+Density:  Normal Distribution. Mean = 1.0663 StandardDev = 0.0076 WeightSum = 102.5632 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 43.3004 StandardDev = 11.2802 WeightSum = 102.5632 Precision = 1.18
+Weight:  Normal Distribution. Mean = 172.6602 StandardDev = 26.5371 WeightSum = 102.5632 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.6573 StandardDev = 2.6745 WeightSum = 102.5632 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.5688 StandardDev = 2.6898 WeightSum = 102.5632 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 98.9902 StandardDev = 7.3631 WeightSum = 102.5632 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 88.6961 StandardDev = 8.6812 WeightSum = 102.5632 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 97.754 StandardDev = 6.0937 WeightSum = 102.5632 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.5075 StandardDev = 4.7388 WeightSum = 102.5632 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 38.0295 StandardDev = 2.1862 WeightSum = 102.5632 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.103 StandardDev = 1.5172 WeightSum = 102.5632 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.7742 StandardDev = 3.3293 WeightSum = 102.5632 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.3452 StandardDev = 2.329 WeightSum = 102.5632 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2056 StandardDev = 0.9703 WeightSum = 102.5632 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.37
+
+Density:  Normal Distribution. Mean = 1.0452 StandardDev = 0.0063 WeightSum = 93.0961 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 45.1508 StandardDev = 11.1467 WeightSum = 93.0961 Precision = 1.18
+Weight:  Normal Distribution. Mean = 186.3121 StandardDev = 26.2156 WeightSum = 93.0961 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.5891 StandardDev = 2.3885 WeightSum = 93.0961 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.5276 StandardDev = 2.2463 WeightSum = 93.0961 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 103.4395 StandardDev = 8.2433 WeightSum = 93.0961 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 96.1768 StandardDev = 8.4358 WeightSum = 93.0961 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 101.9096 StandardDev = 5.8165 WeightSum = 93.0961 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 60.8966 StandardDev = 4.2373 WeightSum = 93.0961 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.0554 StandardDev = 2.4045 WeightSum = 93.0961 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.071 StandardDev = 1.5156 WeightSum = 93.0961 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 32.8553 StandardDev = 3.0609 WeightSum = 93.0961 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.848 StandardDev = 1.9542 WeightSum = 93.0961 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2805 StandardDev = 0.8742 WeightSum = 93.0961 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.13
+
+Density:  Normal Distribution. Mean = 1.0303 StandardDev = 0.0039 WeightSum = 31.5442 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.4008 StandardDev = 14.9188 WeightSum = 31.5442 Precision = 1.18
+Weight:  Normal Distribution. Mean = 195.3032 StandardDev = 27.5287 WeightSum = 31.5442 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 69.4229 StandardDev = 5.0363 WeightSum = 31.5442 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.405 StandardDev = 2.6837 WeightSum = 31.5442 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 105.1734 StandardDev = 8.0402 WeightSum = 31.5442 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 101.9685 StandardDev = 8.5153 WeightSum = 31.5442 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 104.1739 StandardDev = 7.1045 WeightSum = 31.5442 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 63.1883 StandardDev = 4.8625 WeightSum = 31.5442 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.1078 StandardDev = 2.1006 WeightSum = 31.5442 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.51 StandardDev = 1.2531 WeightSum = 31.5442 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.7683 StandardDev = 2.4453 WeightSum = 31.5442 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.383 StandardDev = 1.4225 WeightSum = 31.5442 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.3644 StandardDev = 0.8903 WeightSum = 31.5442 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.01
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 1.2281 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 1.2281 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 1.2281 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 1.2281 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 1.2281 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 1.2281 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 1.2281 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 1.2281 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 1.2281 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 1.2281 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 1.2281 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 1.2281 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 1.2281 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 1.2281 Precision = 0.13023255813953483
+
+
+Weight: 0.51
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.09
+
+Density:  Normal Distribution. Mean = 1.0816 StandardDev = 0.007 WeightSum = 21.7227 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 36.8557 StandardDev = 9.8944 WeightSum = 21.7227 Precision = 1.18
+Weight:  Normal Distribution. Mean = 170.8464 StandardDev = 30.3778 WeightSum = 21.7227 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 72.0752 StandardDev = 3.2273 WeightSum = 21.7227 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.0391 StandardDev = 2.0923 WeightSum = 21.7227 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 95.3627 StandardDev = 6.3987 WeightSum = 21.7227 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 83.4159 StandardDev = 5.8938 WeightSum = 21.7227 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 97.681 StandardDev = 6.9009 WeightSum = 21.7227 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.801 StandardDev = 5.7695 WeightSum = 21.7227 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.7158 StandardDev = 1.8815 WeightSum = 21.7227 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.3656 StandardDev = 1.7829 WeightSum = 21.7227 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.7161 StandardDev = 3.7973 WeightSum = 21.7227 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.1605 StandardDev = 1.8605 WeightSum = 21.7227 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.0766 StandardDev = 0.8059 WeightSum = 21.7227 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.43
+
+Density:  Normal Distribution. Mean = 1.0664 StandardDev = 0.008 WeightSum = 108.3137 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 43.4558 StandardDev = 11.2029 WeightSum = 108.3137 Precision = 1.18
+Weight:  Normal Distribution. Mean = 173.4738 StandardDev = 27.2261 WeightSum = 108.3137 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.8226 StandardDev = 2.6372 WeightSum = 108.3137 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.6109 StandardDev = 2.7241 WeightSum = 108.3137 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 99.0177 StandardDev = 7.3796 WeightSum = 108.3137 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 88.9254 StandardDev = 9.2194 WeightSum = 108.3137 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 97.8509 StandardDev = 6.327 WeightSum = 108.3137 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.4075 StandardDev = 4.8938 WeightSum = 108.3137 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 38.0583 StandardDev = 2.2476 WeightSum = 108.3137 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.1449 StandardDev = 1.4467 WeightSum = 108.3137 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.7961 StandardDev = 3.4081 WeightSum = 108.3137 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.3604 StandardDev = 2.238 WeightSum = 108.3137 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2178 StandardDev = 0.9498 WeightSum = 108.3137 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.38
+
+Density:  Normal Distribution. Mean = 1.0449 StandardDev = 0.0067 WeightSum = 95.7318 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 45.9757 StandardDev = 10.8367 WeightSum = 95.7318 Precision = 1.18
+Weight:  Normal Distribution. Mean = 186.6111 StandardDev = 26.2612 WeightSum = 95.7318 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.6771 StandardDev = 2.3662 WeightSum = 95.7318 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.5081 StandardDev = 2.2757 WeightSum = 95.7318 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 103.5664 StandardDev = 8.4442 WeightSum = 95.7318 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 96.2741 StandardDev = 8.721 WeightSum = 95.7318 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 102.0956 StandardDev = 5.8949 WeightSum = 95.7318 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 60.8533 StandardDev = 4.252 WeightSum = 95.7318 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.0993 StandardDev = 2.3699 WeightSum = 95.7318 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.0244 StandardDev = 1.4178 WeightSum = 95.7318 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 32.8362 StandardDev = 3.1031 WeightSum = 95.7318 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.8116 StandardDev = 1.9241 WeightSum = 95.7318 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2911 StandardDev = 0.8504 WeightSum = 95.7318 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.1 
+
+Density:  Normal Distribution. Mean = 1.0303 StandardDev = 0.0039 WeightSum = 25.2487 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.4008 StandardDev = 14.9188 WeightSum = 25.2487 Precision = 1.18
+Weight:  Normal Distribution. Mean = 195.3032 StandardDev = 27.5287 WeightSum = 25.2487 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 69.4229 StandardDev = 5.0363 WeightSum = 25.2487 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.405 StandardDev = 2.6837 WeightSum = 25.2487 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 105.1734 StandardDev = 8.0402 WeightSum = 25.2487 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 101.9685 StandardDev = 8.5153 WeightSum = 25.2487 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 104.1739 StandardDev = 7.1045 WeightSum = 25.2487 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 63.1883 StandardDev = 4.8625 WeightSum = 25.2487 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.1078 StandardDev = 2.1006 WeightSum = 25.2487 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.51 StandardDev = 1.2531 WeightSum = 25.2487 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.7683 StandardDev = 2.4453 WeightSum = 25.2487 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.383 StandardDev = 1.4225 WeightSum = 25.2487 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.3644 StandardDev = 0.8903 WeightSum = 25.2487 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.01
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 0.983 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 0.983 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 0.983 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 0.983 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 0.983 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 0.983 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 0.983 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 0.983 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 0.983 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 0.983 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 0.983 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 0.983 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 0.983 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 0.983 Precision = 0.13023255813953483
+
+
+Weight: 0.22
+
+Naive Bayes Classifier
+
+Class '(-inf-9.5]': Prior probability = 0.08
+
+Density:  Normal Distribution. Mean = 1.0813 StandardDev = 0.0073 WeightSum = 20.1989 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 37.036 StandardDev = 9.8866 WeightSum = 20.1989 Precision = 1.18
+Weight:  Normal Distribution. Mean = 170.2499 StandardDev = 30.1489 WeightSum = 20.1989 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 72.0288 StandardDev = 3.1944 WeightSum = 20.1989 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 36.9964 StandardDev = 2.098 WeightSum = 20.1989 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 95.2051 StandardDev = 6.3741 WeightSum = 20.1989 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 83.3141 StandardDev = 5.8422 WeightSum = 20.1989 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 97.5511 StandardDev = 6.8452 WeightSum = 20.1989 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.6884 StandardDev = 5.7372 WeightSum = 20.1989 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 37.7163 StandardDev = 1.8582 WeightSum = 20.1989 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.332 StandardDev = 1.7724 WeightSum = 20.1989 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.6429 StandardDev = 3.7679 WeightSum = 20.1989 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.1336 StandardDev = 1.845 WeightSum = 20.1989 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.0726 StandardDev = 0.7952 WeightSum = 20.1989 Precision = 0.13023255813953483
+
+
+Class '(9.5-19]': Prior probability = 0.42
+
+Density:  Normal Distribution. Mean = 1.0661 StandardDev = 0.0081 WeightSum = 107.6835 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 43.4918 StandardDev = 11.381 WeightSum = 107.6835 Precision = 1.18
+Weight:  Normal Distribution. Mean = 174.7208 StandardDev = 27.5774 WeightSum = 107.6835 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.9458 StandardDev = 2.6408 WeightSum = 107.6835 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 37.7276 StandardDev = 2.7399 WeightSum = 107.6835 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 99.307 StandardDev = 7.352 WeightSum = 107.6835 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 89.342 StandardDev = 9.4208 WeightSum = 107.6835 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 98.1057 StandardDev = 6.4157 WeightSum = 107.6835 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 57.5385 StandardDev = 4.9789 WeightSum = 107.6835 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 38.1522 StandardDev = 2.2719 WeightSum = 107.6835 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.2058 StandardDev = 1.4579 WeightSum = 107.6835 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 31.9327 StandardDev = 3.4263 WeightSum = 107.6835 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.4367 StandardDev = 2.2124 WeightSum = 107.6835 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2507 StandardDev = 0.949 WeightSum = 107.6835 Precision = 0.13023255813953483
+
+
+Class '(19-28.5]': Prior probability = 0.39
+
+Density:  Normal Distribution. Mean = 1.0448 StandardDev = 0.0068 WeightSum = 99.2931 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 46.1547 StandardDev = 10.7168 WeightSum = 99.2931 Precision = 1.18
+Weight:  Normal Distribution. Mean = 186.189 StandardDev = 26.3047 WeightSum = 99.2931 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 70.6703 StandardDev = 2.3643 WeightSum = 99.2931 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.4946 StandardDev = 2.2733 WeightSum = 99.2931 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 103.4926 StandardDev = 8.4997 WeightSum = 99.2931 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 96.1638 StandardDev = 8.8134 WeightSum = 99.2931 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 102.0391 StandardDev = 5.941 WeightSum = 99.2931 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 60.7621 StandardDev = 4.2586 WeightSum = 99.2931 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 39.0467 StandardDev = 2.3869 WeightSum = 99.2931 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 22.9815 StandardDev = 1.3787 WeightSum = 99.2931 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 32.7827 StandardDev = 3.1205 WeightSum = 99.2931 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 28.7719 StandardDev = 1.903 WeightSum = 99.2931 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.2793 StandardDev = 0.8445 WeightSum = 99.2931 Precision = 0.13023255813953483
+
+
+Class '(28.5-38]': Prior probability = 0.1 
+
+Density:  Normal Distribution. Mean = 1.0303 StandardDev = 0.0038 WeightSum = 23.9367 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 48.0104 StandardDev = 14.8696 WeightSum = 23.9367 Precision = 1.18
+Weight:  Normal Distribution. Mean = 194.218 StandardDev = 27.3537 WeightSum = 23.9367 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 69.3727 StandardDev = 4.9221 WeightSum = 23.9367 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 38.3285 StandardDev = 2.6576 WeightSum = 23.9367 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 104.9663 StandardDev = 7.9224 WeightSum = 23.9367 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 101.641 StandardDev = 8.4413 WeightSum = 23.9367 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 103.9467 StandardDev = 7.0201 WeightSum = 23.9367 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 62.9677 StandardDev = 4.8917 WeightSum = 23.9367 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.011 StandardDev = 2.0958 WeightSum = 23.9367 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.4766 StandardDev = 1.2424 WeightSum = 23.9367 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 33.6502 StandardDev = 2.4677 WeightSum = 23.9367 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 29.3538 StandardDev = 1.4212 WeightSum = 23.9367 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.3769 StandardDev = 0.8736 WeightSum = 23.9367 Precision = 0.13023255813953483
+
+
+Class '(38-inf)': Prior probability = 0.01
+
+Density:  Normal Distribution. Mean = 1.0064 StandardDev = 0.0081 WeightSum = 0.8878 Precision = 5.248847926267281E-4
+Age:  Normal Distribution. Mean = 47.5933 StandardDev = 3.6476 WeightSum = 0.8878 Precision = 1.18
+Weight:  Normal Distribution. Mean = 218.4375 StandardDev = 21.4024 WeightSum = 0.8878 Precision = 1.2482142857142855
+Height:  Normal Distribution. Mean = 68.0975 StandardDev = 5.5811 WeightSum = 0.8878 Precision = 1.0265957446808511
+Neck:  Normal Distribution. Mean = 40.4258 StandardDev = 1.4636 WeightSum = 0.8878 Precision = 0.2258426966292135
+Chest:  Normal Distribution. Mean = 117.7468 StandardDev = 1.9365 WeightSum = 0.8878 Precision = 0.3289017341040462
+Abdomen:  Normal Distribution. Mean = 116.1966 StandardDev = 4.0477 WeightSum = 0.8878 Precision = 0.42771739130434777
+Hip:  Normal Distribution. Mean = 113.0815 StandardDev = 0.5179 WeightSum = 0.8878 Precision = 0.41523178807947014
+Thigh:  Normal Distribution. Mean = 64.315 StandardDev = 3.0229 WeightSum = 0.8878 Precision = 0.2905797101449275
+Knee:  Normal Distribution. Mean = 40.0993 StandardDev = 3.5459 WeightSum = 0.8878 Precision = 0.1808988764044944
+Ankle:  Normal Distribution. Mean = 23.68 StandardDev = 1.4098 WeightSum = 0.8878 Precision = 0.24666666666666662
+Biceps:  Normal Distribution. Mean = 34.5819 StandardDev = 2.0837 WeightSum = 0.8878 Precision = 0.19611650485436893
+Forearm:  Normal Distribution. Mean = 30.0557 StandardDev = 0.9124 WeightSum = 0.8878 Precision = 0.18289473684210525
+Wrist:  Normal Distribution. Mean = 18.4496 StandardDev = 1.1713 WeightSum = 0.8878 Precision = 0.13023255813953483
+
+
+Weight: 0.18
+
+Number of performed Iterations: 6
+
+
+Time taken to build model: 0.36 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         197               78.1746 %
+Incorrectly Classified Instances        55               21.8254 %
+Kappa statistic                          0.6935
+Mean absolute error                      0.0925
+Root mean squared error                  0.2683
+Relative absolute error                 32.6304 %
+Root relative squared error             71.3539 %
+Total Number of Instances              252     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.889     0.037      0.8       0.889     0.842    '(-inf-9.5]'
+  0.736     0.091      0.81      0.736     0.771    '(9.5-19]'
+  0.785     0.126      0.785     0.785     0.785    '(19-28.5]'
+  0.848     0.055      0.7       0.848     0.767    '(28.5-38]'
+  0         0          0         0         0        '(38-inf)'
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 32  4  0  0  0 |  a = '(-inf-9.5]'
+  8 64 15  0  0 |  b = '(9.5-19]'
+  0 11 73  9  0 |  c = '(19-28.5]'
+  0  0  5 28  0 |  d = '(28.5-38]'
+  0  0  0  3  0 |  e = '(38-inf)'
+

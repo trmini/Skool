@@ -1,0 +1,533 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+# User-configurable junk for Crack
+###
+
+# nice, generic path (RedHat Linux, Solaris1, Solaris2)
+CRACK_PATH=/usr/local/bin:/usr/local/lib:/usr/sbin:/sbin:/usr/bin:/bin:/usr/ucb:/usr/etc:$PATH
+
+# compiler options for crack 5.0
+#
+# -DUSE_BZERO        /* add this to C5FLAGS if you don't have memset() */
+# -DUSE_MALLOC_H
+# -DUSE_PWD_H
+# -DUSE_SIGNAL_H
+# -DUSE_STDLIB_H
+# -DUSE_STRINGS_H
+# -DUSE_STRING_H
+# -DUSE_SYS_TYPES_H
+# -DUSE_UNISTD_H
+# -DMAXWORDLEN=      /* ignore if you don't read the code */
+# -DNUMWORDS=        /* ignore if you don't read the code */
+# -DSTRINGSIZE=      /* ignore if you don't read the code */
+
+# this set tested on:
+# - solaris 2.5
+# - redhat linux 4.0
+# - digital unix v4.0
+
+C5FLAGS="-DUSE_STRING_H -DUSE_STDLIB_H -DUSE_SIGNAL_H -DUSE_SYS_TYPES_H -DUSE_UNISTD_H -DUSE_PWD_H"
+
+#
+# now pick your compiler
+#
+
+# vanilla unix cc
+#CC=cc
+#CFLAGS="-g -O $C5FLAGS"
+#LIBS=-lcrypt # uncomment only if necessary to use stdlib crypt(), eg: NetBSD MD5
+
+# gcc 2.7.2
+CC=gcc
+CFLAGS="-g -O2 -Wall $C5FLAGS"
+#LIBS=-lcrypt # uncomment only if necessary to use stdlib crypt(), eg: NetBSD MD5
+
+# digital unix v4.0, CFLAGS for ev4/ev5 chipsets (pick one)
+#CC=cc
+#CFLAGS="-O4 -fast -tune ev4 $C5FLAGS"
+#CFLAGS="-O4 -fast -tune ev5 $C5FLAGS"
+#LIBS=
+
+# Uncomment the next two lines if a) you are running Crack in
+# networking mode, and b) your environment's operating system will not
+# necessarily run binaries compiled on other revs of the same
+# operating system which have the same architecture and the same
+# *MAJOR* revision number.
+#
+# eg: if you have Foonix 2.0 boxes as well as Foonix 2.1 boxes; in
+# this example, the major revision number is "2".  If the Foonix 2.1
+# O/S will not run Foonix 2.0 binaries for some reason, or vice-versa,
+# then uncomment these lines.
+
+#STRICT_OSREV=yes
+#export STRICT_OSREV
+
+# Uncomment and/or modify on HP/UX or similar where the UCB "rsh"
+# command has been renamed.  See scripts/crack-rsh also
+#CRACK_RSH=remsh
+#CRACK_RCP=rcp
+
+###########################################################
+###########################################################
+#################### THAT'S ALL, FOLKS ####################
+#### NOW GO CONFIGURE YOUR CRYPT ALGORITHM, EG: LIBDES ####
+###########################################################
+###########################################################
+
+###
+# security
+###
+
+umask 077
+export CRACK_PATH                       # So it can be picked up later
+PATH=$CRACK_PATH                        # For temporary use...
+export PATH
+
+###
+# Defaults
+###
+
+usage="Usage: Crack [options] [bindir] [[-fmt format] files]..."
+
+version="5.0a"                          # version string
+deffmt=trad                             # for default trad2spf
+dodie=""                                # for verbose usage/die
+debug="false"                           # ...guess...
+node=`uname -n`                         # more portable then `hostname`
+
+###
+# home base
+###
+
+CRACK_HOME=`echo $0 | sed -e 's/Crack$//'`
+
+if [ "$CRACK_HOME" = "" ]
+then
+	CRACK_HOME=.
+fi
+
+if cd $CRACK_HOME
+then
+	CRACK_HOME=`pwd`
+else
+	echo "Fatal Error: $CRACK_HOME: cannot chdir" 1>&2
+	exit 1
+fi
+
+export CRACK_HOME
+
+###
+# sanity check
+###
+
+if [ ! -f "$CRACK_HOME/Crack" ]
+then
+	echo "Fatal Error: $CRACK_HOME: something weird going down" 1>&2
+	exit 1
+fi
+
+###
+# Hierarchy
+###
+
+for dir in run run/bin
+do
+	test -d $dir || mkdir $dir || exit 1
+done
+
+###
+# Flagwaving
+###
+
+echo "Crack $version: The Password Cracker."
+echo "(c) Alec Muffett, 1991, 1992, 1993, 1994, 1995, 1996"
+echo "System:" `uname -a 2>/dev/null`
+echo "Home: $CRACK_HOME"
+echo "Invoked: $0 $*"
+
+###
+# Parse Arguments
+###
+
+argbackup1="$*"
+
+while [ "x$1" != "x" ]
+do
+	case $1 in
+		-fmt)
+			$debug && echo "beginning of filespecs detected"
+			break
+			;;
+
+		-recover)
+			echo "Option: $1 enabled"
+			recover=true
+			shift
+			;;
+
+		-keep)
+			echo "Option: $1 enabled"
+			keep=true
+			shift
+			;;
+
+		-debug)
+			echo "Option: $1 enabled"
+			debug=true
+			set -x
+			shift
+			;;
+
+		-network)
+			echo "Option: $1 enabled"
+			networkflag=$1
+			shift
+			;;
+
+		-remote)
+			echo "Option: $1 enabled"
+			remoteflag=$1
+			shift
+			;;
+
+		-makeonly)
+			echo "Option: $1 enabled"
+			makeonlyflag=$1
+			shift
+			;;
+
+		-makedict*)
+			echo "Option: $1 enabled"
+			makedictflag="-makedict"
+			shift
+			;;
+
+		-fgnd)
+			echo "Option: $1 enabled"
+			fgndflag=$1
+			shift
+			;;
+
+		-mail)                                  # pass to cracker
+			echo "Option: $1 enabled"
+			mailflag=$1
+			shift
+			;;
+
+		-nice)                                  # pass to cracker
+			echo "Option: $1 enabled"
+			if [ "$2" = "" ]
+			then
+				echo "Crack: -nice needs an argument" 1>&2
+				exit 1
+			fi
+			niceflag="$1 $2"
+			shift 2
+			;;
+
+		-from)                                  # pass to cracker
+			echo "Option: $1 enabled"
+			if [ "$2" = "" ]
+			then
+				echo "Crack: -from needs an argument" 1>&2
+				exit 1
+			fi
+			fromflag="$1 $2"
+			shift 2
+			;;
+
+		-kill)                                  # pass to cracker
+			echo "Option: $1 enabled"
+			if [ "$2" = "" ]
+			then
+				echo "Crack: -kill needs an argument" 1>&2
+				exit 1
+			fi
+			killflag="$2"
+			shift 2
+			;;
+
+		-*)
+			echo "Crack: unrecognised argument $1" 1>&2
+			dodie=yes
+			shift
+			;;
+
+		*)
+			$debug && echo "End of options detected."
+			break
+			;;
+	esac
+done
+
+if [ "x$dodie" != "x" ]
+then
+	echo $usage 1>&2
+	exit 1
+fi
+
+###
+# Sanity test bindir - written in gruntscript for clarity.
+###
+
+bdname=`scripts/binstamp 2>/dev/null`
+
+if [ "x$bdname" = "x" ]
+then
+	echo "Crack: error: cannot continue as binstamp returned empty string" 1>&2
+	exit 0
+fi
+
+echo "Stamp: $bdname"
+echo ""
+
+
+if [ "x$1" != "x" ]
+then
+	if [ "$1" = "-fmt" ]            # use generic name
+	then
+		bindir=run/bin/$bdname
+	elif [ -d run/bin/$1 ]          # have been here before
+	then
+		bindir=run/bin/$1
+		shift
+	elif [ ! -f $1 ]                # use specified name
+	then
+		bindir=run/bin/$1
+		shift
+	else                            # use generic name
+		bindir=run/bin/$bdname
+	fi
+else                                    # supporting "-makeonly"
+	if [ "$makeonlyflag" != "" ]
+	then
+		bindir=run/bin/$bdname
+
+	elif [ "$makedictflag" != "" ]
+	then
+		bindir=run/bin/$bdname
+
+	elif [ "$remoteflag" != "" ]
+	then
+		bindir=run/bin/$bdname
+	else
+		echo $usage 1>&2
+		exit 1
+	fi
+fi
+
+###
+# Reset PATH in advance
+###
+
+PATH=$CRACK_HOME/scripts:$CRACK_HOME/$bindir:$PATH
+export PATH
+
+###
+# Make the binaries
+###
+
+echo "Crack: making utilities in $bindir"
+
+if [ ! -d $bindir ] # small redundancy, big benefit
+then
+	mkdir $bindir || exit 1
+fi
+
+make clean || exit 1
+
+make ARGS="\"XDIR=../../$bindir\" \"XCFLAGS=$CFLAGS\" \"XCC=$CC\" \"XLIBS=$LIBS\"" utils || exit 1
+
+###
+# Make Only ?
+###
+
+if [ "x$makeonlyflag" != "x" ]
+then
+	echo "Crack: makeonly done"
+	exit 0
+fi
+
+###
+# Make the dictionary passes
+###
+
+dp=run/dict
+dplf=$dp/.dictmade
+
+if [ ! -f $dplf ]
+then
+	test -d $dp && rm -rf $dp
+
+	echo "Crack: making dictionary groups, please be patient..."
+	mkdictgrps $dp || exit 1
+
+	echo "Crack: Created new dictionaries..."
+	date > $dplf
+else
+	echo "Crack: The dictionaries seem up to date..."
+fi
+
+###
+# Make Dict Only ?
+###
+
+if [ "x$makedictflag" != "x" ]
+then
+	echo "Crack: makedict done"
+	exit 0
+fi
+
+###
+# We're on a roll...
+###
+
+# F-files are feedback
+crackin=run/I$node.$$           # I-files are input to the cracker
+crackfb=run/D.boot.$$           # D-files are data from the cracker/fb
+crackout=run/D$node.$$
+crackerr=run/E$node.$$          # E-files are errors from the cracker
+
+if [ "x$killflag" = "x" ]
+then
+	crackkf=run/K$node.$$   # K-files are kill file for 'plaster'
+else
+	crackkf=$killflag
+fi
+
+if [ "x$mailflag" != "x" ]
+then
+	crackmf=run/M$node.$$   # M-files are for mail commands
+fi
+
+
+###
+# SPF
+###
+
+# The SPF scripts are frontend processors for creating "Single
+# Password Format" files which Crack can work on, from any of a
+# variety of possible inputs.
+
+# if your target system uses a non-traditional passwd-file format (eg:
+# /etc/master.passwd in FreeBSD) then you can use/write a spf script
+# (eg: freebsd2spf) to convert the data, and invoke it thusly:
+
+# Crack -fmt freebsd /etc/master.passwd
+
+# If your system has shadow passwords but the core of the password
+# data is held in a "traditional" format and uses the standard
+# crypt(), function it is recommended that you coerce your data into a
+# BSD format file to feed into Crack, by using one of the supplied
+# "shadmrg" scripts, or by your own means.
+
+# if your target system is running a non-traditional crypt()
+# algorithm, you will have to modify the ELCID code, too.
+
+if [ "x$remoteflag" = "x" ]
+then
+	echo "Crack: Sorting out and merging feedback, please be patient..."
+	fbmerge
+
+	echo "Crack: Merging password files..."
+	argbackup2="$*"
+
+	(
+		cat run/F-merged        # first the feedback
+
+		while [ "x$1" != "x" ]
+		do
+			if [ "$1" = "-fmt" ]
+			then
+				shift || exit 1
+				deffmt=$1
+
+			elif [ "$deffmt" = "spf" ]
+			then
+				cat $1 1>&3 # skip the sort
+			else
+				${deffmt}2spf $1
+			fi
+
+			shift
+		done |
+		crack-sort -t: +1
+	) 3>&1 |
+	fbfilt $crackfb $crackmf > $crackin # remove feedback-guessable users
+
+	if [ "x$crackmf" != "x" ]
+	then
+		if [ -s $crackmf ]
+		then
+			echo "Crack: mailing nastygrams..."
+			sh -x $crackmf
+		fi
+		rm -f $crackmf
+	fi
+
+	if [ "x$recover" = "x" ]
+	then
+	    echo "Crack: Creating gecos-derived dictionaries"
+	    mkgecosd $dp $crackin
+	else
+	    echo "Crack: -recover: using existing gecos-derived dictionaries"
+	fi
+else
+	echo "Crack: reading data from stdin..."
+	cat > $crackin # has already been thru fbfilt on master
+	ls -l $crackin
+fi
+
+###
+# Launch it...
+###
+
+flags="$fromflag $niceflag $mailflag"
+
+if [ "x$networkflag" != "x" ]
+then
+	if [ "x$remoteflag" != "x" ]
+	then
+		echo "Error: cannot -network AND -remote" 1>&2
+		exit 1
+	elif [ "x$fgndflag" != "x" ]
+	then
+		echo "Error: cannot -network AND -foreground" 1>&2
+		exit 1
+	fi
+
+	echo "Crack: launching: netcrack $flags"
+	netcrack $flags <$crackin
+
+elif [ "x$fgndflag" != "x" ]
+then
+	echo "Crack: exec: cracker -kill $crackkf $flags"
+	exec cracker $flags <$crackin
+else
+	echo "Crack: launching: cracker -kill $crackkf $flags"
+	exec 3>&- 4>&- 5>&- 6>&- 7>&- 8>&- 9>&-
+	nohup cracker -kill $crackkf $flags <$crackin >$crackout 2>$crackerr &
+fi
+
+if [ "x$keep" = "x" ]
+then
+	sleep 3
+	rm $crackin             # Aye, some things never change...
+fi
+
+###
+# Exit
+###
+
+echo "Done"
+
+exit 0

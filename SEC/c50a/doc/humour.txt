@@ -1,0 +1,12 @@
+Perhaps the strangest thing that has happened to me since first
+writing Crack was being phoned up by an administrator at a really very
+large chip-making company who just wanted to doublecheck that I hadn't
+been hacking into his system.
+
+Apparently some manager had received a nastygram telling him that he
+had a weak password, and was demanding to know who this "Alec Muffett"
+was and "Why he was breaking into our systems?!?"  I believe that he
+had the poor guy phoning around various welsh universities trying to
+find me, until he finally tracked me down.
+
+I have no idea who was acually running Crack.

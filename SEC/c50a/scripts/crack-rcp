@@ -1,0 +1,4 @@
+#!/bin/sh
+exec ${CRACK_RCP:-rcp} $*
+echo "$0: oops: rcp $*"
+exit 1

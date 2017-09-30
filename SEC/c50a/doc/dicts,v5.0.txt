@@ -1,0 +1,5 @@
+The dictionaries enclosed in this package are taken from:
+
+	ftp://ftp.ox.ac.uk/pub/wordlists/
+
+with grateful thanks to Paul Leyland.  8-)

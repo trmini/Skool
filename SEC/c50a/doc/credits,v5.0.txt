@@ -1,0 +1,40 @@
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+crack v5.0 was completed under the influence of the following sensual
+experiences: pulp: different class; radiohead: pablo honey, the bends;
+blur: parklife, the great escape; oasis: what's the story; ocean
+colour scene: moseley shoals (probably the best album of the lot); all
+about eve: scarlet and other stories; pink floyd: various; sisters of
+mercy: floodland; sting: ten summoners tales; glenmorangie; laphroaig;
+smws cask 40.4; west oxfordshire cotswolds; marks and spencer 100%
+cotton socks; linux versions 0.96 through 2.0.24; emacs, and a krups
+espresso novo 2000+ coffee maker.
+
+thanks go variously to simon "bob" halsall, josie shaw, chris "j.d."
+samuel, steve usher, edmund sutcliffe and ian smith for helping keep
+me variously sane and/or drunk over the past few years; also for
+general interest's sake thanks should go to casper dik, wietse venema,
+paul leyland, dan farmer, brad powell; marcus ranum and jody patilla;
+whit diffie (for introducing me to caffe verona in palo alto) and mary
+fischer, little mikey shaver, and anyone who's ever bought me drinks
+at usenix or looked after me on a californian jaunt.
+
+best wishes to the rest of the aberystwyth hardcore (rc/ab/hc/sf/sh)
+as we approach the big chill.
+
+the crack 5.0 beta testers are: paul leyland, david o'brien, chris
+samuel, guido van rooij, alan cox, gary barnes, ollivier robert, and
+one anonymous madeira-bearing person.  thanks, guys. 8-)
+
+finally, last but never least, my final thanks, love and appreciation
+must go to gilly anderson for staying with me through all the ups and
+downs of life.

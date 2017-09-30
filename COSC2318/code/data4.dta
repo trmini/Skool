@@ -1,0 +1,16 @@
+REDUCE A RATIONAL NUMBER
+========================
+
+  Divise both numerator and denominator by the GCF of the two numbers.
+
+  24   3x8   3
+  -- = --- = -
+  32   4x8   4
+
+NOTE: GCF stands for the Greatest Common Factors found in two or more
+      numbers.
+      For example:
+      Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24
+      Factors of 32: 1, 2,    4,    8, 16, 32
+      Common factors: 1, 2, 4, 8
+      GCF is 8.

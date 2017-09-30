@@ -1,0 +1,89 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+# creates global gecos dictionary prior to launch
+
+dir=$1
+shift
+
+tmp=run/TG$$
+gecosd=$dir/gecos.txt
+gcpermd=$dir/gcperm.txt
+
+# remove old copies
+rm -f $gecosd* $gcpermd*
+
+# generate source file
+cat $* |
+awk -F: '{print $NF}' |
+tr -cd ' \011\012[0-9][A-Z][a-z]' > $tmp
+
+
+# basic non-permuted words
+echo "mkgecosd: making non-permuted words dictionary"
+tr ' ' '\012' < $tmp | sort | uniq > $gecosd
+
+# words made up from combined elements of each other
+echo "mkgecosd: making permuted words dictionary"
+awk '
+{
+# USE RULES.GECOS INSTEAD OF THIS CODE
+#
+#   for (i=1; i<=NF;i++)
+#   {
+#       x = ""
+#       n = length($i)
+#       for (j=n;j>=1;j--)
+#       {
+#           x = x substr($i,j,1)
+#       }
+#       printf "%s%s\n", x, $i # dcbaabcd
+#       printf "%s%s\n", $i, x # abcddcba
+#   }
+
+    for (i=1; i<NF;i++)
+    {
+	for (j=i+1; j<=NF; j++)
+	{
+	    if ((length($i)>1) && (length($j)>1))
+	    {
+		printf "%s%s\n", $i, $j # ABCDabcd
+		printf "%s%s\n", $j, $i # abcdABCD
+	    }
+
+	    c = substr($i,1,1); # Aabcd abcdA
+	    if ((c ~ /[A-Za-z]/) && ($i ~ /[A-Za-z]/))
+	    {
+		printf "%s%s\n", c, $j
+		printf "%s%s\n", $j, c
+	    }
+
+	    c = substr($j,1,1) # aABCD ABCDa
+	    if ((c ~ /[A-Za-z]/) && ($j ~ /[A-Za-z]/))
+	    {
+		printf "%s%s\n", c, $i
+		printf "%s%s\n", $i, c
+	    }
+	}
+    }
+}' < $tmp | tr ' ' '\012' | sort | uniq > $gcpermd
+
+# when you were here before, couldn't look you in the eye, you're just
+# like an angel, your skin makes me cry, you float like a feather, in
+# a beautiful world, i wish i was special, you're so [very] special...
+
+# remove scratch file
+rm $tmp
+
+# save some space in case of dictdist'ing over a slow link
+dictcomp $gecosd $gcpermd
+
+exit 0

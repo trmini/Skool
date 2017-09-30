@@ -1,0 +1,58 @@
+\documentstyle{article}
+
+\begin{document}
+
+\noindent
+{\bf Problem 4}\\
+
+We have $s_k(\Delta)$ and $m_k(\Delta)$ as follows,\\
+\begin{eqnarray*}
+s_k(\Delta) &=& \frac{1}{k}\sum_{t=\alpha+1}^{\alpha+k}\omega(t,\Delta) \\
+m_k(\Delta) &=& \frac{1}{k}\sum_{t=\alpha}^{\alpha+k-1}\omega(t,\Delta)
+\end{eqnarray*}
+{\bf a.} At first,\\
+\begin{eqnarray*}
+  \omega(t,\Delta) &=& \omega(t+1,\Delta+1) - \delta(t,\Delta) \\
+  \Rightarrow \omega(t+1,\Delta+1) &=& \omega(t,\Delta) + \delta(t,\Delta)
+\end{eqnarray*}
+Summing all $\omega(t, \Delta+1)$ from $t=\alpha$ to $t=\alpha+k$ we have, \\
+\begin{eqnarray*}
+  \frac{1}{k}\sum_{t=\alpha}^{\alpha+k}\omega(t+1,\Delta+1) = \frac{1}{k}
+  \sum_{t=\alpha}^{\alpha+k-1}(\omega(t,\Delta) + \delta(t,\Delta) \Rightarrow \\
+  s_k(\Delta+1) = m_k(\Delta) + \frac{1}{k}\sum_{t=\alpha+1}^{\alpha+k}
+  \omega(t,\Delta) + \frac{\omega(\alpha, Delta)}{k} - \frac{\omega(\alpha+k,\Delta)}{k} \Rightarrow\\
+  s_k(\Delta+1) = s_k(\Delta) + m_k(\Delta) - \frac{\omega(\alpha+k,\Delta)
+  -\omega(\alpha, \Delta)}{k}
+\end{eqnarray*}
+{\bf b.} From the proof of {\bf a.} we have,\\
+\begin{eqnarray*}
+  s_k(\Delta+1) &=& s_k(\Delta) + m_k(\Delta) - \frac{\omega(\alpha+k,\Delta)
+  -\omega(\alpha, \Delta)}{k} \\
+  s_k(\Delta-1) &=& s_k(\Delta) - m_k(\Delta-1) + \frac{\omega(\alpha+k,\Delta
+  -1) -\omega(\alpha, \Delta-1)}{k}
+\end{eqnarray*}
+Adding the above two terms we have,\\
+\begin{eqnarray*}
+  s_k(\Delta+1) + s_k(\Delta-1) &=& 2s_k(\Delta) + (m_k(\Delta) - m_k(\Delta-1))\\
+  & & - \frac{\omega(\alpha+k,\Delta) -\omega(\alpha, \Delta)}{k}
+  + \frac{\omega(\alpha+k,\Delta -1) -\omega(\alpha, \Delta-1)}{k} (\star)
+\end{eqnarray*}
+Let's consider the term $m_k(\Delta) - m_k(\Delta-1)$. We have
+\begin{eqnarray*}
+m_k(\Delta) - m_k(\Delta-1) &=& \frac{1}{k}\sum_{t=\alpha}^{\alpha+k-1}\delta(t,\Delta)
+-\frac{1}{k}\sum_{t=\alpha}^{\alpha+k-1}\delta(t,\Delta-1) \\
+\Leftrightarrow m_k(\Delta) - m_k(\Delta-1) &=& \frac{1}{k}\sum_{t=\alpha}^{\alpha+k-1}
+(\delta(t,\Delta) - \delta(t,\Delta)) (\star \star)
+\end{eqnarray*}
+In case $\delta(t,\Delta-1) = 0$, the memory referece $r_{t+1} \in \omega(t,\Delta-1)$
+which implies that $r_{t+1} \in \omega(t,\Delta)$, or $\delta(t,\Delta) = 0$ too.\\
+The above implies that $\delta(t,\Delta-1)$ is greater than or equal to $\delta(t,\Delta)$,
+or in another word $\delta(t,\Delta) \leq \delta(t,\Delta-1) \Rightarrow (\star \star) \leq 0$.\\
+Apply $(\star \star) \leq 0$ back in $(\star)$ we have,\\
+\begin{eqnarray*}
+s_k(\Delta+1) + s_k(\Delta-1) &\leq& 2s_k(\Delta) - \frac{\omega(\alpha+k,\Delta)-\omega(\alpha,\Delta)}{k}
+     + \frac{\omega(\alpha+k,\Delta -1)-\omega(\alpha,\Delta-1)}{k} \\
+     \Leftrightarrow s_k(\Delta+1) + s_k(\Delta-1) &\leq& 2s_k(\Delta) +\frac{1}{k}[\omega(\alpha+k,\Delta-1)
+     -\omega(\alpha, \Delta-1)-\omega(\alpha+k,\Delta)+\omega(\alpha,\Delta)]
+\end{eqnarray*}
+\end{document}

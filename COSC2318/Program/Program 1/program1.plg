@@ -1,0 +1,27 @@
+--------------------Configuration: program1 - Win32 Debug--------------------
+Begining build with project "C:\My Documents\Cosc\Program\Program 1\program1.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/program1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0x409 /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/program1.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/program1.pdb" /debug /machine:I386 /out:"Debug/program1.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "c:\windows\TEMP\RSP10C6.TMP" with contents </nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/program1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\My Documents\Cosc\Program\Program 1\program1.cpp"
+>
+Creating command line "cl.exe @c:\windows\TEMP\RSP10C6.TMP" 
+Creating temp file "c:\windows\TEMP\RSP10C7.TMP" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/program1.pdb" /debug /machine:I386 /out:"Debug/program1.exe" /pdbtype:sept 
+".\Debug\program1.obj">
+Creating command line "link.exe @c:\windows\TEMP\RSP10C7.TMP" 
+Compiling...
+program1.cpp
+C:\My Documents\Cosc\Program\Program 1\program1.cpp(8) : fatal error C1083: Cannot open include file: 'constrea.h': No such file or directory
+Error executing cl.exe.
+
+
+
+program1.exe - 1 error(s), 0 warning(s)

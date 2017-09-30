@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.j48.J48 -C 0.25 -M 2
+Relation:     bodyfat.names-weka.filters.DiscretizeFilter-B5-R15-15
+Instances:    252
+Attributes:   15
+              Density
+              Age
+              Weight
+              Height
+              Neck
+              Chest
+              Abdomen
+              Hip
+              Thigh
+              Knee
+              Ankle
+              Biceps
+              Forearm
+              Wrist
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Density <= 1.0551
+|   Density <= 1.034
+|   |   Density <= 1.014: '(38-inf)' (3.0)
+|   |   Density > 1.014: '(28.5-38]' (33.0)
+|   Density > 1.034: '(19-28.5]' (93.0)
+Density > 1.0551
+|   Density <= 1.0771: '(9.5-19]' (87.0/1.0)
+|   Density > 1.0771: '(-inf-9.5]' (36.0/1.0)
+
+Number of Leaves  : 	5
+
+Size of the tree : 	9
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         246               97.619  %
+Incorrectly Classified Instances         6                2.381  %
+Kappa statistic                          0.9664
+Mean absolute error                      0.0125
+Root mean squared error                  0.0973
+Relative absolute error                  4.4191 %
+Root relative squared error             25.8836 %
+Total Number of Instances              252     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.972     0.009      0.946     0.972     0.959    '(-inf-9.5]'
+  0.977     0.012      0.977     0.977     0.977    '(9.5-19]'
+  0.989     0          1         0.989     0.995    '(19-28.5]'
+  0.97      0.005      0.97      0.97      0.97     '(28.5-38]'
+  0.667     0.004      0.667     0.667     0.667    '(38-inf)'
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e   <-- classified as
+ 35  1  0  0  0 |  a = '(-inf-9.5]'
+  2 85  0  0  0 |  b = '(9.5-19]'
+  0  1 92  0  0 |  c = '(19-28.5]'
+  0  0  0 32  1 |  d = '(28.5-38]'
+  0  0  0  1  2 |  e = '(38-inf)'
+

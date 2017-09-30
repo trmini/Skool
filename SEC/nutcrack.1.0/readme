@@ -1,0 +1,56 @@
+Nutcracker version 1.0
+
+Copyright 2000 by Ryan T. Rhea
+
+rhear@cs.winthrop.edu
+
+
+
+New versions of Nutcracker can be found at http://www.birdnest.org/zzrhear
+
+
+Nutcracker is a very simple password checker/cracker for Unix/Linux.  It
+has been tested on RedHat Linux, Mandrake-Linux, Caldera OpenLinux,
+Slackware, and FreeBSD.  It should work on any system that uses the Unix/C 
+system calls.  
+
+This cracker is much faster than most others I have used.  It was
+written with speed in mind.  It will report any disabled accounts, as
+well as accounts with no passwords.  It will crack either '/etc/passwd' or
+'/etc/shadow' files, and can use any dictionary file available.  A simple
+dictionary of around 2400 words is included, as well as a sample 
+'/etc/passwd' file.  
+
+The weakest and most vulnerable part of any system is the users' choice of 
+passwords.  Hackers have long known that a simple dictionary attack can be
+very effective in breaking into an otherwise secure system.  The best
+method of protecting those systems, then, is to use the tools a hacker
+would use to find and change any vulnerable passwords.  I have found that
+on most systems checked, over half of the passwords can be found with this
+method.
+
+This tool was written for administrators to test and improve their own
+system's security.  Do not, under any circumstances, use this tool for
+malicious purposes.  There is a good chance you would get caught.
+
+That said, I hope you find the program useful.
+
+
+INSTALLATION
+
+Just run the program! Feel free to copy it any where in your path, or
+leave it in your home folder.  
+
+
+USAGE
+
+nutcrack password_file dictionary_file
+
+ex. nutcrack /etc/shadow /usr/dict/words 
+
+
+
+A sample password file and dictionary are included.  Most Linux systems
+have a bigger dictionary file in '/usr/dict/', although the larger the
+dictionary file, the longer the wait.  The included 2400 word file is
+often big enough! 

@@ -1,0 +1,849 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.NaiveBayes 
+Relation:     soybean
+Instances:    683
+Attributes:   36
+              date
+              plant-stand
+              precip
+              temp
+              hail
+              crop-hist
+              area-damaged
+              severity
+              seed-tmt
+              germination
+              plant-growth
+              leaves
+              leafspots-halo
+              leafspots-marg
+              leafspot-size
+              leaf-shread
+              leaf-malf
+              leaf-mild
+              stem
+              lodging
+              stem-cankers
+              canker-lesion
+              fruiting-bodies
+              external-decay
+              mycelium
+              int-discolor
+              sclerotia
+              fruit-pods
+              fruit-spots
+              seed
+              mold-growth
+              seed-discolor
+              seed-size
+              shriveling
+              roots
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class diaporthe-stem-canker: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 1 1 6 6 6 6  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  21 1  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+temp:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+hail:  Discrete Estimator. Counts =  20 2  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  1 7 8 8  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  18 4 1 1  (Total = 24)
+severity:  Discrete Estimator. Counts =  1 15 7  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  12 10 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  4 10 9  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  1 21  (Total = 22)
+lodging:  Discrete Estimator. Counts =  15 7  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  1 1 1 21  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  11 11 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  1 21  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 21  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class charcoal-rot: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 1 1 4 6 7 7  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  21 1  (Total = 22)
+precip:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+temp:  Discrete Estimator. Counts =  1 6 16  (Total = 23)
+hail:  Discrete Estimator. Counts =  10 12  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  4 6 7 7  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  1 1 11 11  (Total = 24)
+severity:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  7 8 8  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  1 21  (Total = 22)
+lodging:  Discrete Estimator. Counts =  18 4  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  1 1 1 21  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  1 21  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 21  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class rhizoctonia-root-rot: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  7 7 7 2 2 1 1  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  3 19  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+temp:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+hail:  Discrete Estimator. Counts =  19 3  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  1 21 1 1  (Total = 24)
+severity:  Discrete Estimator. Counts =  1 10 12  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  17 5 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leaves:  Discrete Estimator. Counts =  20 2  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  1 21  (Total = 22)
+lodging:  Discrete Estimator. Counts =  19 3  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  1 21 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  1 21 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  15 7  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  1 1 1 21  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 21  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  20 2 1  (Total = 23)
+
+
+Class phytophthora-rot: Prior probability = 0.13
+
+date:  Discrete Estimator. Counts =  8 24 26 28 7 1 1  (Total = 95)
+plant-stand:  Discrete Estimator. Counts =  1 89  (Total = 90)
+precip:  Discrete Estimator. Counts =  1 31 59  (Total = 91)
+temp:  Discrete Estimator. Counts =  10 52 29  (Total = 91)
+hail:  Discrete Estimator. Counts =  15 7  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  7 21 33 31  (Total = 92)
+area-damaged:  Discrete Estimator. Counts =  1 88 1 2  (Total = 92)
+severity:  Discrete Estimator. Counts =  1 8 14  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  8 8 7  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  1 89  (Total = 90)
+leaves:  Discrete Estimator. Counts =  1 89  (Total = 90)
+leafspots-halo:  Discrete Estimator. Counts =  34 1 1  (Total = 36)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 34  (Total = 36)
+leafspot-size:  Discrete Estimator. Counts =  1 1 34  (Total = 36)
+leaf-shread:  Discrete Estimator. Counts =  34 1  (Total = 35)
+leaf-malf:  Discrete Estimator. Counts =  34 1  (Total = 35)
+leaf-mild:  Discrete Estimator. Counts =  34 1 1  (Total = 36)
+stem:  Discrete Estimator. Counts =  1 89  (Total = 90)
+lodging:  Discrete Estimator. Counts =  19 3  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  7 20 31 34  (Total = 92)
+canker-lesion:  Discrete Estimator. Counts =  1 1 89 1  (Total = 92)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  70 7 14  (Total = 91)
+mycelium:  Discrete Estimator. Counts =  89 1  (Total = 90)
+int-discolor:  Discrete Estimator. Counts =  89 1 1  (Total = 91)
+sclerotia:  Discrete Estimator. Counts =  89 1  (Total = 90)
+fruit-pods:  Discrete Estimator. Counts =  1 1 1 21  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 21  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 69 1  (Total = 91)
+
+
+Class brown-stem-rot: Prior probability = 0.06
+
+date:  Discrete Estimator. Counts =  1 1 1 9 18 17 4  (Total = 51)
+plant-stand:  Discrete Estimator. Counts =  34 12  (Total = 46)
+precip:  Discrete Estimator. Counts =  36 10 1  (Total = 47)
+temp:  Discrete Estimator. Counts =  14 26 7  (Total = 47)
+hail:  Discrete Estimator. Counts =  36 10  (Total = 46)
+crop-hist:  Discrete Estimator. Counts =  1 11 17 19  (Total = 48)
+area-damaged:  Discrete Estimator. Counts =  12 3 18 15  (Total = 48)
+severity:  Discrete Estimator. Counts =  1 38 8  (Total = 47)
+seed-tmt:  Discrete Estimator. Counts =  23 23 1  (Total = 47)
+germination:  Discrete Estimator. Counts =  16 16 15  (Total = 47)
+plant-growth:  Discrete Estimator. Counts =  25 21  (Total = 46)
+leaves:  Discrete Estimator. Counts =  11 35  (Total = 46)
+leafspots-halo:  Discrete Estimator. Counts =  36 1 10  (Total = 47)
+leafspots-marg:  Discrete Estimator. Counts =  10 1 36  (Total = 47)
+leafspot-size:  Discrete Estimator. Counts =  1 10 36  (Total = 47)
+leaf-shread:  Discrete Estimator. Counts =  45 1  (Total = 46)
+leaf-malf:  Discrete Estimator. Counts =  45 1  (Total = 46)
+leaf-mild:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+stem:  Discrete Estimator. Counts =  1 45  (Total = 46)
+lodging:  Discrete Estimator. Counts =  29 17  (Total = 46)
+stem-cankers:  Discrete Estimator. Counts =  45 1 1 1  (Total = 48)
+canker-lesion:  Discrete Estimator. Counts =  25 1 1 21  (Total = 48)
+fruiting-bodies:  Discrete Estimator. Counts =  45 1  (Total = 46)
+external-decay:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+mycelium:  Discrete Estimator. Counts =  45 1  (Total = 46)
+int-discolor:  Discrete Estimator. Counts =  1 45 1  (Total = 47)
+sclerotia:  Discrete Estimator. Counts =  45 1  (Total = 46)
+fruit-pods:  Discrete Estimator. Counts =  45 1 1 1  (Total = 48)
+fruit-spots:  Discrete Estimator. Counts =  25 1 1 1 21  (Total = 49)
+seed:  Discrete Estimator. Counts =  45 1  (Total = 46)
+mold-growth:  Discrete Estimator. Counts =  45 1  (Total = 46)
+seed-discolor:  Discrete Estimator. Counts =  45 1  (Total = 46)
+seed-size:  Discrete Estimator. Counts =  45 1  (Total = 46)
+shriveling:  Discrete Estimator. Counts =  45 1  (Total = 46)
+roots:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+
+
+Class powdery-mildew: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 4 4 3 5 5 5  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  10 12  (Total = 22)
+precip:  Discrete Estimator. Counts =  11 10 2  (Total = 23)
+temp:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+hail:  Discrete Estimator. Counts =  12 10  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+severity:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 7 5  (Total = 23)
+germination:  Discrete Estimator. Counts =  8 8 7  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  21 1  (Total = 22)
+lodging:  Discrete Estimator. Counts =  21 1  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  21 1 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class downy-mildew: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 3 5 5 5 5 3  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  10 12  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+temp:  Discrete Estimator. Counts =  9 10 4  (Total = 23)
+hail:  Discrete Estimator. Counts =  12 10  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  3 7 7 7  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+severity:  Discrete Estimator. Counts =  7 15 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  15 7  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+stem:  Discrete Estimator. Counts =  21 1  (Total = 22)
+lodging:  Discrete Estimator. Counts =  21 1  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  21 1 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  1 21  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  1 21  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class brown-spot: Prior probability = 0.13
+
+date:  Discrete Estimator. Counts =  6 28 29 18 9 8 1  (Total = 99)
+plant-stand:  Discrete Estimator. Counts =  58 36  (Total = 94)
+precip:  Discrete Estimator. Counts =  1 11 83  (Total = 95)
+temp:  Discrete Estimator. Counts =  1 83 11  (Total = 95)
+hail:  Discrete Estimator. Counts =  82 12  (Total = 94)
+crop-hist:  Discrete Estimator. Counts =  3 18 38 37  (Total = 96)
+area-damaged:  Discrete Estimator. Counts =  8 18 18 52  (Total = 96)
+severity:  Discrete Estimator. Counts =  12 76 7  (Total = 95)
+seed-tmt:  Discrete Estimator. Counts =  64 16 15  (Total = 95)
+germination:  Discrete Estimator. Counts =  28 34 33  (Total = 95)
+plant-growth:  Discrete Estimator. Counts =  84 10  (Total = 94)
+leaves:  Discrete Estimator. Counts =  1 93  (Total = 94)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 93  (Total = 95)
+leafspots-marg:  Discrete Estimator. Counts =  93 1 1  (Total = 95)
+leafspot-size:  Discrete Estimator. Counts =  1 93 1  (Total = 95)
+leaf-shread:  Discrete Estimator. Counts =  49 45  (Total = 94)
+leaf-malf:  Discrete Estimator. Counts =  93 1  (Total = 94)
+leaf-mild:  Discrete Estimator. Counts =  93 1 1  (Total = 95)
+stem:  Discrete Estimator. Counts =  55 39  (Total = 94)
+lodging:  Discrete Estimator. Counts =  93 1  (Total = 94)
+stem-cankers:  Discrete Estimator. Counts =  60 1 1 34  (Total = 96)
+canker-lesion:  Discrete Estimator. Counts =  55 34 1 6  (Total = 96)
+fruiting-bodies:  Discrete Estimator. Counts =  57 37  (Total = 94)
+external-decay:  Discrete Estimator. Counts =  88 6 1  (Total = 95)
+mycelium:  Discrete Estimator. Counts =  93 1  (Total = 94)
+int-discolor:  Discrete Estimator. Counts =  93 1 1  (Total = 95)
+sclerotia:  Discrete Estimator. Counts =  93 1  (Total = 94)
+fruit-pods:  Discrete Estimator. Counts =  91 3 1 1  (Total = 96)
+fruit-spots:  Discrete Estimator. Counts =  89 3 3 1 1  (Total = 97)
+seed:  Discrete Estimator. Counts =  93 1  (Total = 94)
+mold-growth:  Discrete Estimator. Counts =  93 1  (Total = 94)
+seed-discolor:  Discrete Estimator. Counts =  93 1  (Total = 94)
+seed-size:  Discrete Estimator. Counts =  93 1  (Total = 94)
+shriveling:  Discrete Estimator. Counts =  93 1  (Total = 94)
+roots:  Discrete Estimator. Counts =  93 1 1  (Total = 95)
+
+
+Class bacterial-blight: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 1 4 8 8 4 1  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  16 6  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+temp:  Discrete Estimator. Counts =  1 18 4  (Total = 23)
+hail:  Discrete Estimator. Counts =  11 11  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  3 7 7 7  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+severity:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 11 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  8 9 6  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  17 5  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  4 18  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  19 3  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  21 1  (Total = 22)
+lodging:  Discrete Estimator. Counts =  21 1  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  21 1 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class bacterial-pustule: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 3 8 8 3 3 1  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  12 10  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 13 9  (Total = 23)
+temp:  Discrete Estimator. Counts =  6 12 5  (Total = 23)
+hail:  Discrete Estimator. Counts =  11 11  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  4 7 7 6  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+severity:  Discrete Estimator. Counts =  13 9 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  15 7 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  2 11 10  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  18 4  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  1 17 5  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  4 18 1  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  7 15  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  18 4  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  21 1  (Total = 22)
+lodging:  Discrete Estimator. Counts =  21 1  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  21 1 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  11 11  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  11 11  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  11 11  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  14 8  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  11 10 2  (Total = 23)
+
+
+Class purple-seed-stain: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 1 1 5 6 6 7  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  21 1  (Total = 22)
+precip:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+temp:  Discrete Estimator. Counts =  8 8 7  (Total = 23)
+hail:  Discrete Estimator. Counts =  12 10  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+severity:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  13 9 1  (Total = 23)
+germination:  Discrete Estimator. Counts =  3 10 10  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaves:  Discrete Estimator. Counts =  10 12  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  10 1 12  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  12 1 10  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  12 1 10  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  21 1  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  12 10  (Total = 22)
+lodging:  Discrete Estimator. Counts =  16 6  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  1 1 1 21  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  10 12 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  10 12 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  1 21  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  1 21  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class anthracnose: Prior probability = 0.06
+
+date:  Discrete Estimator. Counts =  3 3 3 3 8 18 13  (Total = 51)
+plant-stand:  Discrete Estimator. Counts =  22 24  (Total = 46)
+precip:  Discrete Estimator. Counts =  1 1 45  (Total = 47)
+temp:  Discrete Estimator. Counts =  1 34 12  (Total = 47)
+hail:  Discrete Estimator. Counts =  34 12  (Total = 46)
+crop-hist:  Discrete Estimator. Counts =  6 14 14 14  (Total = 48)
+area-damaged:  Discrete Estimator. Counts =  6 14 14 14  (Total = 48)
+severity:  Discrete Estimator. Counts =  12 32 3  (Total = 47)
+seed-tmt:  Discrete Estimator. Counts =  22 20 5  (Total = 47)
+germination:  Discrete Estimator. Counts =  16 20 11  (Total = 47)
+plant-growth:  Discrete Estimator. Counts =  33 13  (Total = 46)
+leaves:  Discrete Estimator. Counts =  25 21  (Total = 46)
+leafspots-halo:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 45  (Total = 47)
+leafspot-size:  Discrete Estimator. Counts =  1 1 45  (Total = 47)
+leaf-shread:  Discrete Estimator. Counts =  45 1  (Total = 46)
+leaf-malf:  Discrete Estimator. Counts =  45 1  (Total = 46)
+leaf-mild:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+stem:  Discrete Estimator. Counts =  1 45  (Total = 46)
+lodging:  Discrete Estimator. Counts =  40 6  (Total = 46)
+stem-cankers:  Discrete Estimator. Counts =  1 1 6 40  (Total = 48)
+canker-lesion:  Discrete Estimator. Counts =  1 11 35 1  (Total = 48)
+fruiting-bodies:  Discrete Estimator. Counts =  15 31  (Total = 46)
+external-decay:  Discrete Estimator. Counts =  25 21 1  (Total = 47)
+mycelium:  Discrete Estimator. Counts =  45 1  (Total = 46)
+int-discolor:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+sclerotia:  Discrete Estimator. Counts =  45 1  (Total = 46)
+fruit-pods:  Discrete Estimator. Counts =  7 39 1 1  (Total = 48)
+fruit-spots:  Discrete Estimator. Counts =  7 1 39 1 1  (Total = 49)
+seed:  Discrete Estimator. Counts =  18 28  (Total = 46)
+mold-growth:  Discrete Estimator. Counts =  23 23  (Total = 46)
+seed-discolor:  Discrete Estimator. Counts =  37 9  (Total = 46)
+seed-size:  Discrete Estimator. Counts =  23 23  (Total = 46)
+shriveling:  Discrete Estimator. Counts =  23 23  (Total = 46)
+roots:  Discrete Estimator. Counts =  45 1 1  (Total = 47)
+
+
+Class phyllosticta-leaf-spot: Prior probability = 0.03
+
+date:  Discrete Estimator. Counts =  1 4 9 8 3 1 1  (Total = 27)
+plant-stand:  Discrete Estimator. Counts =  10 12  (Total = 22)
+precip:  Discrete Estimator. Counts =  10 12 1  (Total = 23)
+temp:  Discrete Estimator. Counts =  1 11 11  (Total = 23)
+hail:  Discrete Estimator. Counts =  12 10  (Total = 22)
+crop-hist:  Discrete Estimator. Counts =  6 6 6 6  (Total = 24)
+area-damaged:  Discrete Estimator. Counts =  8 1 8 7  (Total = 24)
+severity:  Discrete Estimator. Counts =  15 7 1  (Total = 23)
+seed-tmt:  Discrete Estimator. Counts =  11 9 3  (Total = 23)
+germination:  Discrete Estimator. Counts =  6 9 8  (Total = 23)
+plant-growth:  Discrete Estimator. Counts =  17 5  (Total = 22)
+leaves:  Discrete Estimator. Counts =  1 21  (Total = 22)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 21  (Total = 23)
+leafspots-marg:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+leafspot-size:  Discrete Estimator. Counts =  1 21 1  (Total = 23)
+leaf-shread:  Discrete Estimator. Counts =  11 11  (Total = 22)
+leaf-malf:  Discrete Estimator. Counts =  11 11  (Total = 22)
+leaf-mild:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+stem:  Discrete Estimator. Counts =  21 1  (Total = 22)
+lodging:  Discrete Estimator. Counts =  21 1  (Total = 22)
+stem-cankers:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+canker-lesion:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruiting-bodies:  Discrete Estimator. Counts =  21 1  (Total = 22)
+external-decay:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+mycelium:  Discrete Estimator. Counts =  21 1  (Total = 22)
+int-discolor:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+sclerotia:  Discrete Estimator. Counts =  21 1  (Total = 22)
+fruit-pods:  Discrete Estimator. Counts =  21 1 1 1  (Total = 24)
+fruit-spots:  Discrete Estimator. Counts =  21 1 1 1 1  (Total = 25)
+seed:  Discrete Estimator. Counts =  21 1  (Total = 22)
+mold-growth:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-discolor:  Discrete Estimator. Counts =  21 1  (Total = 22)
+seed-size:  Discrete Estimator. Counts =  21 1  (Total = 22)
+shriveling:  Discrete Estimator. Counts =  21 1  (Total = 22)
+roots:  Discrete Estimator. Counts =  21 1 1  (Total = 23)
+
+
+Class alternarialeaf-spot: Prior probability = 0.13
+
+date:  Discrete Estimator. Counts =  1 1 1 4 19 41 31  (Total = 98)
+plant-stand:  Discrete Estimator. Counts =  59 34  (Total = 93)
+precip:  Discrete Estimator. Counts =  1 10 83  (Total = 94)
+temp:  Discrete Estimator. Counts =  1 41 52  (Total = 94)
+hail:  Discrete Estimator. Counts =  82 11  (Total = 93)
+crop-hist:  Discrete Estimator. Counts =  12 21 31 31  (Total = 95)
+area-damaged:  Discrete Estimator. Counts =  19 26 25 25  (Total = 95)
+severity:  Discrete Estimator. Counts =  54 39 1  (Total = 94)
+seed-tmt:  Discrete Estimator. Counts =  43 44 7  (Total = 94)
+germination:  Discrete Estimator. Counts =  31 32 31  (Total = 94)
+plant-growth:  Discrete Estimator. Counts =  92 1  (Total = 93)
+leaves:  Discrete Estimator. Counts =  1 92  (Total = 93)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 92  (Total = 94)
+leafspots-marg:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+leafspot-size:  Discrete Estimator. Counts =  1 92 1  (Total = 94)
+leaf-shread:  Discrete Estimator. Counts =  81 12  (Total = 93)
+leaf-malf:  Discrete Estimator. Counts =  92 1  (Total = 93)
+leaf-mild:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+stem:  Discrete Estimator. Counts =  92 1  (Total = 93)
+lodging:  Discrete Estimator. Counts =  92 1  (Total = 93)
+stem-cankers:  Discrete Estimator. Counts =  92 1 1 1  (Total = 95)
+canker-lesion:  Discrete Estimator. Counts =  92 1 1 1  (Total = 95)
+fruiting-bodies:  Discrete Estimator. Counts =  92 1  (Total = 93)
+external-decay:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+mycelium:  Discrete Estimator. Counts =  92 1  (Total = 93)
+int-discolor:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+sclerotia:  Discrete Estimator. Counts =  92 1  (Total = 93)
+fruit-pods:  Discrete Estimator. Counts =  92 1 1 1  (Total = 95)
+fruit-spots:  Discrete Estimator. Counts =  92 1 1 1 1  (Total = 96)
+seed:  Discrete Estimator. Counts =  82 11  (Total = 93)
+mold-growth:  Discrete Estimator. Counts =  92 1  (Total = 93)
+seed-discolor:  Discrete Estimator. Counts =  82 11  (Total = 93)
+seed-size:  Discrete Estimator. Counts =  92 1  (Total = 93)
+shriveling:  Discrete Estimator. Counts =  92 1  (Total = 93)
+roots:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+
+
+Class frog-eye-leaf-spot: Prior probability = 0.13
+
+date:  Discrete Estimator. Counts =  1 1 1 14 34 32 15  (Total = 98)
+plant-stand:  Discrete Estimator. Counts =  64 29  (Total = 93)
+precip:  Discrete Estimator. Counts =  1 11 82  (Total = 94)
+temp:  Discrete Estimator. Counts =  1 55 38  (Total = 94)
+hail:  Discrete Estimator. Counts =  82 11  (Total = 93)
+crop-hist:  Discrete Estimator. Counts =  6 28 30 31  (Total = 95)
+area-damaged:  Discrete Estimator. Counts =  24 24 23 24  (Total = 95)
+severity:  Discrete Estimator. Counts =  49 44 1  (Total = 94)
+seed-tmt:  Discrete Estimator. Counts =  45 43 6  (Total = 94)
+germination:  Discrete Estimator. Counts =  36 29 29  (Total = 94)
+plant-growth:  Discrete Estimator. Counts =  88 5  (Total = 93)
+leaves:  Discrete Estimator. Counts =  1 92  (Total = 93)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 92  (Total = 94)
+leafspots-marg:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+leafspot-size:  Discrete Estimator. Counts =  1 92 1  (Total = 94)
+leaf-shread:  Discrete Estimator. Counts =  92 1  (Total = 93)
+leaf-malf:  Discrete Estimator. Counts =  92 1  (Total = 93)
+leaf-mild:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+stem:  Discrete Estimator. Counts =  27 66  (Total = 93)
+lodging:  Discrete Estimator. Counts =  89 4  (Total = 93)
+stem-cankers:  Discrete Estimator. Counts =  25 1 2 67  (Total = 95)
+canker-lesion:  Discrete Estimator. Counts =  27 11 56 1  (Total = 95)
+fruiting-bodies:  Discrete Estimator. Counts =  89 4  (Total = 93)
+external-decay:  Discrete Estimator. Counts =  28 65 1  (Total = 94)
+mycelium:  Discrete Estimator. Counts =  92 1  (Total = 93)
+int-discolor:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+sclerotia:  Discrete Estimator. Counts =  92 1  (Total = 93)
+fruit-pods:  Discrete Estimator. Counts =  28 65 1 1  (Total = 95)
+fruit-spots:  Discrete Estimator. Counts =  28 63 3 1 1  (Total = 96)
+seed:  Discrete Estimator. Counts =  90 3  (Total = 93)
+mold-growth:  Discrete Estimator. Counts =  92 1  (Total = 93)
+seed-discolor:  Discrete Estimator. Counts =  91 2  (Total = 93)
+seed-size:  Discrete Estimator. Counts =  91 2  (Total = 93)
+shriveling:  Discrete Estimator. Counts =  91 2  (Total = 93)
+roots:  Discrete Estimator. Counts =  92 1 1  (Total = 94)
+
+
+Class diaporthe-pod-&-stem-blight: Prior probability = 0.02
+
+date:  Discrete Estimator. Counts =  1 3 1 1 1 8 7  (Total = 22)
+plant-stand:  Discrete Estimator. Counts =  8 3  (Total = 11)
+precip:  Discrete Estimator. Counts =  1 3 14  (Total = 18)
+temp:  Discrete Estimator. Counts =  1 1 16  (Total = 18)
+hail:  Discrete Estimator. Counts =  1 1  (Total = 2)
+crop-hist:  Discrete Estimator. Counts =  3 4 5 7  (Total = 19)
+area-damaged:  Discrete Estimator. Counts =  3 1 1 14  (Total = 19)
+severity:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+seed-tmt:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+germination:  Discrete Estimator. Counts =  6 3 3  (Total = 12)
+plant-growth:  Discrete Estimator. Counts =  16 1  (Total = 17)
+leaves:  Discrete Estimator. Counts =  16 1  (Total = 17)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leafspot-size:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leaf-shread:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaf-malf:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaf-mild:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+stem:  Discrete Estimator. Counts =  1 16  (Total = 17)
+lodging:  Discrete Estimator. Counts =  1 1  (Total = 2)
+stem-cankers:  Discrete Estimator. Counts =  16 1 1 1  (Total = 19)
+canker-lesion:  Discrete Estimator. Counts =  16 1 1 1  (Total = 19)
+fruiting-bodies:  Discrete Estimator. Counts =  1 16  (Total = 17)
+external-decay:  Discrete Estimator. Counts =  16 1 1  (Total = 18)
+mycelium:  Discrete Estimator. Counts =  16 1  (Total = 17)
+int-discolor:  Discrete Estimator. Counts =  16 1 1  (Total = 18)
+sclerotia:  Discrete Estimator. Counts =  16 1  (Total = 17)
+fruit-pods:  Discrete Estimator. Counts =  1 16 1 1  (Total = 19)
+fruit-spots:  Discrete Estimator. Counts =  1 1 16 1 1  (Total = 20)
+seed:  Discrete Estimator. Counts =  4 13  (Total = 17)
+mold-growth:  Discrete Estimator. Counts =  1 16  (Total = 17)
+seed-discolor:  Discrete Estimator. Counts =  1 16  (Total = 17)
+seed-size:  Discrete Estimator. Counts =  1 16  (Total = 17)
+shriveling:  Discrete Estimator. Counts =  1 16  (Total = 17)
+roots:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+
+
+Class cyst-nematode: Prior probability = 0.02
+
+date:  Discrete Estimator. Counts =  1 1 4 7 6 1 1  (Total = 21)
+plant-stand:  Discrete Estimator. Counts =  1 1  (Total = 2)
+precip:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+temp:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+hail:  Discrete Estimator. Counts =  1 1  (Total = 2)
+crop-hist:  Discrete Estimator. Counts =  1 3 8 6  (Total = 18)
+area-damaged:  Discrete Estimator. Counts =  1 9 7 1  (Total = 18)
+severity:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+seed-tmt:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+germination:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+plant-growth:  Discrete Estimator. Counts =  1 15  (Total = 16)
+leaves:  Discrete Estimator. Counts =  1 15  (Total = 16)
+leafspots-halo:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leafspot-size:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+leaf-shread:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaf-malf:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaf-mild:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+stem:  Discrete Estimator. Counts =  15 1  (Total = 16)
+lodging:  Discrete Estimator. Counts =  1 1  (Total = 2)
+stem-cankers:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+canker-lesion:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+fruiting-bodies:  Discrete Estimator. Counts =  1 1  (Total = 2)
+external-decay:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+mycelium:  Discrete Estimator. Counts =  1 1  (Total = 2)
+int-discolor:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+sclerotia:  Discrete Estimator. Counts =  1 1  (Total = 2)
+fruit-pods:  Discrete Estimator. Counts =  1 1 15 1  (Total = 18)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 1  (Total = 5)
+seed:  Discrete Estimator. Counts =  1 15  (Total = 16)
+mold-growth:  Discrete Estimator. Counts =  15 1  (Total = 16)
+seed-discolor:  Discrete Estimator. Counts =  1 1  (Total = 2)
+seed-size:  Discrete Estimator. Counts =  1 15  (Total = 16)
+shriveling:  Discrete Estimator. Counts =  1 1  (Total = 2)
+roots:  Discrete Estimator. Counts =  1 1 15  (Total = 17)
+
+
+Class 2-4-d-injury: Prior probability = 0.02
+
+date:  Discrete Estimator. Counts =  4 3 3 3 3 3 3  (Total = 22)
+plant-stand:  Discrete Estimator. Counts =  1 1  (Total = 2)
+precip:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+temp:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+hail:  Discrete Estimator. Counts =  1 1  (Total = 2)
+crop-hist:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+area-damaged:  Discrete Estimator. Counts =  5 5 5 4  (Total = 19)
+severity:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+seed-tmt:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+germination:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+plant-growth:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaves:  Discrete Estimator. Counts =  1 17  (Total = 18)
+leafspots-halo:  Discrete Estimator. Counts =  17 1 1  (Total = 19)
+leafspots-marg:  Discrete Estimator. Counts =  1 1 17  (Total = 19)
+leafspot-size:  Discrete Estimator. Counts =  1 1 17  (Total = 19)
+leaf-shread:  Discrete Estimator. Counts =  1 1  (Total = 2)
+leaf-malf:  Discrete Estimator. Counts =  1 17  (Total = 18)
+leaf-mild:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+stem:  Discrete Estimator. Counts =  1 1  (Total = 2)
+lodging:  Discrete Estimator. Counts =  1 1  (Total = 2)
+stem-cankers:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+canker-lesion:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+fruiting-bodies:  Discrete Estimator. Counts =  1 1  (Total = 2)
+external-decay:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+mycelium:  Discrete Estimator. Counts =  1 1  (Total = 2)
+int-discolor:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+sclerotia:  Discrete Estimator. Counts =  1 1  (Total = 2)
+fruit-pods:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 1  (Total = 5)
+seed:  Discrete Estimator. Counts =  1 1  (Total = 2)
+mold-growth:  Discrete Estimator. Counts =  1 1  (Total = 2)
+seed-discolor:  Discrete Estimator. Counts =  1 1  (Total = 2)
+seed-size:  Discrete Estimator. Counts =  1 1  (Total = 2)
+shriveling:  Discrete Estimator. Counts =  1 1  (Total = 2)
+roots:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+
+
+Class herbicide-injury: Prior probability = 0.01
+
+date:  Discrete Estimator. Counts =  4 4 3 1 1 1 1  (Total = 15)
+plant-stand:  Discrete Estimator. Counts =  1 9  (Total = 10)
+precip:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+temp:  Discrete Estimator. Counts =  9 1 1  (Total = 11)
+hail:  Discrete Estimator. Counts =  1 1  (Total = 2)
+crop-hist:  Discrete Estimator. Counts =  5 5 1 1  (Total = 12)
+area-damaged:  Discrete Estimator. Counts =  5 1 1 5  (Total = 12)
+severity:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+seed-tmt:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+germination:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+plant-growth:  Discrete Estimator. Counts =  1 9  (Total = 10)
+leaves:  Discrete Estimator. Counts =  1 9  (Total = 10)
+leafspots-halo:  Discrete Estimator. Counts =  5 1 5  (Total = 11)
+leafspots-marg:  Discrete Estimator. Counts =  1 5 5  (Total = 11)
+leafspot-size:  Discrete Estimator. Counts =  1 5 5  (Total = 11)
+leaf-shread:  Discrete Estimator. Counts =  9 1  (Total = 10)
+leaf-malf:  Discrete Estimator. Counts =  1 9  (Total = 10)
+leaf-mild:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+stem:  Discrete Estimator. Counts =  1 9  (Total = 10)
+lodging:  Discrete Estimator. Counts =  1 1  (Total = 2)
+stem-cankers:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+canker-lesion:  Discrete Estimator. Counts =  1 1 1 1  (Total = 4)
+fruiting-bodies:  Discrete Estimator. Counts =  1 1  (Total = 2)
+external-decay:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+mycelium:  Discrete Estimator. Counts =  1 1  (Total = 2)
+int-discolor:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+sclerotia:  Discrete Estimator. Counts =  1 1  (Total = 2)
+fruit-pods:  Discrete Estimator. Counts =  1 1 1 9  (Total = 12)
+fruit-spots:  Discrete Estimator. Counts =  1 1 1 1 1  (Total = 5)
+seed:  Discrete Estimator. Counts =  1 1  (Total = 2)
+mold-growth:  Discrete Estimator. Counts =  1 1  (Total = 2)
+seed-discolor:  Discrete Estimator. Counts =  1 1  (Total = 2)
+seed-size:  Discrete Estimator. Counts =  1 1  (Total = 2)
+shriveling:  Discrete Estimator. Counts =  1 1  (Total = 2)
+roots:  Discrete Estimator. Counts =  1 9 1  (Total = 11)
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         633               92.6794 %
+Incorrectly Classified Instances        50                7.3206 %
+Kappa statistic                          0.9197
+Mean absolute error                      0.0093
+Root mean squared error                  0.0805
+Relative absolute error                  9.7205 %
+Root relative squared error             36.7517 %
+Total Number of Instances              683     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  1         0          1         1         1        diaporthe-stem-canker
+  1         0          1         1         1        charcoal-rot
+  1         0          1         1         1        rhizoctonia-root-rot
+  1         0.003      0.978     1         0.989    phytophthora-rot
+  1         0          1         1         1        brown-stem-rot
+  1         0          1         1         1        powdery-mildew
+  1         0          1         1         1        downy-mildew
+  0.837     0.012      0.917     0.837     0.875    brown-spot
+  1         0.003      0.909     1         0.952    bacterial-blight
+  0.9       0          1         0.9       0.947    bacterial-pustule
+  1         0          1         1         1        purple-seed-stain
+  1         0          1         1         1        anthracnose
+  0.8       0.008      0.762     0.8       0.78     phyllosticta-leaf-spot
+  0.989     0.049      0.756     0.989     0.857    alternarialeaf-spot
+  0.714     0.007      0.942     0.714     0.813    frog-eye-leaf-spot
+  1         0.001      0.938     1         0.968    diaporthe-pod-&-stem-blight
+  1         0          1         1         1        cyst-nematode
+  0.875     0          1         0.875     0.933    2-4-d-injury
+  1         0          1         1         1        herbicide-injury
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f  g  h  i  j  k  l  m  n  o  p  q  r  s   <-- classified as
+ 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  a = diaporthe-stem-canker
+  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  b = charcoal-rot
+  0  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  c = rhizoctonia-root-rot
+  0  0  0 88  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  d = phytophthora-rot
+  0  0  0  0 44  0  0  0  0  0  0  0  0  0  0  0  0  0  0 |  e = brown-stem-rot
+  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0  0  0  0 |  f = powdery-mildew
+  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0  0  0 |  g = downy-mildew
+  0  0  0  0  0  0  0 77  0  0  0  0  5  6  4  0  0  0  0 |  h = brown-spot
+  0  0  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0  0  0 |  i = bacterial-blight
+  0  0  0  0  0  0  0  0  2 18  0  0  0  0  0  0  0  0  0 |  j = bacterial-pustule
+  0  0  0  0  0  0  0  0  0  0 20  0  0  0  0  0  0  0  0 |  k = purple-seed-stain
+  0  0  0  0  0  0  0  0  0  0  0 44  0  0  0  0  0  0  0 |  l = anthracnose
+  0  0  0  0  0  0  0  2  0  0  0  0 16  2  0  0  0  0  0 |  m = phyllosticta-leaf-spot
+  0  0  0  0  0  0  0  1  0  0  0  0  0 90  0  0  0  0  0 |  n = alternarialeaf-spot
+  0  0  0  0  0  0  0  4  0  0  0  0  0 21 65  1  0  0  0 |  o = frog-eye-leaf-spot
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 15  0  0  0 |  p = diaporthe-pod-&-stem-blight
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0  0 |  q = cyst-nematode
+  0  0  0  2  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0 |  r = 2-4-d-injury
+  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  8 |  s = herbicide-injury
+

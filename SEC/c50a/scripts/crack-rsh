@@ -1,0 +1,4 @@
+#!/bin/sh
+exec ${CRACK_RSH:-rsh} $*
+echo "$0: oops: rsh $*"
+exit 1

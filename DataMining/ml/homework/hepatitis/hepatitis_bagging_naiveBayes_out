@@ -1,0 +1,537 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.Bagging -S 1 -I 10 -P 100 -W weka.classifiers.NaiveBayes --
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              class
+              age
+              sex
+              steroid
+              antivirals
+              fatigue
+              malaise
+              anoresia
+              liver_big
+              liver_firm
+              spleen_palpable
+              spiders
+              ascites
+              varices
+              bilirubin
+              alk_phosphate
+              sgot
+              albumin
+              protime
+              histology
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.54
+
+class:  Discrete Estimator. Counts =  9 76  (Total = 85)
+age:  Normal Distribution. Mean = 40.3686 StandardDev = 11.821 WeightSum = 83 Precision = 1.5476190476190477
+sex:  Discrete Estimator. Counts =  68 17  (Total = 85)
+steroid:  Discrete Estimator. Counts =  41 43  (Total = 84)
+antivirals:  Discrete Estimator. Counts =  20 65  (Total = 85)
+fatigue:  Discrete Estimator. Counts =  50 35  (Total = 85)
+malaise:  Discrete Estimator. Counts =  27 58  (Total = 85)
+anoresia:  Discrete Estimator. Counts =  12 73  (Total = 85)
+liver_big:  Discrete Estimator. Counts =  20 63  (Total = 83)
+liver_firm:  Discrete Estimator. Counts =  32 51  (Total = 83)
+spleen_palpable:  Discrete Estimator. Counts =  11 73  (Total = 84)
+spiders:  Discrete Estimator. Counts =  17 67  (Total = 84)
+ascites:  Discrete Estimator. Counts =  2 82  (Total = 84)
+varices:  Discrete Estimator. Counts =  1 83  (Total = 84)
+bilirubin:  Normal Distribution. Mean = 1.0492 StandardDev = 0.5007 WeightSum = 81 Precision = 0.28518518518518515
+alk_phosphate:  Normal Distribution. Mean = 93.18 StandardDev = 43.8376 WeightSum = 75 Precision = 4.5
+sgot:  Normal Distribution. Mean = 81.4514 StandardDev = 78.8669 WeightSum = 81 Precision = 9.90625
+albumin:  Normal Distribution. Mean = 3.9789 StandardDev = 0.5749 WeightSum = 77 Precision = 0.1791666666666667
+protime:  Normal Distribution. Mean = 69.03 StandardDev = 19.3758 WeightSum = 53 Precision = 2.088235294117647
+
+
+Class 2: Prior probability = 0.46
+
+class:  Discrete Estimator. Counts =  26 48  (Total = 74)
+age:  Normal Distribution. Mean = 43.2688 StandardDev = 13.3417 WeightSum = 72 Precision = 1.5476190476190477
+sex:  Discrete Estimator. Counts =  68 6  (Total = 74)
+steroid:  Discrete Estimator. Counts =  39 35  (Total = 74)
+antivirals:  Discrete Estimator. Counts =  7 67  (Total = 74)
+fatigue:  Discrete Estimator. Counts =  53 21  (Total = 74)
+malaise:  Discrete Estimator. Counts =  34 40  (Total = 74)
+anoresia:  Discrete Estimator. Counts =  18 56  (Total = 74)
+liver_big:  Discrete Estimator. Counts =  20 52  (Total = 72)
+liver_firm:  Discrete Estimator. Counts =  36 36  (Total = 72)
+spleen_palpable:  Discrete Estimator. Counts =  23 51  (Total = 74)
+spiders:  Discrete Estimator. Counts =  39 35  (Total = 74)
+ascites:  Discrete Estimator. Counts =  14 60  (Total = 74)
+varices:  Discrete Estimator. Counts =  19 55  (Total = 74)
+bilirubin:  Normal Distribution. Mean = 1.9963 StandardDev = 1.6995 WeightSum = 70 Precision = 0.28518518518518515
+alk_phosphate:  Normal Distribution. Mean = 118.5283 StandardDev = 59.1071 WeightSum = 53 Precision = 4.5
+sgot:  Normal Distribution. Mean = 89.4353 StandardDev = 89.3958 WeightSum = 71 Precision = 9.90625
+albumin:  Normal Distribution. Mean = 3.6065 StandardDev = 0.6898 WeightSum = 62 Precision = 0.1791666666666667
+protime:  Normal Distribution. Mean = 55.4611 StandardDev = 17.9936 WeightSum = 34 Precision = 2.088235294117647
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.55
+
+class:  Discrete Estimator. Counts =  6 82  (Total = 88)
+age:  Normal Distribution. Mean = 36.5958 StandardDev = 10.6238 WeightSum = 86 Precision = 1.4761904761904763
+sex:  Discrete Estimator. Counts =  74 14  (Total = 88)
+steroid:  Discrete Estimator. Counts =  26 61  (Total = 87)
+antivirals:  Discrete Estimator. Counts =  20 68  (Total = 88)
+fatigue:  Discrete Estimator. Counts =  53 34  (Total = 87)
+malaise:  Discrete Estimator. Counts =  22 65  (Total = 87)
+anoresia:  Discrete Estimator. Counts =  15 72  (Total = 87)
+liver_big:  Discrete Estimator. Counts =  8 75  (Total = 83)
+liver_firm:  Discrete Estimator. Counts =  24 59  (Total = 83)
+spleen_palpable:  Discrete Estimator. Counts =  9 74  (Total = 83)
+spiders:  Discrete Estimator. Counts =  16 67  (Total = 83)
+ascites:  Discrete Estimator. Counts =  2 81  (Total = 83)
+varices:  Discrete Estimator. Counts =  2 81  (Total = 83)
+bilirubin:  Normal Distribution. Mean = 1.0851 StandardDev = 0.7924 WeightSum = 81 Precision = 0.292
+alk_phosphate:  Normal Distribution. Mean = 86.2145 StandardDev = 44.1515 WeightSum = 71 Precision = 4.035087719298246
+sgot:  Normal Distribution. Mean = 86.9718 StandardDev = 84.1377 WeightSum = 84 Precision = 9.753846153846155
+albumin:  Normal Distribution. Mean = 4.11 StandardDev = 0.4896 WeightSum = 80 Precision = 0.16
+protime:  Normal Distribution. Mean = 68.6359 StandardDev = 18.5787 WeightSum = 49 Precision = 2.4838709677419355
+
+
+Class 2: Prior probability = 0.45
+
+class:  Discrete Estimator. Counts =  25 46  (Total = 71)
+age:  Normal Distribution. Mean = 43.3658 StandardDev = 13.7841 WeightSum = 69 Precision = 1.4761904761904763
+sex:  Discrete Estimator. Counts =  63 8  (Total = 71)
+steroid:  Discrete Estimator. Counts =  40 31  (Total = 71)
+antivirals:  Discrete Estimator. Counts =  4 67  (Total = 71)
+fatigue:  Discrete Estimator. Counts =  51 20  (Total = 71)
+malaise:  Discrete Estimator. Counts =  33 38  (Total = 71)
+anoresia:  Discrete Estimator. Counts =  18 53  (Total = 71)
+liver_big:  Discrete Estimator. Counts =  10 53  (Total = 63)
+liver_firm:  Discrete Estimator. Counts =  26 34  (Total = 60)
+spleen_palpable:  Discrete Estimator. Counts =  18 53  (Total = 71)
+spiders:  Discrete Estimator. Counts =  40 31  (Total = 71)
+ascites:  Discrete Estimator. Counts =  18 53  (Total = 71)
+varices:  Discrete Estimator. Counts =  15 56  (Total = 71)
+bilirubin:  Normal Distribution. Mean = 1.6981 StandardDev = 1.4138 WeightSum = 65 Precision = 0.292
+alk_phosphate:  Normal Distribution. Mean = 113.3187 StandardDev = 47.8845 WeightSum = 48 Precision = 4.035087719298246
+sgot:  Normal Distribution. Mean = 125.3221 StandardDev = 134.5144 WeightSum = 66 Precision = 9.753846153846155
+albumin:  Normal Distribution. Mean = 3.6742 StandardDev = 0.6593 WeightSum = 55 Precision = 0.16
+protime:  Normal Distribution. Mean = 51.8602 StandardDev = 20.8333 WeightSum = 33 Precision = 2.4838709677419355
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.55
+
+class:  Discrete Estimator. Counts =  7 80  (Total = 87)
+age:  Normal Distribution. Mean = 38.2402 StandardDev = 12.1124 WeightSum = 85 Precision = 1.7317073170731707
+sex:  Discrete Estimator. Counts =  75 12  (Total = 87)
+steroid:  Discrete Estimator. Counts =  45 42  (Total = 87)
+antivirals:  Discrete Estimator. Counts =  23 64  (Total = 87)
+fatigue:  Discrete Estimator. Counts =  47 38  (Total = 85)
+malaise:  Discrete Estimator. Counts =  31 54  (Total = 85)
+anoresia:  Discrete Estimator. Counts =  23 62  (Total = 85)
+liver_big:  Discrete Estimator. Counts =  13 70  (Total = 83)
+liver_firm:  Discrete Estimator. Counts =  25 58  (Total = 83)
+spleen_palpable:  Discrete Estimator. Counts =  10 72  (Total = 82)
+spiders:  Discrete Estimator. Counts =  11 71  (Total = 82)
+ascites:  Discrete Estimator. Counts =  2 80  (Total = 82)
+varices:  Discrete Estimator. Counts =  1 81  (Total = 82)
+bilirubin:  Normal Distribution. Mean = 1.0821 StandardDev = 0.6019 WeightSum = 77 Precision = 0.28148148148148144
+alk_phosphate:  Normal Distribution. Mean = 97.305 StandardDev = 49.4657 WeightSum = 66 Precision = 4.098360655737705
+sgot:  Normal Distribution. Mean = 69.2463 StandardDev = 67.0346 WeightSum = 80 Precision = 10.39344262295082
+albumin:  Normal Distribution. Mean = 4.0482 StandardDev = 0.5308 WeightSum = 74 Precision = 0.1592592592592593
+protime:  Normal Distribution. Mean = 70.0561 StandardDev = 22.0398 WeightSum = 46 Precision = 3.225806451612903
+
+
+Class 2: Prior probability = 0.45
+
+class:  Discrete Estimator. Counts =  29 43  (Total = 72)
+age:  Normal Distribution. Mean = 44.6038 StandardDev = 12.5813 WeightSum = 70 Precision = 1.7317073170731707
+sex:  Discrete Estimator. Counts =  66 6  (Total = 72)
+steroid:  Discrete Estimator. Counts =  31 41  (Total = 72)
+antivirals:  Discrete Estimator. Counts =  9 63  (Total = 72)
+fatigue:  Discrete Estimator. Counts =  52 20  (Total = 72)
+malaise:  Discrete Estimator. Counts =  33 39  (Total = 72)
+anoresia:  Discrete Estimator. Counts =  19 53  (Total = 72)
+liver_big:  Discrete Estimator. Counts =  13 56  (Total = 69)
+liver_firm:  Discrete Estimator. Counts =  37 31  (Total = 68)
+spleen_palpable:  Discrete Estimator. Counts =  24 48  (Total = 72)
+spiders:  Discrete Estimator. Counts =  42 30  (Total = 72)
+ascites:  Discrete Estimator. Counts =  15 57  (Total = 72)
+varices:  Discrete Estimator. Counts =  22 50  (Total = 72)
+bilirubin:  Normal Distribution. Mean = 2.1111 StandardDev = 1.8078 WeightSum = 68 Precision = 0.28148148148148144
+alk_phosphate:  Normal Distribution. Mean = 117.5667 StandardDev = 46.4066 WeightSum = 51 Precision = 4.098360655737705
+sgot:  Normal Distribution. Mean = 97.7586 StandardDev = 93.8888 WeightSum = 69 Precision = 10.39344262295082
+albumin:  Normal Distribution. Mean = 3.5214 StandardDev = 0.7134 WeightSum = 63 Precision = 0.1592592592592593
+protime:  Normal Distribution. Mean = 50.0949 StandardDev = 19.1039 WeightSum = 34 Precision = 3.225806451612903
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.54
+
+class:  Discrete Estimator. Counts =  9 77  (Total = 86)
+age:  Normal Distribution. Mean = 38.6545 StandardDev = 10.806 WeightSum = 84 Precision = 1.5116279069767442
+sex:  Discrete Estimator. Counts =  73 13  (Total = 86)
+steroid:  Discrete Estimator. Counts =  38 47  (Total = 85)
+antivirals:  Discrete Estimator. Counts =  26 60  (Total = 86)
+fatigue:  Discrete Estimator. Counts =  53 33  (Total = 86)
+malaise:  Discrete Estimator. Counts =  25 61  (Total = 86)
+anoresia:  Discrete Estimator. Counts =  10 76  (Total = 86)
+liver_big:  Discrete Estimator. Counts =  16 66  (Total = 82)
+liver_firm:  Discrete Estimator. Counts =  35 47  (Total = 82)
+spleen_palpable:  Discrete Estimator. Counts =  6 77  (Total = 83)
+spiders:  Discrete Estimator. Counts =  18 65  (Total = 83)
+ascites:  Discrete Estimator. Counts =  2 81  (Total = 83)
+varices:  Discrete Estimator. Counts =  3 80  (Total = 83)
+bilirubin:  Normal Distribution. Mean = 1.2723 StandardDev = 0.847 WeightSum = 83 Precision = 0.275
+alk_phosphate:  Normal Distribution. Mean = 94.0084 StandardDev = 54.0987 WeightSum = 75 Precision = 4.719298245614035
+sgot:  Normal Distribution. Mean = 75.4944 StandardDev = 78.3067 WeightSum = 83 Precision = 10.566666666666666
+albumin:  Normal Distribution. Mean = 4.0425 StandardDev = 0.4799 WeightSum = 80 Precision = 0.16153846153846155
+protime:  Normal Distribution. Mean = 66.4646 StandardDev = 20.9004 WeightSum = 55 Precision = 2.7777777777777777
+
+
+Class 2: Prior probability = 0.46
+
+class:  Discrete Estimator. Counts =  23 50  (Total = 73)
+age:  Normal Distribution. Mean = 44.6675 StandardDev = 13.4435 WeightSum = 71 Precision = 1.5116279069767442
+sex:  Discrete Estimator. Counts =  70 3  (Total = 73)
+steroid:  Discrete Estimator. Counts =  40 33  (Total = 73)
+antivirals:  Discrete Estimator. Counts =  7 66  (Total = 73)
+fatigue:  Discrete Estimator. Counts =  50 23  (Total = 73)
+malaise:  Discrete Estimator. Counts =  35 38  (Total = 73)
+anoresia:  Discrete Estimator. Counts =  21 52  (Total = 73)
+liver_big:  Discrete Estimator. Counts =  16 51  (Total = 67)
+liver_firm:  Discrete Estimator. Counts =  33 33  (Total = 66)
+spleen_palpable:  Discrete Estimator. Counts =  22 50  (Total = 72)
+spiders:  Discrete Estimator. Counts =  34 38  (Total = 72)
+ascites:  Discrete Estimator. Counts =  18 54  (Total = 72)
+varices:  Discrete Estimator. Counts =  20 52  (Total = 72)
+bilirubin:  Normal Distribution. Mean = 1.8054 StandardDev = 1.4419 WeightSum = 69 Precision = 0.275
+alk_phosphate:  Normal Distribution. Mean = 123.6288 StandardDev = 62.6874 WeightSum = 56 Precision = 4.719298245614035
+sgot:  Normal Distribution. Mean = 107.1762 StandardDev = 140.867 WeightSum = 70 Precision = 10.566666666666666
+albumin:  Normal Distribution. Mean = 3.7366 StandardDev = 0.7824 WeightSum = 61 Precision = 0.16153846153846155
+protime:  Normal Distribution. Mean = 53.0702 StandardDev = 19.5775 WeightSum = 38 Precision = 2.7777777777777777
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.5 
+
+class:  Discrete Estimator. Counts =  5 75  (Total = 80)
+age:  Normal Distribution. Mean = 38.177 StandardDev = 13.3466 WeightSum = 78 Precision = 1.4146341463414633
+sex:  Discrete Estimator. Counts =  67 13  (Total = 80)
+steroid:  Discrete Estimator. Counts =  31 49  (Total = 80)
+antivirals:  Discrete Estimator. Counts =  18 62  (Total = 80)
+fatigue:  Discrete Estimator. Counts =  46 34  (Total = 80)
+malaise:  Discrete Estimator. Counts =  29 51  (Total = 80)
+anoresia:  Discrete Estimator. Counts =  16 64  (Total = 80)
+liver_big:  Discrete Estimator. Counts =  11 67  (Total = 78)
+liver_firm:  Discrete Estimator. Counts =  24 54  (Total = 78)
+spleen_palpable:  Discrete Estimator. Counts =  13 66  (Total = 79)
+spiders:  Discrete Estimator. Counts =  10 69  (Total = 79)
+ascites:  Discrete Estimator. Counts =  3 76  (Total = 79)
+varices:  Discrete Estimator. Counts =  3 76  (Total = 79)
+bilirubin:  Normal Distribution. Mean = 1.1913 StandardDev = 0.7528 WeightSum = 76 Precision = 0.2655172413793103
+alk_phosphate:  Normal Distribution. Mean = 95.0148 StandardDev = 49.106 WeightSum = 65 Precision = 4.703703703703703
+sgot:  Normal Distribution. Mean = 68.2769 StandardDev = 63.7446 WeightSum = 76 Precision = 9.753846153846155
+albumin:  Normal Distribution. Mean = 4.0038 StandardDev = 0.4866 WeightSum = 70 Precision = 0.1535714285714286
+protime:  Normal Distribution. Mean = 69.5707 StandardDev = 21.9279 WeightSum = 44 Precision = 2.7777777777777777
+
+
+Class 2: Prior probability = 0.5 
+
+class:  Discrete Estimator. Counts =  38 41  (Total = 79)
+age:  Normal Distribution. Mean = 44.3313 StandardDev = 12.0869 WeightSum = 77 Precision = 1.4146341463414633
+sex:  Discrete Estimator. Counts =  75 4  (Total = 79)
+steroid:  Discrete Estimator. Counts =  44 35  (Total = 79)
+antivirals:  Discrete Estimator. Counts =  4 75  (Total = 79)
+fatigue:  Discrete Estimator. Counts =  60 19  (Total = 79)
+malaise:  Discrete Estimator. Counts =  39 40  (Total = 79)
+anoresia:  Discrete Estimator. Counts =  20 59  (Total = 79)
+liver_big:  Discrete Estimator. Counts =  11 60  (Total = 71)
+liver_firm:  Discrete Estimator. Counts =  38 33  (Total = 71)
+spleen_palpable:  Discrete Estimator. Counts =  26 50  (Total = 76)
+spiders:  Discrete Estimator. Counts =  41 35  (Total = 76)
+ascites:  Discrete Estimator. Counts =  30 46  (Total = 76)
+varices:  Discrete Estimator. Counts =  19 57  (Total = 76)
+bilirubin:  Normal Distribution. Mean = 2.0775 StandardDev = 1.7104 WeightSum = 74 Precision = 0.2655172413793103
+alk_phosphate:  Normal Distribution. Mean = 125.408 StandardDev = 49.9178 WeightSum = 65 Precision = 4.703703703703703
+sgot:  Normal Distribution. Mean = 110.4591 StandardDev = 121.2811 WeightSum = 77 Precision = 9.753846153846155
+albumin:  Normal Distribution. Mean = 3.3986 StandardDev = 0.7283 WeightSum = 69 Precision = 0.1535714285714286
+protime:  Normal Distribution. Mean = 50.2621 StandardDev = 25.466 WeightSum = 53 Precision = 2.7777777777777777
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.57
+
+class:  Discrete Estimator. Counts =  7 84  (Total = 91)
+age:  Normal Distribution. Mean = 38.0237 StandardDev = 10.1027 WeightSum = 89 Precision = 1.368421052631579
+sex:  Discrete Estimator. Counts =  76 15  (Total = 91)
+steroid:  Discrete Estimator. Counts =  42 49  (Total = 91)
+antivirals:  Discrete Estimator. Counts =  26 65  (Total = 91)
+fatigue:  Discrete Estimator. Counts =  54 37  (Total = 91)
+malaise:  Discrete Estimator. Counts =  31 60  (Total = 91)
+anoresia:  Discrete Estimator. Counts =  18 73  (Total = 91)
+liver_big:  Discrete Estimator. Counts =  18 71  (Total = 89)
+liver_firm:  Discrete Estimator. Counts =  31 58  (Total = 89)
+spleen_palpable:  Discrete Estimator. Counts =  13 77  (Total = 90)
+spiders:  Discrete Estimator. Counts =  14 76  (Total = 90)
+ascites:  Discrete Estimator. Counts =  2 88  (Total = 90)
+varices:  Discrete Estimator. Counts =  3 87  (Total = 90)
+bilirubin:  Normal Distribution. Mean = 1.1147 StandardDev = 0.751 WeightSum = 84 Precision = 0.304
+alk_phosphate:  Normal Distribution. Mean = 88.691 StandardDev = 42.439 WeightSum = 78 Precision = 4.649122807017544
+sgot:  Normal Distribution. Mean = 76.3743 StandardDev = 65.1883 WeightSum = 88 Precision = 7.787878787878788
+albumin:  Normal Distribution. Mean = 4.1081 StandardDev = 0.4505 WeightSum = 80 Precision = 0.11851851851851851
+protime:  Normal Distribution. Mean = 67.2738 StandardDev = 20.7985 WeightSum = 59 Precision = 2.393939393939394
+
+
+Class 2: Prior probability = 0.43
+
+class:  Discrete Estimator. Counts =  30 38  (Total = 68)
+age:  Normal Distribution. Mean = 46.1116 StandardDev = 10.6344 WeightSum = 66 Precision = 1.368421052631579
+sex:  Discrete Estimator. Counts =  64 4  (Total = 68)
+steroid:  Discrete Estimator. Counts =  40 28  (Total = 68)
+antivirals:  Discrete Estimator. Counts =  6 62  (Total = 68)
+fatigue:  Discrete Estimator. Counts =  51 17  (Total = 68)
+malaise:  Discrete Estimator. Counts =  32 36  (Total = 68)
+anoresia:  Discrete Estimator. Counts =  15 53  (Total = 68)
+liver_big:  Discrete Estimator. Counts =  14 49  (Total = 63)
+liver_firm:  Discrete Estimator. Counts =  33 29  (Total = 62)
+spleen_palpable:  Discrete Estimator. Counts =  25 41  (Total = 66)
+spiders:  Discrete Estimator. Counts =  37 29  (Total = 66)
+ascites:  Discrete Estimator. Counts =  17 49  (Total = 66)
+varices:  Discrete Estimator. Counts =  20 46  (Total = 66)
+bilirubin:  Normal Distribution. Mean = 1.9643 StandardDev = 1.4643 WeightSum = 65 Precision = 0.304
+alk_phosphate:  Normal Distribution. Mean = 117.1397 StandardDev = 56.6715 WeightSum = 51 Precision = 4.649122807017544
+sgot:  Normal Distribution. Mean = 100.7704 StandardDev = 102.6923 WeightSum = 66 Precision = 7.787878787878788
+albumin:  Normal Distribution. Mean = 3.441 StandardDev = 0.6249 WeightSum = 60 Precision = 0.11851851851851851
+protime:  Normal Distribution. Mean = 50.2727 StandardDev = 14.3216 WeightSum = 38 Precision = 2.393939393939394
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.56
+
+class:  Discrete Estimator. Counts =  8 81  (Total = 89)
+age:  Normal Distribution. Mean = 38.1889 StandardDev = 10.6618 WeightSum = 87 Precision = 1.8205128205128205
+sex:  Discrete Estimator. Counts =  72 17  (Total = 89)
+steroid:  Discrete Estimator. Counts =  46 42  (Total = 88)
+antivirals:  Discrete Estimator. Counts =  20 69  (Total = 89)
+fatigue:  Discrete Estimator. Counts =  53 34  (Total = 87)
+malaise:  Discrete Estimator. Counts =  32 55  (Total = 87)
+anoresia:  Discrete Estimator. Counts =  18 69  (Total = 87)
+liver_big:  Discrete Estimator. Counts =  12 72  (Total = 84)
+liver_firm:  Discrete Estimator. Counts =  31 53  (Total = 84)
+spleen_palpable:  Discrete Estimator. Counts =  16 67  (Total = 83)
+spiders:  Discrete Estimator. Counts =  12 71  (Total = 83)
+ascites:  Discrete Estimator. Counts =  2 81  (Total = 83)
+varices:  Discrete Estimator. Counts =  1 82  (Total = 83)
+bilirubin:  Normal Distribution. Mean = 1.1533 StandardDev = 0.6938 WeightSum = 80 Precision = 0.26666666666666666
+alk_phosphate:  Normal Distribution. Mean = 94.4401 StandardDev = 51.1324 WeightSum = 70 Precision = 4.732142857142857
+sgot:  Normal Distribution. Mean = 85.4984 StandardDev = 79.3869 WeightSum = 84 Precision = 10.39344262295082
+albumin:  Normal Distribution. Mean = 4.0229 StandardDev = 0.5022 WeightSum = 75 Precision = 0.12083333333333333
+protime:  Normal Distribution. Mean = 70.4118 StandardDev = 19.0284 WeightSum = 50 Precision = 2.9411764705882355
+
+
+Class 2: Prior probability = 0.44
+
+class:  Discrete Estimator. Counts =  25 45  (Total = 70)
+age:  Normal Distribution. Mean = 45.0309 StandardDev = 12.5183 WeightSum = 68 Precision = 1.8205128205128205
+sex:  Discrete Estimator. Counts =  64 6  (Total = 70)
+steroid:  Discrete Estimator. Counts =  34 36  (Total = 70)
+antivirals:  Discrete Estimator. Counts =  5 65  (Total = 70)
+fatigue:  Discrete Estimator. Counts =  56 14  (Total = 70)
+malaise:  Discrete Estimator. Counts =  35 35  (Total = 70)
+anoresia:  Discrete Estimator. Counts =  18 52  (Total = 70)
+liver_big:  Discrete Estimator. Counts =  13 50  (Total = 63)
+liver_firm:  Discrete Estimator. Counts =  39 22  (Total = 61)
+spleen_palpable:  Discrete Estimator. Counts =  24 46  (Total = 70)
+spiders:  Discrete Estimator. Counts =  40 30  (Total = 70)
+ascites:  Discrete Estimator. Counts =  19 51  (Total = 70)
+varices:  Discrete Estimator. Counts =  21 49  (Total = 70)
+bilirubin:  Normal Distribution. Mean = 2.0042 StandardDev = 1.4275 WeightSum = 64 Precision = 0.26666666666666666
+alk_phosphate:  Normal Distribution. Mean = 123.3862 StandardDev = 56.4844 WeightSum = 54 Precision = 4.732142857142857
+sgot:  Normal Distribution. Mean = 106.8818 StandardDev = 120.6448 WeightSum = 67 Precision = 10.39344262295082
+albumin:  Normal Distribution. Mean = 3.5271 StandardDev = 0.6316 WeightSum = 58 Precision = 0.12083333333333333
+protime:  Normal Distribution. Mean = 50.098 StandardDev = 20.8178 WeightSum = 30 Precision = 2.9411764705882355
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.5 
+
+class:  Discrete Estimator. Counts =  8 71  (Total = 79)
+age:  Normal Distribution. Mean = 39.9642 StandardDev = 12.6602 WeightSum = 77 Precision = 1.7317073170731707
+sex:  Discrete Estimator. Counts =  64 15  (Total = 79)
+steroid:  Discrete Estimator. Counts =  29 50  (Total = 79)
+antivirals:  Discrete Estimator. Counts =  25 54  (Total = 79)
+fatigue:  Discrete Estimator. Counts =  53 26  (Total = 79)
+malaise:  Discrete Estimator. Counts =  34 45  (Total = 79)
+anoresia:  Discrete Estimator. Counts =  16 63  (Total = 79)
+liver_big:  Discrete Estimator. Counts =  13 65  (Total = 78)
+liver_firm:  Discrete Estimator. Counts =  32 46  (Total = 78)
+spleen_palpable:  Discrete Estimator. Counts =  9 66  (Total = 75)
+spiders:  Discrete Estimator. Counts =  11 64  (Total = 75)
+ascites:  Discrete Estimator. Counts =  4 71  (Total = 75)
+varices:  Discrete Estimator. Counts =  3 72  (Total = 75)
+bilirubin:  Normal Distribution. Mean = 1.2111 StandardDev = 0.7666 WeightSum = 77 Precision = 0.2851851851851852
+alk_phosphate:  Normal Distribution. Mean = 99.0632 StandardDev = 61.719 WeightSum = 73 Precision = 4.483333333333333
+sgot:  Normal Distribution. Mean = 80.1802 StandardDev = 68.6081 WeightSum = 76 Precision = 6.230769230769231
+albumin:  Normal Distribution. Mean = 4.0106 StandardDev = 0.5292 WeightSum = 73 Precision = 0.17500000000000002
+protime:  Normal Distribution. Mean = 62.6059 StandardDev = 19.8891 WeightSum = 56 Precision = 2.4482758620689653
+
+
+Class 2: Prior probability = 0.5 
+
+class:  Discrete Estimator. Counts =  29 51  (Total = 80)
+age:  Normal Distribution. Mean = 43.5813 StandardDev = 11.8798 WeightSum = 78 Precision = 1.7317073170731707
+sex:  Discrete Estimator. Counts =  75 5  (Total = 80)
+steroid:  Discrete Estimator. Counts =  43 37  (Total = 80)
+antivirals:  Discrete Estimator. Counts =  10 70  (Total = 80)
+fatigue:  Discrete Estimator. Counts =  55 25  (Total = 80)
+malaise:  Discrete Estimator. Counts =  42 38  (Total = 80)
+anoresia:  Discrete Estimator. Counts =  20 60  (Total = 80)
+liver_big:  Discrete Estimator. Counts =  14 58  (Total = 72)
+liver_firm:  Discrete Estimator. Counts =  40 32  (Total = 72)
+spleen_palpable:  Discrete Estimator. Counts =  24 56  (Total = 80)
+spiders:  Discrete Estimator. Counts =  42 38  (Total = 80)
+ascites:  Discrete Estimator. Counts =  23 57  (Total = 80)
+varices:  Discrete Estimator. Counts =  16 64  (Total = 80)
+bilirubin:  Normal Distribution. Mean = 1.5723 StandardDev = 1.4044 WeightSum = 76 Precision = 0.2851851851851852
+alk_phosphate:  Normal Distribution. Mean = 128.0642 StandardDev = 57.7616 WeightSum = 62 Precision = 4.483333333333333
+sgot:  Normal Distribution. Mean = 86.7389 StandardDev = 69.1599 WeightSum = 76 Precision = 6.230769230769231
+albumin:  Normal Distribution. Mean = 3.605 StandardDev = 0.8473 WeightSum = 70 Precision = 0.17500000000000002
+protime:  Normal Distribution. Mean = 61.3666 StandardDev = 21.9777 WeightSum = 46 Precision = 2.4482758620689653
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.51
+
+class:  Discrete Estimator. Counts =  7 74  (Total = 81)
+age:  Normal Distribution. Mean = 38.1937 StandardDev = 10.454 WeightSum = 79 Precision = 1.3
+sex:  Discrete Estimator. Counts =  72 9  (Total = 81)
+steroid:  Discrete Estimator. Counts =  35 44  (Total = 79)
+antivirals:  Discrete Estimator. Counts =  25 56  (Total = 81)
+fatigue:  Discrete Estimator. Counts =  38 43  (Total = 81)
+malaise:  Discrete Estimator. Counts =  21 60  (Total = 81)
+anoresia:  Discrete Estimator. Counts =  13 68  (Total = 81)
+liver_big:  Discrete Estimator. Counts =  9 70  (Total = 79)
+liver_firm:  Discrete Estimator. Counts =  26 53  (Total = 79)
+spleen_palpable:  Discrete Estimator. Counts =  8 72  (Total = 80)
+spiders:  Discrete Estimator. Counts =  13 67  (Total = 80)
+ascites:  Discrete Estimator. Counts =  3 77  (Total = 80)
+varices:  Discrete Estimator. Counts =  1 79  (Total = 80)
+bilirubin:  Normal Distribution. Mean = 0.9796 StandardDev = 0.5883 WeightSum = 72 Precision = 0.308
+alk_phosphate:  Normal Distribution. Mean = 86.8805 StandardDev = 44.3717 WeightSum = 64 Precision = 4.649122807017544
+sgot:  Normal Distribution. Mean = 77.6572 StandardDev = 75.0869 WeightSum = 78 Precision = 6.548387096774194
+albumin:  Normal Distribution. Mean = 4.0225 StandardDev = 0.4554 WeightSum = 71 Precision = 0.16153846153846155
+protime:  Normal Distribution. Mean = 64.9351 StandardDev = 20.7679 WeightSum = 44 Precision = 2.857142857142857
+
+
+Class 2: Prior probability = 0.49
+
+class:  Discrete Estimator. Counts =  25 53  (Total = 78)
+age:  Normal Distribution. Mean = 41.8053 StandardDev = 13.2525 WeightSum = 76 Precision = 1.3
+sex:  Discrete Estimator. Counts =  71 7  (Total = 78)
+steroid:  Discrete Estimator. Counts =  44 34  (Total = 78)
+antivirals:  Discrete Estimator. Counts =  11 67  (Total = 78)
+fatigue:  Discrete Estimator. Counts =  59 19  (Total = 78)
+malaise:  Discrete Estimator. Counts =  34 44  (Total = 78)
+anoresia:  Discrete Estimator. Counts =  19 59  (Total = 78)
+liver_big:  Discrete Estimator. Counts =  17 52  (Total = 69)
+liver_firm:  Discrete Estimator. Counts =  39 29  (Total = 68)
+spleen_palpable:  Discrete Estimator. Counts =  23 55  (Total = 78)
+spiders:  Discrete Estimator. Counts =  46 32  (Total = 78)
+ascites:  Discrete Estimator. Counts =  22 56  (Total = 78)
+varices:  Discrete Estimator. Counts =  18 60  (Total = 78)
+bilirubin:  Normal Distribution. Mean = 1.4954 StandardDev = 1.2236 WeightSum = 76 Precision = 0.308
+alk_phosphate:  Normal Distribution. Mean = 121.4288 StandardDev = 54.4273 WeightSum = 59 Precision = 4.649122807017544
+sgot:  Normal Distribution. Mean = 84.7844 StandardDev = 58.7619 WeightSum = 76 Precision = 6.548387096774194
+albumin:  Normal Distribution. Mean = 3.6744 StandardDev = 0.6969 WeightSum = 71 Precision = 0.16153846153846155
+protime:  Normal Distribution. Mean = 54.0909 StandardDev = 22.6729 WeightSum = 44 Precision = 2.857142857142857
+
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.55
+
+class:  Discrete Estimator. Counts =  10 78  (Total = 88)
+age:  Normal Distribution. Mean = 39.907 StandardDev = 11.6618 WeightSum = 86 Precision = 1.625
+sex:  Discrete Estimator. Counts =  76 12  (Total = 88)
+steroid:  Discrete Estimator. Counts =  39 49  (Total = 88)
+antivirals:  Discrete Estimator. Counts =  18 70  (Total = 88)
+fatigue:  Discrete Estimator. Counts =  60 27  (Total = 87)
+malaise:  Discrete Estimator. Counts =  32 55  (Total = 87)
+anoresia:  Discrete Estimator. Counts =  19 68  (Total = 87)
+liver_big:  Discrete Estimator. Counts =  11 73  (Total = 84)
+liver_firm:  Discrete Estimator. Counts =  36 48  (Total = 84)
+spleen_palpable:  Discrete Estimator. Counts =  9 76  (Total = 85)
+spiders:  Discrete Estimator. Counts =  22 63  (Total = 85)
+ascites:  Discrete Estimator. Counts =  3 82  (Total = 85)
+varices:  Discrete Estimator. Counts =  1 84  (Total = 85)
+bilirubin:  Normal Distribution. Mean = 1.1809 StandardDev = 0.7413 WeightSum = 85 Precision = 0.275
+alk_phosphate:  Normal Distribution. Mean = 87.6086 StandardDev = 42.3345 WeightSum = 78 Precision = 4.338709677419355
+sgot:  Normal Distribution. Mean = 69.9334 StandardDev = 54.1801 WeightSum = 84 Precision = 9.90625
+albumin:  Normal Distribution. Mean = 4.0054 StandardDev = 0.5569 WeightSum = 80 Precision = 0.1592592592592593
+protime:  Normal Distribution. Mean = 65.072 StandardDev = 19.048 WeightSum = 54 Precision = 2.7777777777777777
+
+
+Class 2: Prior probability = 0.45
+
+class:  Discrete Estimator. Counts =  30 41  (Total = 71)
+age:  Normal Distribution. Mean = 43.2156 StandardDev = 13.0245 WeightSum = 69 Precision = 1.625
+sex:  Discrete Estimator. Counts =  69 2  (Total = 71)
+steroid:  Discrete Estimator. Counts =  36 35  (Total = 71)
+antivirals:  Discrete Estimator. Counts =  4 67  (Total = 71)
+fatigue:  Discrete Estimator. Counts =  50 21  (Total = 71)
+malaise:  Discrete Estimator. Counts =  38 33  (Total = 71)
+anoresia:  Discrete Estimator. Counts =  23 48  (Total = 71)
+liver_big:  Discrete Estimator. Counts =  10 50  (Total = 60)
+liver_firm:  Discrete Estimator. Counts =  34 26  (Total = 60)
+spleen_palpable:  Discrete Estimator. Counts =  23 45  (Total = 68)
+spiders:  Discrete Estimator. Counts =  35 33  (Total = 68)
+ascites:  Discrete Estimator. Counts =  21 47  (Total = 68)
+varices:  Discrete Estimator. Counts =  23 45  (Total = 68)
+bilirubin:  Normal Distribution. Mean = 1.8401 StandardDev = 1.7534 WeightSum = 68 Precision = 0.275
+alk_phosphate:  Normal Distribution. Mean = 136.7528 StandardDev = 55.0487 WeightSum = 52 Precision = 4.338709677419355
+sgot:  Normal Distribution. Mean = 111.591 StandardDev = 128.8554 WeightSum = 68 Precision = 9.90625
+albumin:  Normal Distribution. Mean = 3.4719 StandardDev = 0.833 WeightSum = 60 Precision = 0.1592592592592593
+protime:  Normal Distribution. Mean = 50.9259 StandardDev = 18.7063 WeightSum = 39 Precision = 2.7777777777777777
+
+
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         105               67.7419 %
+Incorrectly Classified Instances        50               32.2581 %
+Mean absolute error                      0.3245
+Root mean squared error                  0.5019
+Relative absolute error                 65.5125 %
+Root relative squared error            100.8523 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.776     0.443      0.68      0.776     0.725    1
+  0.557     0.224      0.672     0.557     0.609    2
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 66 19 |  a = 1
+ 31 39 |  b = 2
+

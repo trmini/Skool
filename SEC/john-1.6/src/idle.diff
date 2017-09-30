@@ -1,0 +1,84 @@
+--- linux-2.0.35/include/linux/sched.h	Sat Jul 18 22:54:22 1998
++++ linux/include/linux/sched.h	Fri Aug  7 09:51:15 1998
+@@ -93,6 +93,7 @@
+ #define SCHED_OTHER		0
+ #define SCHED_FIFO		1
+ #define SCHED_RR		2
++#define SCHED_IDLE		3
+ 
+ struct sched_param {
+ 	int sched_priority;
+--- linux-2.0.35/kernel/sched.c	Sat Jul 18 22:46:51 1998
++++ linux/kernel/sched.c	Fri Aug 28 00:29:08 1998
+@@ -253,6 +253,13 @@
+ #endif		
+ #endif
+ 
++	if (p->policy == SCHED_IDLE) {
++		if (p->signal & ~p->blocked)
++			return 1;
++		else
++			return -999;
++	}
++
+ 	/*
+ 	 * Realtime process, select the first one on the
+ 	 * runqueue (taking priorities within processes
+@@ -412,6 +419,9 @@
+ 		prev->counter = prev->priority;
+ 		move_last_runqueue(prev);
+ 	}
++	/* switch multiple SCHED_IDLE processes */
++	if (!prev->counter && prev->policy == SCHED_IDLE)
++		move_last_runqueue(prev);
+ 	switch (prev->state) {
+ 		case TASK_INTERRUPTIBLE:
+ 			if (prev->signal & ~prev->blocked)
+@@ -1468,16 +1478,18 @@
+ 	if (policy < 0)
+ 		policy = p->policy;
+ 	else if (policy != SCHED_FIFO && policy != SCHED_RR &&
+-		 policy != SCHED_OTHER)
++		 policy != SCHED_OTHER && policy != SCHED_IDLE)
+ 		return -EINVAL;
+ 	
+ 	/*
+ 	 * Valid priorities for SCHED_FIFO and SCHED_RR are 1..99, valid
+-	 * priority for SCHED_OTHER is 0.
++	 * priority for SCHED_OTHER and SCHED_IDLE is 0.
+ 	 */
+-	if (lp.sched_priority < 0 || lp.sched_priority > 99)
++	if (policy == SCHED_FIFO || policy == SCHED_RR)
++	if (lp.sched_priority < 1 || lp.sched_priority > 99)
+ 		return -EINVAL;
+-	if ((policy == SCHED_OTHER) != (lp.sched_priority == 0))
++	if (policy == SCHED_OTHER || policy == SCHED_IDLE)
++	if (lp.sched_priority != 0)
+ 		return -EINVAL;
+ 
+ 	if ((policy == SCHED_FIFO || policy == SCHED_RR) && !suser())
+@@ -1561,6 +1573,7 @@
+ 	      case SCHED_RR:
+ 		return 99;
+ 	      case SCHED_OTHER:
++	      case SCHED_IDLE:
+ 		return 0;
+ 	}
+ 
+@@ -1574,6 +1587,7 @@
+ 	      case SCHED_RR:
+ 		return 1;
+ 	      case SCHED_OTHER:
++	      case SCHED_IDLE:
+ 		return 0;
+ 	}
+ 
+@@ -1641,7 +1655,7 @@
+ 		return -EINVAL;
+ 
+ 	if (t.tv_sec == 0 && t.tv_nsec <= 2000000L &&
+-	    current->policy != SCHED_OTHER) {
++	    current->policy != SCHED_OTHER && current->policy != SCHED_IDLE) {
+ 		/*
+ 		 * Short delay requests up to 2 ms will be handled with
+ 		 * high precision by a busy wait for all real-time processes.

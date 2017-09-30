@@ -1,0 +1,38 @@
+\documentclass[14pt]{article}
+
+\begin{document}
+
+\noindent
+{\bf
+Cryptography\\
+Homework 7\\
+Dien Trang Luu}
+
+\noindent
+{\bf Problem 1}\\
+We have, $x^2 - 7y^2 = 3$.
+Let take $mod(7)$ on both sides:\\
+$x^2 \equiv 3 mod(7) (*)$
+\\
+Since $3$ is a nonresidue in {\bf F}$_7$, equation $(*)$ does
+not have any integer solution. This implies that the original
+equation does not have any rational solution.
+
+\noindent
+{\bf Problem 2}
+
+\noindent
+{\bf Problem 3}\\
+For my SSN, $\alpha = 4$ and $\beta = 5$. Hence, $a_{10} = 350$ \\
+The cubic equation now is,\\
+$2x^3 + 2x^2y - 3xy^2 + 4y^3 + 5x^2 - 6xy -7y^2 + 8x + 9y - 350 = 0$
+\\
+After subtituting $x = x + \alpha$ and $y = y + \beta$, we have\\
+$2x^3 + 2x^2y - 3xy^2 + 4y^3 + 39x^2 - 20xy + 41y^2 + 119x + 127y = 0$
+\\
+$2/1685159x^3 + (-524/1685159y + 39/14161)x^2 + (-6161/1685159y^2 - 12286/14161y + 1)x + (11877913/1685159y^3 + 1511892/14161y^2)$
+\\Multiply both sides by 1685159 we have,\\
+$2x^3 + (-524y + 4641)x^2 + (-6161y^2 - 1462034y + 1685159)x + (11877913y^3 + 179915148y^2)$
+\\Delete $a_4$,\\
+$2x^3 + (4641y - 524)x^2 + (1685159y^2 - 1462034y - 6161)x + (179915148y + 11877913)$
+\end{document}

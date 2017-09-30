@@ -1,0 +1,92 @@
+
+ John the Ripper's Cracking Modes
+==================================
+
+Mode descriptions here are short, and only cover the basic things. Check
+other documentation files for information on customizing the modes.
+
+ Wordlist Mode
+---------------
+
+This is the simplest cracking mode supported by John. All you need to do
+is specify a wordlist (text file containing one word per line), and some
+password files. You can enable rules (which are used to modify words) if
+desired, they will then be applied to every word in the list.
+
+The wordlist should not contain dupes. John doesn't sort the words not to
+use too much memory, since that would require at least loading the entire
+wordlist to memory or temporary space, while now it's read from disk while
+cracking. Also, leaving the words order as it is allows you to put frequent
+words first. However, if you don't place words in a reasonable order, it is
+better if you sort the wordlist alphabetically: John runs a bit faster if
+each word it tries only differs from the previous one by a few characters,
+this is especially noticable when cracking only a few passwords at a time.
+Most wordlists that you may find on the net are already sorted anyway.
+
+However, you shouldn't bother about words longer than 8 (or whatever limit
+your current password hashing algorithm has) characters being effectively
+the same password if their first 8 characters match. John can handle this
+situation (and only try the password once) when such words are going one
+immediately after the other (that is, when the wordlist is sorted). You'd
+better not truncate words to 8 characters in your wordlist, since the rest
+may be needed when you enable the rules.
+
+The recommended way to sort a wordlist for use with default wordlist rule
+set is:
+
+	tr A-Z a-z < SOURCE | sort -u > TARGET
+
+See doc/RULES for information on writing your own wordlist rules.
+
+ "Single Crack" Mode
+---------------------
+
+This is the mode you should start cracking with. It will try using the
+login/GECOS information as passwords. Since the information is only used
+on the account it was taken from (and on passwords with the same salt,
+which takes almost no extra time), "single crack" mode is much faster than
+the wordlist mode, which allows using a lot of rules (they are always
+enabled for this mode) in a reasonable time. Guessed passwords are also
+tried on the entire password list, just in case more users have the same
+password. Of course, this will only get those passwords that are based on
+the information used.
+
+Note that running this mode on many password files at the same time may
+sometimes get more passwords cracked than you would get if you ran it on
+the files separately.
+
+ Incremental Mode
+------------------
+
+This is the most powerful cracking mode, it can try all possible character
+combinations as passwords. However, it is assumed that cracking with this
+mode will never terminate because of the number of combinations being too
+large (actually, it will terminate if you set a low password length limit,
+or make it use a small charset), and you'll have to interrupt it earlier.
+
+That's why this mode deals with character frequency tables, to get as many
+passwords as possible within a limited time.
+
+To use the mode you need a specific definition for the mode's parameters
+(including password length limits and the charsets). These parameters are
+defined in ~/john.ini's sections called [Incremental:MODE], where MODE is
+any name that you assign to the mode (it's the name you'll need to specify
+on John's command line). You can either use a pre-defined incremental mode
+definition ('All', 'Alpha', or 'Digits'), or define a custom one.
+
+See doc/CONFIG and doc/EXAMPLES for information on defining custom modes.
+
+ External Mode
+---------------
+
+You can define an external cracking mode for use with John. This is done
+with ~/john.ini's sections called [List.External:MODE], where MODE is any
+name that you assign to the mode. The section should contain some functions
+that John will use to generate the words it tries. The functions are coded
+in a subset of the C language, and are compiled by John at startup (if you
+enable the mode on John's command line). See doc/EXTERNAL.
+
+ What Modes Should I Use?
+--------------------------
+
+See doc/EXAMPLES for a reasonable order of cracking modes to use.

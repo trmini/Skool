@@ -1,0 +1,930 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.Bagging -S 1 -I 10 -P 100 -W weka.classifiers.NaiveBayes --
+Relation:     heart_disease
+Instances:    303
+Attributes:   14
+              age
+              sex
+              chest_pain
+              trestbps
+              chol
+              fbs
+              restecg
+              thalach
+              exang
+              oldpeak
+              slope
+              ca
+              thal
+              num
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+All the base classifiers: 
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.51
+
+age:  Normal Distribution. Mean = 51.1323 StandardDev = 9.2023 WeightSum = 155 Precision = 1.135135135135135
+sex:  Discrete Estimator. Counts =  71 86  (Total = 157)
+chest_pain:  Discrete Estimator. Counts =  14 40 67 38  (Total = 159)
+trestbps:  Normal Distribution. Mean = 129.9376 StandardDev = 14.9722 WeightSum = 155 Precision = 2.5555555555555554
+chol:  Normal Distribution. Mean = 245.2198 StandardDev = 56.8656 WeightSum = 155 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  134 23  (Total = 157)
+restecg:  Discrete Estimator. Counts =  98 2 58  (Total = 158)
+thalach:  Normal Distribution. Mean = 160.721 StandardDev = 18.6975 WeightSum = 155 Precision = 1.5308641975308641
+exang:  Discrete Estimator. Counts =  138 19  (Total = 157)
+oldpeak:  Normal Distribution. Mean = 0.616 StandardDev = 0.8684 WeightSum = 155 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.3548 StandardDev = 0.565 WeightSum = 155 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.2533 StandardDev = 0.6751 WeightSum = 150 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.7403 StandardDev = 1.5281 WeightSum = 154 Precision = 2.0
+
+
+Class 1: Prior probability = 0.22
+
+age:  Normal Distribution. Mean = 54.0968 StandardDev = 7.7376 WeightSum = 67 Precision = 1.135135135135135
+sex:  Discrete Estimator. Counts =  8 61  (Total = 69)
+chest_pain:  Discrete Estimator. Counts =  6 9 11 45  (Total = 71)
+trestbps:  Normal Distribution. Mean = 132.5837 StandardDev = 16.7289 WeightSum = 67 Precision = 2.5555555555555554
+chol:  Normal Distribution. Mean = 245.2028 StandardDev = 35.0064 WeightSum = 67 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  60 9  (Total = 69)
+restecg:  Discrete Estimator. Counts =  29 1 40  (Total = 70)
+thalach:  Normal Distribution. Mean = 147.8998 StandardDev = 20.7352 WeightSum = 67 Precision = 1.5308641975308641
+exang:  Discrete Estimator. Counts =  37 32  (Total = 69)
+oldpeak:  Normal Distribution. Mean = 1.1025 StandardDev = 1.1144 WeightSum = 67 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.6418 StandardDev = 0.6158 WeightSum = 67 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.7576 StandardDev = 0.9221 WeightSum = 66 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.1194 StandardDev = 1.9511 WeightSum = 67 Precision = 2.0
+
+
+Class 2: Prior probability = 0.15
+
+age:  Normal Distribution. Mean = 57.9676 StandardDev = 6.8502 WeightSum = 45 Precision = 1.135135135135135
+sex:  Discrete Estimator. Counts =  12 35  (Total = 47)
+chest_pain:  Discrete Estimator. Counts =  3 1 6 39  (Total = 49)
+trestbps:  Normal Distribution. Mean = 139.8173 StandardDev = 16.7676 WeightSum = 45 Precision = 2.5555555555555554
+chol:  Normal Distribution. Mean = 257.4546 StandardDev = 53.4581 WeightSum = 45 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  32 15  (Total = 47)
+restecg:  Discrete Estimator. Counts =  20 3 25  (Total = 48)
+thalach:  Normal Distribution. Mean = 137.1654 StandardDev = 21.3625 WeightSum = 45 Precision = 1.5308641975308641
+exang:  Discrete Estimator. Counts =  20 27  (Total = 47)
+oldpeak:  Normal Distribution. Mean = 1.9131 StandardDev = 1.1356 WeightSum = 45 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.9556 StandardDev = 0.5145 WeightSum = 45 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.1333 StandardDev = 0.9568 WeightSum = 45 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.6667 StandardDev = 1.6714 WeightSum = 42 Precision = 2.0
+
+
+Class 3: Prior probability = 0.09
+
+age:  Normal Distribution. Mean = 55.6216 StandardDev = 6.8326 WeightSum = 26 Precision = 1.135135135135135
+sex:  Discrete Estimator. Counts =  4 24  (Total = 28)
+chest_pain:  Discrete Estimator. Counts =  1 3 1 25  (Total = 30)
+trestbps:  Normal Distribution. Mean = 126.9915 StandardDev = 13.4626 WeightSum = 26 Precision = 2.5555555555555554
+chol:  Normal Distribution. Mean = 252.4161 StandardDev = 43.4346 WeightSum = 26 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  24 4  (Total = 28)
+restecg:  Discrete Estimator. Counts =  8 1 20  (Total = 29)
+thalach:  Normal Distribution. Mean = 132.0665 StandardDev = 22.3122 WeightSum = 26 Precision = 1.5308641975308641
+exang:  Discrete Estimator. Counts =  10 18  (Total = 28)
+oldpeak:  Normal Distribution. Mean = 2.0916 StandardDev = 1.5691 WeightSum = 26 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.9231 StandardDev = 0.5493 WeightSum = 26 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.6923 StandardDev = 0.9102 WeightSum = 26 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.6154 StandardDev = 1.903 WeightSum = 26 Precision = 2.0
+
+
+Class 4: Prior probability = 0.04
+
+age:  Normal Distribution. Mean = 55.0541 StandardDev = 8.7817 WeightSum = 10 Precision = 1.135135135135135
+sex:  Discrete Estimator. Counts =  2 10  (Total = 12)
+chest_pain:  Discrete Estimator. Counts =  2 1 1 10  (Total = 14)
+trestbps:  Normal Distribution. Mean = 150.2667 StandardDev = 11.9757 WeightSum = 10 Precision = 2.5555555555555554
+chol:  Normal Distribution. Mean = 261.3639 StandardDev = 59.2497 WeightSum = 10 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  10 2  (Total = 12)
+restecg:  Discrete Estimator. Counts =  3 1 9  (Total = 13)
+thalach:  Normal Distribution. Mean = 139.4617 StandardDev = 17.2445 WeightSum = 10 Precision = 1.5308641975308641
+exang:  Discrete Estimator. Counts =  7 5  (Total = 12)
+oldpeak:  Normal Distribution. Mean = 2.3206 StandardDev = 1.0642 WeightSum = 10 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2.1 StandardDev = 0.3 WeightSum = 10 Precision = 1.0
+ca:  Normal Distribution. Mean = 1 StandardDev = 1.1832 WeightSum = 10 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.8 StandardDev = 0.6 WeightSum = 10 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.53
+
+age:  Normal Distribution. Mean = 52.9675 StandardDev = 9.6222 WeightSum = 163 Precision = 1.162162162162162
+sex:  Discrete Estimator. Counts =  70 95  (Total = 165)
+chest_pain:  Discrete Estimator. Counts =  20 49 59 39  (Total = 167)
+trestbps:  Normal Distribution. Mean = 128.002 StandardDev = 14.1407 WeightSum = 163 Precision = 2.5238095238095237
+chol:  Normal Distribution. Mean = 248.784 StandardDev = 71.2229 WeightSum = 163 Precision = 3.504
+fbs:  Discrete Estimator. Counts =  137 28  (Total = 165)
+restecg:  Discrete Estimator. Counts =  92 4 70  (Total = 166)
+thalach:  Normal Distribution. Mean = 155.8987 StandardDev = 19.8206 WeightSum = 163 Precision = 1.5974025974025974
+exang:  Discrete Estimator. Counts =  138 27  (Total = 165)
+oldpeak:  Normal Distribution. Mean = 0.5804 StandardDev = 0.6695 WeightSum = 163 Precision = 0.2
+slope:  Normal Distribution. Mean = 1.4233 StandardDev = 0.5745 WeightSum = 163 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.3558 StandardDev = 0.6889 WeightSum = 163 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.9136 StandardDev = 1.6495 WeightSum = 162 Precision = 2.0
+
+
+Class 1: Prior probability = 0.19
+
+age:  Normal Distribution. Mean = 56.477 StandardDev = 6.8732 WeightSum = 57 Precision = 1.162162162162162
+sex:  Discrete Estimator. Counts =  9 50  (Total = 59)
+chest_pain:  Discrete Estimator. Counts =  7 6 13 35  (Total = 61)
+trestbps:  Normal Distribution. Mean = 130.0426 StandardDev = 16.8747 WeightSum = 57 Precision = 2.5238095238095237
+chol:  Normal Distribution. Mean = 252.2265 StandardDev = 43.5948 WeightSum = 57 Precision = 3.504
+fbs:  Discrete Estimator. Counts =  56 3  (Total = 59)
+restecg:  Discrete Estimator. Counts =  22 1 37  (Total = 60)
+thalach:  Normal Distribution. Mean = 147.6336 StandardDev = 21.0923 WeightSum = 57 Precision = 1.5974025974025974
+exang:  Discrete Estimator. Counts =  34 25  (Total = 59)
+oldpeak:  Normal Distribution. Mean = 0.8316 StandardDev = 0.8712 WeightSum = 57 Precision = 0.2
+slope:  Normal Distribution. Mean = 1.4737 StandardDev = 0.4993 WeightSum = 57 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.8947 StandardDev = 0.8922 WeightSum = 57 Precision = 1.0
+thal:  Normal Distribution. Mean = 5.8947 StandardDev = 1.9618 WeightSum = 57 Precision = 2.0
+
+
+Class 2: Prior probability = 0.12
+
+age:  Normal Distribution. Mean = 56.8203 StandardDev = 8.1901 WeightSum = 37 Precision = 1.162162162162162
+sex:  Discrete Estimator. Counts =  6 33  (Total = 39)
+chest_pain:  Discrete Estimator. Counts =  3 2 4 32  (Total = 41)
+trestbps:  Normal Distribution. Mean = 133.4891 StandardDev = 14.702 WeightSum = 37 Precision = 2.5238095238095237
+chol:  Normal Distribution. Mean = 253.7085 StandardDev = 44.8765 WeightSum = 37 Precision = 3.504
+fbs:  Discrete Estimator. Counts =  31 8  (Total = 39)
+restecg:  Discrete Estimator. Counts =  26 1 13  (Total = 40)
+thalach:  Normal Distribution. Mean = 131.5914 StandardDev = 20.6492 WeightSum = 37 Precision = 1.5974025974025974
+exang:  Discrete Estimator. Counts =  18 21  (Total = 39)
+oldpeak:  Normal Distribution. Mean = 1.8595 StandardDev = 1.1762 WeightSum = 37 Precision = 0.2
+slope:  Normal Distribution. Mean = 1.8919 StandardDev = 0.5085 WeightSum = 37 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.1892 StandardDev = 0.9253 WeightSum = 37 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.6667 StandardDev = 1.633 WeightSum = 36 Precision = 2.0
+
+
+Class 3: Prior probability = 0.11
+
+age:  Normal Distribution. Mean = 54.7625 StandardDev = 6.2992 WeightSum = 33 Precision = 1.162162162162162
+sex:  Discrete Estimator. Counts =  6 29  (Total = 35)
+chest_pain:  Discrete Estimator. Counts =  1 4 6 26  (Total = 37)
+trestbps:  Normal Distribution. Mean = 135.1385 StandardDev = 19.3518 WeightSum = 33 Precision = 2.5238095238095237
+chol:  Normal Distribution. Mean = 262.6938 StandardDev = 43.3334 WeightSum = 33 Precision = 3.504
+fbs:  Discrete Estimator. Counts =  27 8  (Total = 35)
+restecg:  Discrete Estimator. Counts =  14 2 20  (Total = 36)
+thalach:  Normal Distribution. Mean = 133.2137 StandardDev = 20.5996 WeightSum = 33 Precision = 1.5974025974025974
+exang:  Discrete Estimator. Counts =  12 23  (Total = 35)
+oldpeak:  Normal Distribution. Mean = 1.9758 StandardDev = 1.5435 WeightSum = 33 Precision = 0.2
+slope:  Normal Distribution. Mean = 1.8182 StandardDev = 0.5196 WeightSum = 33 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.7879 StandardDev = 0.9772 WeightSum = 33 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.2727 StandardDev = 1.5428 WeightSum = 33 Precision = 2.0
+
+
+Class 4: Prior probability = 0.05
+
+age:  Normal Distribution. Mean = 62.0416 StandardDev = 6.4552 WeightSum = 13 Precision = 1.162162162162162
+sex:  Discrete Estimator. Counts =  5 10  (Total = 15)
+chest_pain:  Discrete Estimator. Counts =  1 1 1 14  (Total = 17)
+trestbps:  Normal Distribution. Mean = 138.033 StandardDev = 13.978 WeightSum = 13 Precision = 2.5238095238095237
+chol:  Normal Distribution. Mean = 257.4092 StandardDev = 62.5852 WeightSum = 13 Precision = 3.504
+fbs:  Discrete Estimator. Counts =  14 1  (Total = 15)
+restecg:  Discrete Estimator. Counts =  2 3 11  (Total = 16)
+thalach:  Normal Distribution. Mean = 133.1988 StandardDev = 14.4995 WeightSum = 13 Precision = 1.5974025974025974
+exang:  Discrete Estimator. Counts =  8 7  (Total = 15)
+oldpeak:  Normal Distribution. Mean = 2.2308 StandardDev = 1.3719 WeightSum = 13 Precision = 0.2
+slope:  Normal Distribution. Mean = 2.1538 StandardDev = 0.5329 WeightSum = 13 Precision = 1.0
+ca:  Normal Distribution. Mean = 2.1538 StandardDev = 1.0987 WeightSum = 13 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.3846 StandardDev = 1.2114 WeightSum = 13 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.59
+
+age:  Normal Distribution. Mean = 52.7429 StandardDev = 9.5833 WeightSum = 182 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  93 91  (Total = 184)
+chest_pain:  Discrete Estimator. Counts =  24 40 89 33  (Total = 186)
+trestbps:  Normal Distribution. Mean = 132.1935 StandardDev = 16.997 WeightSum = 182 Precision = 2.789473684210526
+chol:  Normal Distribution. Mean = 240.568 StandardDev = 44.9186 WeightSum = 182 Precision = 2.425
+fbs:  Discrete Estimator. Counts =  150 34  (Total = 184)
+restecg:  Discrete Estimator. Counts =  109 2 74  (Total = 185)
+thalach:  Normal Distribution. Mean = 158.5395 StandardDev = 17.4031 WeightSum = 182 Precision = 1.3611111111111112
+exang:  Discrete Estimator. Counts =  157 27  (Total = 184)
+oldpeak:  Normal Distribution. Mean = 0.5195 StandardDev = 0.7058 WeightSum = 182 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.4011 StandardDev = 0.5823 WeightSum = 182 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.2667 StandardDev = 0.6377 WeightSum = 180 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.8287 StandardDev = 1.5867 WeightSum = 181 Precision = 2.0
+
+
+Class 1: Prior probability = 0.14
+
+age:  Normal Distribution. Mean = 54.8588 StandardDev = 8.4484 WeightSum = 41 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  7 36  (Total = 43)
+chest_pain:  Discrete Estimator. Counts =  2 8 9 26  (Total = 45)
+trestbps:  Normal Distribution. Mean = 128.2478 StandardDev = 14.5597 WeightSum = 41 Precision = 2.789473684210526
+chol:  Normal Distribution. Mean = 246.4037 StandardDev = 38.2223 WeightSum = 41 Precision = 2.425
+fbs:  Discrete Estimator. Counts =  41 2  (Total = 43)
+restecg:  Discrete Estimator. Counts =  21 1 22  (Total = 44)
+thalach:  Normal Distribution. Mean = 147.7967 StandardDev = 21.5042 WeightSum = 41 Precision = 1.3611111111111112
+exang:  Discrete Estimator. Counts =  27 16  (Total = 43)
+oldpeak:  Normal Distribution. Mean = 0.94 StandardDev = 0.9312 WeightSum = 41 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.5366 StandardDev = 0.4987 WeightSum = 41 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.85 StandardDev = 0.9367 WeightSum = 40 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.2439 StandardDev = 1.9353 WeightSum = 41 Precision = 2.0
+
+
+Class 2: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 59.4806 StandardDev = 6.7271 WeightSum = 38 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  8 32  (Total = 40)
+chest_pain:  Discrete Estimator. Counts =  2 2 9 29  (Total = 42)
+trestbps:  Normal Distribution. Mean = 135.7299 StandardDev = 17.9446 WeightSum = 38 Precision = 2.789473684210526
+chol:  Normal Distribution. Mean = 251.8809 StandardDev = 42.3733 WeightSum = 38 Precision = 2.425
+fbs:  Discrete Estimator. Counts =  30 10  (Total = 40)
+restecg:  Discrete Estimator. Counts =  19 1 21  (Total = 41)
+thalach:  Normal Distribution. Mean = 138.5826 StandardDev = 16.8501 WeightSum = 38 Precision = 1.3611111111111112
+exang:  Discrete Estimator. Counts =  18 22  (Total = 40)
+oldpeak:  Normal Distribution. Mean = 1.8118 StandardDev = 1.2606 WeightSum = 38 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.7895 StandardDev = 0.521 WeightSum = 38 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3947 StandardDev = 0.8748 WeightSum = 38 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.0526 StandardDev = 1.4317 WeightSum = 38 Precision = 2.0
+
+
+Class 3: Prior probability = 0.1 
+
+age:  Normal Distribution. Mean = 55.5299 StandardDev = 7.9206 WeightSum = 29 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  8 23  (Total = 31)
+chest_pain:  Discrete Estimator. Counts =  1 2 4 26  (Total = 33)
+trestbps:  Normal Distribution. Mean = 135.2414 StandardDev = 28.5378 WeightSum = 29 Precision = 2.789473684210526
+chol:  Normal Distribution. Mean = 250.8621 StandardDev = 58.4211 WeightSum = 29 Precision = 2.425
+fbs:  Discrete Estimator. Counts =  21 10  (Total = 31)
+restecg:  Discrete Estimator. Counts =  15 3 14  (Total = 32)
+thalach:  Normal Distribution. Mean = 135.4071 StandardDev = 16.8895 WeightSum = 29 Precision = 1.3611111111111112
+exang:  Discrete Estimator. Counts =  8 23  (Total = 31)
+oldpeak:  Normal Distribution. Mean = 1.9538 StandardDev = 1.3799 WeightSum = 29 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 2 StandardDev = 0.5252 WeightSum = 29 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.5862 StandardDev = 0.9655 WeightSum = 29 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.4483 StandardDev = 1.3793 WeightSum = 29 Precision = 2.0
+
+
+Class 4: Prior probability = 0.05
+
+age:  Normal Distribution. Mean = 59.1741 StandardDev = 7.7625 WeightSum = 13 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  7 8  (Total = 15)
+chest_pain:  Discrete Estimator. Counts =  2 1 4 10  (Total = 17)
+trestbps:  Normal Distribution. Mean = 137.3279 StandardDev = 16.7066 WeightSum = 13 Precision = 2.789473684210526
+chol:  Normal Distribution. Mean = 292.8654 StandardDev = 91.9001 WeightSum = 13 Precision = 2.425
+fbs:  Discrete Estimator. Counts =  14 1  (Total = 15)
+restecg:  Discrete Estimator. Counts =  3 1 12  (Total = 16)
+thalach:  Normal Distribution. Mean = 149.6175 StandardDev = 18.5282 WeightSum = 13 Precision = 1.3611111111111112
+exang:  Discrete Estimator. Counts =  11 4  (Total = 15)
+oldpeak:  Normal Distribution. Mean = 3.0534 StandardDev = 0.9012 WeightSum = 13 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 2.0769 StandardDev = 0.2665 WeightSum = 13 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.7692 StandardDev = 1.2499 WeightSum = 13 Precision = 1.0
+thal:  Normal Distribution. Mean = 8 StandardDev = 0.3333 WeightSum = 13 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.56
+
+age:  Normal Distribution. Mean = 53.1467 StandardDev = 9.1398 WeightSum = 171 Precision = 1.0833333333333333
+sex:  Discrete Estimator. Counts =  76 97  (Total = 173)
+chest_pain:  Discrete Estimator. Counts =  20 48 70 37  (Total = 175)
+trestbps:  Normal Distribution. Mean = 129.9782 StandardDev = 16.155 WeightSum = 171 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 242.5924 StandardDev = 51.723 WeightSum = 171 Precision = 3.6198347107438016
+fbs:  Discrete Estimator. Counts =  143 30  (Total = 173)
+restecg:  Discrete Estimator. Counts =  98 1 75  (Total = 174)
+thalach:  Normal Distribution. Mean = 157.8616 StandardDev = 17.4983 WeightSum = 171 Precision = 1.5696202531645569
+exang:  Discrete Estimator. Counts =  143 30  (Total = 173)
+oldpeak:  Normal Distribution. Mean = 0.6174 StandardDev = 0.8142 WeightSum = 171 Precision = 0.17222222222222222
+slope:  Normal Distribution. Mean = 1.4327 StandardDev = 0.6117 WeightSum = 171 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.244 StandardDev = 0.5289 WeightSum = 168 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.6509 StandardDev = 1.4358 WeightSum = 169 Precision = 2.0
+
+
+Class 1: Prior probability = 0.15
+
+age:  Normal Distribution. Mean = 55.6975 StandardDev = 6.7374 WeightSum = 46 Precision = 1.0833333333333333
+sex:  Discrete Estimator. Counts =  4 44  (Total = 48)
+chest_pain:  Discrete Estimator. Counts =  2 10 7 31  (Total = 50)
+trestbps:  Normal Distribution. Mean = 131.1383 StandardDev = 18.5227 WeightSum = 46 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 254.254 StandardDev = 35.7405 WeightSum = 46 Precision = 3.6198347107438016
+fbs:  Discrete Estimator. Counts =  44 4  (Total = 48)
+restecg:  Discrete Estimator. Counts =  19 1 29  (Total = 49)
+thalach:  Normal Distribution. Mean = 149.8987 StandardDev = 22.6841 WeightSum = 46 Precision = 1.5696202531645569
+exang:  Discrete Estimator. Counts =  22 26  (Total = 48)
+oldpeak:  Normal Distribution. Mean = 1.097 StandardDev = 0.9625 WeightSum = 46 Precision = 0.17222222222222222
+slope:  Normal Distribution. Mean = 1.6087 StandardDev = 0.6071 WeightSum = 46 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.8696 StandardDev = 0.797 WeightSum = 46 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.3478 StandardDev = 1.9249 WeightSum = 46 Precision = 2.0
+
+
+Class 2: Prior probability = 0.12
+
+age:  Normal Distribution. Mean = 57.9738 StandardDev = 7.6663 WeightSum = 35 Precision = 1.0833333333333333
+sex:  Discrete Estimator. Counts =  9 28  (Total = 37)
+chest_pain:  Discrete Estimator. Counts =  3 1 4 31  (Total = 39)
+trestbps:  Normal Distribution. Mean = 132.9818 StandardDev = 16.2762 WeightSum = 35 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 270.3499 StandardDev = 43.142 WeightSum = 35 Precision = 3.6198347107438016
+fbs:  Discrete Estimator. Counts =  29 8  (Total = 37)
+restecg:  Discrete Estimator. Counts =  23 3 12  (Total = 38)
+thalach:  Normal Distribution. Mean = 130.5476 StandardDev = 25.5873 WeightSum = 35 Precision = 1.5696202531645569
+exang:  Discrete Estimator. Counts =  19 18  (Total = 37)
+oldpeak:  Normal Distribution. Mean = 1.924 StandardDev = 1.0865 WeightSum = 35 Precision = 0.17222222222222222
+slope:  Normal Distribution. Mean = 1.8286 StandardDev = 0.3769 WeightSum = 35 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.2571 StandardDev = 0.9664 WeightSum = 35 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.5143 StandardDev = 1.8727 WeightSum = 35 Precision = 2.0
+
+
+Class 3: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 55.5066 StandardDev = 6.6709 WeightSum = 38 Precision = 1.0833333333333333
+sex:  Discrete Estimator. Counts =  11 29  (Total = 40)
+chest_pain:  Discrete Estimator. Counts =  1 3 5 33  (Total = 42)
+trestbps:  Normal Distribution. Mean = 140.6148 StandardDev = 22.0618 WeightSum = 38 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 252.1501 StandardDev = 60.8173 WeightSum = 38 Precision = 3.6198347107438016
+fbs:  Discrete Estimator. Counts =  28 12  (Total = 40)
+restecg:  Discrete Estimator. Counts =  14 3 24  (Total = 41)
+thalach:  Normal Distribution. Mean = 135.6069 StandardDev = 18.9881 WeightSum = 38 Precision = 1.5696202531645569
+exang:  Discrete Estimator. Counts =  11 29  (Total = 40)
+oldpeak:  Normal Distribution. Mean = 2.0939 StandardDev = 1.7229 WeightSum = 38 Precision = 0.17222222222222222
+slope:  Normal Distribution. Mean = 2 StandardDev = 0.607 WeightSum = 38 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.2895 StandardDev = 0.9976 WeightSum = 38 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.4211 StandardDev = 1.3694 WeightSum = 38 Precision = 2.0
+
+
+Class 4: Prior probability = 0.05
+
+age:  Normal Distribution. Mean = 54.6667 StandardDev = 9.0699 WeightSum = 13 Precision = 1.0833333333333333
+sex:  Discrete Estimator. Counts =  2 13  (Total = 15)
+chest_pain:  Discrete Estimator. Counts =  3 1 2 11  (Total = 17)
+trestbps:  Normal Distribution. Mean = 136.7622 StandardDev = 18.6405 WeightSum = 13 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 249.4901 StandardDev = 41.2104 WeightSum = 13 Precision = 3.6198347107438016
+fbs:  Discrete Estimator. Counts =  12 3  (Total = 15)
+restecg:  Discrete Estimator. Counts =  4 3 9  (Total = 16)
+thalach:  Normal Distribution. Mean = 139.5755 StandardDev = 21.4285 WeightSum = 13 Precision = 1.5696202531645569
+exang:  Discrete Estimator. Counts =  10 5  (Total = 15)
+oldpeak:  Normal Distribution. Mean = 2.6893 StandardDev = 1.1494 WeightSum = 13 Precision = 0.17222222222222222
+slope:  Normal Distribution. Mean = 2.2308 StandardDev = 0.4213 WeightSum = 13 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3846 StandardDev = 1.3889 WeightSum = 13 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.6923 StandardDev = 0.7216 WeightSum = 13 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.56
+
+age:  Normal Distribution. Mean = 52.6531 StandardDev = 9.2934 WeightSum = 170 Precision = 1.236842105263158
+sex:  Discrete Estimator. Counts =  74 98  (Total = 172)
+chest_pain:  Discrete Estimator. Counts =  21 39 65 49  (Total = 174)
+trestbps:  Normal Distribution. Mean = 129.3403 StandardDev = 16.0624 WeightSum = 170 Precision = 2.3902439024390243
+chol:  Normal Distribution. Mean = 239.3161 StandardDev = 53.0926 WeightSum = 170 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  144 28  (Total = 172)
+restecg:  Discrete Estimator. Counts =  103 2 68  (Total = 173)
+thalach:  Normal Distribution. Mean = 157.4809 StandardDev = 19.2459 WeightSum = 170 Precision = 1.52
+exang:  Discrete Estimator. Counts =  146 26  (Total = 172)
+oldpeak:  Normal Distribution. Mean = 0.5245 StandardDev = 0.6452 WeightSum = 170 Precision = 0.1823529411764706
+slope:  Normal Distribution. Mean = 1.3765 StandardDev = 0.5418 WeightSum = 170 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.3012 StandardDev = 0.7153 WeightSum = 166 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.7811 StandardDev = 1.5402 WeightSum = 169 Precision = 2.0
+
+
+Class 1: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 51.7618 StandardDev = 8.0753 WeightSum = 40 Precision = 1.236842105263158
+sex:  Discrete Estimator. Counts =  3 39  (Total = 42)
+chest_pain:  Discrete Estimator. Counts =  4 10 7 23  (Total = 44)
+trestbps:  Normal Distribution. Mean = 137.2 StandardDev = 21.4577 WeightSum = 40 Precision = 2.3902439024390243
+chol:  Normal Distribution. Mean = 250.2344 StandardDev = 30.865 WeightSum = 40 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  40 2  (Total = 42)
+restecg:  Discrete Estimator. Counts =  21 1 21  (Total = 43)
+thalach:  Normal Distribution. Mean = 152.494 StandardDev = 24.9238 WeightSum = 40 Precision = 1.52
+exang:  Discrete Estimator. Counts =  24 18  (Total = 42)
+oldpeak:  Normal Distribution. Mean = 0.9756 StandardDev = 0.9867 WeightSum = 40 Precision = 0.1823529411764706
+slope:  Normal Distribution. Mean = 1.55 StandardDev = 0.5454 WeightSum = 40 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.641 StandardDev = 0.7334 WeightSum = 39 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.85 StandardDev = 1.7826 WeightSum = 40 Precision = 2.0
+
+
+Class 2: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 59.1781 StandardDev = 5.4638 WeightSum = 39 Precision = 1.236842105263158
+sex:  Discrete Estimator. Counts =  5 36  (Total = 41)
+chest_pain:  Discrete Estimator. Counts =  3 2 3 35  (Total = 43)
+trestbps:  Normal Distribution. Mean = 133.7924 StandardDev = 19.3162 WeightSum = 39 Precision = 2.3902439024390243
+chol:  Normal Distribution. Mean = 246.5246 StandardDev = 42.8461 WeightSum = 39 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  30 11  (Total = 41)
+restecg:  Discrete Estimator. Counts =  21 2 19  (Total = 42)
+thalach:  Normal Distribution. Mean = 144.6338 StandardDev = 15.5374 WeightSum = 39 Precision = 1.52
+exang:  Discrete Estimator. Counts =  20 21  (Total = 41)
+oldpeak:  Normal Distribution. Mean = 1.5103 StandardDev = 1.2768 WeightSum = 39 Precision = 0.1823529411764706
+slope:  Normal Distribution. Mean = 1.641 StandardDev = 0.6196 WeightSum = 39 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.2564 StandardDev = 0.7752 WeightSum = 39 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.8421 StandardDev = 1.6941 WeightSum = 38 Precision = 2.0
+
+
+Class 3: Prior probability = 0.14
+
+age:  Normal Distribution. Mean = 55.4223 StandardDev = 7.9345 WeightSum = 42 Precision = 1.236842105263158
+sex:  Discrete Estimator. Counts =  9 35  (Total = 44)
+chest_pain:  Discrete Estimator. Counts =  1 6 5 34  (Total = 46)
+trestbps:  Normal Distribution. Mean = 133.2846 StandardDev = 15.8706 WeightSum = 42 Precision = 2.3902439024390243
+chol:  Normal Distribution. Mean = 247.0375 StandardDev = 50.1048 WeightSum = 42 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  35 9  (Total = 44)
+restecg:  Discrete Estimator. Counts =  14 2 29  (Total = 45)
+thalach:  Normal Distribution. Mean = 136.1486 StandardDev = 22.0722 WeightSum = 42 Precision = 1.52
+exang:  Discrete Estimator. Counts =  17 27  (Total = 44)
+oldpeak:  Normal Distribution. Mean = 1.537 StandardDev = 1.3583 WeightSum = 42 Precision = 0.1823529411764706
+slope:  Normal Distribution. Mean = 1.8571 StandardDev = 0.5151 WeightSum = 42 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3333 StandardDev = 0.9172 WeightSum = 42 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.1429 StandardDev = 1.6413 WeightSum = 42 Precision = 2.0
+
+
+Class 4: Prior probability = 0.04
+
+age:  Normal Distribution. Mean = 55.5548 StandardDev = 8.0388 WeightSum = 12 Precision = 1.236842105263158
+sex:  Discrete Estimator. Counts =  2 12  (Total = 14)
+chest_pain:  Discrete Estimator. Counts =  3 1 3 9  (Total = 16)
+trestbps:  Normal Distribution. Mean = 134.6504 StandardDev = 20.9819 WeightSum = 12 Precision = 2.3902439024390243
+chol:  Normal Distribution. Mean = 248.0205 StandardDev = 50.3148 WeightSum = 12 Precision = 3.5901639344262297
+fbs:  Discrete Estimator. Counts =  10 4  (Total = 14)
+restecg:  Discrete Estimator. Counts =  3 3 9  (Total = 15)
+thalach:  Normal Distribution. Mean = 142.7533 StandardDev = 23.5923 WeightSum = 12 Precision = 1.52
+exang:  Discrete Estimator. Counts =  9 5  (Total = 14)
+oldpeak:  Normal Distribution. Mean = 2.7049 StandardDev = 1.3784 WeightSum = 12 Precision = 0.1823529411764706
+slope:  Normal Distribution. Mean = 2.1667 StandardDev = 0.3727 WeightSum = 12 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.8333 StandardDev = 1.2134 WeightSum = 12 Precision = 1.0
+thal:  Normal Distribution. Mean = 7 StandardDev = 1.5275 WeightSum = 12 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.55
+
+age:  Normal Distribution. Mean = 52.4962 StandardDev = 9.7257 WeightSum = 168 Precision = 1.263157894736842
+sex:  Discrete Estimator. Counts =  83 87  (Total = 170)
+chest_pain:  Discrete Estimator. Counts =  12 52 68 40  (Total = 172)
+trestbps:  Normal Distribution. Mean = 129.1664 StandardDev = 15.1611 WeightSum = 168 Precision = 2.15
+chol:  Normal Distribution. Mean = 244.353 StandardDev = 56.0576 WeightSum = 168 Precision = 3.384
+fbs:  Discrete Estimator. Counts =  147 23  (Total = 170)
+restecg:  Discrete Estimator. Counts =  97 4 70  (Total = 171)
+thalach:  Normal Distribution. Mean = 158.2027 StandardDev = 18.5319 WeightSum = 168 Precision = 1.6056338028169015
+exang:  Discrete Estimator. Counts =  150 20  (Total = 170)
+oldpeak:  Normal Distribution. Mean = 0.6167 StandardDev = 0.7868 WeightSum = 168 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.369 StandardDev = 0.5728 WeightSum = 168 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.2335 StandardDev = 0.5888 WeightSum = 167 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.5952 StandardDev = 1.3725 WeightSum = 168 Precision = 2.0
+
+
+Class 1: Prior probability = 0.2 
+
+age:  Normal Distribution. Mean = 54.0673 StandardDev = 8.325 WeightSum = 61 Precision = 1.263157894736842
+sex:  Discrete Estimator. Counts =  11 52  (Total = 63)
+chest_pain:  Discrete Estimator. Counts =  10 6 7 42  (Total = 65)
+trestbps:  Normal Distribution. Mean = 135.4148 StandardDev = 16.0726 WeightSum = 61 Precision = 2.15
+chol:  Normal Distribution. Mean = 245.9225 StandardDev = 42.216 WeightSum = 61 Precision = 3.384
+fbs:  Discrete Estimator. Counts =  57 6  (Total = 63)
+restecg:  Discrete Estimator. Counts =  30 1 33  (Total = 64)
+thalach:  Normal Distribution. Mean = 144.0332 StandardDev = 22.249 WeightSum = 61 Precision = 1.6056338028169015
+exang:  Discrete Estimator. Counts =  32 31  (Total = 63)
+oldpeak:  Normal Distribution. Mean = 1.053 StandardDev = 0.9991 WeightSum = 61 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.623 StandardDev = 0.605 WeightSum = 61 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.4833 StandardDev = 0.7186 WeightSum = 60 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.6557 StandardDev = 1.8367 WeightSum = 61 Precision = 2.0
+
+
+Class 2: Prior probability = 0.1 
+
+age:  Normal Distribution. Mean = 55.8642 StandardDev = 7.8243 WeightSum = 31 Precision = 1.263157894736842
+sex:  Discrete Estimator. Counts =  6 27  (Total = 33)
+chest_pain:  Discrete Estimator. Counts =  3 1 4 27  (Total = 35)
+trestbps:  Normal Distribution. Mean = 134.6177 StandardDev = 13.5283 WeightSum = 31 Precision = 2.15
+chol:  Normal Distribution. Mean = 261.5505 StandardDev = 57.2105 WeightSum = 31 Precision = 3.384
+fbs:  Discrete Estimator. Counts =  27 6  (Total = 33)
+restecg:  Discrete Estimator. Counts =  21 1 12  (Total = 34)
+thalach:  Normal Distribution. Mean = 139.0168 StandardDev = 17.5167 WeightSum = 31 Precision = 1.6056338028169015
+exang:  Discrete Estimator. Counts =  12 21  (Total = 33)
+oldpeak:  Normal Distribution. Mean = 1.9287 StandardDev = 0.9937 WeightSum = 31 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 2.0645 StandardDev = 0.5039 WeightSum = 31 Precision = 1.0
+ca:  Normal Distribution. Mean = 1 StandardDev = 0.9837 WeightSum = 31 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.1724 StandardDev = 1.3408 WeightSum = 29 Precision = 2.0
+
+
+Class 3: Prior probability = 0.09
+
+age:  Normal Distribution. Mean = 55.7661 StandardDev = 8.0457 WeightSum = 27 Precision = 1.263157894736842
+sex:  Discrete Estimator. Counts =  4 25  (Total = 29)
+chest_pain:  Discrete Estimator. Counts =  1 3 2 25  (Total = 31)
+trestbps:  Normal Distribution. Mean = 130.9907 StandardDev = 14.2606 WeightSum = 27 Precision = 2.15
+chol:  Normal Distribution. Mean = 256.9333 StandardDev = 47.7054 WeightSum = 27 Precision = 3.384
+fbs:  Discrete Estimator. Counts =  23 6  (Total = 29)
+restecg:  Discrete Estimator. Counts =  10 3 17  (Total = 30)
+thalach:  Normal Distribution. Mean = 125.5962 StandardDev = 17.4708 WeightSum = 27 Precision = 1.6056338028169015
+exang:  Discrete Estimator. Counts =  7 22  (Total = 29)
+oldpeak:  Normal Distribution. Mean = 1.4336 StandardDev = 1.2035 WeightSum = 27 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.7407 StandardDev = 0.5159 WeightSum = 27 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.963 StandardDev = 0.9222 WeightSum = 27 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.5556 StandardDev = 1.2571 WeightSum = 27 Precision = 2.0
+
+
+Class 4: Prior probability = 0.06
+
+age:  Normal Distribution. Mean = 62.7632 StandardDev = 10.2689 WeightSum = 16 Precision = 1.263157894736842
+sex:  Discrete Estimator. Counts =  5 13  (Total = 18)
+chest_pain:  Discrete Estimator. Counts =  2 1 1 16  (Total = 20)
+trestbps:  Normal Distribution. Mean = 141.4969 StandardDev = 11.5586 WeightSum = 16 Precision = 2.15
+chol:  Normal Distribution. Mean = 265.644 StandardDev = 82.2406 WeightSum = 16 Precision = 3.384
+fbs:  Discrete Estimator. Counts =  17 1  (Total = 18)
+restecg:  Discrete Estimator. Counts =  4 1 14  (Total = 19)
+thalach:  Normal Distribution. Mean = 142.3996 StandardDev = 18.7137 WeightSum = 16 Precision = 1.6056338028169015
+exang:  Discrete Estimator. Counts =  8 10  (Total = 18)
+oldpeak:  Normal Distribution. Mean = 2.3265 StandardDev = 1.4626 WeightSum = 16 Precision = 0.16470588235294117
+slope:  Normal Distribution. Mean = 1.9375 StandardDev = 0.5555 WeightSum = 16 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.625 StandardDev = 1.317 WeightSum = 16 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.625 StandardDev = 1.8329 WeightSum = 16 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.51
+
+age:  Normal Distribution. Mean = 53.3289 StandardDev = 8.7357 WeightSum = 156 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  66 92  (Total = 158)
+chest_pain:  Discrete Estimator. Counts =  15 36 62 47  (Total = 160)
+trestbps:  Normal Distribution. Mean = 128.3236 StandardDev = 17.1021 WeightSum = 156 Precision = 2.5853658536585367
+chol:  Normal Distribution. Mean = 240.0478 StandardDev = 41.4312 WeightSum = 156 Precision = 2.4017094017094016
+fbs:  Discrete Estimator. Counts =  135 23  (Total = 158)
+restecg:  Discrete Estimator. Counts =  82 2 75  (Total = 159)
+thalach:  Normal Distribution. Mean = 155.9308 StandardDev = 20.3601 WeightSum = 156 Precision = 1.631578947368421
+exang:  Discrete Estimator. Counts =  128 30  (Total = 158)
+oldpeak:  Normal Distribution. Mean = 0.6166 StandardDev = 0.8511 WeightSum = 156 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.4295 StandardDev = 0.6316 WeightSum = 156 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.268 StandardDev = 0.6765 WeightSum = 153 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.9351 StandardDev = 1.6304 WeightSum = 154 Precision = 2.0
+
+
+Class 1: Prior probability = 0.21
+
+age:  Normal Distribution. Mean = 54.9474 StandardDev = 8.2462 WeightSum = 63 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  15 50  (Total = 65)
+chest_pain:  Discrete Estimator. Counts =  7 6 16 38  (Total = 67)
+trestbps:  Normal Distribution. Mean = 136.0805 StandardDev = 18.5137 WeightSum = 63 Precision = 2.5853658536585367
+chol:  Normal Distribution. Mean = 252.7894 StandardDev = 41.2895 WeightSum = 63 Precision = 2.4017094017094016
+fbs:  Discrete Estimator. Counts =  57 8  (Total = 65)
+restecg:  Discrete Estimator. Counts =  27 1 38  (Total = 66)
+thalach:  Normal Distribution. Mean = 144.33 StandardDev = 20.6438 WeightSum = 63 Precision = 1.631578947368421
+exang:  Discrete Estimator. Counts =  35 30  (Total = 65)
+oldpeak:  Normal Distribution. Mean = 0.8295 StandardDev = 0.8797 WeightSum = 63 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.619 StandardDev = 0.4856 WeightSum = 63 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.5333 StandardDev = 0.8055 WeightSum = 60 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.5079 StandardDev = 1.9179 WeightSum = 63 Precision = 2.0
+
+
+Class 2: Prior probability = 0.12
+
+age:  Normal Distribution. Mean = 58.1684 StandardDev = 6.6792 WeightSum = 35 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  4 33  (Total = 37)
+chest_pain:  Discrete Estimator. Counts =  2 2 3 32  (Total = 39)
+trestbps:  Normal Distribution. Mean = 133.7742 StandardDev = 15.3928 WeightSum = 35 Precision = 2.5853658536585367
+chol:  Normal Distribution. Mean = 270.3639 StandardDev = 41.477 WeightSum = 35 Precision = 2.4017094017094016
+fbs:  Discrete Estimator. Counts =  31 6  (Total = 37)
+restecg:  Discrete Estimator. Counts =  20 1 17  (Total = 38)
+thalach:  Normal Distribution. Mean = 130.806 StandardDev = 21.2785 WeightSum = 35 Precision = 1.631578947368421
+exang:  Discrete Estimator. Counts =  15 22  (Total = 37)
+oldpeak:  Normal Distribution. Mean = 2.065 StandardDev = 0.972 WeightSum = 35 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2 StandardDev = 0.4781 WeightSum = 35 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3714 StandardDev = 0.9285 WeightSum = 35 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.3143 StandardDev = 1.4297 WeightSum = 35 Precision = 2.0
+
+
+Class 3: Prior probability = 0.14
+
+age:  Normal Distribution. Mean = 55.8543 StandardDev = 7.1006 WeightSum = 43 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  8 37  (Total = 45)
+chest_pain:  Discrete Estimator. Counts =  1 1 8 37  (Total = 47)
+trestbps:  Normal Distribution. Mean = 133.1163 StandardDev = 19.6609 WeightSum = 43 Precision = 2.5853658536585367
+chol:  Normal Distribution. Mean = 240.9529 StandardDev = 44.943 WeightSum = 43 Precision = 2.4017094017094016
+fbs:  Discrete Estimator. Counts =  36 9  (Total = 45)
+restecg:  Discrete Estimator. Counts =  16 1 29  (Total = 46)
+thalach:  Normal Distribution. Mean = 134.5863 StandardDev = 22.1217 WeightSum = 43 Precision = 1.631578947368421
+exang:  Discrete Estimator. Counts =  16 29  (Total = 45)
+oldpeak:  Normal Distribution. Mean = 2.4718 StandardDev = 1.6525 WeightSum = 43 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2.0698 StandardDev = 0.6611 WeightSum = 43 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.6977 StandardDev = 0.9773 WeightSum = 43 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.2558 StandardDev = 1.5566 WeightSum = 43 Precision = 2.0
+
+
+Class 4: Prior probability = 0.02
+
+age:  Normal Distribution. Mean = 61.1579 StandardDev = 4.2168 WeightSum = 6 Precision = 1.105263157894737
+sex:  Discrete Estimator. Counts =  2 6  (Total = 8)
+chest_pain:  Discrete Estimator. Counts =  1 1 2 6  (Total = 10)
+trestbps:  Normal Distribution. Mean = 129.6992 StandardDev = 14.3495 WeightSum = 6 Precision = 2.5853658536585367
+chol:  Normal Distribution. Mean = 256.5826 StandardDev = 80.2379 WeightSum = 6 Precision = 2.4017094017094016
+fbs:  Discrete Estimator. Counts =  7 1  (Total = 8)
+restecg:  Discrete Estimator. Counts =  2 2 5  (Total = 9)
+thalach:  Normal Distribution. Mean = 141.4035 StandardDev = 13.6074 WeightSum = 6 Precision = 1.631578947368421
+exang:  Discrete Estimator. Counts =  4 4  (Total = 8)
+oldpeak:  Normal Distribution. Mean = 3.1 StandardDev = 0.823 WeightSum = 6 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2.3333 StandardDev = 0.4714 WeightSum = 6 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.8333 StandardDev = 1.0672 WeightSum = 6 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.6667 StandardDev = 0.7454 WeightSum = 6 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.53
+
+age:  Normal Distribution. Mean = 52.2405 StandardDev = 10.1487 WeightSum = 163 Precision = 1.2
+sex:  Discrete Estimator. Counts =  72 93  (Total = 165)
+chest_pain:  Discrete Estimator. Counts =  17 45 63 42  (Total = 167)
+trestbps:  Normal Distribution. Mean = 129.7291 StandardDev = 15.367 WeightSum = 163 Precision = 2.358974358974359
+chol:  Normal Distribution. Mean = 246.8096 StandardDev = 54.0556 WeightSum = 163 Precision = 3.5491803278688523
+fbs:  Discrete Estimator. Counts =  139 26  (Total = 165)
+restecg:  Discrete Estimator. Counts =  104 3 59  (Total = 166)
+thalach:  Normal Distribution. Mean = 157.8351 StandardDev = 21.3986 WeightSum = 163 Precision = 1.5975609756097562
+exang:  Discrete Estimator. Counts =  141 24  (Total = 165)
+oldpeak:  Normal Distribution. Mean = 0.6966 StandardDev = 0.8848 WeightSum = 163 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.3926 StandardDev = 0.6111 WeightSum = 163 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.2099 StandardDev = 0.5263 WeightSum = 162 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.7205 StandardDev = 1.4711 WeightSum = 161 Precision = 2.0
+
+
+Class 1: Prior probability = 0.2 
+
+age:  Normal Distribution. Mean = 56.2623 StandardDev = 8.8771 WeightSum = 61 Precision = 1.2
+sex:  Discrete Estimator. Counts =  11 52  (Total = 63)
+chest_pain:  Discrete Estimator. Counts =  4 8 7 46  (Total = 65)
+trestbps:  Normal Distribution. Mean = 132.992 StandardDev = 18.7026 WeightSum = 61 Precision = 2.358974358974359
+chol:  Normal Distribution. Mean = 248.4426 StandardDev = 41.0797 WeightSum = 61 Precision = 3.5491803278688523
+fbs:  Discrete Estimator. Counts =  60 3  (Total = 63)
+restecg:  Discrete Estimator. Counts =  27 1 36  (Total = 64)
+thalach:  Normal Distribution. Mean = 143.7019 StandardDev = 25.0207 WeightSum = 61 Precision = 1.5975609756097562
+exang:  Discrete Estimator. Counts =  34 29  (Total = 63)
+oldpeak:  Normal Distribution. Mean = 0.9699 StandardDev = 0.9711 WeightSum = 61 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.6393 StandardDev = 0.5132 WeightSum = 61 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.95 StandardDev = 1.0396 WeightSum = 60 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.3934 StandardDev = 1.8755 WeightSum = 61 Precision = 2.0
+
+
+Class 2: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 59.2 StandardDev = 7.4288 WeightSum = 39 Precision = 1.2
+sex:  Discrete Estimator. Counts =  9 32  (Total = 41)
+chest_pain:  Discrete Estimator. Counts =  1 3 5 34  (Total = 43)
+trestbps:  Normal Distribution. Mean = 134.8849 StandardDev = 18.9463 WeightSum = 39 Precision = 2.358974358974359
+chol:  Normal Distribution. Mean = 273.9239 StandardDev = 55.2349 WeightSum = 39 Precision = 3.5491803278688523
+fbs:  Discrete Estimator. Counts =  35 6  (Total = 41)
+restecg:  Discrete Estimator. Counts =  18 2 22  (Total = 42)
+thalach:  Normal Distribution. Mean = 133.3349 StandardDev = 22.5345 WeightSum = 39 Precision = 1.5975609756097562
+exang:  Discrete Estimator. Counts =  16 25  (Total = 41)
+oldpeak:  Normal Distribution. Mean = 1.7805 StandardDev = 1.1873 WeightSum = 39 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.8462 StandardDev = 0.4824 WeightSum = 39 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3333 StandardDev = 0.9696 WeightSum = 39 Precision = 1.0
+thal:  Normal Distribution. Mean = 7 StandardDev = 1.5728 WeightSum = 38 Precision = 2.0
+
+
+Class 3: Prior probability = 0.1 
+
+age:  Normal Distribution. Mean = 57.36 StandardDev = 5.3162 WeightSum = 30 Precision = 1.2
+sex:  Discrete Estimator. Counts =  8 24  (Total = 32)
+chest_pain:  Discrete Estimator. Counts =  1 2 1 30  (Total = 34)
+trestbps:  Normal Distribution. Mean = 128.9573 StandardDev = 14.4692 WeightSum = 30 Precision = 2.358974358974359
+chol:  Normal Distribution. Mean = 244.8934 StandardDev = 43.786 WeightSum = 30 Precision = 3.5491803278688523
+fbs:  Discrete Estimator. Counts =  28 4  (Total = 32)
+restecg:  Discrete Estimator. Counts =  9 1 23  (Total = 33)
+thalach:  Normal Distribution. Mean = 129.6154 StandardDev = 21.1206 WeightSum = 30 Precision = 1.5975609756097562
+exang:  Discrete Estimator. Counts =  10 22  (Total = 32)
+oldpeak:  Normal Distribution. Mean = 2.2733 StandardDev = 1.4934 WeightSum = 30 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2.1 StandardDev = 0.5972 WeightSum = 30 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.4667 StandardDev = 0.8459 WeightSum = 30 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.5333 StandardDev = 1.9276 WeightSum = 30 Precision = 2.0
+
+
+Class 4: Prior probability = 0.04
+
+age:  Normal Distribution. Mean = 57.36 StandardDev = 12.4915 WeightSum = 10 Precision = 1.2
+sex:  Discrete Estimator. Counts =  2 10  (Total = 12)
+chest_pain:  Discrete Estimator. Counts =  3 1 2 8  (Total = 14)
+trestbps:  Normal Distribution. Mean = 135.8769 StandardDev = 18.1564 WeightSum = 10 Precision = 2.358974358974359
+chol:  Normal Distribution. Mean = 273.2869 StandardDev = 56.252 WeightSum = 10 Precision = 3.5491803278688523
+fbs:  Discrete Estimator. Counts =  10 2  (Total = 12)
+restecg:  Discrete Estimator. Counts =  3 1 9  (Total = 13)
+thalach:  Normal Distribution. Mean = 153.5256 StandardDev = 19.7019 WeightSum = 10 Precision = 1.5975609756097562
+exang:  Discrete Estimator. Counts =  5 7  (Total = 12)
+oldpeak:  Normal Distribution. Mean = 2.108 StandardDev = 1.4531 WeightSum = 10 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.8 StandardDev = 0.4 WeightSum = 10 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.6 StandardDev = 1.2806 WeightSum = 10 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.2 StandardDev = 1.6 WeightSum = 10 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.55
+
+age:  Normal Distribution. Mean = 52.2391 StandardDev = 9.6778 WeightSum = 169 Precision = 1.2
+sex:  Discrete Estimator. Counts =  63 108  (Total = 171)
+chest_pain:  Discrete Estimator. Counts =  13 48 71 41  (Total = 173)
+trestbps:  Normal Distribution. Mean = 130.3448 StandardDev = 15.802 WeightSum = 169 Precision = 2.4651162790697674
+chol:  Normal Distribution. Mean = 242.5467 StandardDev = 53.6388 WeightSum = 169 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  138 33  (Total = 171)
+restecg:  Discrete Estimator. Counts =  100 2 70  (Total = 172)
+thalach:  Normal Distribution. Mean = 158.7593 StandardDev = 20.054 WeightSum = 169 Precision = 1.3902439024390243
+exang:  Discrete Estimator. Counts =  142 29  (Total = 171)
+oldpeak:  Normal Distribution. Mean = 0.5292 StandardDev = 0.7507 WeightSum = 169 Precision = 0.16
+slope:  Normal Distribution. Mean = 1.3905 StandardDev = 0.5768 WeightSum = 169 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.3494 StandardDev = 0.7434 WeightSum = 166 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.7337 StandardDev = 1.4535 WeightSum = 169 Precision = 2.0
+
+
+Class 1: Prior probability = 0.19
+
+age:  Normal Distribution. Mean = 55.7684 StandardDev = 7.7349 WeightSum = 57 Precision = 1.2
+sex:  Discrete Estimator. Counts =  10 49  (Total = 59)
+chest_pain:  Discrete Estimator. Counts =  6 10 5 40  (Total = 61)
+trestbps:  Normal Distribution. Mean = 131.8188 StandardDev = 17.352 WeightSum = 57 Precision = 2.4651162790697674
+chol:  Normal Distribution. Mean = 260.9508 StandardDev = 35.3574 WeightSum = 57 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  51 8  (Total = 59)
+restecg:  Discrete Estimator. Counts =  21 1 38  (Total = 60)
+thalach:  Normal Distribution. Mean = 143.5366 StandardDev = 24.0731 WeightSum = 57 Precision = 1.3902439024390243
+exang:  Discrete Estimator. Counts =  31 28  (Total = 59)
+oldpeak:  Normal Distribution. Mean = 1.0218 StandardDev = 0.8706 WeightSum = 57 Precision = 0.16
+slope:  Normal Distribution. Mean = 1.807 StandardDev = 0.5755 WeightSum = 57 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.7593 StandardDev = 0.8806 WeightSum = 54 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.4561 StandardDev = 1.9109 WeightSum = 57 Precision = 2.0
+
+
+Class 2: Prior probability = 0.1 
+
+age:  Normal Distribution. Mean = 57.3517 StandardDev = 8.5922 WeightSum = 29 Precision = 1.2
+sex:  Discrete Estimator. Counts =  5 26  (Total = 31)
+chest_pain:  Discrete Estimator. Counts =  2 2 5 24  (Total = 33)
+trestbps:  Normal Distribution. Mean = 136.7715 StandardDev = 12.2765 WeightSum = 29 Precision = 2.4651162790697674
+chol:  Normal Distribution. Mean = 272.1077 StandardDev = 46.1035 WeightSum = 29 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  23 8  (Total = 31)
+restecg:  Discrete Estimator. Counts =  16 1 15  (Total = 32)
+thalach:  Normal Distribution. Mean = 133.0799 StandardDev = 17.7734 WeightSum = 29 Precision = 1.3902439024390243
+exang:  Discrete Estimator. Counts =  11 20  (Total = 31)
+oldpeak:  Normal Distribution. Mean = 1.931 StandardDev = 1.0092 WeightSum = 29 Precision = 0.16
+slope:  Normal Distribution. Mean = 1.931 StandardDev = 0.3649 WeightSum = 29 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.4138 StandardDev = 1.0006 WeightSum = 29 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.0345 StandardDev = 1.4499 WeightSum = 29 Precision = 2.0
+
+
+Class 3: Prior probability = 0.13
+
+age:  Normal Distribution. Mean = 55.3263 StandardDev = 8.9749 WeightSum = 38 Precision = 1.2
+sex:  Discrete Estimator. Counts =  9 31  (Total = 40)
+chest_pain:  Discrete Estimator. Counts =  1 3 5 33  (Total = 42)
+trestbps:  Normal Distribution. Mean = 130.9755 StandardDev = 25.1913 WeightSum = 38 Precision = 2.4651162790697674
+chol:  Normal Distribution. Mean = 246.457 StandardDev = 49.9951 WeightSum = 38 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  30 10  (Total = 40)
+restecg:  Discrete Estimator. Counts =  13 1 27  (Total = 41)
+thalach:  Normal Distribution. Mean = 132.878 StandardDev = 18.5142 WeightSum = 38 Precision = 1.3902439024390243
+exang:  Discrete Estimator. Counts =  11 29  (Total = 40)
+oldpeak:  Normal Distribution. Mean = 1.8232 StandardDev = 1.3554 WeightSum = 38 Precision = 0.16
+slope:  Normal Distribution. Mean = 2.0526 StandardDev = 0.4558 WeightSum = 38 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.4737 StandardDev = 0.9931 WeightSum = 38 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.8421 StandardDev = 1.8141 WeightSum = 38 Precision = 2.0
+
+
+Class 4: Prior probability = 0.04
+
+age:  Normal Distribution. Mean = 62.64 StandardDev = 10.1085 WeightSum = 10 Precision = 1.2
+sex:  Discrete Estimator. Counts =  2 10  (Total = 12)
+chest_pain:  Discrete Estimator. Counts =  2 1 1 10  (Total = 14)
+trestbps:  Normal Distribution. Mean = 144.2093 StandardDev = 12.9154 WeightSum = 10 Precision = 2.4651162790697674
+chol:  Normal Distribution. Mean = 223.9854 StandardDev = 50.2199 WeightSum = 10 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  10 2  (Total = 12)
+restecg:  Discrete Estimator. Counts =  5 1 7  (Total = 13)
+thalach:  Normal Distribution. Mean = 135.9659 StandardDev = 20.087 WeightSum = 10 Precision = 1.3902439024390243
+exang:  Discrete Estimator. Counts =  4 8  (Total = 12)
+oldpeak:  Normal Distribution. Mean = 1.968 StandardDev = 1.1932 WeightSum = 10 Precision = 0.16
+slope:  Normal Distribution. Mean = 2.2 StandardDev = 0.6 WeightSum = 10 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3 StandardDev = 1.2689 WeightSum = 10 Precision = 1.0
+thal:  Normal Distribution. Mean = 7 StandardDev = 1.6125 WeightSum = 10 Precision = 2.0
+
+
+Naive Bayes Classifier
+
+Class 0: Prior probability = 0.55
+
+age:  Normal Distribution. Mean = 52.25 StandardDev = 10.1536 WeightSum = 168 Precision = 1.2
+sex:  Discrete Estimator. Counts =  80 90  (Total = 170)
+chest_pain:  Discrete Estimator. Counts =  12 43 79 38  (Total = 172)
+trestbps:  Normal Distribution. Mean = 128.3271 StandardDev = 15.4088 WeightSum = 168 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 244.5627 StandardDev = 67.1157 WeightSum = 168 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  149 21  (Total = 170)
+restecg:  Discrete Estimator. Counts =  104 3 64  (Total = 171)
+thalach:  Normal Distribution. Mean = 158.2624 StandardDev = 19.8385 WeightSum = 168 Precision = 1.6375
+exang:  Discrete Estimator. Counts =  141 29  (Total = 170)
+oldpeak:  Normal Distribution. Mean = 0.6221 StandardDev = 0.7822 WeightSum = 168 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.4107 StandardDev = 0.5704 WeightSum = 168 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.2561 StandardDev = 0.5804 WeightSum = 164 Precision = 1.0
+thal:  Normal Distribution. Mean = 4.619 StandardDev = 1.4134 WeightSum = 168 Precision = 2.0
+
+
+Class 1: Prior probability = 0.18
+
+age:  Normal Distribution. Mean = 54.1527 StandardDev = 8.6867 WeightSum = 55 Precision = 1.2
+sex:  Discrete Estimator. Counts =  9 48  (Total = 57)
+chest_pain:  Discrete Estimator. Counts =  5 6 8 40  (Total = 59)
+trestbps:  Normal Distribution. Mean = 130.0909 StandardDev = 18.7228 WeightSum = 55 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 239.4918 StandardDev = 38.4143 WeightSum = 55 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  50 7  (Total = 57)
+restecg:  Discrete Estimator. Counts =  22 1 35  (Total = 58)
+thalach:  Normal Distribution. Mean = 144.9932 StandardDev = 22.5213 WeightSum = 55 Precision = 1.6375
+exang:  Discrete Estimator. Counts =  32 25  (Total = 57)
+oldpeak:  Normal Distribution. Mean = 0.9984 StandardDev = 1.0801 WeightSum = 55 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.6545 StandardDev = 0.579 WeightSum = 55 Precision = 1.0
+ca:  Normal Distribution. Mean = 0.6226 StandardDev = 0.7327 WeightSum = 53 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.1455 StandardDev = 1.9014 WeightSum = 55 Precision = 2.0
+
+
+Class 2: Prior probability = 0.1 
+
+age:  Normal Distribution. Mean = 59 StandardDev = 6.9218 WeightSum = 30 Precision = 1.2
+sex:  Discrete Estimator. Counts =  4 28  (Total = 32)
+chest_pain:  Discrete Estimator. Counts =  2 2 6 24  (Total = 34)
+trestbps:  Normal Distribution. Mean = 133.9455 StandardDev = 16.686 WeightSum = 30 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 257.9333 StandardDev = 39.5325 WeightSum = 30 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  23 9  (Total = 32)
+restecg:  Discrete Estimator. Counts =  13 2 18  (Total = 33)
+thalach:  Normal Distribution. Mean = 136.5129 StandardDev = 20.9595 WeightSum = 30 Precision = 1.6375
+exang:  Discrete Estimator. Counts =  13 19  (Total = 32)
+oldpeak:  Normal Distribution. Mean = 1.6061 StandardDev = 1.1379 WeightSum = 30 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 1.8333 StandardDev = 0.4534 WeightSum = 30 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.3333 StandardDev = 0.9428 WeightSum = 30 Precision = 1.0
+thal:  Normal Distribution. Mean = 6.6667 StandardDev = 1.66 WeightSum = 30 Precision = 2.0
+
+
+Class 3: Prior probability = 0.14
+
+age:  Normal Distribution. Mean = 57.2 StandardDev = 6.597 WeightSum = 42 Precision = 1.2
+sex:  Discrete Estimator. Counts =  15 29  (Total = 44)
+chest_pain:  Discrete Estimator. Counts =  1 2 5 38  (Total = 46)
+trestbps:  Normal Distribution. Mean = 144.7175 StandardDev = 24.6992 WeightSum = 42 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 240.4506 StandardDev = 61.6595 WeightSum = 42 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  29 15  (Total = 44)
+restecg:  Discrete Estimator. Counts =  18 3 24  (Total = 45)
+thalach:  Normal Distribution. Mean = 131.8967 StandardDev = 22.0106 WeightSum = 42 Precision = 1.6375
+exang:  Discrete Estimator. Counts =  16 28  (Total = 44)
+oldpeak:  Normal Distribution. Mean = 2.2227 StandardDev = 1.7206 WeightSum = 42 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2.1667 StandardDev = 0.4839 WeightSum = 42 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.619 StandardDev = 0.9246 WeightSum = 42 Precision = 1.0
+thal:  Normal Distribution. Mean = 7.2381 StandardDev = 1.4444 WeightSum = 42 Precision = 2.0
+
+
+Class 4: Prior probability = 0.03
+
+age:  Normal Distribution. Mean = 64.8 StandardDev = 9.1389 WeightSum = 8 Precision = 1.2
+sex:  Discrete Estimator. Counts =  1 9  (Total = 10)
+chest_pain:  Discrete Estimator. Counts =  1 1 1 9  (Total = 12)
+trestbps:  Normal Distribution. Mean = 143.3409 StandardDev = 14.6043 WeightSum = 8 Precision = 2.409090909090909
+chol:  Normal Distribution. Mean = 247.4878 StandardDev = 52.2142 WeightSum = 8 Precision = 3.5609756097560976
+fbs:  Discrete Estimator. Counts =  7 3  (Total = 10)
+restecg:  Discrete Estimator. Counts =  3 1 7  (Total = 11)
+thalach:  Normal Distribution. Mean = 135.2984 StandardDev = 15.705 WeightSum = 8 Precision = 1.6375
+exang:  Discrete Estimator. Counts =  4 6  (Total = 10)
+oldpeak:  Normal Distribution. Mean = 1.5721 StandardDev = 1.1078 WeightSum = 8 Precision = 0.17714285714285716
+slope:  Normal Distribution. Mean = 2 StandardDev = 0.7071 WeightSum = 8 Precision = 1.0
+ca:  Normal Distribution. Mean = 1.75 StandardDev = 1.3919 WeightSum = 8 Precision = 1.0
+thal:  Normal Distribution. Mean = 7 StandardDev = 1.7321 WeightSum = 8 Precision = 2.0
+
+
+
+
+Time taken to build model: 0.09 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         169               55.7756 %
+Incorrectly Classified Instances       134               44.2244 %
+Kappa statistic                          0.3012
+Mean absolute error                      0.1844
+Root mean squared error                  0.331 
+Relative absolute error                 71.2227 %
+Root relative squared error             92.1606 %
+Total Number of Instances              303     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.86      0.216      0.825     0.86      0.842    0
+  0.236     0.177      0.228     0.236     0.232    1
+  0.167     0.12       0.158     0.167     0.162    2
+  0.257     0.082      0.29      0.257     0.273    3
+  0         0.021      0         0         0        4
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   <-- classified as
+ 141  17   2   3   1 |   a = 0
+  25  13  13   3   1 |   b = 1
+   3  14   6  11   2 |   c = 2
+   2   8  14   9   2 |   d = 3
+   0   5   3   5   0 |   e = 4
+

@@ -1,0 +1,27 @@
+i have quite a bit of e-mail on this topic.  please let me get this
+over once and for all:  crack.  multithreading.  no point.  got it?
+
+there is no plausible reason for wanting to multithread crack5.
+you might as well multithread your dog.
+
+crack is batch-oriented.
+
+crack runs for days and there is no benefit to making any of its
+structures shared between processes, or run as a "lwp".
+
+"crypt"/"des" gains nothing from multithreading without heavy magic
+which isn't worth the effort.
+
+now that crack5 is so much smaller and lighter (3Mb vs. 30Mb) there's
+not even the benefit of sharing dictionaries between concurrent
+processes, and moreover it'd actually slow things down quite
+considerably (running processes in synch vs. asynch).
+
+the only possible benefit for running crack in some threaded manner
+might be in a o/s where access to extra processors is not granted
+except to threads of a process running on the main processor - but i
+know of no such o/s.
+
+Now - on the *other* hand; there is a *lot* of point in massive,
+coarse grained, parallel processing.  One process per CPU.  It works
+wonders....

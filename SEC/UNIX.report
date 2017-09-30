@@ -1,0 +1,18 @@
+Nutcracker version 1.0
+Copyright 2000 by Ryan T. Rhea
+ 
+got dict file: words /etc/share/dict/words my_words
+  
+got passwd file: SHADOW
+   
+cracking...
+    
+    user name         status           password
+    ----------------  ---------------  ----------------
+    gbwhite           CRACKED          gbwhite 
+    user1             CRACKED          rookie 
+    user2             CRACKED          secret
+    user3             CRACKED          gandalf
+    user4             unable to crack  X
+    user5             unable to crack  X
+    user6             unable to crack  X

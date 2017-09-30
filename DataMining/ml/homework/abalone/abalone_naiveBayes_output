@@ -1,0 +1,449 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.NaiveBayes 
+Relation:     abalone
+Instances:    4177
+Attributes:   9
+              sex
+              length
+              diameter
+              height
+              whole_w
+              shucked_w
+              viscera_w
+              shell_w
+              ring
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  1 1 2  (Total = 4)
+length:  Normal Distribution. Mean = 0.0723 StandardDev = 0.0009 WeightSum = 1 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.0541 StandardDev = 0.0009 WeightSum = 1 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0 StandardDev = 0.0038 WeightSum = 1 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.0023 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.001 StandardDev = 0.0002 WeightSum = 1 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0009 StandardDev = 0.0001 WeightSum = 1 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.0011 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0010848648648648647
+
+
+Class 2: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  1 1 2  (Total = 4)
+length:  Normal Distribution. Mean = 0.1502 StandardDev = 0.0009 WeightSum = 1 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.0974 StandardDev = 0.0009 WeightSum = 1 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.0226 StandardDev = 0.0038 WeightSum = 1 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.0151 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.0049 StandardDev = 0.0002 WeightSum = 1 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0043 StandardDev = 0.0001 WeightSum = 1 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.0054 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0010848648648648647
+
+
+Class 3: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  4 1 13  (Total = 18)
+length:  Normal Distribution. Mean = 0.1762 StandardDev = 0.0337 WeightSum = 15 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.1284 StandardDev = 0.0238 WeightSum = 15 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.0392 StandardDev = 0.013 WeightSum = 15 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.0283 StandardDev = 0.0154 WeightSum = 15 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.012 StandardDev = 0.0075 WeightSum = 15 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0062 StandardDev = 0.0035 WeightSum = 15 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.0091 StandardDev = 0.0042 WeightSum = 15 Precision = 0.0010848648648648647
+
+
+Class 4: Prior probability = 0.01
+
+sex:  Discrete Estimator. Counts =  7 1 52  (Total = 60)
+length:  Normal Distribution. Mean = 0.2214 StandardDev = 0.0494 WeightSum = 57 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.1615 StandardDev = 0.0384 WeightSum = 57 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.0551 StandardDev = 0.0169 WeightSum = 57 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.0596 StandardDev = 0.0382 WeightSum = 57 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.0247 StandardDev = 0.0166 WeightSum = 57 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0129 StandardDev = 0.0085 WeightSum = 57 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.018 StandardDev = 0.0123 WeightSum = 57 Precision = 0.0010848648648648647
+
+
+Class 5: Prior probability = 0.03
+
+sex:  Discrete Estimator. Counts =  12 5 101  (Total = 118)
+length:  Normal Distribution. Mean = 0.2855 StandardDev = 0.0603 WeightSum = 115 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.2109 StandardDev = 0.0473 WeightSum = 115 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.0704 StandardDev = 0.0188 WeightSum = 115 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.1255 StandardDev = 0.0755 WeightSum = 115 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.0617 StandardDev = 0.0648 WeightSum = 115 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0273 StandardDev = 0.0166 WeightSum = 115 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.0367 StandardDev = 0.0203 WeightSum = 115 Precision = 0.0010848648648648647
+
+
+Class 6: Prior probability = 0.06
+
+sex:  Discrete Estimator. Counts =  28 17 217  (Total = 262)
+length:  Normal Distribution. Mean = 0.3691 StandardDev = 0.075 WeightSum = 259 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.2789 StandardDev = 0.0603 WeightSum = 259 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.0918 StandardDev = 0.0237 WeightSum = 259 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.2732 StandardDev = 0.1793 WeightSum = 259 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.1232 StandardDev = 0.086 WeightSum = 259 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0584 StandardDev = 0.0385 WeightSum = 259 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.0784 StandardDev = 0.0501 WeightSum = 259 Precision = 0.0010848648648648647
+
+
+Class 7: Prior probability = 0.09
+
+sex:  Discrete Estimator. Counts =  81 45 268  (Total = 394)
+length:  Normal Distribution. Mean = 0.4219 StandardDev = 0.0759 WeightSum = 391 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.3215 StandardDev = 0.0616 WeightSum = 391 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1055 StandardDev = 0.0241 WeightSum = 391 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.3974 StandardDev = 0.2239 WeightSum = 391 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.1827 StandardDev = 0.1112 WeightSum = 391 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.0859 StandardDev = 0.0505 WeightSum = 391 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.1116 StandardDev = 0.0566 WeightSum = 391 Precision = 0.0010848648648648647
+
+
+Class 8: Prior probability = 0.14
+
+sex:  Discrete Estimator. Counts =  173 123 275  (Total = 571)
+length:  Normal Distribution. Mean = 0.4985 StandardDev = 0.0792 WeightSum = 568 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.3846 StandardDev = 0.0648 WeightSum = 568 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1291 StandardDev = 0.0493 WeightSum = 568 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.6408 StandardDev = 0.2959 WeightSum = 568 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.2938 StandardDev = 0.145 WeightSum = 568 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.1385 StandardDev = 0.0677 WeightSum = 568 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.1786 StandardDev = 0.0754 WeightSum = 568 Precision = 0.0010848648648648647
+
+
+Class 9: Prior probability = 0.16
+
+sex:  Discrete Estimator. Counts =  279 239 174  (Total = 692)
+length:  Normal Distribution. Mean = 0.5468 StandardDev = 0.0829 WeightSum = 689 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4251 StandardDev = 0.0676 WeightSum = 689 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1441 StandardDev = 0.0272 WeightSum = 689 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0.852 StandardDev = 0.3617 WeightSum = 689 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.3879 StandardDev = 0.1823 WeightSum = 689 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.1878 StandardDev = 0.0838 WeightSum = 689 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.2365 StandardDev = 0.0916 WeightSum = 689 Precision = 0.0010848648648648647
+
+
+Class 10: Prior probability = 0.15
+
+sex:  Discrete Estimator. Counts =  295 249 93  (Total = 637)
+length:  Normal Distribution. Mean = 0.5745 StandardDev = 0.0856 WeightSum = 634 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4492 StandardDev = 0.0694 WeightSum = 634 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1551 StandardDev = 0.0318 WeightSum = 634 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.0087 StandardDev = 0.4159 WeightSum = 634 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4472 StandardDev = 0.2029 WeightSum = 634 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2231 StandardDev = 0.0952 WeightSum = 634 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.283 StandardDev = 0.1067 WeightSum = 634 Precision = 0.0010848648648648647
+
+
+Class 11: Prior probability = 0.12
+
+sex:  Discrete Estimator. Counts =  226 201 63  (Total = 490)
+length:  Normal Distribution. Mean = 0.5993 StandardDev = 0.0868 WeightSum = 487 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4707 StandardDev = 0.0711 WeightSum = 487 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1624 StandardDev = 0.0304 WeightSum = 487 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1426 StandardDev = 0.4634 WeightSum = 487 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.504 StandardDev = 0.2298 WeightSum = 487 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2524 StandardDev = 0.1068 WeightSum = 487 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3199 StandardDev = 0.1166 WeightSum = 487 Precision = 0.0010848648648648647
+
+
+Class 12: Prior probability = 0.06
+
+sex:  Discrete Estimator. Counts =  119 129 22  (Total = 270)
+length:  Normal Distribution. Mean = 0.5894 StandardDev = 0.0893 WeightSum = 267 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4621 StandardDev = 0.0724 WeightSum = 267 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1623 StandardDev = 0.0293 WeightSum = 267 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1029 StandardDev = 0.5002 WeightSum = 267 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4728 StandardDev = 0.2434 WeightSum = 267 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2396 StandardDev = 0.1134 WeightSum = 267 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3212 StandardDev = 0.1321 WeightSum = 267 Precision = 0.0010848648648648647
+
+
+Class 13: Prior probability = 0.05
+
+sex:  Discrete Estimator. Counts =  92 89 25  (Total = 206)
+length:  Normal Distribution. Mean = 0.5788 StandardDev = 0.0852 WeightSum = 203 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4566 StandardDev = 0.0698 WeightSum = 203 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1621 StandardDev = 0.0306 WeightSum = 203 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.0755 StandardDev = 0.4542 WeightSum = 203 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4347 StandardDev = 0.2208 WeightSum = 203 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2354 StandardDev = 0.1038 WeightSum = 203 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3208 StandardDev = 0.1166 WeightSum = 203 Precision = 0.0010848648648648647
+
+
+Class 14: Prior probability = 0.03
+
+sex:  Discrete Estimator. Counts =  57 57 15  (Total = 129)
+length:  Normal Distribution. Mean = 0.58 StandardDev = 0.0797 WeightSum = 126 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4583 StandardDev = 0.0646 WeightSum = 126 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1639 StandardDev = 0.0313 WeightSum = 126 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.08 StandardDev = 0.4515 WeightSum = 126 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4272 StandardDev = 0.2107 WeightSum = 126 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2353 StandardDev = 0.0991 WeightSum = 126 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3299 StandardDev = 0.1296 WeightSum = 126 Precision = 0.0010848648648648647
+
+
+Class 15: Prior probability = 0.02
+
+sex:  Discrete Estimator. Counts =  53 42 11  (Total = 106)
+length:  Normal Distribution. Mean = 0.5758 StandardDev = 0.0689 WeightSum = 103 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4564 StandardDev = 0.0588 WeightSum = 103 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1611 StandardDev = 0.0293 WeightSum = 103 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.041 StandardDev = 0.3655 WeightSum = 103 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4025 StandardDev = 0.1463 WeightSum = 103 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2275 StandardDev = 0.0836 WeightSum = 103 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3216 StandardDev = 0.1143 WeightSum = 103 Precision = 0.0010848648648648647
+
+
+Class 16: Prior probability = 0.02
+
+sex:  Discrete Estimator. Counts =  31 31 8  (Total = 70)
+length:  Normal Distribution. Mean = 0.5875 StandardDev = 0.0765 WeightSum = 67 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4682 StandardDev = 0.0651 WeightSum = 67 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1727 StandardDev = 0.0302 WeightSum = 67 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1334 StandardDev = 0.4159 WeightSum = 67 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4217 StandardDev = 0.1608 WeightSum = 67 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2398 StandardDev = 0.0895 WeightSum = 67 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3779 StandardDev = 0.1489 WeightSum = 67 Precision = 0.0010848648648648647
+
+
+Class 17: Prior probability = 0.01
+
+sex:  Discrete Estimator. Counts =  26 27 8  (Total = 61)
+length:  Normal Distribution. Mean = 0.601 StandardDev = 0.0692 WeightSum = 58 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4753 StandardDev = 0.0579 WeightSum = 58 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1757 StandardDev = 0.0314 WeightSum = 58 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.2342 StandardDev = 0.4732 WeightSum = 58 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.467 StandardDev = 0.19 WeightSum = 58 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2512 StandardDev = 0.0904 WeightSum = 58 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3935 StandardDev = 0.1596 WeightSum = 58 Precision = 0.0010848648648648647
+
+
+Class 18: Prior probability = 0.01
+
+sex:  Discrete Estimator. Counts =  19 20 6  (Total = 45)
+length:  Normal Distribution. Mean = 0.5964 StandardDev = 0.0727 WeightSum = 42 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4714 StandardDev = 0.0582 WeightSum = 42 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1722 StandardDev = 0.0251 WeightSum = 42 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1944 StandardDev = 0.4137 WeightSum = 42 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4469 StandardDev = 0.1614 WeightSum = 42 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2428 StandardDev = 0.0897 WeightSum = 42 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3867 StandardDev = 0.1664 WeightSum = 42 Precision = 0.0010848648648648647
+
+
+Class 19: Prior probability = 0.01
+
+sex:  Discrete Estimator. Counts =  16 16 3  (Total = 35)
+length:  Normal Distribution. Mean = 0.5957 StandardDev = 0.067 WeightSum = 32 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4708 StandardDev = 0.0612 WeightSum = 32 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1695 StandardDev = 0.024 WeightSum = 32 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1668 StandardDev = 0.387 WeightSum = 32 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4406 StandardDev = 0.1794 WeightSum = 32 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2489 StandardDev = 0.1024 WeightSum = 32 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3653 StandardDev = 0.1067 WeightSum = 32 Precision = 0.0010848648648648647
+
+
+Class 20: Prior probability = 0.01
+
+sex:  Discrete Estimator. Counts =  13 13 3  (Total = 29)
+length:  Normal Distribution. Mean = 0.6037 StandardDev = 0.0563 WeightSum = 26 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.482 StandardDev = 0.0521 WeightSum = 26 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1765 StandardDev = 0.0178 WeightSum = 26 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.2518 StandardDev = 0.3703 WeightSum = 26 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4581 StandardDev = 0.1431 WeightSum = 26 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2511 StandardDev = 0.0928 WeightSum = 26 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.4259 StandardDev = 0.1363 WeightSum = 26 Precision = 0.0010848648648648647
+
+
+Class 21: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  7 8 2  (Total = 17)
+length:  Normal Distribution. Mean = 0.6176 StandardDev = 0.0722 WeightSum = 14 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4857 StandardDev = 0.0666 WeightSum = 14 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1727 StandardDev = 0.0265 WeightSum = 14 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.2505 StandardDev = 0.358 WeightSum = 14 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4475 StandardDev = 0.1376 WeightSum = 14 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2466 StandardDev = 0.0868 WeightSum = 14 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.4446 StandardDev = 0.1527 WeightSum = 14 Precision = 0.0010848648648648647
+
+
+Class 22: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  4 4 1  (Total = 9)
+length:  Normal Distribution. Mean = 0.5944 StandardDev = 0.0503 WeightSum = 6 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4724 StandardDev = 0.054 WeightSum = 6 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1959 StandardDev = 0.0337 WeightSum = 6 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.2212 StandardDev = 0.489 WeightSum = 6 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4051 StandardDev = 0.1895 WeightSum = 6 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2169 StandardDev = 0.0852 WeightSum = 6 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.39 StandardDev = 0.1409 WeightSum = 6 Precision = 0.0010848648648648647
+
+
+Class 23: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  4 7 1  (Total = 12)
+length:  Normal Distribution. Mean = 0.5873 StandardDev = 0.0968 WeightSum = 9 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.464 StandardDev = 0.0754 WeightSum = 9 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1758 StandardDev = 0.0277 WeightSum = 9 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.1703 StandardDev = 0.5181 WeightSum = 9 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.3994 StandardDev = 0.2017 WeightSum = 9 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2548 StandardDev = 0.129 WeightSum = 9 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3705 StandardDev = 0.1156 WeightSum = 9 Precision = 0.0010848648648648647
+
+
+Class 24: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  2 2 1  (Total = 5)
+length:  Normal Distribution. Mean = 0.6955 StandardDev = 0.0056 WeightSum = 2 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.5409 StandardDev = 0.0009 WeightSum = 2 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.2034 StandardDev = 0.0226 WeightSum = 2 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.799 StandardDev = 0.1791 WeightSum = 2 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.6006 StandardDev = 0.0673 WeightSum = 2 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.3331 StandardDev = 0.0203 WeightSum = 2 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.6325 StandardDev = 0.077 WeightSum = 2 Precision = 0.0010848648648648647
+
+
+Class 25: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  1 2 1  (Total = 4)
+length:  Normal Distribution. Mean = 0.6454 StandardDev = 0.0009 WeightSum = 1 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4922 StandardDev = 0.0009 WeightSum = 1 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.226 StandardDev = 0.0038 WeightSum = 1 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.4059 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.4263 StandardDev = 0.0002 WeightSum = 1 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2281 StandardDev = 0.0001 WeightSum = 1 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.5099 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0010848648648648647
+
+
+Class 26: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  2 1 1  (Total = 4)
+length:  Normal Distribution. Mean = 0.6009 StandardDev = 0.0009 WeightSum = 1 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.4976 StandardDev = 0.0009 WeightSum = 1 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.2034 StandardDev = 0.0038 WeightSum = 1 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.0571 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.384 StandardDev = 0.0002 WeightSum = 1 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.1901 StandardDev = 0.0001 WeightSum = 1 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.3754 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0010848648648648647
+
+
+Class 27: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  2 2 1  (Total = 5)
+length:  Normal Distribution. Mean = 0.6092 StandardDev = 0.0584 WeightSum = 2 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.5003 StandardDev = 0.0352 WeightSum = 2 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.2034 StandardDev = 0.0226 WeightSum = 2 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.6984 StandardDev = 0.4855 WeightSum = 2 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.5387 StandardDev = 0.2146 WeightSum = 2 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.2981 StandardDev = 0.0933 WeightSum = 2 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.7052 StandardDev = 0.1801 WeightSum = 2 Precision = 0.0010848648648648647
+
+
+Class 28: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  1 1 1  (Total = 3)
+length:  Normal Distribution. Mean = 0 StandardDev = 0.0009 WeightSum = 0 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0 StandardDev = 0.0009 WeightSum = 0 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0 StandardDev = 0.0038 WeightSum = 0 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 0 StandardDev = 0.0002 WeightSum = 0 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0 StandardDev = 0.0002 WeightSum = 0 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0 StandardDev = 0.0001 WeightSum = 0 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0 StandardDev = 0.0002 WeightSum = 0 Precision = 0.0010848648648648647
+
+
+Class 29: Prior probability = 0   
+
+sex:  Discrete Estimator. Counts =  1 2 1  (Total = 4)
+length:  Normal Distribution. Mean = 0.7011 StandardDev = 0.0009 WeightSum = 1 Precision = 0.00556390977443609
+diameter:  Normal Distribution. Mean = 0.5842 StandardDev = 0.0009 WeightSum = 1 Precision = 0.0054090909090909085
+height:  Normal Distribution. Mean = 0.1808 StandardDev = 0.0038 WeightSum = 1 Precision = 0.0226
+whole_w:  Normal Distribution. Mean = 1.8071 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0011628912685337728
+shucked_w:  Normal Distribution. Mean = 0.7052 StandardDev = 0.0002 WeightSum = 1 Precision = 9.821664464993395E-4
+viscera_w:  Normal Distribution. Mean = 0.3214 StandardDev = 0.0001 WeightSum = 1 Precision = 8.640500568828214E-4
+shell_w:  Normal Distribution. Mean = 0.4752 StandardDev = 0.0002 WeightSum = 1 Precision = 0.0010848648648648647
+
+
+Time taken to build model: 0.23 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         989               23.6773 %
+Incorrectly Classified Instances      3188               76.3227 %
+Kappa statistic                          0.1378
+Mean absolute error                      0.0558
+Root mean squared error                  0.1881
+Relative absolute error                 90.2986 %
+Root relative squared error            107.0455 %
+Total Number of Instances             4177     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0         0          0         0         0        1
+  0         0          0         0         0        2
+  0.867     0.01       0.236     0.867     0.371    3
+  0.404     0.015      0.277     0.404     0.329    4
+  0.435     0.045      0.216     0.435     0.289    5
+  0.347     0.07       0.248     0.347     0.289    6
+  0.335     0.113      0.235     0.335     0.276    7
+  0.257     0.124      0.246     0.257     0.252    8
+  0.28      0.178      0.237     0.28      0.257    9
+  0.192     0.113      0.234     0.192     0.211    10
+  0.446     0.178      0.248     0.446     0.319    11
+  0.004     0.002      0.111     0.004     0.007    12
+  0         0          0         0         0        13
+  0         0          0         0         0        14
+  0         0          0         0         0        15
+  0         0          0         0         0        16
+  0.052     0.004      0.158     0.052     0.078    17
+  0         0          0         0         0        18
+  0         0          0         0         0        19
+  0         0.004      0         0         0        20
+  0         0          0         0         0        21
+  0         0          0         0         0        22
+  0         0          0         0         0        23
+  0         0.001      0         0         0        24
+  0         0          0         0         0        25
+  0         0          0         0         0        26
+  0         0.007      0         0         0        27
+  0         0          0         0         0        28
+  0         0          0         0         0        29
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   k   l   m   n   o   p   q   r   s   t   u   v   w   x   y   z  aa  ab  ac   <-- classified as
+   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   a = 1
+   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   b = 2
+   0   0  13   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   c = 3
+   0   0  25  23   8   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   d = 4
+   0   0  11  34  50  17   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   e = 5
+   0   0   3  17  80  90  50  12   5   1   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   f = 6
+   0   0   1   6  52 119 131  54  20   5   3   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   g = 7
+   0   0   0   1  19  61 144 146 133  41  23   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   h = 8
+   0   0   0   0  10  35  93 125 193 115 118   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   i = 9
+   0   0   0   0   7  23  49  79 148 122 202   1   0   0   0   0   0   0   0   1   0   0   0   0   0   0   2   0   0 |   j = 10
+   0   0   0   0   4   8  32  54  94  67 217   7   0   0   0   0   0   0   0   0   0   0   0   1   0   0   3   0   0 |   k = 11
+   0   0   0   0   0   6  19  41  52  39 100   1   0   0   0   0   0   0   0   3   1   0   0   0   0   0   5   0   0 |   l = 12
+   0   0   0   0   1   2  15  26  51  33  68   0   0   0   0   0   3   0   0   2   0   0   0   1   0   0   1   0   0 |   m = 13
+   0   0   0   0   0   1   6  22  29  26  32   0   0   0   1   0   3   0   0   1   0   0   1   1   0   0   3   0   0 |   n = 14
+   0   0   0   0   0   0   6  16  24  27  26   0   0   0   0   0   0   0   0   2   0   0   0   1   0   0   1   0   0 |   o = 15
+   0   0   0   0   0   0   6   3  18  10  21   0   0   0   0   0   3   0   0   2   1   0   0   0   0   0   3   0   0 |   p = 16
+   0   0   0   0   0   0   0   5  19   9  15   0   0   0   0   0   3   0   0   1   0   0   0   0   0   0   6   0   0 |   q = 17
+   0   0   0   0   0   0   3   4   6   8  16   0   0   0   0   0   1   0   0   2   0   0   0   0   0   0   2   0   0 |   r = 18
+   0   0   0   0   0   0   1   2  10   7  12   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   s = 19
+   0   0   0   0   0   0   0   1   4   9   8   0   0   0   0   0   2   0   0   0   0   0   0   0   0   0   2   0   0 |   t = 20
+   0   0   0   0   0   0   0   2   2   1   6   0   0   0   0   0   1   0   0   2   0   0   0   0   0   0   0   0   0 |   u = 21
+   0   0   0   0   0   0   0   1   2   0   1   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   1   0   0 |   v = 22
+   0   0   0   0   0   0   0   0   4   1   3   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0 |   w = 23
+   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0 |   x = 24
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0 |   y = 25
+   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |   z = 26
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   1   0   0   1   0   0   0   0   0   0   0   0   0 |  aa = 27
+   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ab = 28
+   0   0   0   0   0   0   0   0   0   0   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0 |  ac = 29
+

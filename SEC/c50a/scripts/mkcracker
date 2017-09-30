@@ -1,0 +1,46 @@
+#!/bin/sh -x
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+# Eulogy for Paul Revere, upon visiting his grave in Boston:
+# "Of course, you realise, this is all your fault..."
+
+prefix=$1
+
+shift
+
+if [ -d ../libdes ] # libdes from eay
+then
+
+    ( cd ../libdes ; make ) || exit 1
+    exec make "$@" $prefix/libdes-cracker
+
+elif [ -d ../ufc-crypt ] # UFC from comp.sources.misc
+then
+
+    ( cd ../ufc-crypt ; make ) || exit 1
+    exec make "$@" $prefix/ufc-cracker
+
+elif [ -d ../crypt ] # GNU UFC in disguise
+then
+
+    ( cd ../crypt ; make ) || exit 1
+    exec make "$@" $prefix/gnu-cracker
+
+else
+
+    exec make "$@" $prefix/stdlib-cracker
+
+fi
+
+echo "WTF!?!"
+
+exit 1

@@ -1,0 +1,14 @@
+----------
+xx--xxxxxx
+xx----xx--
+xx----xx--
+xx----xx--
+xx----xx--
+xx----xx--
+xx--x-xx--
+xxxxx-xx--
+----------
+
+
+This is an example for data, 10x10
+The program will read only the top of the data file until matrix is full

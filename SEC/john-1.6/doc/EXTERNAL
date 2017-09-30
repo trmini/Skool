@@ -1,0 +1,68 @@
+
+ Defining an External Mode
+===========================
+
+To define an external cracking mode you need to create a configuration file
+section called [List.External:MODE], where MODE is any identifier that you
+assign to the mode. The section should contain some functions coded in a
+subset of the C language. John will compile and use them if you enable this
+mode via the command line.
+
+ External Functions
+--------------------
+
+The following functions are currently used by John:
+
+init()		called at startup, should initialize global variables
+filter()	called for each word to be tried, can filter some words out
+generate()	called to generate words, when no other cracking modes used
+restore()	called when restoring an interrupted session
+
+All of them are of type 'void', with no arguments, and should use global
+variable 'word' (pre-defined as 'int word[]'), except for init() which is
+called before 'word' is initialized. The 'word' variable contains current
+word to be tried, in ASCIIZ.
+
+The functions, if defined, should do the following with 'word':
+
+* filter() can modify the word, or zero out 'word[0]' to skip it;
+
+* generate() should set 'word' to the next word to be tried, or zero out
+'word[0]' when cracking is complete (this will cause John to terminate);
+
+* restore() should set global variables to continue from the 'word'.
+
+You can use an external mode separately, or with some other cracking mode,
+in which case only init() and filter() will be used (and only filter()
+will be required). Using an external filter is compatible with all the
+other cracking modes and '-makechars' command line option.
+
+It is recommended that you don't use filter(), or at least don't filter
+too many words out when using an external mode with your own generate().
+Better modify generate() not to generate words that would get filtered out.
+
+ The Language
+--------------
+
+As I already mentioned above, the compiler supports a subset of C. John is
+a cracker, not a compiler, so I don't think it needs anything else. (Well,
+I'm not even sure it needed a compiler at all, but using an external, say,
+perl is less convenient in some cases...)
+
+Here's a list of supported keywords: void, int, if, else, while, continue,
+break, return. You can define standard functions to be called by John,
+define global and local variables (including single dimensional arrays),
+use all the integer operations supported in C, and use C comments.
+
+The following C features are missing in John's compiler:
+
+* only standard functions supported, you can't define your own ones;
+* only 'while' loops are supported;
+* only 'int' and 'void' data types supported;
+* only single dimensional arrays supported;
+* structs/unions are not supported;
+* pointers are not supported (array name refers to the first element);
+* probably something else...
+
+You can find some external mode examples in the default configuration file
+supplied with John.

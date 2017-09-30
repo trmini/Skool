@@ -1,0 +1,32 @@
+// This display the first menu
+// First of all I just write it like a small program
+// Later on, change it into a void function
+
+#include "c:\mydocu~1\cosc\project\display.h"
+
+void display_main_menu()
+ {
+  constream main_menu;
+  int row=0;
+  sub_window(main_menu,18,6,62,21);
+  textcolor(YELLOW);
+  main_menu<<setxy(18,1)<<"A Tutorial"<<endl;
+  main_menu<<setxy(13,2)<<"for Rational Numbers"<<endl;
+  main_menu<<setxy(18,4)<<"MAIN  MENU"<<endl;
+  textcolor(LIGHTRED);
+  for (row=1;row<=9;row++)  main_menu<<setxy(4,row+5)<<row<<".";
+  textcolor(WHITE);
+  main_menu<<setxy(8,6)<<"Instructions"<<endl;
+  main_menu<<setxy(8,7)<<"Addition and Subtraction"<<endl;
+  main_menu<<setxy(8,8)<<"Reciprocal or Multiplicative Inverse"<<endl;
+  main_menu<<setxy(8,9)<<"Multiplication and Division"<<endl;
+  main_menu<<setxy(8,10)<<"Reduce a Rational Number"<<endl;
+  main_menu<<setxy(8,11)<<"Express As a Mixed Number"<<endl;
+  main_menu<<setxy(8,12)<<"Compare Two Rational Numbers"<<endl;
+  main_menu<<setxy(8,13)<<"Other Related Topics"<<endl;
+  main_menu<<setxy(8,14)<<"Quit"<<endl;
+  textcolor(LIGHTGREEN);
+  main_menu<<setxy(5,15)<<"   Enter your choice here: ";
+  return;
+ }
+

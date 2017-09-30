@@ -1,0 +1,132 @@
+import java.lang.*;
+import java.io.*;
+import mySocket;
+
+class client_server {
+  protected static boolean Debug = true;
+  public static void main(String[] args) throws Exception
+  {
+    int PortNum = 2155;
+    int PackSize = 1024;
+    int PackNum = 1000;
+    if ( (args.length >= 1) && (args[0].length() == 2) && (args[0].equals("-s")) ) {
+      try {
+        PortNum = Integer.parseInt(args[1]);
+	PackSize = Integer.parseInt(args[2]);
+      }
+      catch (Exception error) {
+        System.out.println(error);
+	return;
+      }
+      server(PortNum, PackSize);
+    }
+    else if ( (args.length >= 3) && (args[0].length() == 2) && (args[0].equals("-c")) ) {
+      try {
+        PortNum = Integer.parseInt(args[2]);
+        if ( args.length >= 4 ) {
+	  PackSize = Integer.parseInt(args[3]);
+	  if ( args.length >= 5) {
+	    PackNum = Integer.parseInt(args[4]);
+	  }
+	}
+      } catch (Exception error) {
+        System.out.println(error);
+      }
+      client(args[1], PortNum, PackSize, PackNum);
+    }
+    else {
+      System.out.println("Usage: client_server -c <IP Address> <Port Num> <Packet Size = 1024> <Iterration = 1000>");
+      System.out.println("or");
+      System.out.println("       client_server -s <Port Num> <PackSize>");
+    }
+  }
+
+  public static int server(int PortNum, int PackSize) throws Exception
+  {
+    if (PortNum <= 1024) {
+      System.out.println("Invalid port number!");
+      System.out.println("Exiting...");
+      return 0;
+    }
+    mySocket Socket = new mySocket();
+    try {
+      Socket.listen(PortNum);
+    } catch (IOException error) {
+      System.out.println("Could not listen on port " + PortNum);
+      System.out.println("Exiting...");
+      return 0;
+    }
+    System.out.println("Server is acepting client on port " + PortNum + "...");
+    while(true) {
+      byte[] BufferData = new byte[2*PackSize];
+      for (int i = 0; i < 10; i++) {
+	try {
+          Socket.read(BufferData, PackSize);
+	  if (Debug) {
+	    System.out.println("Server: read[" + i + "] done!");
+	  }
+          Socket.write(BufferData, PackSize);
+	  if (Debug) {
+	    System.out.println("Server: write[" + i + "] done!");
+	  }
+	} catch (IOException error) {
+	  Socket.close();
+	  break;
+	}
+      }
+      break;
+    }
+    return 1;
+  }
+
+  public static void client(String HostName, int PortNum, int PackSize, int PackNum) throws Exception
+  {
+    if (PortNum <= 0 || PackSize <= 0 || PackNum <= 0) {
+      System.out.println("Invalid argument!");
+      return;
+    }
+
+    mySocket clientSocket = new mySocket();
+
+    try {
+      clientSocket.connect(HostName, PortNum);
+    }
+    catch(IOException error) {
+      System.out.println("Could not make connection to " + HostName + " at port " + PortNum);
+      System.out.println("Exiting...");
+      return;
+    }
+    System.out.println("Connecting to server...");
+    int i = 0;
+    byte[] BufferData = new byte[2*PackSize];
+    long time_delay = 0;
+
+    time_delay = System.currentTimeMillis();
+    for(i = 0; i < 10; i++) {
+      try {
+        clientSocket.write(BufferData, PackSize);
+	if (Debug) {
+	  System.out.println("Client: write[" + i + "] done!");
+	}
+        clientSocket.read(BufferData, PackSize);
+	if (Debug) {
+	  System.out.println("Client: read[" + i + "] done!");
+	}
+      } catch (IOException error) {
+        System.out.println("Lost connection with host...");
+        System.out.println("Actual number ofpackages sent: " + i);
+        break;
+      }
+    }
+    time_delay = System.currentTimeMillis() - time_delay;
+    clientSocket.close();
+
+    /* Print out statistic here*/
+    /* System.out.println("Message size: " + PackSize + " byte(s)");
+    System.out.println("Latency per packet:\t" + (double) time_delay/(2*i) + " ms");
+    System.out.println("Throughput:\t" + (double) (16*PackSize*i)/(1024*time_delay) + " Mbs"); */
+    /* Print out compact statistic here */
+    System.out.println(PackSize + ", " + ((double) time_delay/(2*i)) + ", " + ((double) (16*PackSize*i)/(1024*time_delay)));
+    return;
+  }
+}

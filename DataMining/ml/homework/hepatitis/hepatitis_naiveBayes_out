@@ -1,0 +1,101 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.NaiveBayes 
+Relation:     hepatitis
+Instances:    155
+Attributes:   20
+              class
+              age
+              sex
+              steroid
+              antivirals
+              fatigue
+              malaise
+              anoresia
+              liver_big
+              liver_firm
+              spleen_palpable
+              spiders
+              ascites
+              varices
+              bilirubin
+              alk_phosphate
+              sgot
+              albumin
+              protime
+              histology
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+Class 1: Prior probability = 0.55
+
+class:  Discrete Estimator. Counts =  8 79  (Total = 87)
+age:  Normal Distribution. Mean = 39.224 StandardDev = 12.0031 WeightSum = 85 Precision = 1.4791666666666667
+sex:  Discrete Estimator. Counts =  74 13  (Total = 87)
+steroid:  Discrete Estimator. Counts =  39 47  (Total = 86)
+antivirals:  Discrete Estimator. Counts =  20 67  (Total = 87)
+fatigue:  Discrete Estimator. Counts =  50 36  (Total = 86)
+malaise:  Discrete Estimator. Counts =  29 57  (Total = 86)
+anoresia:  Discrete Estimator. Counts =  16 70  (Total = 86)
+liver_big:  Discrete Estimator. Counts =  13 70  (Total = 83)
+liver_firm:  Discrete Estimator. Counts =  28 55  (Total = 83)
+spleen_palpable:  Discrete Estimator. Counts =  11 72  (Total = 83)
+spiders:  Discrete Estimator. Counts =  16 67  (Total = 83)
+ascites:  Discrete Estimator. Counts =  3 80  (Total = 83)
+varices:  Discrete Estimator. Counts =  2 81  (Total = 83)
+bilirubin:  Normal Distribution. Mean = 1.1321 StandardDev = 0.747 WeightSum = 81 Precision = 0.2333333333333333
+alk_phosphate:  Normal Distribution. Mean = 92.7193 StandardDev = 45.8323 WeightSum = 72 Precision = 3.2804878048780486
+sgot:  Normal Distribution. Mean = 75.3609 StandardDev = 68.225 WeightSum = 82 Precision = 7.63855421686747
+albumin:  Normal Distribution. Mean = 4.011 StandardDev = 0.5142 WeightSum = 76 Precision = 0.1535714285714286
+protime:  Normal Distribution. Mean = 68.093 StandardDev = 21.1975 WeightSum = 50 Precision = 2.3255813953488373
+
+
+Class 2: Prior probability = 0.45
+
+class:  Discrete Estimator. Counts =  26 46  (Total = 72)
+age:  Normal Distribution. Mean = 43.5932 StandardDev = 12.7138 WeightSum = 70 Precision = 1.4791666666666667
+sex:  Discrete Estimator. Counts =  67 5  (Total = 72)
+steroid:  Discrete Estimator. Counts =  39 33  (Total = 72)
+antivirals:  Discrete Estimator. Counts =  6 66  (Total = 72)
+fatigue:  Discrete Estimator. Counts =  52 20  (Total = 72)
+malaise:  Discrete Estimator. Counts =  34 38  (Total = 72)
+anoresia:  Discrete Estimator. Counts =  18 54  (Total = 72)
+liver_big:  Discrete Estimator. Counts =  14 52  (Total = 66)
+liver_firm:  Discrete Estimator. Counts =  34 31  (Total = 65)
+spleen_palpable:  Discrete Estimator. Counts =  21 50  (Total = 71)
+spiders:  Discrete Estimator. Counts =  37 34  (Total = 71)
+ascites:  Discrete Estimator. Counts =  19 52  (Total = 71)
+varices:  Discrete Estimator. Counts =  18 53  (Total = 71)
+bilirubin:  Normal Distribution. Mean = 1.7672 StandardDev = 1.5479 WeightSum = 68 Precision = 0.2333333333333333
+alk_phosphate:  Normal Distribution. Mean = 122.1678 StandardDev = 53.3313 WeightSum = 54 Precision = 3.2804878048780486
+sgot:  Normal Distribution. Mean = 98.637 StandardDev = 108.0313 WeightSum = 69 Precision = 7.63855421686747
+albumin:  Normal Distribution. Mean = 3.5833 StandardDev = 0.7156 WeightSum = 63 Precision = 0.1535714285714286
+protime:  Normal Distribution. Mean = 53.7944 StandardDev = 22.4409 WeightSum = 38 Precision = 2.3255813953488373
+
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         107               69.0323 %
+Incorrectly Classified Instances        48               30.9677 %
+Mean absolute error                      0.3221
+Root mean squared error                  0.5158
+Relative absolute error                 65.0152 %
+Root relative squared error            103.6468 %
+Total Number of Instances              155     
+
+=== Detailed Accuracy By Class ===
+
+TP Rate   FP Rate   Precision   Recall  F-Measure   Class
+  0.8       0.443      0.687     0.8       0.739    1
+  0.557     0.2        0.696     0.557     0.619    2
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 68 17 |  a = 1
+ 31 39 |  b = 2
+

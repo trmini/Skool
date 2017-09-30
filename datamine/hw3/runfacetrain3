@@ -1,0 +1,1 @@
+./src/face_direction -n shades.net -t ./trainset/all_train.list -1 ./trainset/all_test1.list -2 ./trainset/all_test2.list -e 100 

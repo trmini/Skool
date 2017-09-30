@@ -1,0 +1,45 @@
+: # use perl -*- mode: perl; -*-
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+eval 'exec perl -Ss $0 "$@"'
+	if $runnning_under_some_shell;
+
+$b64blksz = 54;
+
+sub b64encode
+{
+    $i = shift;
+    $o = "";
+
+    @bytes = unpack("C*", $i);
+
+    while (($a, $b, $c) = splice(@bytes, 0, 3))
+    {
+	$val = ($a << 16) | ($b << 8) | $c;
+	$w = ($val & 077000000) >> 18;
+	$x = ($val & 0770000) >> 12;
+	$y = ($val & 07700) >> 6;
+	$z = ($val & 077);
+	$o .= pack("C*", $w, $x,
+		   (defined($b) ? $y : 64),
+		   (defined($c) ? $z : 64));
+    }
+
+    $o =~ tr!\000-\100!A-Za-z0-9+/=!;
+    $o;
+}
+
+while (read(STDIN, $buffer, $b64blksz))
+{
+    print &b64encode($buffer), "\n";
+}
+
+exit 0;

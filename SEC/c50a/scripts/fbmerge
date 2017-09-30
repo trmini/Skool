@@ -1,0 +1,69 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+trap "" 1 2  15
+
+fbdir=run
+ofile=F-merged
+sfile=XF-merged
+tfile=TF-merged$$
+
+if [ ! -d $fbdir ]
+then
+    mkdir $fbdir || exit 1
+ exit 0
+fi
+
+cd $fbdir || exit 1
+
+files="`echo [FD]*`"
+
+if [ "$files" = "[FD]*" -o "$files" = "$ofile" ]
+then
+    exit 0 # nothing to do
+fi
+
+cat [FD]* >> $sfile
+
+rm -f F*
+
+awk -F: < $sfile '
+$1 == "!fb!" {
+    password[$2] = $4
+    hits++
+    next
+}
+$1 == "F" {
+    password[$2] = $3
+    hits++
+    next
+}
+$1 == "G" {
+    password[$3] = $4
+    hits++
+    next
+}
+END {
+    if (hits)
+    {
+	for (ciphertext in password)
+	{
+	    print "F:" ciphertext ":" password[ciphertext];
+	}
+    }
+}' |
+sort |
+uniq > $tfile
+
+mv $tfile $ofile && rm $sfile
+
+exit 0

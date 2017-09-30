@@ -1,0 +1,67 @@
+In-reply-to: Richard Begg's message of 8 Mar 1996 03:17:31 GMT
+Newsgroups: comp.security.unix
+Subject: Re: parallel crack
+Date: 11 Mar 1996 12:56:11 +0000
+Lines: 52
+X-Newsreader: Gnus v5.0.15
+Content-Length: 2728
+X-Lines: 57
+Status: RO
+
+In article <4ho8sb$dae@oznet07.ozemail.com.au> Richard Begg <rbegg@ozemail.com.au> writes:
+
+ >The multi-host bit of crack did this backwards by splitting up the password
+ >file between nodes, if you split the dictionary between nodes, it works much
+ >better.
+
+Yeah, but the original version was written in the days when crypt()
+was still relatively expensive (as indeed it still is, but on a
+smaller scale) and so it was imperative to (a) reduce to an absolute
+minimum the number of calls to crypt(), and (b) not use many resources
+by keeping 1000s of slightly-different dictionaries online.
+
+Remember, this was in the days when 1Gb disks were considered *huge*,
+and were shared between 200+ people.  8-)
+
+Since the number of words is severalfold greater than the number of
+users, and since the dictionaries were generated on the fly, the
+obvious solution to this problem was to distribute the *users* around
+the nodes.
+
+Distributing *dictionaries* around the nodes would have required
+greater resources, involving a central daemon creating dictionaries on
+the fly and dumping them to the remote processes (yielding either time
+synch problems or vast quantities of disk) and a broadcast/multicast
+IPC mechanism between all the co-operating nodes, so that once one
+process had cracked the password for user "fred", all the other
+processes could be notified and wouldn't waste time trying to break
+it, greatly impacting speed in those days.
+
+This was important, because every additional user that you were
+(wasting your time) trying to crack could add hours, days even, to the
+total elapsed time.
+
+I suppose that your dictionary-distributed mechanism addresses
+addresses this little matter of communication, or does it suffer this
+bug (ie: here's an opportunity for you to speed it up further).
+
+You see, for the time it was written, the distribute-the-users
+approach wasn't really backwards at all.  It was quite sane.  8-)
+
+ >I had it running on a 64 node machine with 32MB per node, and it could
+ >run the default crack rule set on the standard dictionary against a 700 entry
+ >password file in about 15 minutes.  The limiting factor is memory, as long as
+ >there is enough memory on each node to hold its bit of the dictionary (and the
+ >password file), then it flies - if you exceed the node's memory, then it gets
+ >very ugly.
+
+Sums it up nicely.  
+
+If you have the kit, go for it. If not, stick with the old way.  8-)
+
+	- alec
+-- 
+#!/usr/local/bin/perl -- -pwcracker-in-3-lines-of-perl-plus-disclaimer
+$u{$p[1]}=$p[0] while(@p=getpwent);while(<>){chop;foreach $c (keys %u)
+{printf "u=%s p=%s\n",$u{$c},$_ if(crypt($_,$c) eq $c);}} # Use: pwc dict ...
+

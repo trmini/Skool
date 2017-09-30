@@ -1,0 +1,118 @@
+\documentstyle{article}
+%\documentclass[14pt]{article}
+
+\begin{document}
+
+\noindent
+{\bf
+Cryptography\\
+Homework 7\\
+Dien Trang Luu}\\
+
+\noindent
+{\bf Problem 1}\\
+
+We have, $x^2 - 7y^2 = 3$.
+Let take $mod (7)$ on both sides:
+
+\begin{displaymath}
+x^2 \equiv 3 mod 7 (*)
+\end{displaymath}
+
+Since $3$ is a nonresidue in ${\bf F}_7$, equation (*) does
+not have any integer solution. This implies that the original
+equation does not have any rational solution.\\
+
+\noindent
+{\bf Problem 2}\\
+
+From the original equation we have,
+\begin{eqnarray*}
+x^2 &-& 7y^2 + y + 5 = 0 \Leftrightarrow \\
+x^2 &=& 7y^2 - y - 5 \Rightarrow \\
+x^2 &\equiv& (6y + 2) mod 7 \\
+\end{eqnarray*}
+
+We have the table for possible value of $y$ in ${\bf F}_7$,\\
+
+\begin{verbatim}
+        
+                  y      0     1     2     3     4     5     6
+		  
+           (6y + 5)      2     1     0     6     5     4     3
+	
+        Number of x      2     2     1     0     0     2     0     
+
+\end{verbatim}
+
+The above implies that there are integer solutions for $(x, y)$ in
+$\bf{ F}_7$. We will have rational solutions for $(x, y)\in{\bf Q}$.
+However, there will not be a formula for all the rational solutions.\\
+
+\noindent
+{\bf Problem 3}\\
+
+For my SSN, $\alpha = 4$ and $\beta = 5$. Hence, $a_{10} = 350$. The cubic equation now is,
+$2x^3 + 2x^2y - 3xy^2 + 4y^3 + 5x^2 - 6xy -7y^2 + 8x + 9y - 350 = 0$
+\\
+
+After substituting $x = x + \alpha$ and $y = y + \beta$, we have\\
+\noindent
+$2x^3 + 2x^2y - 3xy^2 + 4y^3 + 39x^2 - 20xy + 41y^2 + 119x + 127y = 0$
+\\
+
+Now we want to remove $a_9 = 127$. Let $x'$ be $119x + 127y$ and $y' = y$. So
+$x = \frac{x'-127y}{119}$. After subtituing the new values, we have:\\
+
+\noindent
+$\frac{2}{1685159}x^3 + (-\frac{524}{1685159}y + \frac{39}{14161})x^2 + (-\frac{6161}{1685159}y^2
+- \frac{12286}{14161}y + 1)x + (\frac{11877913}{1685159}y^3 + \frac{1511892}{14161}y^2) = 0 $
+\\
+
+Divide  both sides by $y^3$ we have,\\
+
+\noindent
+$\frac{2}{1685159y^3}x^3 + \frac{-524*y + 4641}{1685159y^3}x^2 + \frac{-6161*y^2 - 1462034*y + 1685159}{(1685159y^3}x 
++ \frac{11877913y + 179915148}{1685159y}=0$
+\\
+
+Now substitute $x' = \frac{x}{y}$ and $y' = \frac{1}{y}$, we have:\\
+
+\noindent
+$\frac{2}{1685159}x^3 + \frac{4641*y - 524}{1685159}x^2 + \frac{1685159*y^2 - 1462034*y - 6161}{1685159}x + \frac{179915148*y + 11877913}{1685159} = 0$
+\\
+
+Multiply both sides by $1685159$ we have:\\
+\noindent
+$2x^3 + (4641y - 524)x^2 + (1685159y^2 - 1462034y - 6161)x + (179915148y + 11877913) = 0$
+\\
+
+Substitute $y' = 179915148*y + 11877913$ we have,\\
+
+\noindent
+$2x^3 + (4641y - \frac{418490005}{503964})x^2 + 
+(1685159y^2 - \frac{1273421880157}{755946}y + 
+\frac{223339654614674063}{2285817419664})x + 179915148y = 0$
+\\
+
+Substitute $y' = 179915148y + \frac{223339654614674063}{2285817419664}x$, we have\\
+
+\noindent
+$-\frac{279413425884260517293465812554901417}{11943307501840672636548606879107026944}x^3 + 
+(\frac{40812807970741350119}{2612480638019693546936448}y + \frac{220567943388181568111834629}{2612480638019693546936448})x^2 + 
+(\frac{119/2285817419664}y^2 - \frac{10701024203}{1142908709832}y)x + y = 0$
+\\
+
+Or,\\
+
+\noindent
+$279413425884260517293465812554901417x^3 + (-186581254809844649876320358680032y - 1008356094432336843069038192483721489312)x^2 + (-621770391848687064170874624y^2 + 111824874149270490545639386203403776y)x - 11943307501840672636548606879107026944y = 0$
+\\
+
+Now the equation is of the form,\\
+$a_1x^3 + a_2x^2y + a_3xy^2 + a_5x^2 + a_6xy + a_8y = 0$
+\\However, I could not transform the above equation to the form of\\
+$y^2   = x^3 + ax + b$. I hope that you will have the general solution
+posted on the WEB.
+
+\end{document}

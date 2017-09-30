@@ -1,0 +1,482 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (WinNT; U) [Netscape]">
+   <title>What's New in PGP Command Line</title>
+</head>
+<body>
+
+<center><b><font size=+1>What's New in PGP Command Line</font></b>
+<br>Version 6.5.8
+<br>Copyright (c) 1998-2000 by Networks Associates Technology, Inc., and
+its Affiliated Companies.
+<br>All Rights Reserved.</center>
+
+<p><br>
+<center><table BORDER=0 WIDTH="90%" >
+<tr>
+<td>Thank you for using Network Associates' products. This What's New file
+contains important information regarding the PGP Command Line. Network
+Associates strongly recommends that you read this entire document.
+<p>Network Associates welcomes your comments and suggestions. Please use
+the information provided in this file to contact us.
+<p><b>Warning:</b> Export of this software may be restricted by the U.S.
+Government.
+<p>
+<hr align=left>
+<p><b>WHAT'S IN THIS FILE</b>
+<p><a href="#enhancements">Fixes in this Release&nbsp;</a>
+<br><a href="#functionality">Functionality Overview</a>
+<br><a href="#documentation">Documentation</a>
+<br><a href="#systemrequirements">System Requirements</a>
+<br><a href="#installation">Installation</a>
+<br><a href="#knownissues">Known Issues</a>
+<br><a href="#contactingnetworkassociates">Contacting Network Associates</a>
+<p>
+<hr align=left>
+
+<p><a NAME="enhancements"></a><b>FIXES IN THIS RELEASE&nbsp;</b>
+<ul>
+<li>
+This release corrects a security-related bug with Additional Decryption Keys (ADKs) that may allow sophisticated attackers to add unauthorized ADKs to the unhashed areas of PGP public keys.
+<P>
+For more information about this bug, please review the PGP ADK Security Advisory available
+on <a href="http://www.pgp.com">www.pgp.com.</a> 
+
+</li>
+</ul>
+<P>
+<hr align=left>
+
+<p><a NAME="functionality"></a><b>FUNCTIONALITY OVERVIEW</b>
+<p>PGP Command Line provides a convenient way for you to integrate PGP's
+strong authentication and encryption features with other applications and
+automated processes. Examples include encrypting credit card transactions,
+personnel records, etc.&nbsp;
+<p>The following commands provide on-line help for each of the major product
+areas:
+<ul>
+<li>
+To display all of the encryption/decryption options: <tt>pgp -h</tt></li>
+
+<li>
+To display all of the key management options: <tt>pgp -k</tt></li>
+
+<li>
+To display all of the group management options: <tt>pgp -g</tt>&nbsp;</li>
+</ul>
+
+
+<hr align=left>
+<p><a NAME="documentation"></a><b>DOCUMENTATION</b>
+<p>Also included with this release are the following manuals, which can
+be viewed on-line as well as printed:
+<ul>
+<li>
+<b>Introduction to Cryptography</b> (IntrotoCrypto.pdf)</li>
+
+<li>
+<b>PGP Command Line User's Guide</b> (PGPCmdLineGuide.pdf)</li>
+
+<p><br>Each document is saved in Adobe Acrobat Portable Document Format
+(.PDF). You can view and print these documents with Adobe's Acrobat Reader.
+PDF files can include hypertext links and other navigation features to
+assist you in finding answers to questions about your Network Associates
+product. To download Adobe Acrobat Reader from the World Wide Web, visit
+<a href="http://www.adobe.com">Adobe's
+Web site</a>.</ul>
+For UNIX releases the following online documents are also included:&nbsp;
+<ul>
+<li>
+<b>PGP.1</b></li>
+
+<p><br>After the PGP Command Line product has been installed, this document
+can be found in:
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td>Linux RPM:</td>
+
+<td><tt>/usr/man/man1</tt></td>
+</tr>
+
+<tr>
+<td>Solaris:</td>
+
+<td><tt>/opt/PGP/man/man1/</tt></td>
+</tr>
+
+<tr>
+<td>tar file for all platforms:</td>
+
+<td><i>install_directory</i><tt>/pgp-6.5.8/man/man1</tt></td>
+</tr>
+</table>
+
+<p>For more information on how to view the man page, type <tt>man man</tt>
+at the command prompt (Unix).&nbsp;</ul>
+
+<ul>
+<li>
+<b>PGPCmdLineGuide.ps&nbsp;</b></li>
+
+<li>
+<b>IntrotoCrypto.ps&nbsp;</b></li>
+
+<p><br>These are postscript files of the PGP Command Line User's Guide
+and the Introduction to Cryptography. After the PGP Command Line product
+has been installed, these documents are located in:
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td>Linux RPM:</td>
+
+<td><tt>/usr/doc/pgp-6.5.8&nbsp;</tt></td>
+</tr>
+
+<tr>
+<td>Solaris:</td>
+
+<td><tt>/opt/PGP/docs</tt></td>
+</tr>
+
+<tr>
+<td>tar file for all platforms:</td>
+
+<td><i>install_directory</i><tt>/pgp-6.5.8/docs</tt></td>
+</tr>
+</table>
+</ul>
+Documentation feedback is welcome. Send email to <a href="mailto:tns_documentation@nai.com">tns_documentation@nai.com</a>.&nbsp;
+<p>
+<hr align=left>
+<p><a NAME="systemrequirements"></a><b>SYSTEM REQUIREMENTS&nbsp;</b>
+<p>To install PGP Command Line on a Windows NT or Windows 2000 system,
+you must have:&nbsp;
+<ul>
+<li>
+Windows NT version 4.0 (Service Pack 3 or later)</li>
+
+<br>or
+<br>Windows 2000 (RC2 or later)&nbsp;
+<li>
+32MB RAM minimum&nbsp;</li>
+
+<li>
+6MB disk space for software&nbsp;</li>
+</ul>
+To install PGP Command Line on a UNIX system, you must have:&nbsp;
+<ul>
+<li>
+One of these flavors of UNIX:&nbsp;</li>
+
+<ul>
+<li>
+Sun Solaris for SPARC version 2.51 or later&nbsp;</li>
+
+<li>
+AIX 4.2 or later</li>
+
+<li>
+HPUX 10.20 or later</li>
+
+<li>
+Linux x86 Red Hat (RPM) 5.0 or later&nbsp;</li>
+</ul>
+
+<li>
+32MB RAM minimum for Linux, AIX, and HPUX&nbsp;</li>
+
+<li>
+9MB disk space for software&nbsp;</li>
+
+<li>
+9MB disk space in <tt>/opt</tt> directory for Solaris&nbsp;</li>
+</ul>
+
+<hr align=left>
+<p><a NAME="installation"></a><b>INSTALLATION</b>
+<p><b>To install PGP Command Line on a Windows machine:</b>
+<ol>
+<li>
+Start the Windows system.</li>
+
+<li>
+Download the PGP files to the system or insert the PGP CD-ROM into the
+CD-ROM drive.</li>
+
+<li>
+Double-click <tt>SETUP.EXE</tt> to start the Setup program.</li>
+
+<p><br><b>Note:</b> If you are installing from the CD-ROM, the Setup program
+automatically starts. If, however, the Setup program does not initiate,
+double-click <tt>SETUP.EXE</tt> in the Disk 1 folder on the CD-ROM.&nbsp;
+<p>The PGP Command Line Welcome screen appears.
+<li>
+Review the information in the Welcome screen, then click Next.</li>
+
+<p><br>The Network Associates license agreement appears.
+<li>
+Review the license agreement information, then click Yes to accept the
+licensing terms.</li>
+
+<li>
+Use the default destination directory or click Browse to navigate to a
+directory for your PGP files, then click Next.</li>
+
+<p><br>The PGP files are copied to the computer.
+<li>
+Click Finish to complete the PGP Command Line installation.&nbsp;</li>
+
+<p><br>The <tt>WhatsNew.txt</tt> file appears listing the new features
+and other important information regarding PGP Command Line.</ol>
+
+<p><br><b>To install PGP Command Line on a Sun SparcStation:</b>
+<br><i>To install the software, you must have root privileges.</i>
+<ol>
+<li>
+Download the PGP package to the system or insert the PGP CD-ROM into the
+CD-ROM drive.</li>
+
+<li>
+If this is the first time you are installing the PGP Command Line product
+on this system, navigate to the directory where the <tt>PGPcmdln_x.x.x_Solaris</tt>
+file is located, and begin installing the package by issuing the following
+command (where <tt>x.x.x</tt> is the release number):&nbsp;</li>
+
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>pkgadd -d PGPcmdln_x.x.x_Solaris</tt></td>
+</tr>
+</table>
+
+<p>If a previous version of the Command Line is installed on this system,
+you must remove it before you can install the new package. You can remove
+the installed package by issuing the following command:&nbsp;
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>pkgrm PGP</tt></td>
+</tr>
+</table>
+
+<p><b>Note:</b> If you install from a CD-ROM drive under Sun Solaris, you
+may receive a warning that tells you that the file system does not conform
+to ISO-9660 specifications. This is because the name of the file contains
+more than eight characters. Ignore this warning; the install will proceed
+without problems.
+<li>
+Review the license agreement information, then type Y to accept the licensing
+terms.&nbsp;</li>
+
+<p><br>The installer processes the package and system information, verifies
+disks space requirements, and installs the PGP Command Line program files.&nbsp;
+<p><b>Note:</b> The program files are installed to the default installation
+path of <tt>/opt/PGP/</tt>.
+<li>
+When the installation is complete, you can verify that the product was
+installed properly by entering the following command:&nbsp;</li>
+
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>pkginfo -l PGP</tt></td>
+</tr>
+</table>
+
+<p>The status for the selected package should be "<tt>STATUS: completely
+installed</tt>."</ol>
+
+<p><br><b>To install PGP Command Line on AIX and HPUX systems:</b>
+<ol>
+<li>
+Download the PGP package to the system or insert the PGP CD-ROM into the
+CD-ROM drive.</li>
+
+<li>
+Uncompress the package by issuing the following command (where <tt>x.x.x</tt>
+is the release number):&nbsp;</li>
+
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>gzip -d &lt; PGPcmdln_x.x.x_AIX.tar.gz | tar xvf -</tt></td>
+</tr>
+
+<tr>
+<td>or</td>
+</tr>
+
+<tr>
+<td><tt>gzip -d &lt; PGPcmdln_x.x.x_HPUX.tar.gz | tar xvf -</tt></td>
+</tr>
+</table>
+
+<p>When the package is uncompressed, the <tt>pgp-6.5.8/</tt> directory
+is created.
+<li>
+To run the PGP Command Line application, enter the following command:&nbsp;</li>
+
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>./pgp</tt></td>
+</tr>
+</table>
+</ol>
+
+<p><br><b>To install PGP Command Line on Linux RPM systems:</b>
+<br><i>To install the software, you must have root privileges.</i>
+<ol>
+<li>
+Download the PGP files to the system or insert the PGP CD-ROM into the
+CD-ROM drive.</li>
+
+<li>
+Install the package by issuing the following command (where <tt>x.x.x</tt>
+is the release number):&nbsp;</li>
+
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>rpm -iv PGPcmdln_x.x.x_linux.i386.rpm</tt></td>
+</tr>
+</table>
+
+<p>The PGP program files are copied to the system.
+<li>
+When installation is complete, verify the PGP signature file by adding
+the PGP signature in the <tt>SampleKeys.Asc</tt> file found in /usr/doc/pgp-x.x.x/
+directory to your keyring.&nbsp;</li>
+
+<p><br>Once the PGP signature is added to your keyring, issue the following
+command (where <tt>x.x.x</tt> is the release number):&nbsp;
+<table BORDER=0 CELLPADDING=5 >
+<tr>
+<td><tt>rpm --checksig PGPcmdln_x.x.x_linux.i386.rpm</tt></td>
+</tr>
+</table>
+
+<p>If the signature is correct, the response from this command is "<tt>OK</tt>."</ol>
+
+<hr align=left>
+<p><a NAME="knownissues"></a><b>KNOWN ISSUES</b>
+<ol>
+<li>
+The <tt>BATCHMODE</tt> flag is not supported when used with a UNIX-style
+filter.</li>
+
+<li>
+The <tt>-m</tt> and <tt>-w</tt> options cannot be used together (<tt>pgp
+-mw</tt> <i>file</i>). Use
+<tt>pgp -m</tt> first.</li>
+
+<li>
+The functionality to preserve a signature from within an encrypted file
+is not available in this release.</li>
+
+<li>
+The ability to use the <tt>+makerandom</tt> feature is not supported in
+this release.</li>
+</ol>
+
+<p>
+<hr align=left>
+<p><a NAME="contactingnetworkassociates"></a><b>CONTACTING NETWORK ASSOCIATES</b>
+<p><b>For questions, orders, problems, or comments&nbsp;</b>
+   <P>
+Contact the Network Associates Customer Service department
+between 8:00 a.m. and 8:00 p.m. Central Time, Monday 
+through Friday, at:</P>
+<P>
+<P>
+Network Associates Customer Service<BR>	
+4099 McEwen Road, Suite 500<BR>
+Dallas, Texas 75244<BR>
+</P>
+<P>
+<B>Phone:</B> (972) 308-9960 <BR>
+<B>Email:</B><a href="mailto:cust_care@nai.com">cust_care@nai.com</a><BR>
+<B>World Wide Web:</B><a href="http://support.nai.com">http://support.nai.com</a><BR>
+         </P>
+
+
+<P>
+Contact Network Associates Customer Service for 
+information about technical support 
+subscription plans.</P>
+
+<P>
+For corporate-licensed customers:</P>
+<P>
+<B>Phone:</B> (972) 308-9960<BR>
+</P>
+<P>
+<P>
+For retail-licensed customers:</P>
+<P>
+<B>Phone:</B> (972) 855-7044<BR>
+</P>
+<P>
+
+</ul>
+To provide the answers you need quickly and efficiently, the Network Associates
+technical support staff needs some information about your computer and
+your software. Please have this information ready when you call:
+<ul>
+<li>
+Program name and version number</li>
+
+<li>
+Computer brand and model</li>
+
+<li>
+Any additional hardware or peripherals connected to your computer</li>
+
+<li>
+Operating system type and version numbers</li>
+
+<li>
+Network name, operating system, and version</li>
+
+<li>
+Network card installed, where applicable</li>
+
+<li>
+Modem manufacturer, model, and speed, where applicable</li>
+
+<li>
+Relevant browsers or applications and their version numbers, where applicable</li>
+
+<li>
+How to reproduce your problem: when it occurs, whether you can reproduce
+it regularly, and under what conditions</li>
+
+<li>
+Information needed to contact you by voice, fax, or email</li>
+</ul>
+We also seek and appreciate general feedback.
+<p><b>For product upgrades</b>
+<p>Network Associates has a worldwide range of
+partnerships and reseller relationships with
+hundreds of independent vendors, each of which
+can provide you with consulting services, sales
+advice, and product support for Network
+Associates software. For assistance in locating a
+local reseller, you can contact Network
+Associates Customer Service at (972) 
+308-9960.
+<p><b>For reporting problems</b>
+<p>Network Associates prides itself on delivering a high-quality product.
+If you find any problems, please take a moment to review the contents of
+this file. If the problem you've encountered is documented, there is no
+need to report the problem to Network Associates.
+<p>If you find any feature that does not appear to function properly on
+your system, or if you believe an application would benefit greatly from
+enhancement, please contact Network Associates with your suggestions or
+concerns.
+<p><b>For on-site training information</b>
+<p>Contact Network Associates Customer Service at (800) 338-8754.
+<p>
+<hr align=left></td>
+
+<td></td>
+</tr>
+</table></center>
+
+</body>
+</html>

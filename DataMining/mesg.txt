@@ -1,0 +1,14 @@
+SQL3304N  The table does not exist.
+
+SQL3109N  The utility is beginning to load data from file "training6.dat".
+
+SQL3110N  The utility has completed processing.  "1501" rows were read from 
+the input file.
+
+SQL3221W  ...Begin COMMIT WORK. Input Record Count = "1501".
+
+SQL3222W  ...COMMIT of any database changes was successful.
+
+SQL3149N  "1501" rows were processed from the input file.  "1501" rows were 
+successfully inserted into the table.  "0" rows were rejected.
+

@@ -1,0 +1,39 @@
+
+ Installing John the Ripper
+============================
+
+ Compiling the Sources
+-----------------------
+
+Compile the sources with:
+
+	cd src
+	make
+
+You'll get a list of supported systems. Select one of them, and type:
+
+	make SYSTEM
+
+or, if your system is not listed, try:
+
+	make generic
+
+If everything goes well, this will create the John binary in run/john.
+
+You can then copy the run directory anywhere you like: these are all the
+files that John needs at runtime.
+
+ Installing from a Binary Distribution
+---------------------------------------
+
+You might need to take run/{john.ini,*.chr,password.lst} from the source
+distribution for things to work, unless these files are present already.
+
+ Note on Moving Binaries between Systems
+-----------------------------------------
+
+On some architectures, a few hardware performance parameters are detected
+at compile time -- in particular, this is done for SPARC and generic make
+targets. If you then move the binary to a different system, you might not
+get the best performance. It is better to re-compile John on each system,
+where possible.

@@ -1,0 +1,85 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+# drive dodictgrp using conf/dictgrps.conf
+
+config=conf/dictgrps.conf
+dictdir=$1
+
+###
+# Check invocation
+###
+
+if [ "x$dictdir" = "x" ]
+then
+	echo "Usage: mkdictgrps new-destdir" 1>&2
+	exit 1
+fi
+
+if [ -d $dictdir ]
+then
+	echo "mkdictgrps: Directory $dictdir must not exist to do this!" 1>&2
+	exit 1
+else
+	mkdir $dictdir || exit 1
+fi
+
+###
+# Invoke dodictgrp
+###
+
+awk -F: '
+/^[^#\t\n ]/ {
+	print "echo doing group", $1 "..."
+	print "dodictgrp '"$dictdir"'/" $1, $2, "|| exit 1";
+}
+END {
+	print "exit 0";
+}' < $config |
+sh 			# -x # for debug
+
+if [ $? != 0 ]
+then
+	exit $?
+fi
+
+###
+# Inter dictionary UNIQ
+###
+
+echo "mkdictgrps: uniq'ing dictionary groups..."
+
+cd $dictdir || exit 1
+
+set *
+
+tf=.idtf$$
+
+for first in $*
+do
+	shift
+	for second in $*
+	do
+		echo "group $first and $second..."
+		comm -13 $first $second > $tf
+		mv $tf $second
+	done
+done
+
+###
+# Compress
+###
+
+echo "mkdictgrps: compressing dictionary groups..."
+
+dictcomp * || exit 1
+
+exit 0

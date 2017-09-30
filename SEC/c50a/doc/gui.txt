@@ -1,0 +1,47 @@
+
+Concerning GUIs.
+
+Think about it this way:
+
+		  Would you *really* like to see the
+		 output from a Crack run at your site
+		     to be available on the WWW?
+
+also:
+
+		    Would you *really* like people
+			(other than yourself)
+		to be able to control your Crack jobs?
+
+
+No on both counts?
+
+Jolly good - you've got more common sense than some other people I've
+run into, then.
+
+Seriously: given the networked nature of X-windows, whether you use
+HTTP/cgi or a TCL/Tk GUI interface to browse Crack output, this is
+pretty much what you're talking about; people you don't know being
+able to read your Crack output, willy-nilly.
+
+To be fair, though, this is also pretty much the case if you're
+running "Crack -network", given the latter's preference for NFS as a
+transport mechanism.  Using switched hubs on a LAN can help here, but
+it ain't perfect.
+
+On this basis I may get round to writing some sort of Crack "control
+panel" in Perl/Tk or TCL/Tk for version 5.1, but don't hold your
+breath waiting.  Crack is a "batch" program - not the easiest sort of
+program to remote-control under Unix; perhaps I can put something
+together to control it using named pipes, rather than suffering the
+same goof that SATAN did and have weak authentication between server
+and client - but then again named pipes aren't much use when running
+Crack in networked mode.
+
+In short: it's a real pig, and probably best ignored.
+
+If you're just looking for a way to stop/start Crack at certain times
+of day, check out "scripts/pauser".
+
+If you're just looking for HTML output, try "Reporter -html".
+

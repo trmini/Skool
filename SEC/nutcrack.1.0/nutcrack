@@ -1,0 +1,94 @@
+#!/usr/bin/perl
+
+#Nutcracker version 1.0
+#Copyright 2000 by Ryan T. Rhea
+#rhear@cs.winthrop.edu
+#http://www.birdnest.org/zzrhear
+
+system("clear");
+
+print "Nutcracker version 1.0\n";
+print "Copyright 2000 by Ryan T. Rhea\n";
+
+if($#ARGV<1) {
+    print "\nUSAGE: nutcrack passwd_file dictionary_file \a\n\n";
+    exit;
+}
+
+$passwd=$ARGV[0];
+$dict=$ARGV[1];
+
+get_dict_file();
+get_passwd_file();
+print "\n";
+
+sub get_dict_file {
+    open(DICT, $dict) or die ("\nerror: can't find/open $dict!\a\n\n");
+    while(<DICT>) {
+	@_words=split;
+	push @words, [@_words];
+    }
+    print "\ngot dict file: $dict\n\n";
+    close(DICT);    
+}
+
+sub get_passwd_file {
+    open(PASSWD, $passwd) or die ("error: can't find/open $passwd!\a\n\n");
+    print "got passwd file: $passwd\n\n";
+    print "cracking...\n\n";
+    while(<PASSWD>) {
+	($user, $enc, $uid, $gid, $gecos, $home, $shell)=split(/:/);
+	if($enc eq "\*") {
+	    $status="disabled";
+	    $password="-";
+	    write;
+	}
+	elsif($enc eq "x") {
+	    $status="disabled";
+	    $password="-";
+	    write;
+	}
+	elsif($enc eq "") {
+	    $status="NO PASSWORD\n\a";
+	    $password="NONE";
+	    print"\a";
+	    write;
+	}
+	else {
+	    $crk="no";
+	    crack();
+	    if($crk eq "no") {
+		$status="unable to crack";
+		$password="X";
+		write;
+	    }
+	}
+    }
+    close(PASSWD);	
+}
+
+sub crack {
+    for $pass(@words) {
+	$try=crypt(@$pass[0], $enc);
+	if($try eq $enc) {
+	    $status="CRACKED";
+	    $password=@$pass[0];
+	    print"\a";
+	    write;
+	    $crk="yes";
+	    last;
+	}
+    }
+}
+
+format STDOUT =
+@<<<<<<<<<<<<<<<  @<<<<<<<<<<<<<<  @<<<<<<<<<<<<<<<
+$user, $status, $password
+.
+
+
+format STDOUT_TOP =
+user name         status	   password
+----------------  ---------------  ----------------
+.
+

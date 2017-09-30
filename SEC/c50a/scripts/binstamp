@@ -1,0 +1,58 @@
+#!/bin/sh
+###
+# This program was written by and is copyright Alec Muffett 1991,
+# 1992, 1993, 1994, 1995, and 1996, and is provided as part of the
+# Crack v5.0 Password Cracking package.
+#
+# The copyright holder disclaims all responsibility or liability with
+# respect to its usage or its effect upon hardware or computer
+# systems, and maintains copyright as set out in the "LICENCE"
+# document which accompanies distributions of Crack v5.0 and upwards.
+###
+
+SYSTEM=`uname -s`
+RELEASE=`uname -r`
+ARCH=`uname -p || arch || uname -m`
+
+case $ARCH in
+    i486)        ARCH=i386 ;;
+    x86)         ARCH=i386 ;;
+    i86pc)       ARCH=i386 ;;
+    sun3?*)      ARCH=sun3 ;;
+    sun4?*)      ARCH=sun4 ;;
+esac
+
+if [ "$STRICT_OSREV" = "" ]
+then
+    RELEASE=`echo $RELEASE | awk -F. '{print $1}'`
+fi
+
+if [ "$SYSTEM" = "" ]
+then
+
+    if [ -d /mach ]
+    then
+	SYSTEM=mach
+    fi
+elif [ "$SYSTEM" = "AIX" ] # so much for standards
+then
+    ARCH=`uname -v`
+fi
+
+if [ "$RELEASE" = "" ]
+then
+    RELEASE=norel
+fi
+
+if [ "$ARCH" = "" ]
+then
+    ARCH=noarch
+fi
+
+echo "$SYSTEM-$RELEASE-$ARCH" |
+    tr '[A-Z]' '[a-z]' |
+    tr -cs '\010\055\137[0-9][A-Z][a-z]' '_'
+
+# 'tr' is a f*cking pain - hacked about by too many morons
+
+exit 0

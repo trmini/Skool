@@ -1,0 +1,30 @@
+Crack 5.0a: The Password Cracker.
+(c) Alec Muffett, 1991, 1992, 1993, 1994, 1995, 1996
+System: Linux ZER0 2.4.3-20mdksmp #1 SMP Sun Apr 15 22:32:27 CEST 2001 i686 unknown
+Home: /home/dluu/courses/SEC/c50a
+Invoked: ./Crack -makeonly
+Option: -makeonly enabled
+Stamp: linux-2-unknown
+
+Crack: making utilities in run/bin/linux-2-unknown
+find . -name "*~" -print | xargs -n50 rm -f
+( cd src; for dir in * ; do ( cd $dir ; make clean ) ; done )
+make[1]: Entering directory `/home/dluu/courses/SEC/c50a/src/lib'
+rm -f dawglib.o debug.o rules.o stringlib.o *~
+make[1]: Leaving directory `/home/dluu/courses/SEC/c50a/src/lib'
+make[1]: Entering directory `/home/dluu/courses/SEC/c50a/src/libdes'
+/bin/rm -f *.o tags core rpw destest des speed libdes.a .nfs* *.old \
+*.bak destest rpw des speed
+make[1]: Leaving directory `/home/dluu/courses/SEC/c50a/src/libdes'
+make[1]: Entering directory `/home/dluu/courses/SEC/c50a/src/util'
+rm -f *.o *~
+make[1]: Leaving directory `/home/dluu/courses/SEC/c50a/src/util'
+make[1]: Entering directory `/home/dluu/courses/SEC/c50a/src/lib'
+make[1]: `../../run/bin/linux-2-unknown/libc5.a' is up to date.
+make[1]: Leaving directory `/home/dluu/courses/SEC/c50a/src/lib'
+make[1]: Entering directory `/home/dluu/courses/SEC/c50a/src/util'
+gcc -g -O2 -Wall -DUSE_STRING_H -DUSE_STDLIB_H -DUSE_SIGNAL_H -DUSE_SYS_TYPES_H -DUSE_UNISTD_H -DUSE_PWD_H -I../lib -o ../../run/bin/linux-2-unknown/dictfilt dictfilt.c elcid.o ../../run/bin/linux-2-unknown/libc5.a -lcrypt
+gcc: elcid.o: No such file or directory
+make[1]: *** [../../run/bin/linux-2-unknown/dictfilt] Error 1
+make[1]: Leaving directory `/home/dluu/courses/SEC/c50a/src/util'
+make: *** [utils] Error 1

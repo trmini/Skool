@@ -1,0 +1,93 @@
+
+ Customizing John the Ripper
+=============================
+
+John the Ripper's behavior can be customized by editing its configuration
+file, ~/john.ini. You can set global options, define wordlist and "single
+crack" mode rules, define parameters for incremental modes, or even define
+a new cracking mode.
+
+The configuration file consists of several sections. Each section starts
+with a line containing its name, in brackets. Sections consist of either
+value assignments to some variables (in form 'variable = value'), or some
+other text specific to particular section's type (names of such sections
+start with a 'list.'). Section and variable names are not case sensitive.
+Lines starting with '#' or ';' and empty lines are ignored, you can use
+them for comments, or to comment out lines that you don't want to delete
+completely.
+
+ General Options
+-----------------
+
+Some global options can be defined in the [Options] section. Currently you
+can set the following:
+
+Wordfile	Set to your wordlist file name, to be used in batch mode.
+		(That is, when you run John with password files, but not
+		specifying a cracking mode.)
+
+Idle		If set to 'Y', John will use idle cycles only. Currently
+		this is only supported on Linux, if you apply the kernel
+		patch found in src/idle.diff. (Note: even though the patch
+		is trivial, it is to be considered experimental. You have
+		been warned.) When running on Linux without the patch, a
+		less efficient implementation, based on sched_yield(), is
+		used. On all the other systems this option is equivalent
+		to nice(20). By the way, this doesn't affect the startup
+		time and non-cracking John runs, as the priority is only
+		set before going into the cracking loop.
+
+Save		Crash recovery file saving delay in seconds. Adjust this
+		when using power-saving, say, on a notebook computer.
+
+Beep		If set to 'Y', John will beep when a password is found.
+		Why would someone need this, anyway? Still, some people
+		requested that I put this feature back in, so it's here.
+
+ Defining Wordlist Rules
+-------------------------
+
+The rules for wordlist and "single crack" modes are defined in separate
+sections, [List.Rules:Wordlist] and [List.Rules:Single] respectively. I
+used an extended Crack (by Alec Muffett) syntax, since many of you are
+already familiar with it. I added some more rules, and (most important)
+a preprocessor, which generates multiple rules from a single source line.
+
+When defining rules, simply place one rule (which may include preprocessor
+commands) per line. See doc/RULES for information on rules syntax and the
+preprocessor.
+
+ Incremental Mode Parameters
+-----------------------------
+
+To define the incremental mode parameters you need to create a section
+called [Incremental:MODE], where MODE is any identifier that you assign
+to the mode. There're some pre-defined incremental modes in the default
+configuration file supplied with John, you can use them as templates.
+
+The following parameters are supported:
+
+File		Set to your charset file name. See doc/EXAMPLES for an
+		example on how to generate one.
+
+MinLen		Minimum password length, in characters (0 by default).
+
+MaxLen		Maximum password length, in characters (CHARSET_LENGTH as
+		defined in src/params.h, normally 8, by default).
+
+CharCount	Allows you to limit the number of different characters
+		used, to make John start trying longer passwords earlier.
+		This can also be used to make John print a warning if the
+		charset only defines less than CharCount characters. By
+		default (when this parameter is not used) all the defined
+		characters will be used.
+
+Extra		This can be used to make John try some extra characters,
+		that don't appear in the charset file. Just list all these
+		characters here, they will then be added, but considered
+		the least probable.
+
+ Defining an External Mode
+---------------------------
+
+See doc/EXTERNAL.

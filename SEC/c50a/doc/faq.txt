@@ -1,0 +1,114 @@
+From the Security FAQ:
+
+ >Q.16 How can I generate safe passwords?
+ >
+ >You can't.  The key word here is GENERATE.  Once an algorithm for
+ >creating passwords is specified using upon some systematic method, it
+ >merely becomes a matter of analysing your algorithm in order to find
+ >every password on your system.
+ >
+ >Unless the algorithm is very subtle, it will probably suffer from a
+ >very low period (ie: it will soon start to repeat itself) so that
+ >either:
+ >
+ >  a) a cracker can try out every possible output of the password
+ >  generator on every user of the system, or
+ >
+ >  b) the cracker can analyse the output of the password program,
+ >  determine the algorithm being used, and apply the algorithm to other
+ >  users to determine their passwords.
+ >
+ >A beautiful example of this (where it was disastrously assumed that a
+ >random number generator could generate an infinite number of random
+ >passwords) is detailed in [Morris & Thompson].
+ >
+ >The only way to get a reasonable amount of variety in your passwords
+ >(I'm afraid) is to make them up.  Work out some flexible method of your
+ >own which is NOT based upon:
+ >
+ >  1) modifying any part of your name or name+initials
+ >  2) modifying a dictionary word
+ >  3) acronyms
+ >  4) any systematic, well-adhered-to algorithm whatsoever
+ >
+ >For instance, NEVER use passwords like:
+ >
+ >alec7 		- it's based on the users name (& it's too short anyway)
+ >tteffum		- based on the users name again
+ >gillian		- girlfiends name (in a dictionary)
+ >naillig		- ditto, backwards
+ >PORSCHE911 	- it's in a dictionary
+ >12345678 	- it's in a dictionary (& people can watch you type it easily)
+ >qwertyui 	- ...ditto...
+ >abcxyz		- ...ditto...
+ >0ooooooo	- ...ditto...
+ >Computer 	- just because it's capitalised doesn't make it safe
+ >wombat6 	- ditto for appending some random character
+ >6wombat 	- ditto for prepending some random character
+ >merde3		- even for french words...
+ >mr.spock 	- it's in a sci-fi dictionary
+ >zeolite 	- it's in a geological dictionary
+ >ze0lite 	- corrupted version of a word in a geological dictionary
+ >ze0l1te 	- ...ditto...
+ >Z30L1T3 	- ...ditto...
+ >
+ >I hope that these examples emphasise that ANY password derived from ANY
+ >dictionary word (or personal information), modified in ANY way,
+ >constitutes a potentially guessable password.
+ >
+ >For more detailed information in the same vein, you should read the
+ >APPENDIX files which accompany Crack [Muffett].
+ >
+ >Q.17 Why are passwords so important?
+ >
+ >Because they are the first line of defence against interactive attacks
+ >on your system.  It can be stated simply: if a cracker cannot interact
+ >with your system(s), and he has no access to read or write the
+ >information contained in the password file, then he has almost no
+ >avenues of attack left open to break your system.
+ >
+ >This is also why, if a cracker can at least read your password file (and
+ >if you are on a vanilla modern Unix, you should assume this) it is so
+ >important that he is not able to break any of the passwords contained
+ >therein.  If he can, then it is also fair to assume that he can (a) log
+ >on to your system and can then (b) break into "root" via an operating
+ >system hole.
+ >
+ >Q.18 How many possible passwords are there?
+ >
+ >Most people ask this at one time or another, worried that programs
+ >like Crack will eventually grow in power until they can do a
+ >completely exhaustive search of all possible passwords, to break into
+ >a specific users' account - usually root.
+ >
+ >If (to simplify the maths) we make the assumptions that:
+ >
+ >  1) Valid passwords are created from a set of 62 chars [A-Za-z0-9]
+ >  2) Valid passwords are to be between 5 and 8 chars long
+ >
+ >Then the size of the set of all valid passwords is: (in base 62)
+ >
+ >				   100000 +
+ >				  1000000 +
+ >				 10000000 +
+ >				100000000 =
+ >				---------
+ >				111100000	(base 62)
+ >
+ >A figure which is far too large to usefully undertake an exhaustive
+ >search with current technologies.  Don't forget, however, that
+ >passwords CAN be made up with even more characters then this; you can
+ >use <space>, all the punctuation characters, and symbols (~<>|\#$%^&*)
+ >too.  If you can use some of all the 95 non-control characters in
+ >passwords, this increases the search space for a cracker to cover even
+ >further.
+ >
+ >However, it's still MUCH more efficient for a cracker to get a copy of
+ >"Crack", break into ANY account on the system (you only need one), log
+ >onto the machine, and spoof his way up to root priviledges via
+ >operating systems holes.
+ >
+ >Take comfort from these figures.  If you can slam the door in the face
+ >of a potential crackers with a robust password file, you have sealed
+ >most of the major avenues of attack immediately.
+ >

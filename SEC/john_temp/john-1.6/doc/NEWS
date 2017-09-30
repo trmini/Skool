@@ -1,0 +1,45 @@
+
+ John the Ripper -- Changes History
+====================================
+
+ Changes from v1.5 to v1.6
+---------------------------
+* Batch mode: easier to use.
+* Kerberos AFS passwords support.
+* WinNT passwords support (LM hashes only).
+* Idle priority support on Linux.
+* Rule reject flags: can reject entire rules on condition.
+* New utility: 'unique' (removes duplicated lines without re-ordering).
+* New options: '-stdout', '-status'.
+* GNU-style long options support.
+* New make targets for AIX, HP-UX, IRIX.
+* Bug and portability fixes, and new bugs.
+
+ Changes from v1.4 to v1.5
+---------------------------
+* Everything is re-coded, to be far more extendable, more portable (no
+GNU C extensions used, unless __GNUC__ is defined), and more readable.
+* Bitslice DES routines: up to 3 times faster on RISC.
+* BSDI's extended DES-based ciphertext format support.
+* OpenBSD's Blowfish-based ciphertext format support.
+* Special assembly DES routines for x86 with MMX: +30% on a Pentium II.
+* Improved MD5 routines (both C and x86 assembly), 10...50% faster.
+* Smarter length switching in incremental mode.
+* Wordlist rules are now expanded while cracking, not at startup.
+* New options: '-session', '-groups'.
+* Simplified the syntax of '-users', '-shells', '-salts'.
+* Replaced '-noname' and '-nohash' with '-savemem'.
+* Replaced '-des' and '-md5' with '-format'.
+* Removed some obsolete options, to keep the thing simple.
+* Added 'continue', 'break', 'return' to the built-in compiler.
+* You can now use C comments in external mode definitions.
+* Better default rule sets: variable length limit, less redundancy.
+* Many internal algorithm improvements.
+
+ Changes from v1.3 to v1.4
+---------------------------
+* MD5-based password files support.
+* SPARC V8 assembly DES routines.
+* A lot of bugfixes.
+
+Versions earlier than v1.3 are probably not worth mentioning here now...
